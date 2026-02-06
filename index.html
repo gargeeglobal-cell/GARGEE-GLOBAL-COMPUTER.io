@@ -3,173 +3,217 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Gargee Global Computer Institute | Professional IT College</title>
 
+<!-- Tailwind -->
 <script src="https://cdn.tailwindcss.com"></script>
 
 <style>
-html { scroll-behavior: smooth; }
+html{scroll-behavior:smooth}
+.section-img{
+  background:linear-gradient(135deg,#2563eb,#1e40af);
+}
+.card-hover:hover{
+  transform:translateY(-6px);
+  transition:.3s ease;
+}
 </style>
 </head>
 
-<body class="bg-slate-950 text-gray-200">
+<body class="bg-slate-100 text-gray-800">
 
 <!-- HEADER -->
-<header class="bg-slate-900 sticky top-0 z-50 shadow-xl">
-  <div class="max-w-7xl mx-auto flex justify-between items-center p-5">
-    <h1 class="text-xl font-bold text-blue-400">
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <h1 class="text-xl font-bold text-blue-700">
       GARGEE GLOBAL COMPUTER INSTITUTE
     </h1>
-    <nav class="space-x-6 text-sm">
-      <a href="#courses" class="hover:text-blue-400">Courses</a>
-      <a href="#admission" class="hover:text-blue-400">Admission</a>
-      <a href="#director" class="hover:text-blue-400">Leadership</a>
-      <a href="#contact" class="hover:text-blue-400">Contact</a>
+    <nav class="space-x-6 text-sm font-semibold">
+      <a href="#courses" class="hover:text-blue-600">Courses</a>
+      <a href="#placement" class="hover:text-blue-600">Placement</a>
+      <a href="#admission" class="hover:text-blue-600">Admission</a>
+      <a href="#director" class="hover:text-blue-600">Leadership</a>
+      <a href="#contact" class="hover:text-blue-600">Contact</a>
     </nav>
   </div>
 </header>
 
 <!-- HERO -->
-<section class="relative bg-[url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1')] bg-cover bg-center">
-<div class="absolute inset-0 bg-black/85"></div>
-<div class="relative max-w-6xl mx-auto py-32 px-6 text-center">
-<h2 class="text-5xl font-bold text-white">Professional IT Education for Career Growth</h2>
-<p class="mt-6 text-xl text-gray-300">ISO Verified • Affiliated with Fucture IT College</p>
-<a href="#courses" class="inline-block mt-10 bg-blue-600 hover:bg-blue-700 px-10 py-4 rounded-xl font-semibold">
-Explore Courses
-</a>
-</div>
+<section class="section-img py-32 text-white">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+        Professional IT & Computer Education for Career Success
+      </h2>
+      <p class="mt-6 text-lg text-blue-100">
+        ISO Verified • Affiliated with Fucture IT College
+      </p>
+      <p class="mt-3 italic text-blue-200">
+        From Computer Basics to Global IT Careers
+      </p>
+
+      <div class="mt-8 flex gap-4">
+        <a href="#courses" class="bg-white text-blue-700 px-8 py-3 rounded-xl font-semibold">
+          Explore Courses
+        </a>
+        <a href="#admission" class="bg-blue-900 px-8 py-3 rounded-xl font-semibold">
+          Enroll Now
+        </a>
+      </div>
+    </div>
+
+    <!-- Visual -->
+    <div class="bg-white/10 p-10 rounded-2xl text-center">
+      <svg width="180" height="180">
+        <rect width="180" height="180" rx="30" fill="#ffffff"/>
+        <text x="50%" y="55%" text-anchor="middle" fill="#1e40af" font-size="20" font-weight="bold">
+          IT COLLEGE
+        </text>
+      </svg>
+    </div>
+  </div>
 </section>
 
 <!-- COURSES -->
-<section id="courses" class="bg-slate-900 py-24 px-6">
-<div class="max-w-7xl mx-auto">
+<section id="courses" class="py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-blue-700 mb-6">
+      Courses & Programs (1000+ Options)
+    </h3>
+    <p class="text-gray-600 mb-12">
+      Computer basics to advanced professional programs designed according to market and MNC demand.
+      Duration ranges from <strong>3 Months to 3 Years</strong>.
+    </p>
 
-<h3 class="text-3xl font-bold text-blue-400 mb-12">Our Professional IT Courses</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- CARD -->
+      <div onclick="selectCourse('Computer Basics')" class="card-hover cursor-pointer bg-blue-50 p-8 rounded-xl shadow">
+        <h4 class="font-semibold text-lg">Computer Basics</h4>
+        <p class="text-sm text-gray-600 mt-2">3 – 6 Months</p>
+      </div>
 
-<div class="grid md:grid-cols-3 gap-10">
+      <div onclick="selectCourse('Office Automation')" class="card-hover cursor-pointer bg-blue-50 p-8 rounded-xl shadow">
+        <h4 class="font-semibold text-lg">Office Automation</h4>
+        <p class="text-sm text-gray-600 mt-2">6 – 12 Months</p>
+      </div>
 
-<!-- COURSE CARD -->
-<div onclick="openForm('Computer Basics')" class="cursor-pointer bg-slate-800 rounded-xl overflow-hidden hover:scale-105 transition">
-<img src="https://images.unsplash.com/photo-1581091012184-5c7c1d1f92b4" class="h-44 w-full object-cover">
-<div class="p-6">
-<h4 class="font-semibold text-lg">Computer Basics</h4>
-<p class="text-sm text-gray-400 mt-2">3 – 6 Months</p>
-</div>
-</div>
+      <div onclick="selectCourse('Full Stack Development')" class="card-hover cursor-pointer bg-blue-50 p-8 rounded-xl shadow">
+        <h4 class="font-semibold text-lg">Full Stack Development</h4>
+        <p class="text-sm text-gray-600 mt-2">1 – 3 Years</p>
+      </div>
 
-<div onclick="openForm('Office Automation')" class="cursor-pointer bg-slate-800 rounded-xl overflow-hidden hover:scale-105 transition">
-<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" class="h-44 w-full object-cover">
-<div class="p-6">
-<h4 class="font-semibold text-lg">Office Automation</h4>
-<p class="text-sm text-gray-400 mt-2">6 – 12 Months</p>
-</div>
-</div>
+      <div onclick="selectCourse('Cyber Security')" class="card-hover cursor-pointer bg-blue-50 p-8 rounded-xl shadow">
+        <h4 class="font-semibold text-lg">Cyber Security</h4>
+        <p class="text-sm text-gray-600 mt-2">6 – 24 Months</p>
+      </div>
 
-<div onclick="openForm('Full Stack Development')" class="cursor-pointer bg-slate-800 rounded-xl overflow-hidden hover:scale-105 transition">
-<img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" class="h-44 w-full object-cover">
-<div class="p-6">
-<h4 class="font-semibold text-lg">Full Stack Development</h4>
-<p class="text-sm text-gray-400 mt-2">1 – 3 Years</p>
-</div>
-</div>
+      <div onclick="selectCourse('AI & Data Science')" class="card-hover cursor-pointer bg-blue-50 p-8 rounded-xl shadow">
+        <h4 class="font-semibold text-lg">AI & Data Science</h4>
+        <p class="text-sm text-gray-600 mt-2">1 – 3 Years</p>
+      </div>
 
-<div onclick="openForm('Cyber Security')" class="cursor-pointer bg-slate-800 rounded-xl overflow-hidden hover:scale-105 transition">
-<img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b" class="h-44 w-full object-cover">
-<div class="p-6">
-<h4 class="font-semibold text-lg">Cyber Security</h4>
-<p class="text-sm text-gray-400 mt-2">6 – 24 Months</p>
-</div>
-</div>
-
-<div onclick="openForm('Data Science & AI')" class="cursor-pointer bg-slate-800 rounded-xl overflow-hidden hover:scale-105 transition">
-<img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c" class="h-44 w-full object-cover">
-<div class="p-6">
-<h4 class="font-semibold text-lg">Data Science & AI</h4>
-<p class="text-sm text-gray-400 mt-2">1 – 3 Years</p>
-</div>
-</div>
-
-<div onclick="openForm('BPO / KPO Training')" class="cursor-pointer bg-slate-800 rounded-xl overflow-hidden hover:scale-105 transition">
-<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" class="h-44 w-full object-cover">
-<div class="p-6">
-<h4 class="font-semibold text-lg">BPO / KPO Training</h4>
-<p class="text-sm text-gray-400 mt-2">3 – 12 Months</p>
-</div>
-</div>
-
-</div>
-</div>
+      <div onclick="selectCourse('BPO / KPO & Corporate Training')" class="card-hover cursor-pointer bg-blue-50 p-8 rounded-xl shadow">
+        <h4 class="font-semibold text-lg">BPO / KPO & Corporate IT</h4>
+        <p class="text-sm text-gray-600 mt-2">3 – 12 Months</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- ADMISSION FORM -->
-<section id="admission" class="bg-black py-28 px-6">
-<div class="max-w-xl mx-auto">
+<!-- PLACEMENT -->
+<section id="placement" class="bg-blue-50 py-24">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h3 class="text-3xl font-bold text-blue-700 mb-6">
+        Placement & Career Support
+      </h3>
+      <ul class="list-disc pl-6 space-y-3 text-gray-700">
+        <li>20+ placement drives conducted</li>
+        <li>120+ MNC & corporate hiring partners</li>
+        <li>Resume, interview & soft-skill training</li>
+        <li>Internship & live project exposure</li>
+      </ul>
+    </div>
 
-<h3 class="text-3xl font-bold text-blue-400 text-center mb-10">
-Admission Enquiry Form
-</h3>
+    <div class="section-img p-10 rounded-2xl text-white text-center">
+      <h4 class="text-2xl font-bold">Career Ready Training</h4>
+      <p class="mt-4 text-blue-100">
+        We prepare students for real corporate environments, not just certificates.
+      </p>
+    </div>
+  </div>
+</section>
 
-<form class="space-y-5 bg-slate-900 p-8 rounded-xl shadow-xl">
-<input type="text" placeholder="Full Name" class="w-full p-3 rounded bg-slate-800" required>
-<input type="tel" placeholder="Mobile Number" class="w-full p-3 rounded bg-slate-800" required>
-<input type="email" placeholder="Email Address" class="w-full p-3 rounded bg-slate-800">
+<!-- ADMISSION -->
+<section id="admission" class="py-28 bg-white">
+  <div class="max-w-xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-blue-700 text-center mb-8">
+      Admission Enquiry
+    </h3>
 
-<input id="courseField" type="text" placeholder="Selected Course" class="w-full p-3 rounded bg-slate-800" readonly>
+    <form onsubmit="sendWhatsApp();return false;"
+      class="bg-blue-50 p-8 rounded-xl shadow space-y-5">
 
-<button class="w-full bg-blue-600 hover:bg-blue-700 p-3 rounded-xl font-semibold">
-Submit Admission Enquiry
-</button>
+      <input id="name" required placeholder="Student Name" class="w-full p-3 rounded">
+      <input id="phone" required placeholder="Mobile Number" class="w-full p-3 rounded">
+      <input id="course" readonly placeholder="Selected Course"
+        class="w-full p-3 rounded bg-gray-100">
 
-<p class="text-center text-sm text-gray-400 mt-3">
-Our admission team will contact you shortly.
-</p>
-</form>
-
-</div>
+      <button class="w-full bg-green-600 hover:bg-green-700 text-white p-3 rounded-xl font-semibold">
+        Submit on WhatsApp
+      </button>
+    </form>
+  </div>
 </section>
 
 <!-- DIRECTOR -->
-<section id="director" class="bg-slate-900 py-24 px-6">
-<div class="max-w-6xl mx-auto">
-<h3 class="text-3xl font-bold text-blue-400">Director’s Message</h3>
-<p class="mt-6 text-gray-300 leading-8">
-Our mission is to convert students into professionals through discipline,
-industry-focused training, and structured education aligned with global IT standards.
-</p>
-
-<h4 class="mt-10 text-xl font-semibold text-blue-300">Mission</h4>
-<p class="mt-3 text-gray-300">
-Deliver industry-ready IT education with integrity, skill, and innovation.
-</p>
-
-<h4 class="mt-6 text-xl font-semibold text-blue-300">Vision</h4>
-<p class="mt-3 text-gray-300">
-To be a nationally trusted IT education institution shaping future professionals.
-</p>
-</div>
+<section id="director" class="bg-blue-50 py-28">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-blue-700 mb-6">
+      Director’s Message
+    </h3>
+    <p class="text-gray-700 leading-8">
+      Our mission is to bridge the gap between education and industry.
+      We focus on discipline, practical exposure, and career transformation.
+      Through ISO-verified systems and affiliation with Fucture IT College,
+      we ensure academic credibility and long-term success.
+    </p>
+    <p class="mt-6 font-semibold">— Aditya Gupta, Director</p>
+  </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="bg-black py-20 px-6">
-<div class="max-w-6xl mx-auto">
-<h3 class="text-3xl font-bold text-blue-400">Contact Us</h3>
-<p class="mt-4">📍 Vishal Mega Mart, Surajpur, Greater Noida</p>
-<p>📞 9720136336 / 8178599981</p>
-<p>✉️ gargeeglobal@gmail.com</p>
-</div>
+<!-- CONTACT + MAP -->
+<section id="contact" class="bg-white py-28">
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-blue-700 mb-6">
+      Contact & Location
+    </h3>
+    <p>📍 Vishal Mega Mart, Surajpur, Greater Noida – 201306</p>
+    <p>📞 9720136336 / 8178599981</p>
+    <p>✉️ gargeeglobal@gmail.com</p>
+
+    <div class="mt-10 rounded-xl overflow-hidden shadow">
+      <iframe
+        src="https://www.google.com/maps?q=Vishal+Mega+Mart+Surajpur+Greater+Noida+Uttar+Pradesh&output=embed"
+        width="100%" height="380" style="border:0;" loading="lazy">
+      </iframe>
+    </div>
+  </div>
 </section>
 
-<footer class="bg-slate-950 py-6 text-center text-gray-400">
-© 2026 Gargee Global Computer Institute | All Rights Reserved
+<footer class="bg-blue-700 text-white py-6 text-center">
+© 2026 Gargee Global Computer Institute
 </footer>
 
-<!-- JS -->
 <script>
-function openForm(courseName) {
-  document.getElementById('courseField').value = courseName;
-  document.getElementById('admission').scrollIntoView({ behavior: 'smooth' });
+function selectCourse(course){
+  document.getElementById('course').value = course;
+  document.getElementById('admission').scrollIntoView({behavior:'smooth'});
+}
+function sendWhatsApp(){
+  let n=name.value,p=phone.value,c=course.value;
+  let msg=`Admission Enquiry:%0AName: ${n}%0AMobile: ${p}%0ACourse: ${c}`;
+  window.open(`https://wa.me/919720136336?text=${msg}`,'_blank');
 }
 </script>
 
