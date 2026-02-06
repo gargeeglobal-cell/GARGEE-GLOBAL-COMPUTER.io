@@ -1,113 +1,260 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gargee Global Computer Institute | Official College Website</title>
-  <meta name="description" content="ISO Verified & Fucture IT College Affiliated Computer Institute in Greater Noida offering 1000+ IT courses with placement support." />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-    body{background:#f7f9fc;color:#222}
-    header{background:#ffffff;box-shadow:0 4px 20px rgba(0,0,0,.08);position:sticky;top:0;z-index:999}
-    nav{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:15px}
-    nav h1{color:#0b5ed7;font-size:22px}
-    nav ul{list-style:none;display:flex;gap:20px}
-    nav ul li a{text-decoration:none;color:#222;font-weight:500}
-    nav ul li a:hover{color:#0b5ed7}.hero{background:url('https://images.unsplash.com/photo-1581091870627-3c0b8f21f9f9?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;height:85vh;display:flex;align-items:center}
-.hero-overlay{background:rgba(255,255,255,.88);width:100%;padding:60px}
-.hero h2{font-size:42px;color:#0b5ed7}
-.hero p{margin:20px 0;font-size:18px;max-width:650px}
-.btn{display:inline-block;background:#0b5ed7;color:#fff;padding:12px 24px;border-radius:6px;text-decoration:none;margin-top:10px}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gargee Global Computer Institute | ISO Verified IT College</title>
 
-section{max-width:1200px;margin:auto;padding:70px 20px}
-section h3{text-align:center;font-size:34px;color:#0b5ed7;margin-bottom:40px}
+<meta name="description" content="Gargee Global Computer Institute, Surajpur Greater Noida. ISO Verified, Affiliated with Fucture IT College. 1000+ IT & Computer Courses. Admissions Open.">
+<meta name="keywords" content="Computer Institute Greater Noida, IT College, Cyber Security Course, BPO KPO Training, ISO Verified Institute">
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
-.card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.08)}
-.card img{width:100%;height:180px;object-fit:cover}
-.card div{padding:20px}
-.card h4{color:#0b5ed7;margin-bottom:10px}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-.why{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-.why img{width:100%;border-radius:12px}
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+body{background:#0b0f19;color:#e5e7eb;line-height:1.7}
+img{max-width:100%;display:block;border-radius:14px}
+a{text-decoration:none;color:inherit}
 
-.director{display:grid;grid-template-columns:1fr 2fr;gap:40px;align-items:center}
-.director img{width:100%;border-radius:12px}
+header{
+position:sticky;top:0;z-index:999;
+background:linear-gradient(90deg,#0b0f19,#111827);
+border-bottom:1px solid #1f2937
+}
+.nav{
+max-width:1200px;margin:auto;
+display:flex;justify-content:space-between;align-items:center;
+padding:18px
+}
+.nav h1{color:#60a5fa;font-size:20px;font-weight:700}
+.nav a{margin-left:18px;font-size:14px}
+.nav a:hover{color:#60a5fa}
 
-.testimonial{background:#fff;padding:25px;border-radius:10px;box-shadow:0 8px 25px rgba(0,0,0,.07)}
+.hero{
+background:url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f") center/cover no-repeat;
+}
+.hero-overlay{
+background:rgba(0,0,0,.75);
+padding:120px 20px;
+text-align:center
+}
+.hero h2{font-size:44px;color:#fff}
+.hero p{margin-top:12px;color:#d1d5db}
+.btn{
+display:inline-block;
+margin:14px 8px;
+padding:14px 28px;
+border-radius:30px;
+font-weight:600
+}
+.btn-primary{background:#2563eb}
+.btn-whatsapp{background:#16a34a}
 
-.placement-logos{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:20px;align-items:center}
-.placement-logos img{width:100%;filter:grayscale(100%)}
+section{padding:80px 20px}
+.container{max-width:1200px;margin:auto}
 
-form{background:#fff;padding:30px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.08);max-width:600px;margin:auto}
-form input,form select{width:100%;padding:12px;margin:10px 0;border-radius:6px;border:1px solid #ccc}
-form button{width:100%;background:#0b5ed7;color:#fff;border:none;padding:14px;border-radius:6px;font-size:16px}
+.section-title{
+font-size:32px;
+color:#60a5fa;
+margin-bottom:30px;
+text-align:center
+}
 
-iframe{width:100%;border-radius:12px;height:350px;border:0}
+.card{
+background:#111827;
+border:1px solid #1f2937;
+padding:24px;
+border-radius:16px
+}
 
-footer{background:#0b5ed7;color:#fff;text-align:center;padding:30px;margin-top:50px}
+.grid{
+display:grid;
+gap:30px
+}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
 
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25d366;color:#fff;padding:14px 18px;border-radius:50%;font-size:24px;text-decoration:none}
+.course img{height:180px;object-fit:cover;margin-bottom:14px}
+.course h4{color:#93c5fd}
+.course p{font-size:14px;color:#d1d5db}
 
-  </style>
+.director{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center
+}
+@media(max-width:900px){
+.director{grid-template-columns:1fr}
+.hero h2{font-size:34px}
+}
+
+.testimonial{font-style:italic;color:#d1d5db}
+
+form input,form select{
+width:100%;
+padding:12px;
+margin-bottom:14px;
+border-radius:8px;
+border:none
+}
+
+footer{
+background:#020617;
+text-align:center;
+padding:20px;
+font-size:14px;
+color:#9ca3af
+}
+
+.whatsapp-float{
+position:fixed;
+bottom:20px;right:20px;
+background:#16a34a;
+color:#fff;
+padding:14px 18px;
+border-radius:50px;
+font-weight:600;
+z-index:999
+}
+</style>
 </head>
-<body><header>
-  <nav>
-    <h1>GARGEE GLOBAL</h1>
-    <ul>
-      <li><a href="#courses">Courses</a></li>
-      <li><a href="#placement">Placement</a></li>
-      <li><a href="#director">Director</a></li>
-      <li><a href="#admission">Admission</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header><section class="hero">
+
+<body>
+
+<header>
+  <div class="nav">
+    <h1>GARGEE GLOBAL COMPUTER INSTITUTE</h1>
+    <div>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#placement">Placement</a>
+      <a href="#admission">Admission</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
   <div class="hero-overlay">
-    <h2>Gargee Global Computer Institute</h2>
-    <p>ISO Verified | Affiliated with Fucture IT College | 1000+ Career-Oriented IT Courses from 3 Months to 3 Years</p>
-    <a href="#admission" class="btn">Enroll Now</a>
+    <h2>Empowering Careers Through Technology</h2>
+    <p>ISO Verified | Affiliated with Fucture IT College</p>
+    <p><em>From Basics to Beyond – Every Skill, One Institute</em></p>
+    <a href="#admission" class="btn btn-primary">Enroll Now</a>
+    <a href="https://wa.me/919720136336" class="btn btn-whatsapp">WhatsApp</a>
   </div>
-</section><section id="courses">
-  <h3>Our Popular Courses</h3>
-  <div class="cards">
-    <div class="card"><img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80"><div><h4>Computer Fundamentals</h4><p>Duration: 3 – 6 Months</p><a href="#admission" class="btn">Enroll</a></div></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=800&q=80"><div><h4>Full Stack Development</h4><p>Duration: 1 – 3 Years</p><a href="#admission" class="btn">Enroll</a></div></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"><div><h4>Cyber Security</h4><p>Duration: 6 – 18 Months</p><a href="#admission" class="btn">Enroll</a></div></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80"><div><h4>BPO / KPO & Corporate IT</h4><p>Duration: 3 – 12 Months</p><a href="#admission" class="btn">Enroll</a></div></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <h3 class="section-title">About Our Institute</h3>
+    <div class="grid grid-3">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1581091215367-59ab6c1e3b44">
+        <p>Located near Vishal Mega Mart, Surajpur, Greater Noida, Gargee Global Computer Institute delivers industry-driven IT education aligned with real corporate demand.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+        <p>ISO verified systems and academic affiliation with Fucture IT College ensure structured learning, credibility, and professional recognition.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786">
+        <p>We focus on skills, confidence, discipline, and placement readiness – not just certificates.</p>
+      </div>
+    </div>
   </div>
-</section><section id="placement">
-  <h3>Placement & Industry Exposure</h3>
-  <p style="text-align:center;max-width:800px;margin:auto">We provide placement assistance and industry exposure with 120+ MNC & IT partners through our affiliation with Fucture IT College.</p>
-  <div class="placement-logos" style="margin-top:30px">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/HP_logo_2012.svg">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Google_Logo.svg">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg">
+</section>
+
+<!-- COURSES -->
+<section id="courses">
+  <div class="container">
+    <h3 class="section-title">1000+ Industry-Oriented Courses</h3>
+    <div class="grid grid-3">
+      <div class="card course">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+        <h4>Computer Basics to Advanced</h4>
+        <p>Duration: 3 Months – 3 Years</p>
+        <a href="#admission" class="btn btn-primary">Enroll</a>
+      </div>
+      <div class="card course">
+        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b">
+        <h4>Cyber Security & Ethical Hacking</h4>
+        <p>Duration: 6 Months – 2 Years</p>
+        <a href="#admission" class="btn btn-primary">Enroll</a>
+      </div>
+      <div class="card course">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+        <h4>BPO / KPO / Corporate IT Training</h4>
+        <p>Duration: 3 Months – 1 Year</p>
+        <a href="#admission" class="btn btn-primary">Enroll</a>
+      </div>
+    </div>
   </div>
-</section><section id="director" class="director">
-  <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80">
-  <div>
-    <h3>Director's Message – Aditya Gupta</h3>
-    <p>Our mission is to bridge the gap between academic knowledge and real industry requirements. At Gargee Global, we focus on skill mastery, discipline, innovation, and employability. Education is not about certificates, it is about confidence, capability, and character.</p>
-    <p><strong>Vision:</strong> To become India’s most trusted IT skill development institution aligned with future technologies and global industry demand.</p>
+</section>
+
+<!-- PLACEMENT -->
+<section id="placement">
+  <div class="container">
+    <h3 class="section-title">Placement & Career Support</h3>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+      <p>We provide placement assistance, interview preparation, and corporate exposure aligned with 120+ MNC and IT companies.</p>
+    </div>
   </div>
-</section><section id="admission">
-  <h3>Admission & Enrollment</h3>
-  <form>
-    <input type="text" placeholder="Full Name" required>
-    <input type="email" placeholder="Email" required>
-    <input type="tel" placeholder="Mobile Number" required>
-    <select><option>Select Course</option><option>Computer Basics</option><option>Full Stack</option><option>Cyber Security</option></select>
-    <button>Submit Admission Request</button>
-  </form>
-</section><section id="contact">
-  <h3>Visit Our Campus</h3>
-  <iframe src="https://www.google.com/maps?q=Vishal%20Mega%20Mart%20Surajpur%20Greater%20Noida&output=embed"></iframe>
-  <p style="text-align:center;margin-top:20px">Vishal Mega Mart, Surajpur, Greater Noida, Uttar Pradesh – 201306<br>Email: gargeeglobal@gmail.com</p>
-</section><footer>
-  <p>© 2026 Gargee Global Computer Institute | ISO Verified | Fucture IT College Affiliated</p>
-</footer><a class="whatsapp" href="https://wa.me/919720136336">💬</a>
+</section>
+
+<!-- DIRECTOR -->
+<section>
+  <div class="container director">
+    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf">
+    <div>
+      <h3 class="section-title">Director’s Message</h3>
+      <p>“Education must build careers, not just certificates. Our mission is to transform students into confident professionals ready for corporate and global opportunities.”</p>
+      <p><strong>Aditya Gupta</strong><br>Director</p>
+    </div>
+  </div>
+</section>
+
+<!-- ADMISSION -->
+<section id="admission">
+  <div class="container">
+    <h3 class="section-title">Admission Form</h3>
+    <div class="card">
+      <form>
+        <input type="text" placeholder="Full Name">
+        <input type="tel" placeholder="Mobile Number">
+        <select>
+          <option>Select Course</option>
+          <option>Computer Basic to Advanced</option>
+          <option>Cyber Security</option>
+          <option>BPO / KPO</option>
+        </select>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h3 class="section-title">Contact & Location</h3>
+    <div class="card">
+      <p>📍 Vishal Mega Mart, Surajpur, Greater Noida, UP – 201306</p>
+      <p>📞 9720136336 / 8178599981</p>
+      <p>✉️ gargeeglobal@gmail.com</p>
+      <iframe src="https://www.google.com/maps?q=Vishal+Mega+Mart+Surajpur+Greater+Noida&output=embed"
+      width="100%" height="300" style="border:0;margin-top:15px"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+© 2026 Gargee Global Computer Institute | ISO Verified | Affiliated with Fucture IT College
+</footer>
+
+<a href="https://wa.me/919720136336" class="whatsapp-float">WhatsApp</a>
 
 </body>
 </html>
