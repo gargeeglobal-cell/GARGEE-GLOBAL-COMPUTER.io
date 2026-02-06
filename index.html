@@ -4,23 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Gargee Global Computer Institute | IT College & Career Education</title>
-
-<meta name="description" content="ISO Verified | Affiliated with Fucture IT College. 1000+ Computer & IT Courses (3 Months to 3 Years). Admissions Open with Placement Support.">
+<title>Gargee Global Computer Institute | Professional IT College</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+html { scroll-behavior: smooth; }
+</style>
 </head>
 
 <body class="bg-slate-950 text-gray-200">
 
 <!-- HEADER -->
-<header class="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 sticky top-0 z-50 shadow-2xl">
-  <div class="max-w-7xl mx-auto flex justify-between items-center p-6">
-    <h1 class="text-xl md:text-2xl font-bold text-blue-400 tracking-wide">
+<header class="bg-slate-900 sticky top-0 z-50 shadow-xl">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-5">
+    <h1 class="text-xl font-bold text-blue-400">
       GARGEE GLOBAL COMPUTER INSTITUTE
     </h1>
-    <nav class="space-x-6 text-sm font-medium">
-      <a href="#about" class="hover:text-blue-400">About</a>
+    <nav class="space-x-6 text-sm">
       <a href="#courses" class="hover:text-blue-400">Courses</a>
       <a href="#admission" class="hover:text-blue-400">Admission</a>
       <a href="#director" class="hover:text-blue-400">Leadership</a>
@@ -32,69 +33,70 @@
 <!-- HERO -->
 <section class="relative bg-[url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1')] bg-cover bg-center">
 <div class="absolute inset-0 bg-black/85"></div>
-<div class="relative max-w-7xl mx-auto py-36 px-6 text-center">
-<h2 class="text-4xl md:text-6xl font-bold text-white">
-A Trusted IT College for Future Professionals
-</h2>
-<p class="mt-6 text-xl text-gray-300">
-ISO Verified • Affiliated with Fucture IT College
-</p>
-<p class="mt-4 italic text-gray-400">
-Courses from <strong>3 Months to 3 Years</strong>
-</p>
-
-<div class="mt-10 flex justify-center gap-6">
-<a href="#admission" class="bg-blue-600 hover:bg-blue-700 px-10 py-4 rounded-xl font-semibold">
-Enroll Now
+<div class="relative max-w-6xl mx-auto py-32 px-6 text-center">
+<h2 class="text-5xl font-bold text-white">Professional IT Education for Career Growth</h2>
+<p class="mt-6 text-xl text-gray-300">ISO Verified • Affiliated with Fucture IT College</p>
+<a href="#courses" class="inline-block mt-10 bg-blue-600 hover:bg-blue-700 px-10 py-4 rounded-xl font-semibold">
+Explore Courses
 </a>
-<a href="tel:9720136336" class="bg-green-600 hover:bg-green-700 px-10 py-4 rounded-xl font-semibold">
-Call for Admission
-</a>
-</div>
-</div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="relative bg-[url('https://images.unsplash.com/photo-1581092160607-ee22621dd758')] bg-cover bg-center">
-<div class="bg-black/85 py-28 px-6">
-<div class="max-w-6xl mx-auto">
-<h3 class="text-3xl font-bold text-blue-400">
-About Gargee Global Computer Institute
-</h3>
-<p class="mt-8 leading-8 text-gray-300">
-Gargee Global Computer Institute is a professionally managed IT College & Computer Training Institute
-located at Vishal Mega Mart, Surajpur, Greater Noida, Uttar Pradesh – 201306.
-The institute is ISO verified and academically affiliated with Fucture IT College.
-We focus on structured learning, discipline, industry relevance, and long-term career development.
-</p>
-</div>
 </div>
 </section>
 
 <!-- COURSES -->
-<section id="courses" class="relative bg-[url('https://images.unsplash.com/photo-1516321497487-e288fb19713f')] bg-cover bg-center">
-<div class="bg-slate-900/95 py-28 px-6">
+<section id="courses" class="bg-slate-900 py-24 px-6">
 <div class="max-w-7xl mx-auto">
 
-<h3 class="text-3xl font-bold text-blue-400">
-Computer & IT Courses (1000+ Programs)
-</h3>
+<h3 class="text-3xl font-bold text-blue-400 mb-12">Our Professional IT Courses</h3>
 
-<p class="mt-6 text-gray-300">
-All programs are designed according to market, corporate, and MNC demand.  
-<strong>Duration: Minimum 3 Months – Maximum 3 Years</strong>
-</p>
+<div class="grid md:grid-cols-3 gap-10">
 
-<div class="grid md:grid-cols-3 gap-8 mt-12">
-<div class="bg-slate-800 p-6 rounded-xl">Computer Basics (3–6 Months)</div>
-<div class="bg-slate-800 p-6 rounded-xl">Office Automation (6–12 Months)</div>
-<div class="bg-slate-800 p-6 rounded-xl">Programming Languages (6–18 Months)</div>
-<div class="bg-slate-800 p-6 rounded-xl">Web & Full Stack Development (1–3 Years)</div>
-<div class="bg-slate-800 p-6 rounded-xl">Cyber Security & Ethical Hacking (6–24 Months)</div>
-<div class="bg-slate-800 p-6 rounded-xl">AI, Data Science & Cloud (1–3 Years)</div>
-<div class="bg-slate-800 p-6 rounded-xl">BPO / KPO Training (3–12 Months)</div>
-<div class="bg-slate-800 p-6 rounded-xl">IT & MNC Placement Programs (1–2 Years)</div>
-<div class="bg-slate-800 p-6 rounded-xl">Corporate & Industrial Training (Custom)</div>
+<!-- COURSE CARD -->
+<div onclick="openForm('Computer Basics')" class="cursor-pointer bg-slate-800 rounded-xl overflow-hidden hover:scale-105 transition">
+<img src="https://images.unsplash.com/photo-1581091012184-5c7c1d1f92b4" class="h-44 w-full object-cover">
+<div class="p-6">
+<h4 class="font-semibold text-lg">Computer Basics</h4>
+<p class="text-sm text-gray-400 mt-2">3 – 6 Months</p>
+</div>
+</div>
+
+<div onclick="openForm('Office Automation')" class="cursor-pointer bg-slate-800 rounded-xl overflow-hidden hover:scale-105 transition">
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" class="h-44 w-full object-cover">
+<div class="p-6">
+<h4 class="font-semibold text-lg">Office Automation</h4>
+<p class="text-sm text-gray-400 mt-2">6 – 12 Months</p>
+</div>
+</div>
+
+<div onclick="openForm('Full Stack Development')" class="cursor-pointer bg-slate-800 rounded-xl overflow-hidden hover:scale-105 transition">
+<img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" class="h-44 w-full object-cover">
+<div class="p-6">
+<h4 class="font-semibold text-lg">Full Stack Development</h4>
+<p class="text-sm text-gray-400 mt-2">1 – 3 Years</p>
+</div>
+</div>
+
+<div onclick="openForm('Cyber Security')" class="cursor-pointer bg-slate-800 rounded-xl overflow-hidden hover:scale-105 transition">
+<img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b" class="h-44 w-full object-cover">
+<div class="p-6">
+<h4 class="font-semibold text-lg">Cyber Security</h4>
+<p class="text-sm text-gray-400 mt-2">6 – 24 Months</p>
+</div>
+</div>
+
+<div onclick="openForm('Data Science & AI')" class="cursor-pointer bg-slate-800 rounded-xl overflow-hidden hover:scale-105 transition">
+<img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c" class="h-44 w-full object-cover">
+<div class="p-6">
+<h4 class="font-semibold text-lg">Data Science & AI</h4>
+<p class="text-sm text-gray-400 mt-2">1 – 3 Years</p>
+</div>
+</div>
+
+<div onclick="openForm('BPO / KPO Training')" class="cursor-pointer bg-slate-800 rounded-xl overflow-hidden hover:scale-105 transition">
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" class="h-44 w-full object-cover">
+<div class="p-6">
+<h4 class="font-semibold text-lg">BPO / KPO Training</h4>
+<p class="text-sm text-gray-400 mt-2">3 – 12 Months</p>
+</div>
 </div>
 
 </div>
@@ -102,77 +104,58 @@ All programs are designed according to market, corporate, and MNC demand.
 </section>
 
 <!-- ADMISSION FORM -->
-<section id="admission" class="relative bg-[url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d')] bg-cover bg-center">
-<div class="bg-black/85 py-28 px-6">
+<section id="admission" class="bg-black py-28 px-6">
 <div class="max-w-xl mx-auto">
 
-<h3 class="text-3xl font-bold text-blue-400 text-center">
-Admission & Enrollment Form
+<h3 class="text-3xl font-bold text-blue-400 text-center mb-10">
+Admission Enquiry Form
 </h3>
 
-<form class="mt-10 space-y-5 bg-slate-900 p-8 rounded-xl shadow-xl">
-<input type="text" placeholder="Full Name" class="w-full p-3 rounded bg-slate-800 text-white" required>
-<input type="email" placeholder="Email Address" class="w-full p-3 rounded bg-slate-800 text-white">
-<input type="tel" placeholder="Mobile Number" class="w-full p-3 rounded bg-slate-800 text-white" required>
-<select class="w-full p-3 rounded bg-slate-800 text-white">
-<option>Select Course Interest</option>
-<option>Computer Basics</option>
-<option>Full Stack Development</option>
-<option>Cyber Security</option>
-<option>BPO / KPO</option>
-<option>Other IT Course</option>
-</select>
+<form class="space-y-5 bg-slate-900 p-8 rounded-xl shadow-xl">
+<input type="text" placeholder="Full Name" class="w-full p-3 rounded bg-slate-800" required>
+<input type="tel" placeholder="Mobile Number" class="w-full p-3 rounded bg-slate-800" required>
+<input type="email" placeholder="Email Address" class="w-full p-3 rounded bg-slate-800">
+
+<input id="courseField" type="text" placeholder="Selected Course" class="w-full p-3 rounded bg-slate-800" readonly>
+
 <button class="w-full bg-blue-600 hover:bg-blue-700 p-3 rounded-xl font-semibold">
-Submit Enquiry
+Submit Admission Enquiry
 </button>
-<p class="text-sm text-gray-400 text-center mt-3">
+
+<p class="text-center text-sm text-gray-400 mt-3">
 Our admission team will contact you shortly.
 </p>
 </form>
 
 </div>
-</div>
 </section>
 
 <!-- DIRECTOR -->
-<section id="director" class="relative bg-[url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655')] bg-cover bg-center">
-<div class="bg-slate-900/95 py-28 px-6">
+<section id="director" class="bg-slate-900 py-24 px-6">
 <div class="max-w-6xl mx-auto">
-
-<h3 class="text-3xl font-bold text-blue-400">
-Director’s Message
-</h3>
-
-<p class="mt-8 leading-8 text-gray-300">
-At Gargee Global Computer Institute, our objective is to transform students into skilled professionals.
-Education today must go beyond certificates and focus on discipline, ethics, and industry relevance.
-Our ISO-verified systems and affiliation with Fucture IT College ensure structured academic growth
-and career-focused learning for every student.
+<h3 class="text-3xl font-bold text-blue-400">Director’s Message</h3>
+<p class="mt-6 text-gray-300 leading-8">
+Our mission is to convert students into professionals through discipline,
+industry-focused training, and structured education aligned with global IT standards.
 </p>
 
-<p class="mt-6 font-semibold">— Aditya Gupta, Director</p>
-
-<h4 class="mt-12 text-2xl font-bold text-blue-300">Mission</h4>
-<p class="mt-4 text-gray-300">
-To provide high-quality, industry-aligned IT education that builds confidence, competence,
-and employability among students.
+<h4 class="mt-10 text-xl font-semibold text-blue-300">Mission</h4>
+<p class="mt-3 text-gray-300">
+Deliver industry-ready IT education with integrity, skill, and innovation.
 </p>
 
-<h4 class="mt-8 text-2xl font-bold text-blue-300">Vision</h4>
-<p class="mt-4 text-gray-300">
-To become a nationally recognized IT education institution producing skilled professionals
-ready for global opportunities.
+<h4 class="mt-6 text-xl font-semibold text-blue-300">Vision</h4>
+<p class="mt-3 text-gray-300">
+To be a nationally trusted IT education institution shaping future professionals.
 </p>
-
-</div>
 </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="bg-black py-24 px-6">
+<section id="contact" class="bg-black py-20 px-6">
 <div class="max-w-6xl mx-auto">
 <h3 class="text-3xl font-bold text-blue-400">Contact Us</h3>
-<p class="mt-4">Vishal Mega Mart, Surajpur, Greater Noida, Uttar Pradesh – 201306</p>
+<p class="mt-4">📍 Vishal Mega Mart, Surajpur, Greater Noida</p>
 <p>📞 9720136336 / 8178599981</p>
 <p>✉️ gargeeglobal@gmail.com</p>
 </div>
@@ -181,6 +164,14 @@ ready for global opportunities.
 <footer class="bg-slate-950 py-6 text-center text-gray-400">
 © 2026 Gargee Global Computer Institute | All Rights Reserved
 </footer>
+
+<!-- JS -->
+<script>
+function openForm(courseName) {
+  document.getElementById('courseField').value = courseName;
+  document.getElementById('admission').scrollIntoView({ behavior: 'smooth' });
+}
+</script>
 
 </body>
 </html>
