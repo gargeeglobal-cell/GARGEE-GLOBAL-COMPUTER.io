@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Gargee Global Computer Institute | ISO Verified IT College</title>
-
 <meta name="description" content="ISO Verified Gargee Global Computer Institute, Affiliated with Future IT College. Industry demand based IT, Software, SAP, Cloud & Networking courses.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -57,7 +56,7 @@ header{
   font-size:14px;
   font-weight:500
 }
-.nav a:hover{color:#2563eb}
+.nav a:hover{color:#1d4ed8}
 
 /* HERO */
 .hero{
@@ -65,7 +64,7 @@ header{
 }
 .hero-overlay{
   background:rgba(255,255,255,.92);
-  padding:140px 20px;
+  padding:120px 20px;
   text-align:center
 }
 .hero h2{
@@ -97,9 +96,10 @@ header{
   background:#16a34a;
   color:#fff
 }
+.btn-whatsapp:hover{background:#15803d}
 
 /* SECTIONS */
-section{padding:90px 20px}
+section{padding:80px 20px}
 .container{max-width:1200px;margin:auto}
 
 .section-title{
@@ -236,12 +236,11 @@ footer{
 <section id="courses">
   <div class="container">
     <h3 class="section-title">Company Demand Based Courses</h3>
-
     <div class="grid grid-3">
 
       <div class="card course">
         <div class="img-wrap">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Data Operator MIS Training">
         </div>
         <h4>Data Operator & MIS Executive</h4>
         <p>Advanced Excel, MIS Reports<br>3 – 12 Months</p>
@@ -250,7 +249,7 @@ footer{
 
       <div class="card course">
         <div class="img-wrap">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80" alt="Computer Diploma Training">
         </div>
         <h4>Computer Diploma</h4>
         <p>Basic to Advanced<br>3 Months – 3 Years</p>
@@ -259,7 +258,7 @@ footer{
 
       <div class="card course">
         <div class="img-wrap">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80" alt="Hardware and Networking Training">
         </div>
         <h4>Hardware & Networking</h4>
         <p>CCNA, Server, IT Support</p>
@@ -274,7 +273,7 @@ footer{
   <div class="container">
     <h3 class="section-title">Placement Support</h3>
     <div class="card">
-      <p>Live projects, interview preparation, resume support and MNC exposure.</p>
+      <p>Live projects, interview preparation, resume support and exposure with top IT companies and MNCs, ensuring students confidently step into professional roles after training.</p>
     </div>
   </div>
 </section>
@@ -282,11 +281,13 @@ footer{
 <section>
   <div class="container director">
     <div class="img-wrap">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&q=80">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&q=80" alt="Director Aditya Gupta">
     </div>
     <div>
       <h3 class="section-title">Director’s Message</h3>
-      <p>We focus on real skills, real exposure and real careers.</p>
+      <p>
+        At Gargee Global Computer Institute, our mission is to equip every student with the latest industry-ready skills, combining practical exposure, live projects, and corporate mentorship. We ensure that each learner gains hands-on experience in software, networking, SAP, cloud, and IT solutions. Our goal is to nurture confident professionals who can seamlessly transition into global IT roles, drive innovation, and contribute effectively to organizational growth, preparing them for a rewarding and successful career.
+      </p>
       <p><strong>Aditya Gupta</strong><br>Director</p>
     </div>
   </div>
@@ -335,6 +336,11 @@ function openForm(){
 window.addEventListener("click",function(e){
   const modal=document.getElementById("formModal");
   if(e.target===modal){modal.style.display="none";}
+});
+window.addEventListener("keydown",function(e){
+  if(e.key==="Escape"){
+    document.getElementById("formModal").style.display="none";
+  }
 });
 
 function sendWhatsApp(){
