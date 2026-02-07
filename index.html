@@ -4,106 +4,35 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gargee Global Computer Institute | ISO Verified IT College</title>
-<meta name="description" content="Gargee Global Computer Institute - Industry-ready IT & Software courses, ISO verified, affiliated with Future IT College. Enroll today!">
-<meta name="keywords" content="IT courses, computer institute, MIS, software courses, networking, cyber security, SAP, cloud computing, Greater Noida">
-<meta property="og:title" content="Gargee Global Computer Institute">
-<meta property="og:description" content="Industry-ready IT & Software courses, ISO verified, affiliated with Future IT College.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/..."> <!-- Placeholder base64 hero image -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="Gargee Global Computer Institute - Industry-ready IT & Software courses with mission & vision to empower students. Enroll now!">
 
 <style>
-/* ===== RESET & BASE ===== */
 *{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
-body{background:#f9fafb;color:#111827;line-height:1.7;scroll-behavior:smooth}
-a{text-decoration:none;color:inherit}
-ul{list-style:none}
-img,video{max-width:100%;display:block}
-
-/* ===== HEADER ===== */
-header{position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #e5e7eb;box-shadow:0 2px 6px rgba(0,0,0,0.05)}
-.nav{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:18px 20px}
-.nav h1{font-size:20px;color:#2563eb;font-weight:700}
-.nav-links{display:flex;gap:18px;align-items:center}
-.nav-links a{font-size:14px;color:#111827;position:relative;transition:0.3s}
-.nav-links a.active{color:#2563eb;font-weight:600}
-.nav-links a.active::after{content:'';position:absolute;bottom:-6px;left:0;width:100%;height:3px;background:#2563eb;border-radius:2px}
-/* Hamburger */
-.hamburger{display:none;flex-direction:column;cursor:pointer;gap:5px}
-.hamburger div{width:25px;height:3px;background:#111827;border-radius:2px}
-
-/* ===== HERO ===== */
-.hero{position:relative;height:90vh;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center;background:#111827}
-.hero img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;filter:brightness(0.5)}
-.hero-overlay{position:relative;z-index:1;color:#fff;padding:20px;opacity:0;transform:translateY(30px);transition:1s ease}
-.hero-overlay h2{font-size:46px;margin-bottom:12px;text-shadow:0 2px 8px rgba(0,0,0,0.5);animation:fadeUp 1s ease forwards}
-.hero-overlay p{margin-top:12px;font-size:18px;text-shadow:0 1px 6px rgba(0,0,0,0.5);animation:fadeUp 1s ease 0.3s forwards}
-.hero-overlay .btn{margin-top:20px;animation:fadeUp 1s ease 0.6s forwards}
-@keyframes fadeUp{0%{opacity:0;transform:translateY(20px);}100%{opacity:1;transform:translateY(0);}}
-
-/* ===== BUTTONS ===== */
-.btn{display:inline-block;margin:10px 8px;padding:14px 32px;border-radius:30px;font-weight:600;cursor:pointer;transition:0.3s;text-align:center}
-.btn-primary{background:linear-gradient(90deg,#2563eb,#1e40af);color:#fff}
-.btn-primary:hover{opacity:0.9;transform:scale(1.05)}
-.btn-whatsapp{background:#16a34a;color:#fff}
-.btn-whatsapp:hover{opacity:0.9;transform:scale(1.05)}
-
-/* ===== SECTIONS ===== */
-section{padding:90px 20px;opacity:0;transform:translateY(30px);transition:1s ease}
-section.visible{opacity:1;transform:translateY(0)}
+body{background:#f9fafb;color:#111;font-size:16px;line-height:1.7}
+a{color:inherit;text-decoration:none}
+header{background:#fff;position:sticky;top:0;z-index:1000;border-bottom:1px solid #ddd}
+.nav{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:15px}
+.nav h1{color:#2563eb;font-weight:700;font-size:22px}
+.nav-links{display:flex;gap:18px}
+.nav-links a{font-size:15px;cursor:pointer}
+.hero{position:relative;height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden}
+.hero video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero .overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5)}
+.hero-content{position:relative;z-index:1;max-width:800px}
+.hero-content h2{font-size:48px;margin-bottom:15px}
+.hero-content p{font-size:18px;margin-bottom:12px}
+.btn{padding:14px 30px;border-radius:30px;font-weight:600;cursor:pointer;display:inline-block;transition:0.3s}
+.btn-primary{background:#2563eb;color:#fff;margin-right:10px}
+.btn-primary:hover{opacity:0.9}
+section{padding:80px 20px}
 .container{max-width:1200px;margin:auto}
-.section-title{font-size:34px;color:#2563eb;margin-bottom:35px;text-align:center}
-.grid{display:grid;gap:30px}
-.grid-3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-
-/* ===== COURSES ===== */
-.course h4{color:#2563eb;font-size:18px;margin-top:12px}
-.course p{font-size:14px;color:#374151;line-height:1.4}
-.course:hover{transform:translateY(-5px);box-shadow:0 8px 20px rgba(0,0,0,0.1)}
-.course-icon{font-size:50px;color:#2563eb;margin-bottom:12px;display:block}
-
-/* ===== DIRECTOR ===== */
-.director{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;text-align:left}
-
-/* ===== TESTIMONIALS ===== */
-.testimonial-slider{position:relative;overflow:hidden;margin-top:40px}
-.testimonial-track{display:flex;transition:0.5s}
-.testimonial-card{flex:0 0 100%;background:#fff;border:1px solid #e5e7eb;padding:26px;border-radius:18px;text-align:center;font-style:italic;color:#374151;opacity:0;transform:translateY(30px);transition:1s ease}
-.testimonial-card strong{display:block;margin-top:10px;color:#111827;font-style:normal}
-
-/* ===== COUNTERS ===== */
-.counters{display:flex;gap:20px;justify-content:center;margin-top:30px;flex-wrap:wrap}
-.counter{background:#2563eb;color:#fff;padding:20px 30px;border-radius:18px;font-size:24px;text-align:center;flex:1;transition:0.5s}
-.counter span{display:block;font-size:40px;font-weight:700}
-
-/* ===== FORM ===== */
-form input,form select{
-width:100%;padding:13px;margin-bottom:14px;border-radius:8px;border:1px solid #d1d5db;font-size:14px
-}
-
-/* ===== MODALS ===== */
-.modal, .course-modal{position:fixed;inset:0;background:rgba(0,0,0,.7);display:none;align-items:center;justify-content:center;z-index:2000}
-.modal-content, .course-modal-content{background:#fff;padding:30px;border-radius:16px;width:90%;max-width:480px}
-.course-modal-content{max-width:500px}
-.course-modal-content h4{margin-bottom:15px;color:#2563eb;text-align:center}
-.course-modal-content p{color:#374151;margin-bottom:10px}
-
-/* ===== FOOTER ===== */
-footer{background:#f3f4f6;text-align:center;padding:22px;font-size:14px;color:#6b7280}
-
-/* ===== WHATSAPP ===== */
-.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#16a34a;color:#fff;padding:14px 22px;border-radius:50px;font-weight:600;z-index:999}
-
-/* ===== MEDIA ===== */
-@media(max-width:900px){
-.hero-overlay h2{font-size:34px}
-.director{grid-template-columns:1fr}
-.grid-3{grid-template-columns:1fr}
-.counters{flex-direction:column;gap:15px}
-.hamburger{display:flex}
-.nav-links{display:none;flex-direction:column;background:#fff;position:absolute;top:70px;right:20px;padding:20px;box-shadow:0 4px 12px rgba(0,0,0,0.1);border-radius:12px}
-.nav-links.show{display:flex}
-}
+.section-title{font-size:32px;color:#2563eb;text-align:center;margin-bottom:30px}
+.grid-3{display:grid;gap:25px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.course-card{background:#fff;border:1px solid #ddd;padding:18px;border-radius:12px;transition:0.3s}
+.course-card:hover{transform:translateY(-5px);box-shadow:0 8px 20px rgba(0,0,0,0.1)}
+.course-card img{border-radius:8px}
+footer{background:#f3f4f6;text-align:center;padding:18px;font-size:14px;color:#555}
+#contact iframe{border:0;border-radius:8px;display:block;width:100%;height:280px;margin-top:15px}
 </style>
 </head>
 <body>
@@ -114,216 +43,78 @@ footer{background:#f3f4f6;text-align:center;padding:22px;font-size:14px;color:#6
     <div class="nav-links">
       <a href="#courses">Courses</a>
       <a href="#placement">Placement</a>
-      <a href="#admission">Admission</a>
+      <a href="#about">About</a>
       <a href="#contact">Contact</a>
-    </div>
-    <div class="hamburger" onclick="toggleMenu()">
-      <div></div><div></div><div></div>
     </div>
   </div>
 </header>
 
 <section class="hero">
-  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/..." alt="Students Studying on Computers">
-  <div class="hero-overlay">
-    <h2>Industry Ready IT & Software Education</h2>
-    <p>ISO Verified • Affiliated with Future IT College</p>
-    <p><em>1000+ Courses | Software • Hardware • Networking • SAP • Cloud</em></p>
-    <button class="btn btn-primary" onclick="openForm()">Enroll Now</button>
-    <a href="https://wa.me/919720136336" class="btn btn-whatsapp">WhatsApp</a>
+  <video autoplay muted loop playsinline>
+    <source src="https://mixkit.co/free-stock-video/computer/slow-motion-laptop-working.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h2>Industry‑Ready IT & Software Education</h2>
+    <p>ISO Verified • Practical Training • Placement Support</p>
+    <p>Real Skills for Real Careers in IT, Cloud, SAP, Networking & More</p>
+    <a href="#contact" class="btn btn-primary">Get Admission Info</a>
+    <a href="https://wa.me/919720136336" class="btn btn-primary" style="background:#16a34a">WhatsApp</a>
   </div>
 </section>
 
 <section id="courses">
   <div class="container">
-    <h3 class="section-title">Company Demand Based Courses</h3>
-    <div class="grid grid-3">
-      <div class="card course" onclick="openCourseModal('Data Operator & MIS Executive','Advanced Excel, MIS Reports, Corporate Office Roles','Duration: 3 – 12 Months')">
-        <span class="course-icon">📊</span>
-        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/..." alt="Data Operator">
+    <h3 class="section-title">Industry Demand Based Courses</h3>
+    <div class="grid-3">
+      <div class="course-card">
+        <img src="https://pixabay.com/get/g1a2f83fe4017b3aae2663fbfcf2df22f1c482d95.jpg" alt="MIS Course" loading="lazy">
         <h4>Data Operator & MIS Executive</h4>
-        <p>Advanced Excel, MIS Reports, Corporate Office Roles<br>Duration: 3 – 12 Months</p>
-        <button class="btn btn-primary" onclick="openForm(event)">Enroll</button>
+        <p>Advanced Excel, MIS Reports, Corporate Roles | 3–12 months</p>
       </div>
-      <div class="card course" onclick="openCourseModal('Computer Basics to Advanced Diploma','Learn all computer skills from basics to advanced','Duration: 3 Months – 3 Years')">
-        <span class="course-icon">💻</span>
-        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/..." alt="Computer Basics">
+      <div class="course-card">
+        <img src="https://pixabay.com/get/g7a2e157614cc5825.jpg" alt="Computer Course" loading="lazy">
         <h4>Computer Basics to Advanced Diploma</h4>
-        <p>3 Months – 3 Years</p>
-        <button class="btn btn-primary" onclick="openForm(event)">Enroll</button>
+        <p>Full Computer Skill Set | 3 months – 3 years</p>
       </div>
-      <div class="card course" onclick="openCourseModal('Hardware & Networking','CCNA, Server, IT Support','Learn Networking, Servers, IT Hardware')">
-        <span class="course-icon">🖥️</span>
-        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/..." alt="Hardware & Networking">
+      <div class="course-card">
+        <img src="https://pixabay.com/get/g9b0c93f.jpg" alt="Networking Course" loading="lazy">
         <h4>Hardware & Networking</h4>
-        <p>CCNA, Server, IT Support</p>
-        <button class="btn btn-primary" onclick="openForm(event)">Enroll</button>
+        <p>CCNA, Server, IT Support | Practical + Live Labs</p>
       </div>
-      <!-- Add other courses similarly -->
     </div>
   </div>
 </section>
 
 <section id="placement">
   <div class="container">
-    <h3 class="section-title">Placement & Career Support</h3>
-    <div class="card">
-      <p>Dedicated placement cell, live projects, interview preparation and corporate exposure with IT companies & MNCs.</p>
-      <div class="counters">
-        <div class="counter"><span data-target="1200">0</span> Students Trained</div>
-        <div class="counter"><span data-target="1000">0</span> Courses Offered</div>
-        <div class="counter"><span data-target="98">0</span>% Placement</div>
-      </div>
-    </div>
+    <h3 class="section-title">Placement Support & Success</h3>
+    <p style="text-align:center;">We provide guidance, interview preparation, resume support, live project experience and connections with top IT companies.</p>
   </div>
 </section>
 
-<section>
-  <div class="container director">
-    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/..." alt="Director Aditya Gupta">
-    <div>
-      <h3 class="section-title">Director’s Message</h3>
-      <p>Our mission is to transform students into confident, industry-ready professionals with real skills, real exposure and real careers.</p>
-      <p><strong>Aditya Gupta</strong><br>Director</p>
-      <button class="btn btn-primary" onclick="openForm()">Enroll Now</button>
-    </div>
-  </div>
-</section>
-
-<section id="testimonials">
+<section id="about">
   <div class="container">
-    <h3 class="section-title">What Our Students Say</h3>
-    <div class="testimonial-slider">
-      <div class="testimonial-track">
-        <div class="testimonial-card">"I learned everything I needed to get my first IT job!"<strong>- Riya S.</strong></div>
-        <div class="testimonial-card">"Placement support was excellent!"<strong>- Ankit P.</strong></div>
-        <div class="testimonial-card">"The Cloud and SAP courses helped me a lot!"<strong>- Priya K.</strong></div>
-      </div>
-    </div>
+    <h3 class="section-title">About Our Institute</h3>
+    <p><strong>Director’s Message:</strong></p>
+    <p>At Gargee Global Computer Institute, our mission is to empower every student with job‑ready skills that bridge the gap between education and industry expectations. We believe in practical training, hands‑on experience, and fostering a mindset of innovation and resilience. Our students aren’t just learners — they become confident professionals prepared for the future of work. We prioritize integrity, quality, and continuous improvement so that every learner achieves success.</p>
+    <p>We train students to master essential technologies including software development, cloud computing, networking, cyber security, SAP systems and much more. Our trainers are industry experts dedicated to nurturing talent and building careers. With real projects, expert mentoring and personalized support, we ensure every student unlocked their full potential. Join us to transform your aspirations into achievement.</p>
+    <p><strong>Mission:</strong> To provide world‑class, affordable IT education that empowers individuals with the skills and confidence required to excel in the digital economy.</p>
+    <p><strong>Vision:</strong> To be the leading institute recognized for transforming learners into skilled professionals, driving innovation, employment, and growth in the tech industry.</p>
   </div>
 </section>
 
 <section id="contact">
   <div class="container">
     <h3 class="section-title">Contact & Location</h3>
-    <div class="card">
-      <p>📍 Vishal Mega Mart, Surajpur, Greater Noida, UP – 201306</p>
-      <p>📞 9720136336 / 8178599981</p>
-      <p>✉️ gargeeglobal@gmail.com</p>
-      <iframe src="https://www.google.com/maps?q=Vishal+Mega+Mart+Surajpur+Greater+Noida&output=embed" width="100%" height="300" style="border:0;margin-top:15px" loading="lazy"></iframe>
-    </div>
+    <p>📍 Vishal Mega Mart, Surajpur, Greater Noida, UP – 201306</p>
+    <p>📞 9720136336 / 8178599981</p>
+    <p>✉️ gargeeglobal@gmail.com</p>
+    <iframe src="https://www.google.com/maps?q=Vishal+Mega+Mart+Surajpur+Greater+Noida&output=embed"></iframe>
   </div>
 </section>
 
-<footer>© 2026 Gargee Global Computer Institute • ISO Verified • Affiliated with Future IT College</footer>
-<a href="https://wa.me/919720136336" class="whatsapp-float">WhatsApp</a>
-
-<!-- FORM MODAL -->
-<div class="modal" id="formModal">
-  <div class="modal-content">
-    <h3>Admission Enquiry</h3>
-    <form onsubmit="sendWhatsApp();return false;">
-      <input id="name" placeholder="Full Name" required>
-      <input id="phone" placeholder="Mobile Number" required>
-      <select id="course" required>
-        <option value="">Course Interested</option>
-        <option>Data Operator / MIS</option>
-        <option>Software / ERP</option>
-        <option>Hardware / Networking</option>
-        <option>SAP</option>
-        <option>Cloud Computing</option>
-      </select>
-      <button class="btn btn-primary" type="submit">Send Enquiry</button>
-    </form>
-  </div>
-</div>
-
-<!-- COURSE MODAL -->
-<div class="course-modal" id="courseModal">
-  <div class="course-modal-content">
-    <h4 id="courseTitle"></h4>
-    <p id="courseDesc"></p>
-    <p id="courseDuration"></p>
-    <button class="btn btn-primary" onclick="closeCourseModal()">Close</button>
-  </div>
-</div>
-
-<script>
-// ===== MOBILE MENU =====
-function toggleMenu(){document.querySelector('.nav-links').classList.toggle('show');}
-
-// ===== FORM =====
-function openForm(e){if(e)e.stopPropagation();document.getElementById("formModal").style.display="flex";}
-window.onclick=function(e){
-  if(e.target.classList.contains("modal")){e.target.style.display="none";}
-  if(e.target.classList.contains("course-modal")){e.target.style.display="none";}
-}
-function sendWhatsApp(){
-  let n=name.value,p=phone.value,c=course.value;
-  if(!n||!p||!c){alert("Please fill all fields!");return;}
-  let url=`https://wa.me/919720136336?text=Name:%20${n}%0APhone:%20${p}%0ACourse:%20${c}`;
-  window.open(url,"_blank");
-}
-
-// ===== COURSE MODAL =====
-function openCourseModal(title,desc,duration){
-  document.getElementById("courseTitle").innerText=title;
-  document.getElementById("courseDesc").innerText=desc;
-  document.getElementById("courseDuration").innerText=duration;
-  document.getElementById("courseModal").style.display="flex";
-}
-function closeCourseModal(){document.getElementById("courseModal").style.display="none";}
-
-// ===== FADE-IN SECTIONS =====
-function scrollFade(){
-  document.querySelectorAll('section').forEach(sec=>{
-    let top=sec.getBoundingClientRect().top;
-    if(top<window.innerHeight-100){sec.classList.add('visible');}
-  });
-  document.querySelectorAll('.testimonial-card').forEach(card=>{
-    let top=card.getBoundingClientRect().top;
-    if(top<window.innerHeight-100){card.classList.add('visible');}
-  });
-  document.querySelectorAll('.hero-overlay').forEach(h=>{
-    h.classList.add('visible');
-  });
-  // NAV HIGHLIGHT
-  const sections = document.querySelectorAll('section');
-  const navLinks = document.querySelectorAll('.nav-links a');
-  sections.forEach((sec,i)=>{
-    if(window.scrollY >= sec.offsetTop - 150){
-      navLinks.forEach(a=>a.classList.remove('active'));
-      if(navLinks[i]) navLinks[i].classList.add('active');
-    }
-  });
-}
-window.addEventListener('scroll',scrollFade);
-window.addEventListener('load',scrollFade);
-
-// ===== COUNTERS =====
-const counters=document.querySelectorAll('.counter span');
-counters.forEach(counter=>{
-  counter.innerText='0';
-  const updateCounter=()=>{
-    const target=+counter.getAttribute('data-target');
-    const count=+counter.innerText;
-    const inc=target/200;
-    if(count<target){counter.innerText=Math.ceil(count+inc);setTimeout(updateCounter,15);}
-    else{counter.innerText=target;}
-  };
-  updateCounter();
-});
-
-// ===== TESTIMONIAL SLIDER =====
-let sliderIndex=0;
-const track=document.querySelector('.testimonial-track');
-const slides=document.querySelectorAll('.testimonial-card');
-function moveSlider(){
-  sliderIndex=(sliderIndex+1)%slides.length;
-  track.style.transform=`translateX(-${sliderIndex*100}%)`;
-}
-setInterval(moveSlider,4000);
-</script>
+<footer>© 2026 Gargee Global Computer Institute • ISO Verified • All Rights Reserved</footer>
 
 </body>
 </html>
