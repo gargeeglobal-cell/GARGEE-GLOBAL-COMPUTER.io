@@ -2,288 +2,337 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<title>Future IT College | Gargee Global Computer Institute</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Gargee Global Computer Institute | Career & Corporate IT Training</title>
+<meta name="description" content="Future IT College (Gargee Global Computer Institute) offers professional IT, software, cyber security and corporate skill courses in Surajpur, Greater Noida.">
+<meta name="keywords" content="Computer Institute Surajpur, IT Training Greater Noida, Cyber Security, Job Oriented Courses, Corporate Training">
+<meta name="author" content="Future IT College">
 
-<meta name="description" content="Job-oriented computer, IT & corporate training programs from 3 Months to 3 Years with placement support in Greater Noida.">
-<meta name="keywords" content="Computer Institute, IT Training, Corporate Training, Diploma Courses, Cyber Security, Web Development">
-<meta name="author" content="Gargee Global Computer Institute">
-
-<!-- CACHE SAFE (GitHub Pages) -->
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-<!-- SEO SCHEMA -->
 <script type="application/ld+json">
 {
- "@context":"https://schema.org",
- "@type":"EducationalOrganization",
- "name":"Gargee Global Computer Institute",
- "address":{
-   "@type":"PostalAddress",
-   "addressLocality":"Surajpur",
-   "addressRegion":"Uttar Pradesh",
-   "postalCode":"201306",
-   "addressCountry":"IN"
- },
- "telephone":["+919720136336","+918178599981"],
- "email":"gargeeglobal@gmail.com"
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Future IT College",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Surajpur",
+    "addressLocality": "Greater Noida",
+    "addressRegion": "Uttar Pradesh",
+    "postalCode": "201306",
+    "addressCountry": "IN"
+  },
+  "telephone": "+91-8178599981",
+  "email": "gargeeglobal@gmail.com"
 }
 </script>
 
 <style>
 :root{
- --primary:#1d4ed8;
- --dark:#020617;
- --light:#f8fafc;
- --accent:#16a34a;
+  --primary:#0a2db3;
+  --accent:#ffcc00;
+  --dark:#0b1220;
+  --light:#f4f6fb;
 }
-*{margin:0;padding:0;box-sizing:border-box;
-font-family:Poppins,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-
-html{scroll-behavior:smooth}
-body{background:var(--light);color:#111;line-height:1.8}
-
-/* PRELOADER */
-#preloader{
- position:fixed;inset:0;background:#fff;
- display:flex;align-items:center;justify-content:center;
- z-index:9999;transition:.4s
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--light);
+  color:#111;
+  line-height:1.6;
+  scroll-behavior:smooth;
 }
-.loader{
- width:45px;height:45px;border:5px solid #ddd;
- border-top:5px solid var(--primary);
- border-radius:50%;animation:spin 1s linear infinite
+header{
+  background:var(--primary);
+  color:#fff;
+  padding:35px 20px;
+  text-align:center;
 }
-@keyframes spin{to{transform:rotate(360deg)}}
-
-/* HEADER */
-header{position:sticky;top:0;background:#fff;border-bottom:1px solid #ddd;z-index:1000}
-.nav{max-width:1200px;margin:auto;padding:14px 20px;
-display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center}
-.logo{font-weight:700;color:var(--primary)}
-.nav nav{display:flex;flex-wrap:wrap;justify-content:center}
-.nav a{margin:8px 12px;text-decoration:none;color:#111;font-weight:500}
-.nav a:hover{color:var(--primary)}
-
-/* HERO */
-.hero{
- min-height:calc(100vh - 70px);
- display:flex;align-items:center;justify-content:center;
- text-align:center;color:#fff;
- background:linear-gradient(135deg,#1d4ed8,#020617);
- padding:20px
+section{
+  padding:45px 20px;
 }
-.hero h1{font-size:46px;line-height:1.2}
-.hero p{max-width:720px;margin:15px auto}
-
-.btn{
- display:inline-block;padding:14px 32px;border-radius:30px;
- font-weight:600;text-decoration:none;margin:10px;
- transition:.3s
+.container{
+  max-width:1100px;
+  margin:auto;
 }
-.btn:hover{transform:scale(1.05)}
-.btn-primary{background:#fff;color:var(--primary)}
-.btn-success{background:var(--accent);color:#fff}
-
-/* SECTIONS */
-section{padding:90px 20px}
-.container{max-width:1200px;margin:auto}
-.title{text-align:center;font-size:34px;color:var(--primary);margin-bottom:50px}
-
-/* GRID */
-.grid{display:grid;gap:30px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+h2{
+  color:var(--primary);
+  margin-bottom:15px;
+  text-align:center;
+}
+h3{
+  color:var(--dark);
+  margin-bottom:10px;
+}
 .card{
- background:#fff;padding:28px;border-radius:18px;border:1px solid #ddd;
- transition:.3s;will-change:transform
+  background:#fff;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  margin-bottom:30px;
+  transition: transform .3s, box-shadow .3s;
 }
-.card:hover{transform:translateY(-8px);box-shadow:0 15px 35px rgba(0,0,0,.12)}
-.icon{font-size:34px;margin-bottom:12px}
-
-/* REVEAL */
-.reveal{opacity:0;transform:translateY(40px);transition:.7s}
-.reveal.active{opacity:1;transform:none}
-
-/* COUNTER */
-.counter{font-size:42px;font-weight:700;color:var(--primary)}
-
-/* FORM */
-form{
- background:#fff;padding:30px;border-radius:18px;
- border:1px solid #ddd;max-width:600px;margin:auto
+.card:hover{
+  transform: translateY(-5px);
+  box-shadow:0 15px 30px rgba(0,0,0,.12);
 }
-form input,form select{
- width:100%;padding:14px;margin-bottom:15px;
- border-radius:10px;border:1px solid #ccc
+.btn{
+  display:inline-block;
+  padding:12px 22px;
+  background:var(--primary);
+  color:#fff;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  text-decoration:none;
+  transition:opacity .3s;
 }
-
-/* WHATSAPP */
+.btn:hover{
+  opacity:.9;
+}
+input,select{
+  width:100%;
+  padding:11px;
+  margin:8px 0;
+  border-radius:5px;
+  border:1px solid #ccc;
+}
+footer{
+  background:var(--dark);
+  color:#fff;
+  text-align:center;
+  padding:25px;
+}
 .whatsapp{
- position:fixed;bottom:16px;right:16px;
- width:55px;height:55px;border-radius:50%;
- background:#25D366;color:#fff;
- display:flex;align-items:center;justify-content:center;
- font-size:26px;text-decoration:none;z-index:999
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  background:#25D366;
+  color:#fff;
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:26px;
+  text-decoration:none;
+  box-shadow:0 5px 15px rgba(0,0,0,.3);
 }
-
-/* FOOTER */
-footer{background:#020617;color:#ccc;text-align:center;padding:40px 15px}
-
-/* MOBILE */
+.trust-badges, .placement-logos{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+  margin-top:15px;
+  justify-content:center;
+}
+.trust-badges img, .placement-logos img{
+  height:50px;
+  width:auto;
+  border-radius:6px;
+  transition: transform .3s;
+}
+.trust-badges img:hover, .placement-logos img:hover{
+  transform: scale(1.1);
+}
+.affiliation-card ul{
+  padding-left:20px;
+}
 @media(max-width:768px){
- .hero h1{font-size:32px}
+  .trust-badges img, .placement-logos img{
+    height:40px;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<div id="preloader"><div class="loader"></div></div>
+<a class="whatsapp" href="https://wa.me/918178599981">💬</a>
 
-<a class="whatsapp" href="https://wa.me/919720136336"
- aria-label="Chat on WhatsApp" title="Chat on WhatsApp">💬</a>
-
-<header role="banner">
- <div class="nav">
-  <div class="logo">GARGEE GLOBAL COMPUTER INSTITUTE</div>
-  <nav>
-   <a href="#courses">Courses</a>
-   <a href="#journey">Journey</a>
-   <a href="#corporate">Corporate</a>
-   <a href="#admission">Admission</a>
-   <a href="#contact">Contact</a>
-  </nav>
- </div>
+<header>
+<h1>Future IT College</h1>
+<p>Authority Computer Education & Corporate Skill Development</p>
 </header>
 
-<main role="main">
-
-<section class="hero">
- <div>
-  <h1>From Skills to Career – From Student to Professional</h1>
-  <p>Job-Oriented Computer, IT & Corporate Training Programs (3 Months – 3 Years)</p>
-  <a href="#admission" class="btn btn-primary">Apply for Admission</a>
-  <a href="#corporate" class="btn btn-success">Corporate Training</a>
- </div>
-</section>
-
-<section id="courses">
+<section>
 <div class="container">
-<h3 class="title">Courses & Duration</h3>
-<div class="grid reveal">
- <div class="card">🖥️ Basic Computer (3–6 Months)</div>
- <div class="card">📊 MIS & Advanced Excel (6 Months)</div>
- <div class="card">🌐 Web Development (1 Year)</div>
- <div class="card">🛠️ Hardware & Networking (1 Year)</div>
- <div class="card">🔐 Cyber Security (2 Years)</div>
- <div class="card">☁️ Cloud, SAP & Enterprise IT (3 Years)</div>
+<h2>About Us</h2>
+<div class="card">
+Future IT College (Gargee Global Computer Institute) is a trusted computer training institute in Surajpur, Greater Noida.
+We provide job-oriented IT, software, cyber security programs and corporate skill development with hands-on lab exposure and professional guidance.
 </div>
 </div>
 </section>
 
-<section id="journey" style="background:#eef2ff">
+<section>
 <div class="container">
-<h3 class="title">Student Career Journey</h3>
-<div class="grid reveal">
- <div class="card">📋 Counseling</div>
- <div class="card">🎓 Practical Training</div>
- <div class="card">💼 Live Projects</div>
- <div class="card">🚀 Placement Support</div>
+<h2>Director’s Message</h2>
+<div class="card">
+<h3>Mr. Aditya Gupta</h3>
+<p><strong>Director – Future IT College</strong></p>
+<p>
+At Future IT College, we are committed to delivering industry-relevant, job-oriented education that equips students with practical skills, confidence, and professional ethics. Our goal is to prepare every student to excel in IT, software, and corporate sectors with real-world readiness.
+</p>
+<img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?crop=entropy&cs=tinysrgb&fit=max&h=250&w=600" alt="Director Image" style="width:100%;margin-top:15px;border-radius:12px;">
+</div>
+
+<div class="card">
+<h3>Our Vision</h3>
+<p>
+To become a leading center of excellence in IT and computer education by fostering innovation, skill development, and digital empowerment, enabling students to contribute to India’s technology and corporate growth.
+</p>
+</div>
+
+<div class="card">
+<h3>Our Mission</h3>
+<p>
+To provide high-quality, practical training with experienced faculty, modern infrastructure, and industry-aligned curriculum, ensuring students gain real-world skills, placement support, and long-term professional success.
+</p>
 </div>
 </div>
 </section>
 
-<section id="corporate">
+<section>
 <div class="container">
-<h3 class="title">Corporate IT Training</h3>
-<div class="grid reveal">
- <div class="card">Employee Upskilling</div>
- <div class="card">Freshers Training</div>
- <div class="card">Customized Modules</div>
- <div class="card">On-Site / Off-Site</div>
+<h2>Our Courses</h2>
+<div class="card">
+• Basic Computer & Office Automation<br>
+• Advanced IT & Software Training<br>
+• Web Development & Programming<br>
+• Cyber Security & Networking<br>
+• Corporate & Professional Skill Training
+<img src="https://images.unsplash.com/photo-1581091215369-3dc366c14744?crop=entropy&cs=tinysrgb&fit=max&h=250&w=600" alt="Courses" style="width:100%;margin-top:15px;border-radius:12px;">
 </div>
 </div>
 </section>
 
-<section id="placement" style="background:#f1f5f9">
+<section>
 <div class="container">
-<h3 class="title">Our Impact</h3>
-<div class="grid reveal">
- <div class="card"><div class="counter" data-target="500">0</div>Students Trained</div>
- <div class="card"><div class="counter" data-target="120">0</div>Hiring Companies</div>
- <div class="card"><div class="counter" data-target="85">0</div>Placement %</div>
+<h2>Why Choose Us</h2>
+<div class="card">
+✔ Industry-Oriented Curriculum<br>
+✔ Practical Training with Lab Access<br>
+✔ Experienced Faculty<br>
+✔ Career Guidance & Placement Support<br>
+✔ Trusted Institute in Surajpur Greater Noida
 </div>
 </div>
 </section>
 
-<section id="admission">
+<section>
 <div class="container">
-<h3 class="title">Admission Form</h3>
-<form id="admissionForm">
- <input required placeholder="Full Name">
- <input required type="tel" placeholder="Mobile Number">
- <select required>
-  <option value="">Select Course</option>
-  <option>Basic Computer</option>
-  <option>Web Development</option>
-  <option>Cyber Security</option>
-  <option>Cloud & SAP</option>
- </select>
- <button class="btn btn-success" type="submit">Submit & WhatsApp</button>
-</form>
+<h2>Affiliation & Authorized Partners</h2>
+<div class="card affiliation-card">
+<ul>
+<li>Authorized Training Partner with Future IT College Network</li>
+<li>Registered with local educational authorities, compliant with Indian IT education standards</li>
+<li>Certified corporate and IT skill development programs</li>
+</ul>
+<img src="https://images.unsplash.com/photo-1581091870622-0f5179ed0a14?crop=entropy&cs=tinysrgb&fit=max&h=100&w=600" alt="Affiliation Logo" style="width:100%;margin-top:15px;border-radius:12px;">
+</div>
 </div>
 </section>
 
-<section id="contact">
+<section>
 <div class="container">
-<h3 class="title">Visit & Contact</h3>
-<p>📍 Surajpur, Greater Noida</p>
-<p>📞 9720136336 / 8178599981</p>
-<p>✉️ gargeeglobal@gmail.com</p>
+<h2>Our Placement & Hiring Partners</h2>
+<div class="card">
+<p>Students trained at Future IT College have been successfully placed in reputed companies:</p>
+<div class="placement-logos">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Infosys_logo.svg" alt="Infosys">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Tata_Consultancy_Services_Logo.svg" alt="TCS">
+</div>
+</div>
 </div>
 </section>
 
-</main>
+<section>
+<div class="container">
+<h2>Certifications & Trust</h2>
+<div class="card">
+<p>Future IT College maintains high-quality standards and is recognized for excellence:</p>
+<div class="trust-badges">
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/ISO_9001_logo.svg" alt="ISO 9001">
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/MSME_logo.svg" alt="MSME Registered">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Emblem_of_India.svg" alt="Government Approved">
+</div>
+</div>
+</div>
+</section>
 
-<footer role="contentinfo">
-© <span id="year"></span> Gargee Global Computer Institute • All Rights Reserved
+<section>
+<div class="container">
+<h2>Admission Enquiry (WhatsApp)</h2>
+<div class="card">
+<input id="name" placeholder="Full Name">
+<input id="mobile" placeholder="Mobile Number">
+<select id="course">
+<option>Basic Computer</option>
+<option>Advanced IT</option>
+<option>Web Development</option>
+<option>Cyber Security</option>
+<option>Corporate Training</option>
+</select>
+<button class="btn" onclick="sendWA()">Send Enquiry</button>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>Franchise & Expansion</h2>
+<div class="card">
+Future IT College offers franchise opportunities for educational partners.
+The franchise model is transparent, compliant with education regulations, and focused on
+quality training delivery and brand integrity.
+<br><br>
+<button class="btn" onclick="window.print()">Download Proposal (PDF)</button>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>Government Inspection Readiness</h2>
+<div class="card">
+✔ Institute Registration Documents<br>
+✔ Approved Course Curriculum<br>
+✔ Qualified Faculty Records<br>
+✔ Student Admission & Fee Records<br>
+✔ Infrastructure & Safety Compliance
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>Privacy Policy</h2>
+<div class="card">
+All student and enquiry data is kept strictly confidential.
+No personal information is shared with third parties.
+This institute follows applicable Indian IT and education regulations.
+</div>
+</div>
+</section>
+
+<footer>
+© 2026 Future IT College | All Rights Reserved
 </footer>
 
 <script>
-/* PRELOADER */
-window.addEventListener("load",()=>{
- const p=document.getElementById("preloader");
- p.style.opacity="0";setTimeout(()=>p.remove(),400);
-});
-
-/* YEAR */
-document.getElementById("year").innerText=new Date().getFullYear();
-
-/* REVEAL + COUNTER */
-const observer=new IntersectionObserver(entries=>{
- entries.forEach(entry=>{
-  if(entry.isIntersecting){
-   entry.target.classList.add("active");
-   entry.target.querySelectorAll(".counter").forEach(c=>{
-    if(c.dataset.done)return;c.dataset.done=1;
-    let t=+c.dataset.target,n=0,inc=Math.ceil(t/60);
-    const run=()=>{n+=inc;if(n<t){c.innerText=n;requestAnimationFrame(run)}
-    else c.innerText=t+(t==85?"%":"+")};run();
-   });
-  }
- });
-},{threshold:.3});
-document.querySelectorAll(".reveal").forEach(e=>observer.observe(e));
-
-/* FORM → WHATSAPP */
-document.getElementById("admissionForm").onsubmit=e=>{
- e.preventDefault();
- window.location.href="https://wa.me/919720136336";
-};
+function sendWA(){
+let n=document.getElementById("name").value.trim();
+let m=document.getElementById("mobile").value.trim();
+let c=document.getElementById("course").value;
+if(m.length<10){alert("Please enter a valid mobile number");return;}
+let msg=`Hello, my name is ${n}. I am interested in the ${c} course. Please guide me.`;
+window.open(`https://wa.me/918178599981?text=${encodeURIComponent(msg)}`);
+localStorage.setItem("lead_"+m,new Date().toISOString());
+}
 </script>
 
 </body>
