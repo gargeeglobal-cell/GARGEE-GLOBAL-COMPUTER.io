@@ -2,286 +2,308 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Gargee Global Computer Institute | Complete Training</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Gargee Global Computer Institute, affiliated with Future IT College, offers professional IT, software, cyber security, AI, ML, web development, corporate skill courses, and placement support in Surajpur, Greater Noida.">
-<meta name="keywords" content="Computer Institute Surajpur, IT Training Greater Noida, Cyber Security, AI ML, Web Development, Corporate Training, BPO, KPO, Excel, SAP, Power BI">
-<meta name="author" content="Gargee Global Computer Institute">
+<title>Gargee Global Computer Institute | ISO Verified IT College</title>
+
+<meta name="description" content="ISO Verified Gargee Global Computer Institute, Affiliated with Fucture IT College. 1000+ Company Demand Based Software, Hardware, Networking, SAP, Cloud, MIS, CRM & IT Courses.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-:root{
-  --primary:#0a2db3;
-  --accent:#ffcc00;
-  --dark:#333;
-  --light:#fefefe;
-  --section-light:#ffffff;
-  --font-heading:'Roboto', sans-serif;
-  --font-body:'Arial', sans-serif;
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+body{background:#05070f;color:#e5e7eb;line-height:1.7}
+a{text-decoration:none;color:inherit}
+
+/* IMAGE FIX (NO BREAK EVER) */
+.img-wrap{
+  width:100%;
+  aspect-ratio:16/9;
+  overflow:hidden;
+  border-radius:14px;
 }
-*{scroll-behavior:smooth;margin:0;padding:0;box-sizing:border-box;}
-body{font-family:var(--font-body);background:var(--light);color:var(--dark);}
-a{text-decoration:none;}
+.img-wrap img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+/* HEADER */
 header{
-  background:url('https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-  position:relative; text-align:center; padding:120px 20px 80px; color:#fff;
+position:sticky;top:0;z-index:1000;
+background:linear-gradient(90deg,#020617,#0b1222);
+border-bottom:1px solid #1f2937
 }
-header::after{
-  content:"";
-  position:absolute; top:0; left:0; right:0; bottom:0;
-  background:rgba(0,0,0,0.35);
+.nav{
+max-width:1200px;margin:auto;
+display:flex;justify-content:space-between;align-items:center;
+padding:18px 20px
 }
-header h1, header p{position:relative; z-index:1;}
-header h1{ font-size:3rem; color:#fff; margin-bottom:10px; text-shadow: 2px 2px 5px rgba(0,0,0,0.5);}
-header p{ font-size:1.4rem; color:#f0f0f0; text-shadow: 1px 1px 3px rgba(0,0,0,0.4);}
-nav{
-  position:sticky; top:0; background:#ffffff; box-shadow:0 2px 8px rgba(0,0,0,.1);
-  z-index:999; display:flex; justify-content:center; padding:12px 0; flex-wrap:wrap;
+.nav h1{font-size:20px;color:#60a5fa;font-weight:700}
+.nav a{margin-left:18px;font-size:14px}
+.nav a:hover{color:#60a5fa}
+
+/* HERO */
+.hero{
+background:url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
 }
-nav a{
-  color:var(--primary); font-weight:bold; padding:12px 20px; transition:0.3s;
+.hero-overlay{
+background:rgba(0,0,0,.85);
+padding:150px 20px;
+text-align:center
 }
-nav a:hover{color:var(--accent);}
-section{padding:60px 20px; background:linear-gradient(to bottom,#f9f9f9,#ffffff);}
-.container{max-width:1200px;margin:auto;}
-h2{color:var(--primary); margin-bottom:25px; text-align:center; font-family:var(--font-heading);}
-h3{color:var(--dark); margin-bottom:15px; font-family:var(--font-heading);}
-p{line-height:1.6;}
-.card{
-  background:var(--section-light); padding:25px; border-radius:12px;
-  box-shadow:0 8px 20px rgba(0,0,0,.08); margin-bottom:30px;
-  transition: transform .3s, box-shadow .3s;
-}
-.card:hover{
-  transform: translateY(-5px); box-shadow:0 15px 30px rgba(0,0,0,.12);
-}
+.hero h2{font-size:46px;color:#fff}
+.hero p{margin-top:12px;color:#d1d5db}
+
+/* BUTTONS */
 .btn{
-  display:inline-block; padding:12px 25px; background:var(--primary);
-  color:#fff; border:none; border-radius:6px; cursor:pointer;
-  transition:opacity .3s;
+display:inline-block;margin:14px 8px;
+padding:14px 32px;border-radius:30px;
+font-weight:600;cursor:pointer
 }
-.btn:hover{ opacity:.9; }
-input,select{
-  width:100%; padding:12px; margin:8px 0; border-radius:5px; border:1px solid #ccc;
+.btn-primary{background:#2563eb}
+.btn-whatsapp{background:#16a34a}
+
+/* GENERAL */
+section{padding:90px 20px}
+.container{max-width:1200px;margin:auto}
+.section-title{
+font-size:34px;color:#60a5fa;
+margin-bottom:35px;text-align:center
 }
+.card{
+background:#0b1222;
+border:1px solid #1f2937;
+padding:26px;border-radius:18px;
+transition:.3s
+}
+.card:hover{transform:translateY(-5px)}
+.grid{display:grid;gap:30px}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+
+/* COURSES */
+.course h4{color:#93c5fd;font-size:18px;margin-top:12px}
+.course p{font-size:14px;color:#d1d5db}
+
+/* DIRECTOR */
+.director{
+display:grid;grid-template-columns:1fr 1fr;
+gap:40px;align-items:center
+}
+
+/* FORM */
+form input,form select{
+width:100%;padding:13px;
+margin-bottom:14px;border-radius:8px;
+border:none;font-size:14px
+}
+
+/* MODAL */
+.modal{
+position:fixed;inset:0;
+background:rgba(0,0,0,.7);
+display:none;align-items:center;justify-content:center;
+z-index:2000
+}
+.modal-content{
+background:#0b1222;
+padding:30px;border-radius:16px;
+width:90%;max-width:420px
+}
+.modal-content h3{margin-bottom:15px;color:#60a5fa}
+
+/* FOOTER */
 footer{
-  background:#f5f5f5; color:var(--dark); text-align:center; padding:25px;
-  display:flex; flex-direction:column; gap:5px;
+background:#020617;
+text-align:center;padding:22px;
+font-size:14px;color:#9ca3af
 }
-footer a{color:var(--accent);}
-.whatsapp, .enroll{
-  position:fixed; right:18px; display:flex; align-items:center; justify-content:center;
-  font-weight:bold; text-decoration:none; z-index:999; transition: transform .3s;
+
+/* WHATSAPP */
+.whatsapp-float{
+position:fixed;bottom:20px;right:20px;
+background:#16a34a;color:#fff;
+padding:14px 22px;border-radius:50px;
+font-weight:600;z-index:999
 }
-.whatsapp{
-  background:#25D366; color:#fff; width:55px; height:55px; border-radius:50%; font-size:26px;
-  box-shadow:0 5px 15px rgba(0,0,0,.3); bottom:18px;
-}
-.enroll{
-  background:var(--accent); color:#0b1220; font-size:16px;
-  width:auto; padding:0 15px; border-radius:30px; height:50px; bottom:85px;
-}
-.enroll:hover, .whatsapp:hover{ transform: scale(1.1); }
-.course-card{ margin-bottom:25px; }
-.course-card img{ width:100%; height:auto; max-height:250px; object-fit:cover; margin-top:15px; border-radius:12px; }
-.placement-group{margin-bottom:30px;}
-.placement-group h4{text-align:center; color:var(--primary); margin-bottom:15px;}
-.placement-logos{display:grid; grid-template-columns:repeat(auto-fit,minmax(100px,1fr)); gap:20px; justify-items:center;}
-.placement-logos img{width:100px; height:60px; object-fit:contain; transition:transform .3s;}
-.placement-logos img:hover{transform:scale(1.1);}
-@media(max-width:768px){
-  header{ padding:80px 20px 40px; }
-  nav{flex-direction:column;}
-  nav a{padding:10px;}
-  .course-card img{ max-height:180px; }
-  .placement-logos img{ width:80px; height:50px; }
+
+@media(max-width:900px){
+.hero h2{font-size:34px}
+.director{grid-template-columns:1fr}
 }
 </style>
 </head>
+
 <body>
 
-<a class="whatsapp" href="https://wa.me/918178599981">💬</a>
-<a class="enroll" href="#contact">Enroll Now</a>
-
-<nav>
-  <a href="#about">About</a>
-  <a href="#director">Director</a>
-  <a href="#mission">Mission & Vision</a>
-  <a href="#courses">Courses</a>
-  <a href="#placement">Placement</a>
-  <a href="#franchise">Franchise</a>
-  <a href="#contact">Contact</a>
-</nav>
-
 <header>
-<h1>Gargee Global Computer Institute</h1>
-<p>Affiliated with Future IT College | Professional IT & Corporate Training</p>
+  <div class="nav">
+    <h1>GARGEE GLOBAL COMPUTER INSTITUTE</h1>
+    <div>
+      <a href="#courses">Courses</a>
+      <a href="#placement">Placement</a>
+      <a href="#admission">Admission</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
 </header>
 
-<section id="about">
-<div class="container">
-<h2>About Us</h2>
-<div class="card">
-Gargee Global Computer Institute, located near Vishal Mega Mart, Surajpur, Greater Noida, is a premier IT & corporate training institute affiliated with Future IT College. We offer over <strong>1000+ job-oriented courses</strong> from Basic Computer, Advanced IT, Cyber Security, AI/ML, Web Development, Excel, Power BI, SAP, Accounts/GST, Automation, BPO/KPO. Our programs ensure placement support in top companies across Noida, Delhi & Gurgaon.
-</div>
-</div>
-</section>
-
-<section id="director">
-<div class="container">
-<h2>Message from Director</h2>
-<div class="card">
-<p><strong>Aditya Gupta</strong>, Director</p>
-<p>Welcome to Gargee Global Computer Institute. Our mission is to equip students with high-quality skills, knowledge, and professional confidence. We focus on hands-on learning, real projects, corporate simulations, and exposure to real-world workflows.</p>
-</div>
-</div>
-</section>
-
-<section id="mission">
-<div class="container">
-<h2>Mission & Vision</h2>
-<div class="card">
-<h3>Our Mission</h3>
-<p>Deliver high-quality IT and corporate training. Foster practical skills, innovation, and professional confidence. Prepare students for placements, internships, and career growth. Integrate soft skills, leadership, and teamwork. Enable lifelong learning and employability.</p>
-<h3>Our Vision</h3>
-<p>Become a leading center of excellence in IT and corporate education. Empower learners to excel in technology, business, and professional domains. Maintain strong industry partnerships for placement and upskilling. Inspire lifelong learning and continuous skill development.</p>
-</div>
-</div>
+<section class="hero">
+  <div class="hero-overlay">
+    <h2>Industry Ready IT & Software Education</h2>
+    <p>ISO Verified • Affiliated with Fucture IT College</p>
+    <p><em>1000+ Courses | Software • Hardware • Networking • SAP • Cloud</em></p>
+    <button class="btn btn-primary" onclick="openForm()">Enroll Now</button>
+    <a href="https://wa.me/919720136336" class="btn btn-whatsapp">WhatsApp</a>
+  </div>
 </section>
 
 <section id="courses">
-<div class="container">
-<h2>Our Courses</h2>
-<div class="course-card card"><h3>1. Basic Computer</h3><p>Computer fundamentals, MS Office, typing, internet basics.</p><img src="https://images.unsplash.com/photo-1581091215369-3dc366c14744?auto=format&fit=crop&w=800&q=80" alt="Basic Computer"></div>
-<div class="course-card card"><h3>2. Advanced IT</h3><p>Programming, networking, web development, database management.</p><img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?auto=format&fit=crop&w=800&q=80" alt="Advanced IT"></div>
-<div class="course-card card"><h3>3. Cyber Security</h3><p>Ethical hacking, penetration testing, network security.</p><img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=80" alt="Cyber Security"></div>
-<div class="course-card card"><h3>50. 1000+ Courses Available</h3><p>Wide range of 1000+ courses across IT, corporate, finance, management, creative, and technical domains.</p><img src="https://images.unsplash.com/photo-1581093588401-35e3e568c4a3?auto=format&fit=crop&w=800&q=80" alt="1000+ Courses"></div>
-</div>
+  <div class="container">
+    <h3 class="section-title">Company Demand Based Courses</h3>
+
+    <div class="grid grid-3">
+
+      <!-- DATA OPERATOR & MIS (FIXED IMAGE) -->
+      <div class="card course">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80">
+        </div>
+        <h4>Data Operator & MIS Executive</h4>
+        <p>Advanced Excel, MIS Reports, Corporate Office Roles<br>Duration: 3 – 12 Months</p>
+        <button class="btn btn-primary" onclick="openForm()">Enroll</button>
+      </div>
+
+      <div class="card course">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80">
+        </div>
+        <h4>Computer Basics to Advanced Diploma</h4>
+        <p>3 Months – 3 Years</p>
+        <button class="btn btn-primary" onclick="openForm()">Enroll</button>
+      </div>
+
+      <div class="card course">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80">
+        </div>
+        <h4>Hardware & Networking</h4>
+        <p>CCNA, Server, IT Support</p>
+        <button class="btn btn-primary" onclick="openForm()">Enroll</button>
+      </div>
+
+      <div class="card course">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80">
+        </div>
+        <h4>Cyber Security & Ethical Hacking</h4>
+        <p>6 Months – 2 Years</p>
+        <button class="btn btn-primary" onclick="openForm()">Enroll</button>
+      </div>
+
+      <div class="card course">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1200&q=80">
+        </div>
+        <h4>SAP & Corporate ERP</h4>
+        <p>FICO, MM, HR, BASIS</p>
+        <button class="btn btn-primary" onclick="openForm()">Enroll</button>
+      </div>
+
+      <div class="card course">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80">
+        </div>
+        <h4>Cloud Computing</h4>
+        <p>AWS, Azure, Google Cloud</p>
+        <button class="btn btn-primary" onclick="openForm()">Enroll</button>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<!-- PLACEMENT SECTION -->
 <section id="placement">
-<div class="container">
-<h2>Our Placement Partners (120+ Companies)</h2>
-
-<!-- Group 1: Global IT -->
-<div class="placement-group">
-<h4>Global IT Companies</h4>
-<div class="placement-logos">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/IBM_logo.svg" alt="IBM">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Oracle_logo.svg" alt="Oracle">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/SAP_2011_logo.svg" alt="SAP">
-</div>
-</div>
-
-<!-- Group 2: Indian IT & Consulting -->
-<div class="placement-group">
-<h4>Indian IT & Consulting</h4>
-<div class="placement-logos">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Infosys_logo.svg" alt="Infosys">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Tata_Consultancy_Services_Logo.svg" alt="TCS">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Wipro_Logo.svg" alt="Wipro">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/TechMahindra_logo.svg" alt="Tech Mahindra">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Cognizant_logo.svg" alt="Cognizant">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Capgemini_logo.svg" alt="Capgemini">
-</div>
-</div>
-
-<!-- Group 3: BPO / KPO / Services -->
-<div class="placement-group">
-<h4>BPO / KPO / Services</h4>
-<div class="placement-logos">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Genpact_logo.svg" alt="Genpact">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/EXL_Logo.svg" alt="EXL">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Concentrix_logo.svg" alt="Concentrix">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Teleperformance_logo.svg" alt="Teleperformance">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Sitel_logo.svg" alt="Sitel">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/WNS_logo.svg" alt="WNS">
-</div>
-</div>
-
-<!-- Group 4: Finance & Consulting -->
-<div class="placement-group">
-<h4>Finance & Consulting</h4>
-<div class="placement-logos">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Deloitte_logo.svg" alt="Deloitte">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Accenture_logo.svg" alt="Accenture">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/EY_Logo.svg" alt="EY">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/PwC_logo.svg" alt="PwC">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/KPMG_logo.svg" alt="KPMG">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/IBM_logo.svg" alt="IBM FS">
-</div>
-</div>
-
-<!-- Group 5: Startups & Other Corporates -->
-<div class="placement-group">
-<h4>Startups & Other Corporates</h4>
-<div class="placement-logos">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Ola_logo.svg" alt="Ola">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flipkart_logo.svg" alt="Flipkart">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Zomato_logo.svg" alt="Zomato">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Swiggy_logo.svg" alt="Swiggy">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Byju%27s_logo.svg" alt="Byjus">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Oyo_rooms_logo.svg" alt="OYO">
-</div>
-</div>
-
-</div>
+  <div class="container">
+    <h3 class="section-title">Placement & Career Support</h3>
+    <div class="card">
+      <p>
+        Dedicated placement cell, live projects, interview preparation
+        and corporate exposure with IT companies & MNCs.
+      </p>
+    </div>
+  </div>
 </section>
 
-<section id="franchise">
-<div class="container">
-<h2>Business & Franchise Opportunities</h2>
-<div class="card">
-<p>We offer franchise & business partnerships for educational entrepreneurs. Benefit from ISO/MSME-certified curriculum, brand support, placement network, and infrastructure.</p>
-<button class="btn" onclick="window.print()">Download Franchise Proposal (PDF)</button>
-</div>
-</div>
+<section>
+  <div class="container director">
+    <div class="img-wrap">
+      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&q=80">
+    </div>
+    <div>
+      <h3 class="section-title">Director’s Message</h3>
+      <p>
+        Our mission is to transform students into confident,
+        industry-ready professionals with real skills,
+        real exposure and real careers.
+      </p>
+      <p><strong>Aditya Gupta</strong><br>Director</p>
+    </div>
+  </div>
 </section>
 
 <section id="contact">
-<div class="container">
-<h2>Admission Enquiry</h2>
-<div class="card">
-<input id="name" placeholder="Full Name">
-<input id="mobile" placeholder="Mobile Number">
-<select id="course">
-<option>Basic Computer</option>
-<option>Advanced IT</option>
-<option>Cyber Security</option>
-<option>AI & ML</option>
-<option>Excel / Advanced Excel</option>
-<option>Power BI</option>
-<option>SAP & Automation</option>
-<option>Accounts & GST</option>
-<option>Digital Marketing</option>
-<option>BPO & KPO</option>
-<option>Company / Market Specific Courses</option>
-<option>1000+ Courses</option>
-</select>
-<button class="btn" onclick="sendWA()">Send Enquiry via WhatsApp</button>
-</div>
-</div>
+  <div class="container">
+    <h3 class="section-title">Contact & Location</h3>
+    <div class="card">
+      <p>📍 Vishal Mega Mart, Surajpur, Greater Noida, UP – 201306</p>
+      <p>📞 9720136336 / 8178599981</p>
+      <p>✉️ gargeeglobal@gmail.com</p>
+      <iframe src="https://www.google.com/maps?q=Vishal+Mega+Mart+Surajpur+Greater+Noida&output=embed"
+      width="100%" height="300" style="border:0;margin-top:15px"></iframe>
+    </div>
+  </div>
 </section>
 
 <footer>
-<p>Address: Near Vishal Mega Mart, Surajpur, Greater Noida, Uttar Pradesh 201306</p>
-<p>Mobile: 8178599981 / 9720136336 | Email: <a href="mailto:gargeeglobal@gmail.com">gargeeglobal@gmail.com</a></p>
-<p>Affiliated with Future IT College | ISO 9001 & MSME Certified | Trusted Institute</p>
-<p>© 2026 Gargee Global Computer Institute | All Rights Reserved</p>
+© 2026 Gargee Global Computer Institute • ISO Verified • Affiliated with Fucture IT College
 </footer>
 
+<a href="https://wa.me/919720136336" class="whatsapp-float">WhatsApp</a>
+
+<!-- ADMISSION MODAL -->
+<div class="modal" id="formModal">
+  <div class="modal-content">
+    <h3>Admission Enquiry</h3>
+    <form onsubmit="sendWhatsApp();return false;">
+      <input id="name" placeholder="Full Name" required>
+      <input id="phone" placeholder="Mobile Number" required>
+      <select id="course">
+        <option>Course Interested</option>
+        <option>Data Operator / MIS</option>
+        <option>Software / ERP</option>
+        <option>Hardware / Networking</option>
+        <option>SAP</option>
+        <option>Cloud Computing</option>
+      </select>
+      <button class="btn btn-primary" type="submit">Send Enquiry</button>
+    </form>
+  </div>
+</div>
+
 <script>
-function sendWA(){
-  let n=document.getElementById("name").value.trim();
-  let m=document.getElementById("mobile").value.trim();
-  let c=document.getElementById("course").value;
-  if(m.length<10){alert("Please enter a valid mobile number");return;}
-  let msg=`Hello, my name is ${n}. I am interested in the ${c} course. Please guide me.`;
-  window.open(`https://wa.me/918178599981?text=${encodeURIComponent(msg)}`);
-  localStorage.setItem("lead_"+m,new Date().toISOString());
+function openForm(){
+  document.getElementById("formModal").style.display="flex";
+}
+window.onclick=function(e){
+  if(e.target.classList.contains("modal")){
+    e.target.style.display="none";
+  }
+}
+function sendWhatsApp(){
+  let n=name.value,p=phone.value,c=course.value;
+  let url=`https://wa.me/919720136336?text=Name:%20${n}%0APhone:%20${p}%0ACourse:%20${c}`;
+  window.open(url,"_blank");
 }
 </script>
 
