@@ -8,19 +8,13 @@
 <meta name="keywords" content="Computer Institute Surajpur, IT Training Greater Noida, Cyber Security, AI ML, Web Development, Corporate Training, BPO, KPO, Excel, SAP, Power BI">
 <meta name="author" content="Gargee Global Computer Institute">
 
-<!-- Preload images -->
-<link rel="preload" as="image" href="images/header-bg.jpg">
-<link rel="preload" as="image" href="images/course1.jpg">
-<link rel="preload" as="image" href="images/course2.jpg">
-<link rel="preload" as="image" href="images/course3.jpg">
-
 <style>
 :root{
-  --primary:#0a2db3;       /* Blue headings/buttons */
-  --accent:#ffcc00;        /* Yellow CTA */
-  --dark:#333;             /* Dark text */
-  --light:#f8f9fb;         /* Page background */
-  --section-light:#ffffff; /* Card background */
+  --primary:#0a2db3;
+  --accent:#ffcc00;
+  --dark:#333;
+  --light:#fefefe;
+  --section-light:#ffffff;
   --font-heading:'Roboto', sans-serif;
   --font-body:'Arial', sans-serif;
 }
@@ -30,17 +24,17 @@ body{font-family:var(--font-body);background:var(--light);color:var(--dark);}
 a{text-decoration:none;}
 
 header{
-  background:url('images/header-bg.jpg') center/cover no-repeat;
-  position:relative; text-align:center; padding:120px 20px 80px; color:#0b1220;
+  background:url('https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  position:relative; text-align:center; padding:120px 20px 80px; color:#fff;
 }
 header::after{
   content:"";
   position:absolute; top:0; left:0; right:0; bottom:0;
-  background:rgba(255,255,255,0.5); /* Light overlay */
+  background:rgba(0,0,0,0.35);
 }
 header h1, header p{position:relative; z-index:1;}
-header h1{ font-size:3rem; color:var(--primary); margin-bottom:10px; }
-header p{ font-size:1.3rem; color:#555; }
+header h1{ font-size:3rem; color:#fff; margin-bottom:10px; text-shadow: 2px 2px 5px rgba(0,0,0,0.5);}
+header p{ font-size:1.4rem; color:#f0f0f0; text-shadow: 1px 1px 3px rgba(0,0,0,0.4);}
 
 nav{
   position:sticky; top:0; background:#ffffff; box-shadow:0 2px 8px rgba(0,0,0,.1);
@@ -51,7 +45,7 @@ nav a{
 }
 nav a:hover{color:var(--accent);}
 
-section{padding:60px 20px;}
+section{padding:60px 20px; background:linear-gradient(to bottom,#f9f9f9,#ffffff);}
 .container{max-width:1200px;margin:auto;}
 h2{color:var(--primary); margin-bottom:25px; text-align:center; font-family:var(--font-heading);}
 h3{color:var(--dark); margin-bottom:15px; font-family:var(--font-heading);}
@@ -59,7 +53,7 @@ p{line-height:1.6;}
 
 .card{
   background:var(--section-light); padding:25px; border-radius:12px;
-  box-shadow:0 10px 25px rgba(0,0,0,.08); margin-bottom:30px;
+  box-shadow:0 8px 20px rgba(0,0,0,.08); margin-bottom:30px;
   transition: transform .3s, box-shadow .3s;
 }
 .card:hover{
@@ -78,18 +72,18 @@ input,select{
 }
 
 footer{
-  background:#f0f0f0; color:var(--dark); text-align:center; padding:25px;
+  background:#f5f5f5; color:var(--dark); text-align:center; padding:25px;
   display:flex; flex-direction:column; gap:5px;
 }
 footer a{color:var(--accent);}
 
 .whatsapp, .enroll{
-  position:fixed; right:18px; bottom:18px; display:flex; align-items:center; justify-content:center;
+  position:fixed; right:18px; display:flex; align-items:center; justify-content:center;
   font-weight:bold; text-decoration:none; z-index:999; transition: transform .3s;
 }
 .whatsapp{
   background:#25D366; color:#fff; width:55px; height:55px; border-radius:50%; font-size:26px;
-  box-shadow:0 5px 15px rgba(0,0,0,.3);
+  box-shadow:0 5px 15px rgba(0,0,0,.3); bottom:18px;
 }
 .enroll{
   background:var(--accent); color:#0b1220; font-size:16px;
@@ -97,16 +91,8 @@ footer a{color:var(--accent);}
 }
 .enroll:hover, .whatsapp:hover{ transform: scale(1.1); }
 
-.trust-badges, .placement-logos{
-  display:flex; flex-wrap:wrap; gap:15px; margin-top:15px; justify-content:center;
-}
-.trust-badges img, .placement-logos img{
-  height:50px; width:auto; border-radius:6px; transition: transform .3s; object-fit:contain;
-}
-.trust-badges img:hover, .placement-logos img:hover{ transform: scale(1.1); }
-
 .course-card{ margin-bottom:25px; }
-.course-card img{ width:100%; height:200px; object-fit:cover; margin-top:15px; border-radius:12px; }
+.course-card img{ width:100%; height:auto; max-height:250px; object-fit:cover; margin-top:15px; border-radius:12px; }
 
 #carousel{
   display:grid; grid-template-columns:repeat(auto-fit,minmax(100px,1fr)); gap:20px;
@@ -118,8 +104,8 @@ footer a{color:var(--accent);}
   header{ padding:80px 20px 40px; }
   nav{flex-direction:column;}
   nav a{padding:10px;}
-  .trust-badges img, .placement-logos img, #carousel img{ height:40px; }
-  .course-card img{ height:150px; }
+  .course-card img{ max-height:180px; }
+  #carousel img{ height:40px; }
 }
 </style>
 </head>
@@ -147,7 +133,7 @@ footer a{color:var(--accent);}
 <div class="container">
 <h2>About Us</h2>
 <div class="card">
-Gargee Global Computer Institute, located near Vishal Mega Mart, Surajpur, Greater Noida, is a premier IT & corporate training institute affiliated with Future IT College. We offer over <strong>1000+ job-oriented courses</strong> ranging from Basic Computer Skills, Advanced IT, Cyber Security, AI/ML, Web Development, Excel, Power BI, SAP, Accounts/GST, Automation, Corporate Training, BPO/KPO, and industry-specific company tools. Our programs are designed based on market demand and real-world tools, ensuring placement support in top companies across Noida, Delhi & Gurgaon.
+Gargee Global Computer Institute, located near Vishal Mega Mart, Surajpur, Greater Noida, is a premier IT & corporate training institute affiliated with Future IT College. We offer over <strong>1000+ job-oriented courses</strong> ranging from Basic Computer Skills, Advanced IT, Cyber Security, AI/ML, Web Development, Excel, Power BI, SAP, Accounts/GST, Automation, Corporate Training, BPO/KPO, and industry-specific tools. Our programs are designed based on market demand, ensuring placement support in top companies across Noida, Delhi & Gurgaon.
 </div>
 </div>
 </section>
@@ -157,14 +143,7 @@ Gargee Global Computer Institute, located near Vishal Mega Mart, Surajpur, Great
 <h2>Message from Director</h2>
 <div class="card">
 <p><strong>Aditya Gupta</strong>, Director</p>
-<p>Welcome to Gargee Global Computer Institute. Our mission is to equip students with the highest quality skills, knowledge, and professional confidence needed in the IT and corporate world.</p>
-<p>We focus on practical learning through hands-on projects, corporate simulations, and exposure to real-world tools and company workflows.</p>
-<p>Our courses cover Basic Computer to Advanced IT, AI/ML, Cyber Security, Web Development, Excel, Power BI, SAP, Automation, Digital Marketing, Accounts, BPO/KPO, and company-specific training tools.</p>
-<p>We constantly update our curriculum to match industry trends, emerging technologies, and market requirements.</p>
-<p>Our ISO & MSME certifications ensure a structured, quality-driven learning environment.</p>
-<p>We provide personalized mentorship, career guidance, and placement support to help students succeed in competitive roles.</p>
-<p>Hands-on labs, workshops, hackathons, and projects help students apply knowledge practically.</p>
-<p>We empower learners to be independent, innovative, and industry-ready professionals.</p>
+<p>Welcome to Gargee Global Computer Institute. Our mission is to equip students with the highest quality skills, knowledge, and professional confidence needed in the IT and corporate world. We focus on practical learning, hands-on projects, and exposure to real-world tools and workflows.</p>
 </div>
 </div>
 </section>
@@ -174,10 +153,9 @@ Gargee Global Computer Institute, located near Vishal Mega Mart, Surajpur, Great
 <h2>Mission & Vision</h2>
 <div class="card">
 <h3>Our Mission</h3>
-<p>Deliver high-quality IT and corporate training covering Basic Computer, Advanced IT, AI/ML, Cyber Security, Web Development, Excel, Power BI, SAP, Automation, Digital Marketing, Accounts, BPO/KPO, and corporate tools. Foster practical skills, innovation, and professional confidence. Prepare students for placements, internships, and career growth. Integrate soft skills, leadership, and teamwork. Promote ethical practices, problem-solving, and analytical thinking. Ensure exposure to real corporate workflows and market-demand tools. Enable lifelong learning, continuous skill development, and employability.</p>
-
+<p>Deliver high-quality IT and corporate training, foster practical skills, innovation, and professional confidence. Prepare students for placements, internships, and career growth. Integrate soft skills, leadership, and teamwork. Enable lifelong learning and employability.</p>
 <h3>Our Vision</h3>
-<p>Become a leading center of excellence in IT and corporate education. Empower learners to excel in technology, business, and professional domains. Cultivate skilled, confident, and innovative professionals. Maintain strong industry partnerships for placement and upskilling. Deliver comprehensive training from entry-level to advanced courses. Inspire lifelong learning and continuous skill development. Provide exposure to emerging technologies and corporate tools. Create a culture of integrity, professionalism, and innovation. Equip students to meet market demands and corporate expectations.</p>
+<p>Become a leading center of excellence in IT and corporate education. Empower learners to excel in technology, business, and professional domains. Maintain strong industry partnerships for placement and upskilling. Inspire lifelong learning and continuous skill development.</p>
 </div>
 </div>
 </section>
@@ -185,10 +163,10 @@ Gargee Global Computer Institute, located near Vishal Mega Mart, Surajpur, Great
 <section id="courses">
 <div class="container">
 <h2>Our Courses</h2>
-<div class="course-card card"><h3>1. Basic Computer</h3><p>Computer fundamentals, MS Office, typing, internet basics.</p><img src="images/course1.jpg" alt="Basic Computer"></div>
-<div class="course-card card"><h3>2. Advanced IT</h3><p>Programming, networking, web development, database management.</p><img src="images/course2.jpg" alt="Advanced IT"></div>
-<div class="course-card card"><h3>3. Cyber Security</h3><p>Ethical hacking, penetration testing, network security.</p><img src="images/course3.jpg" alt="Cyber Security"></div>
-<div class="course-card card"><h3>50. 1000+ Courses Available</h3><p>We offer a wide range of 1000+ courses across IT, corporate, finance, management, creative, and technical domains.</p><img src="images/course50.jpg" alt="1000+ Courses"></div>
+<div class="course-card card"><h3>1. Basic Computer</h3><p>Computer fundamentals, MS Office, typing, internet basics.</p><img src="https://images.unsplash.com/photo-1581091215369-3dc366c14744?auto=format&fit=crop&w=800&q=80" alt="Basic Computer"></div>
+<div class="course-card card"><h3>2. Advanced IT</h3><p>Programming, networking, web development, database management.</p><img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?auto=format&fit=crop&w=800&q=80" alt="Advanced IT"></div>
+<div class="course-card card"><h3>3. Cyber Security</h3><p>Ethical hacking, penetration testing, network security.</p><img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=80" alt="Cyber Security"></div>
+<div class="course-card card"><h3>50. 1000+ Courses Available</h3><p>We offer a wide range of 1000+ courses across IT, corporate, finance, management, creative, and technical domains.</p><img src="https://images.unsplash.com/photo-1581093588401-35e3e568c4a3?auto=format&fit=crop&w=800&q=80" alt="1000+ Courses"></div>
 </div>
 </section>
 
@@ -196,11 +174,11 @@ Gargee Global Computer Institute, located near Vishal Mega Mart, Surajpur, Great
 <div class="container">
 <h2>Our Placement Partners</h2>
 <div class="card" id="carousel">
-<img src="images/microsoft.png" alt="Microsoft">
-<img src="images/google.png" alt="Google">
-<img src="images/amazon.png" alt="Amazon">
-<img src="images/infosys.png" alt="Infosys">
-<img src="images/tcs.png" alt="TCS">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Infosys_logo.svg" alt="Infosys">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Tata_Consultancy_Services_Logo.svg" alt="TCS">
 </div>
 </div>
 </section>
