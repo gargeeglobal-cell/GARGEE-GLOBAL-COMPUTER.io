@@ -2,30 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Future IT College | Gargee Global Computer Institute</title>
+<title>Gargee Global Computer Institute | College Theme</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta name="description" content="Future IT College (Gargee Global Computer Institute) offers professional IT, software, cyber security and corporate skill courses in Surajpur, Greater Noida.">
-<meta name="keywords" content="Computer Institute Surajpur, IT Training Greater Noida, Cyber Security, Job Oriented Courses, Corporate Training">
-<meta name="author" content="Future IT College">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  "name": "Future IT College",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Surajpur",
-    "addressLocality": "Greater Noida",
-    "addressRegion": "Uttar Pradesh",
-    "postalCode": "201306",
-    "addressCountry": "IN"
-  },
-  "telephone": "+91-8178599981",
-  "email": "gargeeglobal@gmail.com"
-}
-</script>
+<meta name="description" content="Gargee Global Computer Institute, affiliated with Future IT College, offers professional IT, software, cyber security, AI, ML, web development, corporate skill courses, and placement support in Surajpur, Greater Noida.">
+<meta name="keywords" content="Computer Institute Surajpur, IT Training Greater Noida, Cyber Security, AI ML, Web Development, Corporate Training, BPO, KPO">
+<meta name="author" content="Gargee Global Computer Institute">
 
 <style>
 :root{
@@ -33,213 +14,178 @@
   --accent:#ffcc00;
   --dark:#0b1220;
   --light:#f4f6fb;
+  --font-heading:'Roboto', sans-serif;
+  --font-body:'Arial', sans-serif;
 }
-body{
-  margin:0;
-  font-family:Arial,Helvetica,sans-serif;
-  background:var(--light);
-  color:#111;
-  line-height:1.6;
-  scroll-behavior:smooth;
-}
+*{scroll-behavior:smooth;margin:0;padding:0;box-sizing:border-box;}
+body{font-family:var(--font-body);background:var(--light);color:#111;}
 header{
-  background:var(--primary);
-  color:#fff;
-  padding:35px 20px;
-  text-align:center;
+  background:url('https://images.unsplash.com/photo-1581091215369-3dc366c14744?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;
+  color:#fff;padding:120px 20px 80px;text-align:center;position:relative;
 }
-section{
-  padding:45px 20px;
+header::after{
+  content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(10,45,179,0.7);
 }
-.container{
-  max-width:1100px;
-  margin:auto;
+header h1, header p{position:relative;z-index:1;}
+header h1{ font-size:3rem; margin-bottom:10px; }
+header p{ font-size:1.3rem; }
+
+nav{
+  position:sticky;top:0; background:#0a2db3; z-index:999;
+  display:flex; justify-content:center; padding:12px 0; flex-wrap:wrap;
 }
-h2{
-  color:var(--primary);
-  margin-bottom:15px;
-  text-align:center;
+nav a{
+  color:#fff; text-decoration:none; padding:12px 20px; font-weight:bold;
+  transition:opacity .3s;
 }
-h3{
-  color:var(--dark);
-  margin-bottom:10px;
-}
+nav a:hover{opacity:.8;}
+
+section{ padding:60px 20px; }
+.container{ max-width:1100px; margin:auto; }
+h2{ color:var(--primary); margin-bottom:25px; text-align:center; font-family:var(--font-heading); }
+h3{ color:var(--dark); margin-bottom:15px; font-family:var(--font-heading); }
 .card{
-  background:#fff;
-  padding:25px;
-  border-radius:12px;
+  background:#fff; padding:30px; border-radius:12px;
   box-shadow:0 10px 25px rgba(0,0,0,.08);
-  margin-bottom:30px;
-  transition: transform .3s, box-shadow .3s;
+  margin-bottom:40px; transition: transform .3s, box-shadow .3s;
 }
 .card:hover{
   transform: translateY(-5px);
   box-shadow:0 15px 30px rgba(0,0,0,.12);
 }
 .btn{
-  display:inline-block;
-  padding:12px 22px;
-  background:var(--primary);
-  color:#fff;
-  border:none;
-  border-radius:6px;
-  cursor:pointer;
-  text-decoration:none;
-  transition:opacity .3s;
+  display:inline-block; padding:12px 25px; background:var(--primary);
+  color:#fff; border:none; border-radius:6px; cursor:pointer;
+  text-decoration:none; transition:opacity .3s;
 }
-.btn:hover{
-  opacity:.9;
-}
-input,select{
-  width:100%;
-  padding:11px;
-  margin:8px 0;
-  border-radius:5px;
-  border:1px solid #ccc;
-}
+.btn:hover{ opacity:.9; }
+input,select{ width:100%; padding:12px; margin:8px 0; border-radius:5px; border:1px solid #ccc; }
+
 footer{
-  background:var(--dark);
-  color:#fff;
-  text-align:center;
-  padding:25px;
+  background:var(--dark); color:#fff; text-align:center; padding:25px;
+  display:flex; flex-direction:column; gap:5px;
 }
-.whatsapp{
-  position:fixed;
-  right:18px;
-  bottom:18px;
-  background:#25D366;
-  color:#fff;
-  width:55px;
-  height:55px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:26px;
-  text-decoration:none;
-  box-shadow:0 5px 15px rgba(0,0,0,.3);
-}
-.trust-badges, .placement-logos{
-  display:flex;
-  flex-wrap:wrap;
-  gap:15px;
-  margin-top:15px;
-  justify-content:center;
-}
-.trust-badges img, .placement-logos img{
-  height:50px;
-  width:auto;
-  border-radius:6px;
+footer a{color:#ffcc00;text-decoration:none;}
+
+.whatsapp, .enroll{
+  position:fixed; right:18px; bottom:18px; background:#25D366;
+  color:#fff; width:55px; height:55px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-size:26px; text-decoration:none; box-shadow:0 5px 15px rgba(0,0,0,.3);
+  z-index:999;
   transition: transform .3s;
 }
-.trust-badges img:hover, .placement-logos img:hover{
-  transform: scale(1.1);
+.enroll{
+  background:var(--accent); color:#0b1220; font-size:16px; font-weight:bold;
+  width:auto; padding:0 15px; border-radius:30px; height:50px;
+  bottom:85px;
 }
-.affiliation-card ul{
-  padding-left:20px;
+.enroll:hover, .whatsapp:hover{ transform: scale(1.1); }
+
+.trust-badges, .placement-logos{
+  display:flex; flex-wrap:wrap; gap:15px; margin-top:15px; justify-content:center;
 }
+.trust-badges img, .placement-logos img{
+  height:50px; width:auto; border-radius:6px; transition: transform .3s;
+}
+.trust-badges img:hover, .placement-logos img:hover{ transform: scale(1.1); }
+
+.affiliation-card ul{ padding-left:20px; list-style: disc; }
+.course-card{ margin-bottom:25px; }
+.course-card img{ width:100%; margin-top:15px; border-radius:12px; }
+
+#carousel{
+  display:flex; overflow-x:auto; scroll-behavior:smooth; gap:20px; padding:10px 0;
+}
+#carousel::-webkit-scrollbar{ display:none; }
+#carousel img{ height:60px; border-radius:6px; flex-shrink:0; transition: transform .3s; }
+#carousel img:hover{ transform: scale(1.2); }
+
 @media(max-width:768px){
-  .trust-badges img, .placement-logos img{
-    height:40px;
-  }
+  header{ padding:80px 20px 40px; }
+  nav{flex-direction:column;}
+  nav a{padding:10px;}
+  .trust-badges img, .placement-logos img, #carousel img{ height:40px; }
 }
 </style>
 </head>
-
 <body>
 
 <a class="whatsapp" href="https://wa.me/918178599981">💬</a>
+<a class="enroll" href="#contact">Enroll Now</a>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#mission">Mission & Vision</a>
+  <a href="#courses">Courses</a>
+  <a href="#placement">Placement</a>
+  <a href="#franchise">Franchise</a>
+  <a href="#contact">Contact</a>
+</nav>
 
 <header>
-<h1>Future IT College</h1>
-<p>Authority Computer Education & Corporate Skill Development</p>
+<h1>Gargee Global Computer Institute</h1>
+<p>Affiliated with Future IT College | Professional IT & Corporate Training</p>
 </header>
 
-<section>
+<section id="about">
 <div class="container">
 <h2>About Us</h2>
 <div class="card">
-Future IT College (Gargee Global Computer Institute) is a trusted computer training institute in Surajpur, Greater Noida.
-We provide job-oriented IT, software, cyber security programs and corporate skill development with hands-on lab exposure and professional guidance.
+Gargee Global Computer Institute, located near Vishal Mega Mart, Surajpur, Greater Noida (Uttar Pradesh, 201306), is a premier IT training institute affiliated with Future IT College. We provide 1000+ job‑oriented courses from Basic Computer, Web Development, Cyber Security, AI/ML, Animation, Digital Marketing, Corporate Training, to BPO/KPO skill development, catering to student career growth and professional upskilling. Courses are designed based on market demand with hands‑on tools and placement support in Noida, Delhi & Gurgaon.
 </div>
 </div>
 </section>
 
-<section>
+<section id="mission">
 <div class="container">
-<h2>Director’s Message</h2>
-<div class="card">
-<h3>Mr. Aditya Gupta</h3>
-<p><strong>Director – Future IT College</strong></p>
-<p>
-At Future IT College, we are committed to delivering industry-relevant, job-oriented education that equips students with practical skills, confidence, and professional ethics. Our goal is to prepare every student to excel in IT, software, and corporate sectors with real-world readiness.
-</p>
-<img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?crop=entropy&cs=tinysrgb&fit=max&h=250&w=600" alt="Director Image" style="width:100%;margin-top:15px;border-radius:12px;">
-</div>
-
-<div class="card">
-<h3>Our Vision</h3>
-<p>
-To become a leading center of excellence in IT and computer education by fostering innovation, skill development, and digital empowerment, enabling students to contribute to India’s technology and corporate growth.
-</p>
-</div>
-
+<h2>Mission & Vision</h2>
 <div class="card">
 <h3>Our Mission</h3>
-<p>
-To provide high-quality, practical training with experienced faculty, modern infrastructure, and industry-aligned curriculum, ensuring students gain real-world skills, placement support, and long-term professional success.
-</p>
+<p>Deliver high‑quality, industry‑aligned IT & corporate training that equips students with real‑world skills, professional confidence, and placement support, enabling successful careers in software, IT, corporate, and entrepreneurial sectors.</p>
+<h3>Our Vision</h3>
+<p>To be a leading center of excellence in digital education and professional skills, fostering empowered learners who excel in the technology and corporate domains with innovation, integrity, and impact.</p>
 </div>
 </div>
 </section>
 
-<section>
+<section id="courses">
 <div class="container">
 <h2>Our Courses</h2>
-<div class="card">
-• Basic Computer & Office Automation<br>
-• Advanced IT & Software Training<br>
-• Web Development & Programming<br>
-• Cyber Security & Networking<br>
-• Corporate & Professional Skill Training
-<img src="https://images.unsplash.com/photo-1581091215369-3dc366c14744?crop=entropy&cs=tinysrgb&fit=max&h=250&w=600" alt="Courses" style="width:100%;margin-top:15px;border-radius:12px;">
+
+<div class="course-card card">
+<h3>IT & Software Courses</h3>
+<p>Web Dev, Prog, AI/ML, DSA, Cyber Security</p>
+<p>Tools: Python, Java, C/C++, SQL, AWS, Linux</p>
+<p>Duration: 3 months – 3 years</p>
+<img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?auto=format&fit=crop&w=800&q=80" alt="IT Courses">
 </div>
+
+<div class="course-card card">
+<h3>Corporate & Professional Training</h3>
+<p>BPO, KPO, Soft Skills, Corporate Comm</p>
+<p>Tools: MS Office, CRM, Communication Platforms</p>
+<p>Duration: 1 – 6 months</p>
+<img src="https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=800&q=80" alt="Corporate Training">
+</div>
+
+<div class="course-card card">
+<h3>Creative & Digital Courses</h3>
+<p>Animation, Graphics, Digital Marketing</p>
+<p>Tools: Photoshop, Illustrator, Premiere, Figma, SEO</p>
+<p>Duration: 3 – 24 months</p>
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Creative Courses">
+</div>
+
 </div>
 </section>
 
-<section>
+<section id="placement">
 <div class="container">
-<h2>Why Choose Us</h2>
+<h2>Our Placement Partners</h2>
 <div class="card">
-✔ Industry-Oriented Curriculum<br>
-✔ Practical Training with Lab Access<br>
-✔ Experienced Faculty<br>
-✔ Career Guidance & Placement Support<br>
-✔ Trusted Institute in Surajpur Greater Noida
-</div>
-</div>
-</section>
-
-<section>
-<div class="container">
-<h2>Affiliation & Authorized Partners</h2>
-<div class="card affiliation-card">
-<ul>
-<li>Authorized Training Partner with Future IT College Network</li>
-<li>Registered with local educational authorities, compliant with Indian IT education standards</li>
-<li>Certified corporate and IT skill development programs</li>
-</ul>
-<img src="https://images.unsplash.com/photo-1581091870622-0f5179ed0a14?crop=entropy&cs=tinysrgb&fit=max&h=100&w=600" alt="Affiliation Logo" style="width:100%;margin-top:15px;border-radius:12px;">
-</div>
-</div>
-</section>
-
-<section>
-<div class="container">
-<h2>Our Placement & Hiring Partners</h2>
-<div class="card">
-<p>Students trained at Future IT College have been successfully placed in reputed companies:</p>
-<div class="placement-logos">
+<p>Students trained here are placed in top companies across Noida, Delhi & Gurgaon:</p>
+<div id="carousel">
 <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft">
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
@@ -250,23 +196,20 @@ To provide high-quality, practical training with experienced faculty, modern inf
 </div>
 </section>
 
-<section>
+<section id="franchise">
 <div class="container">
-<h2>Certifications & Trust</h2>
+<h2>Business & Franchise Opportunities</h2>
 <div class="card">
-<p>Future IT College maintains high-quality standards and is recognized for excellence:</p>
-<div class="trust-badges">
-<img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/ISO_9001_logo.svg" alt="ISO 9001">
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/MSME_logo.svg" alt="MSME Registered">
-<img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Emblem_of_India.svg" alt="Government Approved">
-</div>
+Gargee Global Computer Institute offers franchise & business partnerships for educational entrepreneurs. Benefit from our ISO/MSME‑certified curriculum, brand support, placement network, and infrastructure. Grow your business while delivering high‑quality IT & corporate training in your region.
+<br><br>
+<button class="btn" onclick="window.print()">Download Franchise Proposal (PDF)</button>
 </div>
 </div>
 </section>
 
-<section>
+<section id="contact">
 <div class="container">
-<h2>Admission Enquiry (WhatsApp)</h2>
+<h2>Admission Enquiry</h2>
 <div class="card">
 <input id="name" placeholder="Full Name">
 <input id="mobile" placeholder="Mobile Number">
@@ -276,62 +219,29 @@ To provide high-quality, practical training with experienced faculty, modern inf
 <option>Web Development</option>
 <option>Cyber Security</option>
 <option>Corporate Training</option>
+<option>Animation / Digital Marketing</option>
 </select>
-<button class="btn" onclick="sendWA()">Send Enquiry</button>
-</div>
-</div>
-</section>
-
-<section>
-<div class="container">
-<h2>Franchise & Expansion</h2>
-<div class="card">
-Future IT College offers franchise opportunities for educational partners.
-The franchise model is transparent, compliant with education regulations, and focused on
-quality training delivery and brand integrity.
-<br><br>
-<button class="btn" onclick="window.print()">Download Proposal (PDF)</button>
-</div>
-</div>
-</section>
-
-<section>
-<div class="container">
-<h2>Government Inspection Readiness</h2>
-<div class="card">
-✔ Institute Registration Documents<br>
-✔ Approved Course Curriculum<br>
-✔ Qualified Faculty Records<br>
-✔ Student Admission & Fee Records<br>
-✔ Infrastructure & Safety Compliance
-</div>
-</div>
-</section>
-
-<section>
-<div class="container">
-<h2>Privacy Policy</h2>
-<div class="card">
-All student and enquiry data is kept strictly confidential.
-No personal information is shared with third parties.
-This institute follows applicable Indian IT and education regulations.
+<button class="btn" onclick="sendWA()">Send Enquiry via WhatsApp</button>
 </div>
 </div>
 </section>
 
 <footer>
-© 2026 Future IT College | All Rights Reserved
+<p>Address: Near Vishal Mega Mart, Surajpur, Greater Noida, Uttar Pradesh 201306</p>
+<p>Mobile: 8178599981 / 9720136336 | Email: <a href="mailto:gargeeglobal@gmail.com">gargeeglobal@gmail.com</a></p>
+<p>Affiliated with Future IT College | ISO 9001 & MSME Certified | Trusted Institute</p>
+<p>© 2026 Gargee Global Computer Institute | All Rights Reserved</p>
 </footer>
 
 <script>
 function sendWA(){
-let n=document.getElementById("name").value.trim();
-let m=document.getElementById("mobile").value.trim();
-let c=document.getElementById("course").value;
-if(m.length<10){alert("Please enter a valid mobile number");return;}
-let msg=`Hello, my name is ${n}. I am interested in the ${c} course. Please guide me.`;
-window.open(`https://wa.me/918178599981?text=${encodeURIComponent(msg)}`);
-localStorage.setItem("lead_"+m,new Date().toISOString());
+  let n=document.getElementById("name").value.trim();
+  let m=document.getElementById("mobile").value.trim();
+  let c=document.getElementById("course").value;
+  if(m.length<10){alert("Please enter a valid mobile number");return;}
+  let msg=`Hello, my name is ${n}. I am interested in the ${c} course. Please guide me.`;
+  window.open(`https://wa.me/918178599981?text=${encodeURIComponent(msg)}`);
+  localStorage.setItem("lead_"+m,new Date().toISOString());
 }
 </script>
 
