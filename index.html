@@ -7,6 +7,7 @@
 <meta name="description" content="ISO Verified Gargee Global Computer Institute providing top IT training & placement support in Greater Noida with corporate partnerships.">
 <meta name="keywords" content="IT training, computer institute, software courses, networking course, SAP training, cloud computing, placement support">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
 body{background:#05070f;color:#e5e7eb;line-height:1.7}
@@ -17,7 +18,7 @@ header{position:sticky;top:0;z-index:1000;background:linear-gradient(90deg,#0206
 .nav h1{font-size:20px;color:#60a5fa;font-weight:700}
 .nav a{margin-left:18px;font-size:14px}
 .nav a:hover{color:#60a5fa}
-.hero{background:url('/mnt/data/A_website_homepage_for_Gargee_Global_Computer_Inst.png') center/cover no-repeat;background-size:cover;}
+.hero{background:url('https://images.unsplash.com/photo-1581091870629-1f6223674f1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;background-size:cover;}
 .hero-overlay{background:rgba(0,0,0,.75);padding:120px 20px;text-align:center}
 .hero h2{font-size:46px;color:#fff}
 .hero p{margin-top:12px;color:#d1d5db;font-size:18px}
@@ -38,10 +39,14 @@ footer{background:#020617;text-align:center;padding:20px;font-size:14px;color:#9
 .modal-content{background:#0b1222;padding:30px;border-radius:16px;width:90%;max-width:420px}
 .modal-content h3{margin-bottom:15px;color:#60a5fa}
 input,select{width:100%;padding:10px;margin-bottom:12px;border-radius:8px;border:none;background:#1f2937;color:#fff}
+.accordion{background:#0b1222;color:#fff;cursor:pointer;padding:15px;width:100%;border:none;text-align:left;outline:none;font-size:16px;transition:0.4s;border-radius:10px;margin-bottom:8px}
+.accordion:hover{background:#2563eb}
+.panel{padding:0 15px;display:none;background-color:#1f2937;border-radius:10px;margin-bottom:10px}
 @media(max-width:900px){.hero h2{font-size:34px}.grid-3{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
+
 <header>
 <div class="nav">
 <h1>GARGEE GLOBAL COMPUTER INSTITUTE</h1>
@@ -54,6 +59,7 @@ input,select{width:100%;padding:10px;margin-bottom:12px;border-radius:8px;border
 </div>
 </div>
 </header>
+
 <section class="hero">
 <div class="hero-overlay">
 <h2>Industry Ready IT & Software Education</h2>
@@ -63,6 +69,7 @@ input,select{width:100%;padding:10px;margin-bottom:12px;border-radius:8px;border
 <a href="https://wa.me/919720136336" class="btn btn-whatsapp">WhatsApp Us</a>
 </div>
 </section>
+
 <section id="affiliation">
 <div class="container">
 <h3 class="section-title">Affiliation & Accreditation</h3>
@@ -82,6 +89,7 @@ input,select{width:100%;padding:10px;margin-bottom:12px;border-radius:8px;border
 </div>
 </div>
 </section>
+
 <section id="director">
 <div class="container">
 <h3 class="section-title">Director’s Message</h3>
@@ -90,16 +98,15 @@ input,select{width:100%;padding:10px;margin-bottom:12px;border-radius:8px;border
 </div>
 </div>
 </section>
+
 <section id="courses">
 <div class="container">
 <h3 class="section-title">Professional IT & Computer Courses</h3>
 <div class="grid grid-3">
-<!-- 50 Courses with syllabus bullets -->
-<!-- Computer Basics -->
+<!-- Sample 12 Courses -->
 <div class="card"><h4>Computer Fundamentals</h4><ul><li>Basics of Computers</li><li>Windows OS</li><li>MS Office</li><li>Email & Internet</li></ul></div>
 <div class="card"><h4>MS Office & Excel</h4><ul><li>Word, Excel, PowerPoint</li><li>Advanced Excel & Formulas</li><li>Pivot Tables & Charts</li><li>MIS Reporting</li></ul></div>
 <div class="card"><h4>Typing & Digital Literacy</h4><ul><li>English & Hindi Typing</li><li>Internet Basics</li><li>Digital Tools</li><li>Practical Labs</li></ul></div>
-<!-- Advanced Courses -->
 <div class="card"><h4>Python Programming</h4><ul><li>Basics to Advanced Python</li><li>OOP Concepts</li><li>Real Projects</li><li>Data Analysis</li></ul></div>
 <div class="card"><h4>Full Stack Development</h4><ul><li>HTML, CSS, JS, React</li><li>Node.js & Express</li><li>Database Projects</li><li>Industry Deployment</li></ul></div>
 <div class="card"><h4>Data Science</h4><ul><li>Python for Data</li><li>Pandas & NumPy</li><li>Visualization & ML Basics</li><li>Mini Projects</li></ul></div>
@@ -107,29 +114,33 @@ input,select{width:100%;padding:10px;margin-bottom:12px;border-radius:8px;border
 <div class="card"><h4>Cloud Computing (AWS & Azure)</h4><ul><li>AWS Basics</li><li>Azure Services</li><li>Hands-on Projects</li><li>Cloud Certification Guidance</li></ul></div>
 <div class="card"><h4>Cyber Security</h4><ul><li>Ethical Hacking</li><li>Network Security</li><li>Risk Management</li><li>Live Security Projects</li></ul></div>
 <div class="card"><h4>Networking (CCNA / CCNP)</h4><ul><li>Networking Basics</li><li>Router & Switch Config</li><li>Network Troubleshooting</li><li>Corporate Lab Practice</li></ul></div>
-<!-- ERP & Professional Courses -->
 <div class="card"><h4>SAP FICO</h4><ul><li>Financial Accounting Module</li><li>General Ledger & Reporting</li><li>Practical Case Studies</li><li>Live SAP Projects</li></ul></div>
 <div class="card"><h4>SAP MM / SD / HR</h4><ul><li>Module-specific Training</li><li>Practical Exercises</li><li>Live Cases</li><li>Certification Guidance</li></ul></div>
-<div class="card"><h4>AI Fundamentals</h4><ul><li>Python & ML Basics</li><li>Data Visualization</li><li>AI Projects</li><li>Industry Ready</li></ul></div>
-<div class="card"><h4>Blockchain Basics</h4><ul><li>Blockchain Concepts</li><li>Practical Examples</li><li>Projects</li><li>Industry Applications</li></ul></div>
-<!-- Add rest of courses similarly -->
+</div>
+
+<!-- Accordion for 1000+ Courses -->
+<button class="accordion">View All 1000+ Courses</button>
+<div class="panel">
+<p>Full course list (organized by category) will be added here in accordion style. Each category like Software, Networking, Cloud, Cyber Security, SAP, AI/ML will have its own list. This allows page to stay lightweight and smooth.</p>
 </div>
 </div>
 </section>
+
 <section id="placement">
 <div class="container">
 <h3 class="section-title">Placement Support & Corporate Tie-Ups</h3>
-<div class="card">
-<p>Dedicated placement cell, interview prep, resume building, and corporate exposure. Over 500+ students placed with top IT companies!</p>
-<div class="trust">
-<div>⭐ 4.8/5 Google Reviews</div>
-<div>👨‍🎓 500+ Students Placed</div>
-<div>🏢 300+ Hiring Partners</div>
-<div>📆 10+ Years Industry Experience</div>
-</div>
+<div class="grid grid-3" style="text-align:center;align-items:center;">
+<img src="https://1000logos.net/wp-content/uploads/2021/04/TCS-Logo.png" alt="TCS">
+<img src="https://1000logos.net/wp-content/uploads/2021/04/Infosys-logo.png" alt="Infosys">
+<img src="https://1000logos.net/wp-content/uploads/2021/04/Wipro-Logo.png" alt="Wipro">
+<img src="https://1000logos.net/wp-content/uploads/2021/04/HCL-Logo.png" alt="HCL">
+<img src="https://1000logos.net/wp-content/uploads/2021/04/Tech-Mahindra-Logo.png" alt="Tech Mahindra">
+<img src="https://1000logos.net/wp-content/uploads/2021/04/Accenture-Logo.png" alt="Accenture">
+<img src="https://1000logos.net/wp-content/uploads/2021/04/IBM-Logo.png" alt="IBM">
 </div>
 </div>
 </section>
+
 <section id="roadmap">
 <div class="container">
 <h3 class="section-title">Career Roadmap: Beginner to Job</h3>
@@ -143,30 +154,18 @@ input,select{width:100%;padding:10px;margin-bottom:12px;border-radius:8px;border
 </div>
 </div>
 </section>
+
 <section id="faculty">
 <div class="container">
 <h3 class="section-title">Expert Trainers</h3>
 <div class="grid grid-3">
-<div class="card"><h4>Rohit Sharma</h4><p>Senior Software Trainer with 10+ years corporate + academic experience. Expert in full stack projects.</p></div>
-<div class="card"><h4>Priya Singh</h4><p>Networking & Cloud specialist; 8+ years training + industry exposure.</p></div>
-<div class="card"><h4>Amit Verma</h4><p>Cyber Security expert with live security project experience.</p></div>
+<div class="card"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rohit Sharma"><h4>Rohit Sharma</h4><p>Senior Software Trainer with 10+ years corporate + academic experience. Expert in full stack projects.</p></div>
+<div class="card"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Singh"><h4>Priya Singh</h4><p>Networking & Cloud specialist; 8+ years training + industry exposure.</p></div>
+<div class="card"><img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Amit Verma"><h4>Amit Verma</h4><p>Cyber Security expert with live security project experience.</p></div>
 </div>
 </div>
 </section>
-<section id="partners">
-<div class="container">
-<h3 class="section-title">Our Placement Partners</h3>
-<div class="grid grid-3" style="text-align:center;align-items:center;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Tata_Consultancy_Services_Logo.svg" alt="TCS">
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Infosys_logo.svg" alt="Infosys">
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Wipro_Logo.svg" alt="Wipro">
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/HCL_Technologies_logo.svg" alt="HCL">
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Tech_Mahindra_logo.svg" alt="Tech Mahindra">
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Accenture_logo.svg" alt="Accenture">
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM">
-</div>
-</div>
-</section>
+
 <section id="contact">
 <div class="container">
 <h3 class="section-title">Contact & Location</h3>
@@ -178,9 +177,12 @@ input,select{width:100%;padding:10px;margin-bottom:12px;border-radius:8px;border
 </div>
 </div>
 </section>
+
 <footer>© 2026 Gargee Global Computer Institute • ISO Verified • Career Focused</footer>
+
 <a href="https://wa.me/919720136336" class="whatsapp-float">WhatsApp</a>
 <a href="tel:9720136336" class="call-float">Call Now</a>
+
 <div class="modal" id="formModal">
 <div class="modal-content">
 <h3>Quick Admission Enquiry</h3>
@@ -203,12 +205,12 @@ input,select{width:100%;padding:10px;margin-bottom:12px;border-radius:8px;border
 <option>SAP MM / SD / HR</option>
 <option>AI Fundamentals</option>
 <option>Blockchain Basics</option>
-<!-- Add rest courses -->
 </select>
 <button class="btn btn-primary" type="submit">Send Enquiry</button>
 </form>
 </div>
 </div>
+
 <script>
 function openForm(){document.getElementById("formModal").style.display="flex";}
 window.onclick=function(e){if(e.target.classList.contains("modal")){e.target.style.display="none";}}
@@ -217,6 +219,16 @@ let n=name.value,p=phone.value,c=course.value;
 let url=`https://wa.me/919720136336?text=Name:%20${n}%0APhone:%20${p}%0ACourse:%20${c}`;
 window.open(url,"_blank");
 }
+// Accordion
+var acc=document.getElementsByClassName("accordion");
+for(var i=0;i<acc.length;i++){
+acc[i].addEventListener("click",function(){
+this.classList.toggle("active");
+var panel=this.nextElementSibling;
+panel.style.display=(panel.style.display==="block")?"none":"block";
+});
+}
 </script>
+
 </body>
 </html>
