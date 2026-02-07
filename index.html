@@ -243,7 +243,7 @@ footer{
           <img loading="lazy" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Data Operator MIS Training">
         </div>
         <h4>Data Operator & MIS Executive</h4>
-        <p>Advanced Excel, MIS Reports<br>3 – 12 Months</p>
+        <p>Advanced Excel, MIS Reports<br>Duration: 3 – 12 Months</p>
         <button class="btn btn-primary" onclick="openForm()">Enroll</button>
       </div>
 
@@ -252,16 +252,43 @@ footer{
           <img loading="lazy" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80" alt="Computer Diploma Training">
         </div>
         <h4>Computer Diploma</h4>
-        <p>Basic to Advanced<br>3 Months – 3 Years</p>
+        <p>Basics to Advanced Computer Skills, MS Office, Internet<br>Duration: 3 Months – 3 Years</p>
         <button class="btn btn-primary" onclick="openForm()">Enroll</button>
       </div>
 
       <div class="card course">
         <div class="img-wrap">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80" alt="Hardware and Networking Training">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80" alt="Hardware Networking">
         </div>
         <h4>Hardware & Networking</h4>
-        <p>CCNA, Server, IT Support</p>
+        <p>CCNA, Server Maintenance, IT Support<br>Duration: 6 Months – 1.5 Years</p>
+        <button class="btn btn-primary" onclick="openForm()">Enroll</button>
+      </div>
+
+      <div class="card course">
+        <div class="img-wrap">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80" alt="Cyber Security">
+        </div>
+        <h4>Cyber Security & Ethical Hacking</h4>
+        <p>Network Security, Ethical Hacking Basics<br>Duration: 6 Months – 2 Years</p>
+        <button class="btn btn-primary" onclick="openForm()">Enroll</button>
+      </div>
+
+      <div class="card course">
+        <div class="img-wrap">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1200&q=80" alt="SAP ERP Training">
+        </div>
+        <h4>SAP & ERP Modules</h4>
+        <p>FICO, MM, HR, BASIS Modules<br>Duration: 6 – 12 Months</p>
+        <button class="btn btn-primary" onclick="openForm()">Enroll</button>
+      </div>
+
+      <div class="card course">
+        <div class="img-wrap">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80" alt="Cloud Computing Training">
+        </div>
+        <h4>Cloud Computing</h4>
+        <p>AWS, Azure, Google Cloud Fundamentals<br>Duration: 3 – 12 Months</p>
         <button class="btn btn-primary" onclick="openForm()">Enroll</button>
       </div>
 
@@ -322,6 +349,9 @@ footer{
         <option>Data Operator / MIS</option>
         <option>Diploma Computer</option>
         <option>Networking</option>
+        <option>Cyber Security</option>
+        <option>SAP / ERP</option>
+        <option>Cloud Computing</option>
       </select>
       <button class="btn btn-primary" type="submit">Send Enquiry</button>
     </form>
@@ -329,27 +359,15 @@ footer{
 </div>
 
 <script>
-function openForm(){
-  document.getElementById("formModal").style.display="flex";
-}
-
-window.addEventListener("click",function(e){
-  const modal=document.getElementById("formModal");
-  if(e.target===modal){modal.style.display="none";}
-});
-window.addEventListener("keydown",function(e){
-  if(e.key==="Escape"){
-    document.getElementById("formModal").style.display="none";
-  }
-});
+function openForm(){document.getElementById("formModal").style.display="flex";}
+window.addEventListener("click",function(e){if(e.target===document.getElementById("formModal")){e.target.style.display="none";}});
+window.addEventListener("keydown",function(e){if(e.key==="Escape"){document.getElementById("formModal").style.display="none";}});
 
 function sendWhatsApp(){
   const n=document.getElementById("name").value.trim();
   const p=document.getElementById("phone").value.trim();
   const c=document.getElementById("course").value;
-
   if(!n||!p) return;
-
   const url=`https://wa.me/919720136336?text=Name:%20${encodeURIComponent(n)}%0APhone:%20${encodeURIComponent(p)}%0ACourse:%20${encodeURIComponent(c)}`;
   window.open(url,"_blank");
 }
