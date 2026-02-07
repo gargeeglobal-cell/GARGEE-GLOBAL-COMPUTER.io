@@ -3,23 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Gargee Global Computer Institute | ISO Verified IT College</title>
 
-<meta name="description" content="ISO Verified Gargee Global Computer Institute, Affiliated with Fucture IT College. 1000+ Company Demand Based Software, Hardware, Networking, SAP, Cloud, MIS, CRM & IT Courses.">
+<meta name="description" content="ISO Verified Gargee Global Computer Institute, Affiliated with Future IT College. Industry demand based IT, Software, SAP, Cloud & Networking courses.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
-body{background:#05070f;color:#e5e7eb;line-height:1.7}
+
+body{
+  background:#f8fafc;
+  color:#1f2937;
+  line-height:1.7
+}
+
 a{text-decoration:none;color:inherit}
 
-/* IMAGE FIX (NO BREAK EVER) */
+/* IMAGE SAFE (NO BREAK) */
 .img-wrap{
   width:100%;
   aspect-ratio:16/9;
   overflow:hidden;
   border-radius:14px;
+  background:#e5e7eb;
 }
 .img-wrap img{
   width:100%;
@@ -30,106 +38,174 @@ a{text-decoration:none;color:inherit}
 
 /* HEADER */
 header{
-position:sticky;top:0;z-index:1000;
-background:linear-gradient(90deg,#020617,#0b1222);
-border-bottom:1px solid #1f2937
+  position:sticky;top:0;z-index:1000;
+  background:#ffffff;
+  border-bottom:1px solid #e5e7eb
 }
 .nav{
-max-width:1200px;margin:auto;
-display:flex;justify-content:space-between;align-items:center;
-padding:18px 20px
+  max-width:1200px;margin:auto;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:18px 20px
 }
-.nav h1{font-size:20px;color:#60a5fa;font-weight:700}
-.nav a{margin-left:18px;font-size:14px}
-.nav a:hover{color:#60a5fa}
+.nav h1{
+  font-size:20px;
+  color:#2563eb;
+  font-weight:700
+}
+.nav a{
+  margin-left:18px;
+  font-size:14px;
+  font-weight:500
+}
+.nav a:hover{color:#2563eb}
 
 /* HERO */
 .hero{
-background:url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+  background:url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
 }
 .hero-overlay{
-background:rgba(0,0,0,.85);
-padding:150px 20px;
-text-align:center
+  background:rgba(255,255,255,.92);
+  padding:140px 20px;
+  text-align:center
 }
-.hero h2{font-size:46px;color:#fff}
-.hero p{margin-top:12px;color:#d1d5db}
+.hero h2{
+  font-size:46px;
+  color:#111827
+}
+.hero p{
+  margin-top:12px;
+  color:#374151
+}
 
 /* BUTTONS */
 .btn{
-display:inline-block;margin:14px 8px;
-padding:14px 32px;border-radius:30px;
-font-weight:600;cursor:pointer
+  display:inline-block;
+  margin:14px 8px;
+  padding:14px 32px;
+  border-radius:30px;
+  font-weight:600;
+  cursor:pointer;
+  border:none
 }
-.btn-primary{background:#2563eb}
-.btn-whatsapp{background:#16a34a}
+.btn-primary{
+  background:#2563eb;
+  color:#fff
+}
+.btn-primary:hover{background:#1d4ed8}
 
-/* GENERAL */
+.btn-whatsapp{
+  background:#16a34a;
+  color:#fff
+}
+
+/* SECTIONS */
 section{padding:90px 20px}
 .container{max-width:1200px;margin:auto}
-.section-title{
-font-size:34px;color:#60a5fa;
-margin-bottom:35px;text-align:center
-}
-.card{
-background:#0b1222;
-border:1px solid #1f2937;
-padding:26px;border-radius:18px;
-transition:.3s
-}
-.card:hover{transform:translateY(-5px)}
-.grid{display:grid;gap:30px}
-.grid-3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
 
-/* COURSES */
-.course h4{color:#93c5fd;font-size:18px;margin-top:12px}
-.course p{font-size:14px;color:#d1d5db}
+.section-title{
+  font-size:34px;
+  color:#2563eb;
+  margin-bottom:35px;
+  text-align:center
+}
+
+.card{
+  background:#ffffff;
+  border:1px solid #e5e7eb;
+  padding:26px;
+  border-radius:18px;
+  transition:.3s
+}
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 25px rgba(0,0,0,.08)
+}
+
+.grid{
+  display:grid;
+  gap:30px
+}
+.grid-3{
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr))
+}
+
+/* COURSE */
+.course h4{
+  color:#1d4ed8;
+  font-size:18px;
+  margin-top:12px
+}
+.course p{
+  font-size:14px;
+  color:#374151
+}
 
 /* DIRECTOR */
 .director{
-display:grid;grid-template-columns:1fr 1fr;
-gap:40px;align-items:center
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center
 }
 
 /* FORM */
 form input,form select{
-width:100%;padding:13px;
-margin-bottom:14px;border-radius:8px;
-border:none;font-size:14px
+  width:100%;
+  padding:13px;
+  margin-bottom:14px;
+  border-radius:8px;
+  border:1px solid #d1d5db;
+  font-size:14px
 }
 
 /* MODAL */
 .modal{
-position:fixed;inset:0;
-background:rgba(0,0,0,.7);
-display:none;align-items:center;justify-content:center;
-z-index:2000
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.6);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:2000
 }
 .modal-content{
-background:#0b1222;
-padding:30px;border-radius:16px;
-width:90%;max-width:420px
+  background:#ffffff;
+  padding:30px;
+  border-radius:16px;
+  width:90%;
+  max-width:420px
 }
-.modal-content h3{margin-bottom:15px;color:#60a5fa}
+.modal-content h3{
+  margin-bottom:15px;
+  color:#2563eb
+}
 
 /* FOOTER */
 footer{
-background:#020617;
-text-align:center;padding:22px;
-font-size:14px;color:#9ca3af
+  background:#ffffff;
+  text-align:center;
+  padding:22px;
+  font-size:14px;
+  color:#6b7280;
+  border-top:1px solid #e5e7eb
 }
 
-/* WHATSAPP */
+/* WHATSAPP FLOAT */
 .whatsapp-float{
-position:fixed;bottom:20px;right:20px;
-background:#16a34a;color:#fff;
-padding:14px 22px;border-radius:50px;
-font-weight:600;z-index:999
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#16a34a;
+  color:#fff;
+  padding:14px 22px;
+  border-radius:50px;
+  font-weight:600;
+  z-index:999
 }
 
 @media(max-width:900px){
-.hero h2{font-size:34px}
-.director{grid-template-columns:1fr}
+  .hero h2{font-size:34px}
+  .director{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -142,7 +218,6 @@ font-weight:600;z-index:999
     <div>
       <a href="#courses">Courses</a>
       <a href="#placement">Placement</a>
-      <a href="#admission">Admission</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
@@ -151,8 +226,8 @@ font-weight:600;z-index:999
 <section class="hero">
   <div class="hero-overlay">
     <h2>Industry Ready IT & Software Education</h2>
-    <p>ISO Verified • Affiliated with Fucture IT College</p>
-    <p><em>1000+ Courses | Software • Hardware • Networking • SAP • Cloud</em></p>
+    <p>ISO Verified • Affiliated with Future IT College</p>
+    <p><em>1000+ Company Demand Based Courses</em></p>
     <button class="btn btn-primary" onclick="openForm()">Enroll Now</button>
     <a href="https://wa.me/919720136336" class="btn btn-whatsapp">WhatsApp</a>
   </div>
@@ -164,58 +239,30 @@ font-weight:600;z-index:999
 
     <div class="grid grid-3">
 
-      <!-- DATA OPERATOR & MIS (FIXED IMAGE) -->
       <div class="card course">
         <div class="img-wrap">
-          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80">
         </div>
         <h4>Data Operator & MIS Executive</h4>
-        <p>Advanced Excel, MIS Reports, Corporate Office Roles<br>Duration: 3 – 12 Months</p>
+        <p>Advanced Excel, MIS Reports<br>3 – 12 Months</p>
         <button class="btn btn-primary" onclick="openForm()">Enroll</button>
       </div>
 
       <div class="card course">
         <div class="img-wrap">
-          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80">
         </div>
-        <h4>Computer Basics to Advanced Diploma</h4>
-        <p>3 Months – 3 Years</p>
+        <h4>Computer Diploma</h4>
+        <p>Basic to Advanced<br>3 Months – 3 Years</p>
         <button class="btn btn-primary" onclick="openForm()">Enroll</button>
       </div>
 
       <div class="card course">
         <div class="img-wrap">
-          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80">
         </div>
         <h4>Hardware & Networking</h4>
         <p>CCNA, Server, IT Support</p>
-        <button class="btn btn-primary" onclick="openForm()">Enroll</button>
-      </div>
-
-      <div class="card course">
-        <div class="img-wrap">
-          <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80">
-        </div>
-        <h4>Cyber Security & Ethical Hacking</h4>
-        <p>6 Months – 2 Years</p>
-        <button class="btn btn-primary" onclick="openForm()">Enroll</button>
-      </div>
-
-      <div class="card course">
-        <div class="img-wrap">
-          <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1200&q=80">
-        </div>
-        <h4>SAP & Corporate ERP</h4>
-        <p>FICO, MM, HR, BASIS</p>
-        <button class="btn btn-primary" onclick="openForm()">Enroll</button>
-      </div>
-
-      <div class="card course">
-        <div class="img-wrap">
-          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80">
-        </div>
-        <h4>Cloud Computing</h4>
-        <p>AWS, Azure, Google Cloud</p>
         <button class="btn btn-primary" onclick="openForm()">Enroll</button>
       </div>
 
@@ -225,12 +272,9 @@ font-weight:600;z-index:999
 
 <section id="placement">
   <div class="container">
-    <h3 class="section-title">Placement & Career Support</h3>
+    <h3 class="section-title">Placement Support</h3>
     <div class="card">
-      <p>
-        Dedicated placement cell, live projects, interview preparation
-        and corporate exposure with IT companies & MNCs.
-      </p>
+      <p>Live projects, interview preparation, resume support and MNC exposure.</p>
     </div>
   </div>
 </section>
@@ -238,15 +282,11 @@ font-weight:600;z-index:999
 <section>
   <div class="container director">
     <div class="img-wrap">
-      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&q=80">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&q=80">
     </div>
     <div>
       <h3 class="section-title">Director’s Message</h3>
-      <p>
-        Our mission is to transform students into confident,
-        industry-ready professionals with real skills,
-        real exposure and real careers.
-      </p>
+      <p>We focus on real skills, real exposure and real careers.</p>
       <p><strong>Aditya Gupta</strong><br>Director</p>
     </div>
   </div>
@@ -254,24 +294,22 @@ font-weight:600;z-index:999
 
 <section id="contact">
   <div class="container">
-    <h3 class="section-title">Contact & Location</h3>
+    <h3 class="section-title">Contact</h3>
     <div class="card">
-      <p>📍 Vishal Mega Mart, Surajpur, Greater Noida, UP – 201306</p>
+      <p>📍 Vishal Mega Mart, Surajpur, Greater Noida</p>
       <p>📞 9720136336 / 8178599981</p>
       <p>✉️ gargeeglobal@gmail.com</p>
-      <iframe src="https://www.google.com/maps?q=Vishal+Mega+Mart+Surajpur+Greater+Noida&output=embed"
-      width="100%" height="300" style="border:0;margin-top:15px"></iframe>
     </div>
   </div>
 </section>
 
 <footer>
-© 2026 Gargee Global Computer Institute • ISO Verified • Affiliated with Fucture IT College
+© 2026 Gargee Global Computer Institute • All Rights Reserved
 </footer>
 
 <a href="https://wa.me/919720136336" class="whatsapp-float">WhatsApp</a>
 
-<!-- ADMISSION MODAL -->
+<!-- MODAL -->
 <div class="modal" id="formModal">
   <div class="modal-content">
     <h3>Admission Enquiry</h3>
@@ -281,10 +319,8 @@ font-weight:600;z-index:999
       <select id="course">
         <option>Course Interested</option>
         <option>Data Operator / MIS</option>
-        <option>Software / ERP</option>
-        <option>Hardware / Networking</option>
-        <option>SAP</option>
-        <option>Cloud Computing</option>
+        <option>Diploma Computer</option>
+        <option>Networking</option>
       </select>
       <button class="btn btn-primary" type="submit">Send Enquiry</button>
     </form>
@@ -295,14 +331,20 @@ font-weight:600;z-index:999
 function openForm(){
   document.getElementById("formModal").style.display="flex";
 }
-window.onclick=function(e){
-  if(e.target.classList.contains("modal")){
-    e.target.style.display="none";
-  }
-}
+
+window.addEventListener("click",function(e){
+  const modal=document.getElementById("formModal");
+  if(e.target===modal){modal.style.display="none";}
+});
+
 function sendWhatsApp(){
-  let n=name.value,p=phone.value,c=course.value;
-  let url=`https://wa.me/919720136336?text=Name:%20${n}%0APhone:%20${p}%0ACourse:%20${c}`;
+  const n=document.getElementById("name").value.trim();
+  const p=document.getElementById("phone").value.trim();
+  const c=document.getElementById("course").value;
+
+  if(!n||!p) return;
+
+  const url=`https://wa.me/919720136336?text=Name:%20${encodeURIComponent(n)}%0APhone:%20${encodeURIComponent(p)}%0ACourse:%20${encodeURIComponent(c)}`;
   window.open(url,"_blank");
 }
 </script>
