@@ -8,78 +8,92 @@
 <meta name="keywords" content="Computer Institute Surajpur, IT Training Greater Noida, Cyber Security, AI ML, Web Development, Corporate Training, BPO, KPO, Excel, SAP, Power BI">
 <meta name="author" content="Gargee Global Computer Institute">
 
+<!-- Preload images -->
+<link rel="preload" as="image" href="images/header-bg.jpg">
+<link rel="preload" as="image" href="images/course1.jpg">
+<link rel="preload" as="image" href="images/course2.jpg">
+<link rel="preload" as="image" href="images/course3.jpg">
+
 <style>
 :root{
-  --primary:#0a2db3;
-  --accent:#ffcc00;
-  --dark:#0b1220;
-  --light:#f4f6fb;
-  --section-light:#f8f9fb;
+  --primary:#0a2db3;       /* Blue headings/buttons */
+  --accent:#ffcc00;        /* Yellow CTA */
+  --dark:#333;             /* Dark text */
+  --light:#f8f9fb;         /* Page background */
+  --section-light:#ffffff; /* Card background */
   --font-heading:'Roboto', sans-serif;
   --font-body:'Arial', sans-serif;
 }
+
 *{scroll-behavior:smooth;margin:0;padding:0;box-sizing:border-box;}
-body{font-family:var(--font-body);background:var(--section-light);color:#111;}
+body{font-family:var(--font-body);background:var(--light);color:var(--dark);}
+a{text-decoration:none;}
+
 header{
-  background:url('https://images.unsplash.com/photo-1581091215369-3dc366c14744?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;
-  color:#fff;padding:120px 20px 80px;text-align:center;position:relative;
+  background:url('images/header-bg.jpg') center/cover no-repeat;
+  position:relative; text-align:center; padding:120px 20px 80px; color:#0b1220;
 }
 header::after{
-  content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(10,45,179,0.75);
+  content:"";
+  position:absolute; top:0; left:0; right:0; bottom:0;
+  background:rgba(255,255,255,0.5); /* Light overlay */
 }
-header h1, header p{position:relative;z-index:1;}
-header h1{ font-size:3rem; margin-bottom:10px; }
-header p{ font-size:1.3rem; }
+header h1, header p{position:relative; z-index:1;}
+header h1{ font-size:3rem; color:var(--primary); margin-bottom:10px; }
+header p{ font-size:1.3rem; color:#555; }
 
 nav{
-  position:sticky;top:0; background:#0a2db3; z-index:999;
-  display:flex; justify-content:center; padding:12px 0; flex-wrap:wrap;
+  position:sticky; top:0; background:#ffffff; box-shadow:0 2px 8px rgba(0,0,0,.1);
+  z-index:999; display:flex; justify-content:center; padding:12px 0; flex-wrap:wrap;
 }
 nav a{
-  color:#fff; text-decoration:none; padding:12px 20px; font-weight:bold;
-  transition:opacity .3s;
+  color:var(--primary); font-weight:bold; padding:12px 20px; transition:0.3s;
 }
-nav a:hover{opacity:.8;}
+nav a:hover{color:var(--accent);}
 
-section{ padding:60px 20px; }
-.container{ max-width:1200px; margin:auto; }
-h2{ color:var(--primary); margin-bottom:25px; text-align:center; font-family:var(--font-heading); }
-h3{ color:var(--dark); margin-bottom:15px; font-family:var(--font-heading); }
+section{padding:60px 20px;}
+.container{max-width:1200px;margin:auto;}
+h2{color:var(--primary); margin-bottom:25px; text-align:center; font-family:var(--font-heading);}
+h3{color:var(--dark); margin-bottom:15px; font-family:var(--font-heading);}
+p{line-height:1.6;}
+
 .card{
-  background:#fff; padding:25px; border-radius:12px;
-  box-shadow:0 10px 25px rgba(0,0,0,.08);
-  margin-bottom:30px; transition: transform .3s, box-shadow .3s;
+  background:var(--section-light); padding:25px; border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08); margin-bottom:30px;
+  transition: transform .3s, box-shadow .3s;
 }
 .card:hover{
-  transform: translateY(-5px);
-  box-shadow:0 15px 30px rgba(0,0,0,.12);
+  transform: translateY(-5px); box-shadow:0 15px 30px rgba(0,0,0,.12);
 }
+
 .btn{
   display:inline-block; padding:12px 25px; background:var(--primary);
   color:#fff; border:none; border-radius:6px; cursor:pointer;
-  text-decoration:none; transition:opacity .3s;
+  transition:opacity .3s;
 }
 .btn:hover{ opacity:.9; }
-input,select{ width:100%; padding:12px; margin:8px 0; border-radius:5px; border:1px solid #ccc; }
+
+input,select{
+  width:100%; padding:12px; margin:8px 0; border-radius:5px; border:1px solid #ccc;
+}
 
 footer{
-  background:var(--dark); color:#fff; text-align:center; padding:25px;
+  background:#f0f0f0; color:var(--dark); text-align:center; padding:25px;
   display:flex; flex-direction:column; gap:5px;
 }
-footer a{color:var(--accent);text-decoration:none;}
+footer a{color:var(--accent);}
 
 .whatsapp, .enroll{
-  position:fixed; right:18px; bottom:18px; background:#25D366;
-  color:#fff; width:55px; height:55px; border-radius:50%;
-  display:flex; align-items:center; justify-content:center;
-  font-size:26px; text-decoration:none; box-shadow:0 5px 15px rgba(0,0,0,.3);
-  z-index:999;
-  transition: transform .3s;
+  position:fixed; right:18px; bottom:18px; display:flex; align-items:center; justify-content:center;
+  font-weight:bold; text-decoration:none; z-index:999; transition: transform .3s;
+}
+.whatsapp{
+  background:#25D366; color:#fff; width:55px; height:55px; border-radius:50%; font-size:26px;
+  box-shadow:0 5px 15px rgba(0,0,0,.3);
 }
 .enroll{
-  background:var(--accent); color:#0b1220; font-size:16px; font-weight:bold;
-  width:auto; padding:0 15px; border-radius:30px; height:50px;
-  bottom:85px;
+  background:var(--accent); color:#0b1220; font-size:16px;
+  width:auto; padding:0 15px; border-radius:30px; height:50px; bottom:85px;
 }
 .enroll:hover, .whatsapp:hover{ transform: scale(1.1); }
 
@@ -87,25 +101,25 @@ footer a{color:var(--accent);text-decoration:none;}
   display:flex; flex-wrap:wrap; gap:15px; margin-top:15px; justify-content:center;
 }
 .trust-badges img, .placement-logos img{
-  height:50px; width:auto; border-radius:6px; transition: transform .3s;
+  height:50px; width:auto; border-radius:6px; transition: transform .3s; object-fit:contain;
 }
 .trust-badges img:hover, .placement-logos img:hover{ transform: scale(1.1); }
 
 .course-card{ margin-bottom:25px; }
-.course-card img{ width:100%; margin-top:15px; border-radius:12px; }
+.course-card img{ width:100%; height:200px; object-fit:cover; margin-top:15px; border-radius:12px; }
 
 #carousel{
-  display:flex; overflow-x:auto; scroll-behavior:smooth; gap:20px; padding:10px 0;
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(100px,1fr)); gap:20px;
 }
-#carousel::-webkit-scrollbar{ display:none; }
-#carousel img{ height:60px; border-radius:6px; flex-shrink:0; transition: transform .3s; }
-#carousel img:hover{ transform: scale(1.2); }
+#carousel img{ width:100%; height:60px; object-fit:contain; border-radius:6px; transition: transform .3s; }
+#carousel img:hover{ transform: scale(1.1); }
 
 @media(max-width:768px){
   header{ padding:80px 20px 40px; }
   nav{flex-direction:column;}
   nav a{padding:10px;}
   .trust-badges img, .placement-logos img, #carousel img{ height:40px; }
+  .course-card img{ height:150px; }
 }
 </style>
 </head>
@@ -129,7 +143,6 @@ footer a{color:var(--accent);text-decoration:none;}
 <p>Affiliated with Future IT College | Professional IT & Corporate Training</p>
 </header>
 
-<!-- About Section -->
 <section id="about">
 <div class="container">
 <h2>About Us</h2>
@@ -139,7 +152,6 @@ Gargee Global Computer Institute, located near Vishal Mega Mart, Surajpur, Great
 </div>
 </section>
 
-<!-- Director Message Section (~80 lines) -->
 <section id="director">
 <div class="container">
 <h2>Message from Director</h2>
@@ -151,97 +163,48 @@ Gargee Global Computer Institute, located near Vishal Mega Mart, Surajpur, Great
 <p>We constantly update our curriculum to match industry trends, emerging technologies, and market requirements.</p>
 <p>Our ISO & MSME certifications ensure a structured, quality-driven learning environment.</p>
 <p>We provide personalized mentorship, career guidance, and placement support to help students succeed in competitive roles.</p>
-<p>Our teaching methodology combines theoretical knowledge with practical exposure to build professional readiness.</p>
-<p>Students develop portfolios, project experience, and real-world problem-solving skills.</p>
-<p>We emphasize soft skills, corporate etiquette, and communication to prepare students for workplace success.</p>
-<p>Through collaboration with top companies, our students gain internships and placement opportunities.</p>
-<p>We foster innovation, creativity, leadership, and entrepreneurial skills in every learner.</p>
 <p>Hands-on labs, workshops, hackathons, and projects help students apply knowledge practically.</p>
-<p>Our faculty combines industry experience with academic expertise to ensure career-oriented training.</p>
-<p>Students gain confidence, adaptability, and professionalism through interactive learning sessions.</p>
-<p>We provide specialized training on corporate tools and company-specific technologies for employability.</p>
-<p>We encourage students to develop research, critical thinking, and problem-solving abilities.</p>
-<p>Our training builds resilience, teamwork, and project management skills for professional success.</p>
-<p>We ensure all students are job-ready, capable, and confident before graduation.</p>
-<p>We maintain a strong placement network with leading IT, corporate, and BPO/KPO companies.</p>
-<p>Our mission is to transform students into skilled professionals with practical, market-ready expertise.</p>
-<p>We cultivate lifelong learning, self-improvement, and continuous skill development.</p>
-<p>Our students are exposed to cutting-edge technologies like AI, ML, Cyber Security, Cloud Computing, RPA, and Automation.</p>
-<p>We provide exposure to real-life industry challenges, case studies, and corporate practices.</p>
-<p>Students learn to adapt to evolving technology trends and business requirements.</p>
-<p>We instill ethical practices, professional integrity, and social responsibility in all learners.</p>
-<p>We support career growth, entrepreneurial ventures, and innovation-driven projects.</p>
-<p>Our programs integrate technical skills, business understanding, and corporate strategies.</p>
-<p>We prepare students for entry-level to advanced roles across IT, corporate, and BPO/KPO industries.</p>
-<p>We help students create career pathways with certifications, portfolio projects, and internship experiences.</p>
-<p>Our alumni contribute to mentoring and sharing industry insights with current students.</p>
-<p>We measure success by student placements, skill acquisition, and career growth.</p>
-<p>Our training combines classroom learning, digital modules, and practical assignments.</p>
-<p>We provide access to modern labs, corporate software, and global-standard training tools.</p>
-<p>Our students gain analytical, problem-solving, and decision-making capabilities.</p>
-<p>We maintain excellence in teaching, training, and mentoring practices.</p>
 <p>We empower learners to be independent, innovative, and industry-ready professionals.</p>
-<p>Our mission includes bridging the gap between academics and practical industry requirements.</p>
-<p>We deliver education that is comprehensive, practical, and globally competitive.</p>
-<p>We nurture a culture of integrity, excellence, and innovation among students.</p>
-<p>Our training encourages adaptability, collaboration, and continuous learning.</p>
-<p>We provide exposure to corporate workflows, ERP systems, analytics, and project management tools.</p>
-<p>Students acquire skills in digital transformation, business intelligence, and data analytics.</p>
-<p>Our programs foster employability, career growth, and professional confidence.</p>
-<p>We guide students through career planning, interviews, and corporate onboarding processes.</p>
-<p>We ensure that every learner is industry-ready with hands-on experience and market-relevant knowledge.</p>
-<p>We aim to create confident, skilled, and innovative professionals who can contribute effectively to any organization.</p>
-<p>We take pride in shaping the next generation of IT, corporate, and BPO/KPO professionals.</p>
 </div>
 </div>
 </section>
 
-<!-- Mission & Vision Section (~50 lines) -->
 <section id="mission">
 <div class="container">
 <h2>Mission & Vision</h2>
 <div class="card">
 <h3>Our Mission</h3>
-<p>Deliver high-quality IT and corporate training covering Basic Computer, Advanced IT, AI/ML, Cyber Security, Web Development, Excel, Power BI, SAP, Automation, Digital Marketing, Accounts, BPO/KPO, and corporate tools. Foster practical skills, innovation, and professional confidence. Provide personalized mentoring, hands-on projects, and industry exposure. Prepare students for placements, internships, and career growth. Integrate soft skills, leadership, and teamwork. Promote ethical practices, problem-solving, and analytical thinking. Ensure exposure to real corporate workflows and market-demand tools. Enable lifelong learning, continuous skill development, and employability. Bridge academic knowledge with industry needs. Deliver measurable student outcomes. Maintain ISO & MSME quality standards. Encourage creativity, entrepreneurship, and innovation. Build confidence, adaptability, and professional competence. Develop portfolio projects and real-world expertise. Offer customized courses to meet diverse learner needs. Equip students for global corporate environments. Maintain excellence, ethics, and professionalism. Prepare students for competitive recruitment, career advancement, and real-world challenges.</p>
+<p>Deliver high-quality IT and corporate training covering Basic Computer, Advanced IT, AI/ML, Cyber Security, Web Development, Excel, Power BI, SAP, Automation, Digital Marketing, Accounts, BPO/KPO, and corporate tools. Foster practical skills, innovation, and professional confidence. Prepare students for placements, internships, and career growth. Integrate soft skills, leadership, and teamwork. Promote ethical practices, problem-solving, and analytical thinking. Ensure exposure to real corporate workflows and market-demand tools. Enable lifelong learning, continuous skill development, and employability.</p>
 
 <h3>Our Vision</h3>
-<p>Become a leading center of excellence in IT and corporate education. Empower learners to excel in technology, business, and professional domains. Cultivate skilled, confident, and innovative professionals. Maintain strong industry partnerships for placement and upskilling. Deliver comprehensive training from entry-level to advanced courses. Nurture entrepreneurship, leadership, and creativity. Inspire lifelong learning and continuous skill development. Provide exposure to emerging technologies and corporate tools. Create a culture of integrity, professionalism, and innovation. Equip students to meet market demands and corporate expectations. Enable learners to thrive in global professional environments. Foster community impact through education. Continuously update curriculum to align with industry trends. Promote inclusive and accessible education. Strengthen the institute’s brand as a trusted educational partner. Encourage research, projects, and corporate simulations. Support holistic student growth. Facilitate hands-on learning and practical skill application. Develop a network of skilled professionals ready for industry roles. Uphold academic and ethical excellence. Drive innovation in teaching methodologies. Offer customized courses for diverse learners. Prepare students for competitive recruitment. Promote collaboration, teamwork, and leadership. Maintain high-quality infrastructure and resources. Ensure measurable student outcomes. Enable career and personal growth. Align training with future industry opportunities. Build confident and employable professionals.</p>
+<p>Become a leading center of excellence in IT and corporate education. Empower learners to excel in technology, business, and professional domains. Cultivate skilled, confident, and innovative professionals. Maintain strong industry partnerships for placement and upskilling. Deliver comprehensive training from entry-level to advanced courses. Inspire lifelong learning and continuous skill development. Provide exposure to emerging technologies and corporate tools. Create a culture of integrity, professionalism, and innovation. Equip students to meet market demands and corporate expectations.</p>
 </div>
 </div>
 </section>
 
-<!-- Courses Section -->
 <section id="courses">
 <div class="container">
 <h2>Our Courses</h2>
-
-<!-- Example: 50 course cards -->
-<div class="course-card card"><h3>1. Basic Computer</h3><p>Computer fundamentals, MS Office, typing, internet basics.</p><img src="https://images.unsplash.com/photo-1581092331053-34a56d8fcbf7?auto=format&fit=crop&w=800&q=80" alt="Basic Computer"></div>
-<div class="course-card card"><h3>2. Advanced IT</h3><p>Programming, networking, web development, database management.</p><img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?auto=format&fit=crop&w=800&q=80" alt="Advanced IT"></div>
-<div class="course-card card"><h3>3. Cyber Security</h3><p>Ethical hacking, penetration testing, network security.</p><img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=80" alt="Cyber Security"></div>
-<!-- Continue for courses 4-50 -->
-<div class="course-card card"><h3>50. 1000+ Courses Available</h3><p>We offer a wide range of 1000+ courses across IT, corporate, finance, management, creative, and technical domains.</p><img src="https://images.unsplash.com/photo-1581093588401-35e3e568c4a3?auto=format&fit=crop&w=800&q=80" alt="1000+ Courses"></div>
+<div class="course-card card"><h3>1. Basic Computer</h3><p>Computer fundamentals, MS Office, typing, internet basics.</p><img src="images/course1.jpg" alt="Basic Computer"></div>
+<div class="course-card card"><h3>2. Advanced IT</h3><p>Programming, networking, web development, database management.</p><img src="images/course2.jpg" alt="Advanced IT"></div>
+<div class="course-card card"><h3>3. Cyber Security</h3><p>Ethical hacking, penetration testing, network security.</p><img src="images/course3.jpg" alt="Cyber Security"></div>
+<div class="course-card card"><h3>50. 1000+ Courses Available</h3><p>We offer a wide range of 1000+ courses across IT, corporate, finance, management, creative, and technical domains.</p><img src="images/course50.jpg" alt="1000+ Courses"></div>
 </div>
 </section>
 
-<!-- Placement Section -->
 <section id="placement">
 <div class="container">
 <h2>Our Placement Partners</h2>
-<div class="card">
-<p>Our students are placed in top companies across Noida, Delhi & Gurgaon:</p>
-<div id="carousel">
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft">
-<img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Infosys_logo.svg" alt="Infosys">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Tata_Consultancy_Services_Logo.svg" alt="TCS">
-</div>
+<div class="card" id="carousel">
+<img src="images/microsoft.png" alt="Microsoft">
+<img src="images/google.png" alt="Google">
+<img src="images/amazon.png" alt="Amazon">
+<img src="images/infosys.png" alt="Infosys">
+<img src="images/tcs.png" alt="TCS">
 </div>
 </div>
 </section>
 
-<!-- Franchise Section -->
 <section id="franchise">
 <div class="container">
 <h2>Business & Franchise Opportunities</h2>
@@ -252,7 +215,6 @@ Gargee Global Computer Institute, located near Vishal Mega Mart, Surajpur, Great
 </div>
 </section>
 
-<!-- Contact / Enquiry Section -->
 <section id="contact">
 <div class="container">
 <h2>Admission Enquiry</h2>
@@ -278,7 +240,6 @@ Gargee Global Computer Institute, located near Vishal Mega Mart, Surajpur, Great
 </div>
 </section>
 
-<!-- Footer -->
 <footer>
 <p>Address: Near Vishal Mega Mart, Surajpur, Greater Noida, Uttar Pradesh 201306</p>
 <p>Mobile: 8178599981 / 9720136336 | Email: <a href="mailto:gargeeglobal@gmail.com">gargeeglobal@gmail.com</a></p>
