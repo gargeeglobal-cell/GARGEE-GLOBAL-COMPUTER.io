@@ -5,34 +5,50 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gargee Global Computer Institute | ISO Verified IT College</title>
 <meta name="description" content="Gargee Global Computer Institute - Industry-ready IT & Software courses with mission & vision to empower students. Enroll now!">
+<meta name="keywords" content="Gargee Global Computer Institute, IT Courses, Computer Institute, MIS, Networking, SAP, Cloud Computing, Placement, Greater Noida">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
-body{background:#f9fafb;color:#111;font-size:16px;line-height:1.7}
-a{color:inherit;text-decoration:none}
-header{background:#fff;position:sticky;top:0;z-index:1000;border-bottom:1px solid #ddd}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f9fafb;color:#111;font-size:16px;line-height:1.7;scroll-behavior:smooth}
+a{text-decoration:none;color:inherit}
+header{background:#fff;position:sticky;top:0;z-index:1000;border-bottom:1px solid #ddd;transition:0.3s}
 .nav{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:15px}
 .nav h1{color:#2563eb;font-weight:700;font-size:22px}
 .nav-links{display:flex;gap:18px}
-.nav-links a{font-size:15px;cursor:pointer}
+.nav-links a{font-size:15px;cursor:pointer;transition:0.3s}
+.nav-links a:hover{color:#2563eb}
+.menu-toggle{display:none;font-size:24px;cursor:pointer}
 .hero{position:relative;height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden}
 .hero video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .hero .overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5)}
-.hero-content{position:relative;z-index:1;max-width:800px}
+.hero-content{position:relative;z-index:1;max-width:800px;padding:0 20px}
 .hero-content h2{font-size:48px;margin-bottom:15px}
 .hero-content p{font-size:18px;margin-bottom:12px}
 .btn{padding:14px 30px;border-radius:30px;font-weight:600;cursor:pointer;display:inline-block;transition:0.3s}
 .btn-primary{background:#2563eb;color:#fff;margin-right:10px}
 .btn-primary:hover{opacity:0.9}
+.btn-success{background:#16a34a;color:#fff}
 section{padding:80px 20px}
 .container{max-width:1200px;margin:auto}
 .section-title{font-size:32px;color:#2563eb;text-align:center;margin-bottom:30px}
 .grid-3{display:grid;gap:25px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.course-card{background:#fff;border:1px solid #ddd;padding:18px;border-radius:12px;transition:0.3s}
+.course-card{background:#fff;border:1px solid #ddd;padding:18px;border-radius:12px;transition:0.3s;text-align:center}
 .course-card:hover{transform:translateY(-5px);box-shadow:0 8px 20px rgba(0,0,0,0.1)}
-.course-card img{border-radius:8px}
+.course-card img{border-radius:8px;width:100%;height:180px;object-fit:cover;margin-bottom:12px}
 footer{background:#f3f4f6;text-align:center;padding:18px;font-size:14px;color:#555}
 #contact iframe{border:0;border-radius:8px;display:block;width:100%;height:280px;margin-top:15px}
+
+/* Mobile Styles */
+@media(max-width:768px){
+  .hero-content h2{font-size:28px}
+  .hero-content p{font-size:14px}
+  .nav-links{display:none;flex-direction:column;position:absolute;top:60px;right:20px;background:#fff;padding:15px;border:1px solid #ddd;border-radius:8px;width:200px;box-shadow:0 4px 12px rgba(0,0,0,0.1)}
+  .nav-links.active{display:flex}
+  .menu-toggle{display:block}
+}
 </style>
 </head>
 <body>
@@ -40,7 +56,8 @@ footer{background:#f3f4f6;text-align:center;padding:18px;font-size:14px;color:#5
 <header>
   <div class="nav">
     <h1>GARGEE GLOBAL COMPUTER INSTITUTE</h1>
-    <div class="nav-links">
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <div class="nav-links" id="nav-links">
       <a href="#courses">Courses</a>
       <a href="#placement">Placement</a>
       <a href="#about">About</a>
@@ -50,8 +67,9 @@ footer{background:#f3f4f6;text-align:center;padding:18px;font-size:14px;color:#5
 </header>
 
 <section class="hero">
-  <video autoplay muted loop playsinline>
-    <source src="https://mixkit.co/free-stock-video/computer/slow-motion-laptop-working.mp4" type="video/mp4">
+  <video autoplay muted loop playsinline poster="https://i.ibb.co/FnTtD49/hero-fallback.jpg">
+    <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+    Your browser does not support the video tag.
   </video>
   <div class="overlay"></div>
   <div class="hero-content">
@@ -59,7 +77,7 @@ footer{background:#f3f4f6;text-align:center;padding:18px;font-size:14px;color:#5
     <p>ISO Verified • Practical Training • Placement Support</p>
     <p>Real Skills for Real Careers in IT, Cloud, SAP, Networking & More</p>
     <a href="#contact" class="btn btn-primary">Get Admission Info</a>
-    <a href="https://wa.me/919720136336" class="btn btn-primary" style="background:#16a34a">WhatsApp</a>
+    <a href="https://wa.me/919720136336" class="btn btn-success">WhatsApp</a>
   </div>
 </section>
 
@@ -68,17 +86,17 @@ footer{background:#f3f4f6;text-align:center;padding:18px;font-size:14px;color:#5
     <h3 class="section-title">Industry Demand Based Courses</h3>
     <div class="grid-3">
       <div class="course-card">
-        <img src="https://pixabay.com/get/g1a2f83fe4017b3aae2663fbfcf2df22f1c482d95.jpg" alt="MIS Course" loading="lazy">
+        <img src="https://i.ibb.co/3v2xVJ2/mis-course.jpg" alt="MIS Course" loading="lazy">
         <h4>Data Operator & MIS Executive</h4>
         <p>Advanced Excel, MIS Reports, Corporate Roles | 3–12 months</p>
       </div>
       <div class="course-card">
-        <img src="https://pixabay.com/get/g7a2e157614cc5825.jpg" alt="Computer Course" loading="lazy">
+        <img src="https://i.ibb.co/5xwJYw2/computer-course.jpg" alt="Computer Course" loading="lazy">
         <h4>Computer Basics to Advanced Diploma</h4>
         <p>Full Computer Skill Set | 3 months – 3 years</p>
       </div>
       <div class="course-card">
-        <img src="https://pixabay.com/get/g9b0c93f.jpg" alt="Networking Course" loading="lazy">
+        <img src="https://i.ibb.co/tC4Rcvp/networking-course.jpg" alt="Networking Course" loading="lazy">
         <h4>Hardware & Networking</h4>
         <p>CCNA, Server, IT Support | Practical + Live Labs</p>
       </div>
@@ -89,7 +107,15 @@ footer{background:#f3f4f6;text-align:center;padding:18px;font-size:14px;color:#5
 <section id="placement">
   <div class="container">
     <h3 class="section-title">Placement Support & Success</h3>
-    <p style="text-align:center;">We provide guidance, interview preparation, resume support, live project experience and connections with top IT companies.</p>
+    <p style="text-align:center;">We provide guidance, interview preparation, resume support, live project experience, and connections with top IT companies.</p>
+    <div class="grid-3" style="margin-top:30px;text-align:center;">
+      <div class="course-card">TCS</div>
+      <div class="course-card">Infosys</div>
+      <div class="course-card">HCL</div>
+      <div class="course-card">Tech Mahindra</div>
+      <div class="course-card">Wipro</div>
+      <div class="course-card">Capgemini</div>
+    </div>
   </div>
 </section>
 
@@ -97,8 +123,7 @@ footer{background:#f3f4f6;text-align:center;padding:18px;font-size:14px;color:#5
   <div class="container">
     <h3 class="section-title">About Our Institute</h3>
     <p><strong>Director’s Message:</strong></p>
-    <p>At Gargee Global Computer Institute, our mission is to empower every student with job‑ready skills that bridge the gap between education and industry expectations. We believe in practical training, hands‑on experience, and fostering a mindset of innovation and resilience. Our students aren’t just learners — they become confident professionals prepared for the future of work. We prioritize integrity, quality, and continuous improvement so that every learner achieves success.</p>
-    <p>We train students to master essential technologies including software development, cloud computing, networking, cyber security, SAP systems and much more. Our trainers are industry experts dedicated to nurturing talent and building careers. With real projects, expert mentoring and personalized support, we ensure every student unlocked their full potential. Join us to transform your aspirations into achievement.</p>
+    <p>At Gargee Global Computer Institute, our mission is to empower every student with job‑ready skills that bridge the gap between education and industry expectations. We focus on practical training, hands-on projects, and fostering innovation. Our students become confident professionals prepared for the future of work.</p>
     <p><strong>Mission:</strong> To provide world‑class, affordable IT education that empowers individuals with the skills and confidence required to excel in the digital economy.</p>
     <p><strong>Vision:</strong> To be the leading institute recognized for transforming learners into skilled professionals, driving innovation, employment, and growth in the tech industry.</p>
   </div>
@@ -108,13 +133,20 @@ footer{background:#f3f4f6;text-align:center;padding:18px;font-size:14px;color:#5
   <div class="container">
     <h3 class="section-title">Contact & Location</h3>
     <p>📍 Vishal Mega Mart, Surajpur, Greater Noida, UP – 201306</p>
-    <p>📞 9720136336 / 8178599981</p>
-    <p>✉️ gargeeglobal@gmail.com</p>
+    <p>📞 <a href="tel:9720136336">9720136336</a> / <a href="tel:8178599981">8178599981</a></p>
+    <p>✉️ <a href="mailto:gargeeglobal@gmail.com">gargeeglobal@gmail.com</a></p>
     <iframe src="https://www.google.com/maps?q=Vishal+Mega+Mart+Surajpur+Greater+Noida&output=embed"></iframe>
   </div>
 </section>
 
 <footer>© 2026 Gargee Global Computer Institute • ISO Verified • All Rights Reserved</footer>
+
+<script>
+// Mobile menu toggle
+const toggle = document.getElementById('menu-toggle');
+const nav = document.getElementById('nav-links');
+toggle.addEventListener('click', ()=>{nav.classList.toggle('active');});
+</script>
 
 </body>
 </html>
