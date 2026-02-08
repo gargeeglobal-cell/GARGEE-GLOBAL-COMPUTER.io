@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Gargee Global Computer Institute | ISO Verified IT College</title>
 <meta name="description" content="ISO Verified Gargee Global Computer Institute, Affiliated with Future IT College. Industry demand based IT, Software, SAP, Cloud & Networking courses.">
 
@@ -11,202 +10,81 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
-
-body{
-  background:#f8fafc;
-  color:#1f2937;
-  line-height:1.7
-}
-
+body{background:#f8fafc;color:#1f2937;line-height:1.7}
 a{text-decoration:none;color:inherit}
 
 /* IMAGE SAFE (NO BREAK) */
-.img-wrap{
-  width:100%;
-  aspect-ratio:16/9;
-  overflow:hidden;
-  border-radius:14px;
-  background:#e5e7eb;
-}
-.img-wrap img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
+.img-wrap{width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:14px;background:#e5e7eb;}
+.img-wrap img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s ease;}
+.img-wrap img:hover{transform:scale(1.05);}
 
 /* HEADER */
-header{
-  position:sticky;top:0;z-index:1000;
-  background:#ffffff;
-  border-bottom:1px solid #e5e7eb
-}
-.nav{
-  max-width:1200px;margin:auto;
-  display:flex;justify-content:space-between;align-items:center;
-  padding:18px 20px
-}
-.nav h1{
-  font-size:20px;
-  color:#2563eb;
-  font-weight:700
-}
-.nav a{
-  margin-left:18px;
-  font-size:14px;
-  font-weight:500
-}
+header{position:sticky;top:0;z-index:1000;background:#ffffff;border-bottom:1px solid #e5e7eb;transition:0.3s;}
+header.scrolled{box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+.nav{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:18px 20px}
+.nav h1{font-size:20px;color:#2563eb;font-weight:700}
+.nav a{margin-left:18px;font-size:14px;font-weight:500}
 .nav a:hover{color:#1d4ed8}
 
 /* HERO */
-.hero{
-  background:url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
-}
-.hero-overlay{
-  background:rgba(255,255,255,.92);
-  padding:120px 20px;
-  text-align:center
-}
-.hero h2{
-  font-size:46px;
-  color:#111827
-}
-.hero p{
-  margin-top:12px;
-  color:#374151
-}
+.hero{background:url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;}
+.hero-overlay{background:rgba(255,255,255,.92);padding:120px 20px;text-align:center;animation:fadeIn 1s ease-in;}
+.hero h2{font-size:46px;color:#111827}
+.hero p{margin-top:12px;color:#374151}
 
 /* BUTTONS */
-.btn{
-  display:inline-block;
-  margin:14px 8px;
-  padding:14px 32px;
-  border-radius:30px;
-  font-weight:600;
-  cursor:pointer;
-  border:none
-}
-.btn-primary{
-  background:#2563eb;
-  color:#fff
-}
-.btn-primary:hover{background:#1d4ed8}
-
-.btn-whatsapp{
-  background:#16a34a;
-  color:#fff
-}
-.btn-whatsapp:hover{background:#15803d}
+.btn{display:inline-block;margin:14px 8px;padding:14px 32px;border-radius:30px;font-weight:600;cursor:pointer;border:none;transition:0.3s;}
+.btn-primary{background:#2563eb;color:#fff}
+.btn-primary:hover{background:#1d4ed8;transform:translateY(-2px);}
+.btn-whatsapp{background:#16a34a;color:#fff}
+.btn-whatsapp:hover{background:#15803d;transform:translateY(-2px);}
 
 /* SECTIONS */
 section{padding:80px 20px}
 .container{max-width:1200px;margin:auto}
+.section-title{font-size:34px;color:#2563eb;margin-bottom:35px;text-align:center}
 
-.section-title{
-  font-size:34px;
-  color:#2563eb;
-  margin-bottom:35px;
-  text-align:center
-}
+/* CARDS */
+.card{background:#ffffff;border:1px solid #e5e7eb;padding:26px;border-radius:18px;transition:.3s;}
+.card:hover{transform:translateY(-5px);box-shadow:0 10px 25px rgba(0,0,0,.08);}
 
-.card{
-  background:#ffffff;
-  border:1px solid #e5e7eb;
-  padding:26px;
-  border-radius:18px;
-  transition:.3s
-}
-.card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 10px 25px rgba(0,0,0,.08)
-}
-
-.grid{
-  display:grid;
-  gap:30px
-}
-.grid-3{
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr))
-}
+/* GRID */
+.grid{display:grid;gap:30px}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
 
 /* COURSE */
-.course h4{
-  color:#1d4ed8;
-  font-size:18px;
-  margin-top:12px
-}
-.course p{
-  font-size:14px;
-  color:#374151
-}
+.course h4{color:#1d4ed8;font-size:18px;margin-top:12px}
+.course p{font-size:14px;color:#374151}
 
 /* DIRECTOR */
-.director{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px;
-  align-items:center
-}
+.director{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
 
 /* FORM */
-form input,form select{
-  width:100%;
-  padding:13px;
-  margin-bottom:14px;
-  border-radius:8px;
-  border:1px solid #d1d5db;
-  font-size:14px
-}
+form input,form select{width:100%;padding:13px;margin-bottom:14px;border-radius:8px;border:1px solid #d1d5db;font-size:14px}
 
 /* MODAL */
-.modal{
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.6);
-  display:none;
-  align-items:center;
-  justify-content:center;
-  z-index:2000
-}
-.modal-content{
-  background:#ffffff;
-  padding:30px;
-  border-radius:16px;
-  width:90%;
-  max-width:420px
-}
-.modal-content h3{
-  margin-bottom:15px;
-  color:#2563eb
-}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:2000;transition:opacity 0.3s;}
+.modal-content{background:#ffffff;padding:30px;border-radius:16px;width:90%;max-width:420px}
+.modal-content h3{margin-bottom:15px;color:#2563eb}
 
 /* FOOTER */
-footer{
-  background:#ffffff;
-  text-align:center;
-  padding:22px;
-  font-size:14px;
-  color:#6b7280;
-  border-top:1px solid #e5e7eb
-}
+footer{background:#ffffff;text-align:center;padding:22px;font-size:14px;color:#6b7280;border-top:1px solid #e5e7eb}
 
 /* WHATSAPP FLOAT */
-.whatsapp-float{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#16a34a;
-  color:#fff;
-  padding:14px 22px;
-  border-radius:50px;
-  font-weight:600;
-  z-index:999
-}
+.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#16a34a;color:#fff;padding:14px 22px;border-radius:50px;font-weight:600;z-index:999}
+
+/* PLACEMENT LIST */
+ul.placement-list{margin-top:15px;padding-left:20px;list-style:none;line-height:1.6;}
+ul.placement-list li{margin-bottom:10px;position:relative;padding-left:28px;}
+ul.placement-list li::before{content:"✅";position:absolute;left:0;top:0;}
 
 @media(max-width:900px){
   .hero h2{font-size:34px}
   .director{grid-template-columns:1fr}
 }
+
+/* ANIMATIONS */
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
 </style>
 </head>
 
@@ -300,7 +178,19 @@ footer{
   <div class="container">
     <h3 class="section-title">Placement Support</h3>
     <div class="card">
-      <p>Live projects, interview preparation, resume support and exposure with top IT companies and MNCs, ensuring students confidently step into professional roles after training.</p>
+      <p>
+        At <strong>Gargee Global Computer Institute</strong>, we provide <strong>comprehensive placement assistance</strong> to help students confidently step into professional roles. Our program ensures each student develops practical skills and corporate readiness through structured guidance and industry exposure.
+      </p>
+      <ul class="placement-list">
+        <li><strong>Resume Building:</strong> Craft professional CVs tailored for IT & corporate roles</li>
+        <li><strong>Interview Preparation:</strong> Mock interviews, HR & technical rounds training</li>
+        <li><strong>Live Project Exposure:</strong> Hands-on experience with real-world corporate projects</li>
+        <li><strong>Corporate Networking:</strong> Direct connections with IT companies, MNCs & startups</li>
+        <li><strong>Career Guidance:</strong> Personalized mentorship to choose the right career path</li>
+      </ul>
+      <p style="margin-top:12px;">
+        Our goal is to equip every student with the confidence, knowledge, and industry-ready skills to excel in competitive job markets, ensuring a smooth transition from learning to professional success.
+      </p>
     </div>
   </div>
 </section>
@@ -368,9 +258,15 @@ function sendWhatsApp(){
   const p=document.getElementById("phone").value.trim();
   const c=document.getElementById("course").value;
   if(!n||!p) return;
+  if(!/^\d{10}$/.test(p)){ alert("Enter valid 10-digit mobile number"); return; }
   const url=`https://wa.me/919720136336?text=Name:%20${encodeURIComponent(n)}%0APhone:%20${encodeURIComponent(p)}%0ACourse:%20${encodeURIComponent(c)}`;
   window.open(url,"_blank");
 }
+
+// Header scroll shadow
+window.addEventListener("scroll",()=>{
+  document.querySelector("header").classList.toggle("scrolled", window.scrollY>50);
+});
 </script>
 
 </body>
