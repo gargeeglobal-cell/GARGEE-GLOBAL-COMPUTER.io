@@ -41,15 +41,6 @@ a{text-decoration:none;color:inherit}
   margin-bottom:12px;
 }
 
-/* BADGES HOVER EFFECT */
-.badge {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.badge:hover {
-  transform: translateY(-8px) scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-}
-
 header{
   position:sticky;
   top:0;
@@ -171,16 +162,16 @@ footer{
     </p>
 
     <div class="grid grid-3" style="justify-items:center;gap:30px;align-items:center;">
-      <div class="img-wrap badge">
+      <div class="img-wrap" style="height:100px;width:150px;">
         <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/ISO_9001_logo.svg" alt="ISO Certified" loading="lazy">
       </div>
-      <div class="img-wrap badge">
+      <div class="img-wrap" style="height:100px;width:150px;">
         <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Emblem_of_India.svg" alt="Government Recognized" loading="lazy">
       </div>
-      <div class="img-wrap badge">
+      <div class="img-wrap" style="height:100px;width:150px;">
         <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Future_IT_College_Logo.png" alt="Future IT College Affiliated" loading="lazy">
       </div>
-      <div class="img-wrap badge">
+      <div class="img-wrap" style="height:100px;width:150px;">
         <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/College_Icon.png" alt="120+ Partner Colleges" loading="lazy">
       </div>
     </div>
@@ -199,8 +190,148 @@ footer{
     </p>
 
     <div class="grid grid-3">
-      <!-- Your existing course cards go here (unchanged) -->
-      <!-- ... -->
+
+      <!-- COURSES LIST -->
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=80" alt="Computer Fundamentals" loading="lazy">
+        </div>
+        <h4>Computer Fundamentals & Digital Literacy</h4>
+        <p>MS Windows, Internet, Typing, File Management</p>
+        <p><strong>Duration:</strong> 3 Months</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Office Automation" loading="lazy">
+        </div>
+        <h4>Office Automation Professional</h4>
+        <p>MS Word, Excel, PowerPoint, Outlook</p>
+        <p><strong>Duration:</strong> 3–6 Months</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Software Programming" loading="lazy">
+        </div>
+        <h4>Software Programming Career Track</h4>
+        <p>C, C++, Java, Python, Logic Building</p>
+        <p><strong>Duration:</strong> 6–18 Months</p>
+        <a class="btn btn-primary" href="#contact">Join Now</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=80" alt="Advanced Java & Python" loading="lazy">
+        </div>
+        <h4>Advanced Java & Python Developer</h4>
+        <p>Core + Advanced + Live Projects</p>
+        <p><strong>Duration:</strong> 1–2 Years</p>
+        <a class="btn btn-primary" href="#contact">Career Start</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Full Stack Web Development" loading="lazy">
+        </div>
+        <h4>Full Stack Web Development</h4>
+        <p>HTML, CSS, JS, React, Node, Database</p>
+        <p><strong>Duration:</strong> 6–12 Months</p>
+        <a class="btn btn-primary" href="#contact">Apply</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=800&q=80" alt="Mobile App Development" loading="lazy">
+        </div>
+        <h4>Mobile App Development</h4>
+        <p>Android, Flutter, React Native</p>
+        <p><strong>Duration:</strong> 6–18 Months</p>
+        <a class="btn btn-primary" href="#contact">Apply</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Cyber Security" loading="lazy">
+        </div>
+        <h4>Cyber Security & Ethical Hacking</h4>
+        <p>Security, Pen-Testing, SOC, CEH Track</p>
+        <p><strong>Duration:</strong> 6 Months – 3 Years</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80" alt="Networking & Cloud" loading="lazy">
+        </div>
+        <h4>Networking & Cloud Computing</h4>
+        <p>CCNA, CCNP, AWS, Azure</p>
+        <p><strong>Duration:</strong> 6–24 Months</p>
+        <a class="btn btn-primary" href="#contact">Join</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Data Analytics & Power BI" loading="lazy">
+        </div>
+        <h4>Data Analytics & Power BI</h4>
+        <p>Excel, SQL, Power BI, Dashboard</p>
+        <p><strong>Duration:</strong> 6–12 Months</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=800&q=80" alt="Graphic & UI/UX" loading="lazy">
+        </div>
+        <h4>Graphic & UI/UX Designing</h4>
+        <p>Photoshop, Illustrator, Figma</p>
+        <p><strong>Duration:</strong> 6–12 Months</p>
+        <a class="btn btn-primary" href="#contact">Join</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Digital Marketing" loading="lazy">
+        </div>
+        <h4>Digital Marketing Professional</h4>
+        <p>SEO, Google Ads, Social Media</p>
+        <p><strong>Duration:</strong> 3–9 Months</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80" alt="SAP Functional & Technical" loading="lazy">
+        </div>
+        <h4>SAP Functional & Technical</h4>
+        <p>SAP FICO, MM, HR, ABAP</p>
+        <p><strong>Duration:</strong> 6–24 Months</p>
+        <a class="btn btn-primary" href="#contact">Apply</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80" alt="Corporate IT & MNC Training" loading="lazy">
+        </div>
+        <h4>Corporate IT & MNC Training</h4>
+        <p>Live Projects, Interview, Placement</p>
+        <p><strong>Duration:</strong> 6–36 Months</p>
+        <a class="btn btn-primary" href="#contact">Join</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=800&q=80" alt="BPO / KPO / ITES Training" loading="lazy">
+        </div>
+        <h4>BPO / KPO / ITES Training</h4>
+        <p>Communication, Process, CRM Tools</p>
+        <p><strong>Duration:</strong> 3–6 Months</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
+
     </div>
 
     <p style="text-align:center;margin-top:40px;font-size:18px;font-weight:700;color:#2563eb">
