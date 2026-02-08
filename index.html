@@ -99,7 +99,7 @@ section{padding:80px 20px}
   border-radius:18px;
 }
 
-/* PLACEMENT LIST */
+/* LIST */
 ul{list-style:none;margin-top:16px}
 ul li{margin-bottom:10px}
 ul li::before{content:"✔ ";color:#16a34a;font-weight:700}
@@ -139,6 +139,7 @@ footer{
   <div class="nav">
     <h1>GARGEE GLOBAL COMPUTER INSTITUTE</h1>
     <div>
+      <a href="#director">Director</a>
       <a href="#placement">Placement</a>
       <a href="#partners">Partners</a>
       <a href="#contact">Contact</a>
@@ -155,22 +156,74 @@ footer{
   </div>
 </section>
 
-<!-- PLACEMENT MESSAGE -->
+<!-- DIRECTOR MESSAGE -->
+<section id="director">
+  <div class="container">
+    <h3 class="section-title">Director’s Message</h3>
+
+    <div class="card">
+      <p>
+        At <strong>Gargee Global Computer Institute</strong>, our core belief is that quality education should directly
+        translate into real career opportunities. In today’s fast-changing IT and corporate environment, theoretical
+        knowledge alone is not enough. Students require practical exposure, industry discipline, and professional
+        guidance to succeed. Our institute has been structured to bridge the exact gap between academic learning
+        and real company requirements.
+        <br><br>
+        We focus on skill-based training, real-time project work, and professional grooming so that every student
+        gains the confidence to perform in interviews and workplace environments. Our goal is not to enroll students
+        in bulk, but to mentor them individually and help them build long-term, stable careers. I personally ensure
+        that our courses, faculty standards, and training methodologies remain aligned with current industry needs.
+        <br><br>
+        I warmly welcome students, parents, and corporate visitors to experience our training culture and see how
+        Gargee Global Computer Institute is shaping the future of skilled professionals.
+      </p>
+
+      <p style="margin-top:20px;font-weight:600;color:#2563eb">
+        — Aditya Gupta<br>
+        Director, Gargee Global Computer Institute
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION & VISION -->
+<section>
+  <div class="container">
+    <h3 class="section-title">Our Mission & Vision</h3>
+
+    <div class="grid grid-3">
+      <div class="card">
+        <h4 style="color:#2563eb;margin-bottom:10px">Our Mission</h4>
+        <p>
+          Our mission is to deliver industry-relevant, practical, and career-focused education that empowers
+          students with real-world skills. We aim to create confident professionals by combining technical training,
+          corporate discipline, ethical values, and continuous mentorship, ensuring students are fully prepared
+          for employment and long-term career growth.
+        </p>
+      </div>
+
+      <div class="card">
+        <h4 style="color:#2563eb;margin-bottom:10px">Our Vision</h4>
+        <p>
+          Our vision is to become a trusted and recognized skill-development institute that produces job-ready
+          professionals for the IT and corporate sectors. We strive to build a learning ecosystem where quality,
+          transparency, innovation, and student success remain the foundation of everything we do.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLACEMENT -->
 <section id="placement">
   <div class="container">
     <h3 class="section-title">Placement & Career Support</h3>
 
     <div class="card">
       <p>
-        <strong>Gargee Global Computer Institute</strong> is committed to building real careers, not false promises.
-        Our training model is designed exactly as per current company requirements, focusing on practical skills,
-        live system work, and professional discipline. Students are guided step-by-step in resume creation,
-        interview preparation, corporate communication, and job readiness.
-        We work with multiple IT companies, corporate offices, startups, and service organizations that regularly
-        require trained candidates. If you are serious about your future and want a stable career in IT or
-        corporate sector, Gargee Global Computer Institute is the right place to start your professional journey.
+        <strong>Gargee Global Computer Institute</strong> focuses on real career outcomes through practical training,
+        interview preparation, and professional skill development.
       </p>
-
       <ul>
         <li>100% practical & job-oriented training</li>
         <li>Interview & resume preparation</li>
@@ -181,18 +234,17 @@ footer{
   </div>
 </section>
 
-<!-- PLACEMENT PARTNERS -->
+<!-- PARTNERS -->
 <section id="partners">
   <div class="container">
     <h3 class="section-title">Our Placement Partners</h3>
-
     <div class="grid grid-3">
-      <div class="img-wrap"><img src="https://logo.clearbit.com/tcs.com" alt="TCS"></div>
-      <div class="img-wrap"><img src="https://logo.clearbit.com/infosys.com" alt="Infosys"></div>
-      <div class="img-wrap"><img src="https://logo.clearbit.com/wipro.com" alt="Wipro"></div>
-      <div class="img-wrap"><img src="https://logo.clearbit.com/hcltech.com" alt="HCL"></div>
-      <div class="img-wrap"><img src="https://logo.clearbit.com/accenture.com" alt="Accenture"></div>
-      <div class="img-wrap"><img src="https://logo.clearbit.com/ibm.com" alt="IBM"></div>
+      <div class="img-wrap"><img src="https://logo.clearbit.com/tcs.com"></div>
+      <div class="img-wrap"><img src="https://logo.clearbit.com/infosys.com"></div>
+      <div class="img-wrap"><img src="https://logo.clearbit.com/wipro.com"></div>
+      <div class="img-wrap"><img src="https://logo.clearbit.com/hcltech.com"></div>
+      <div class="img-wrap"><img src="https://logo.clearbit.com/accenture.com"></div>
+      <div class="img-wrap"><img src="https://logo.clearbit.com/ibm.com"></div>
     </div>
   </div>
 </section>
@@ -214,27 +266,9 @@ footer{
 
 <a class="whatsapp-float" href="https://wa.me/919720136336">WhatsApp</a>
 
-<!-- MODAL -->
-<div id="formModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);align-items:center;justify-content:center;">
-  <div class="card" style="max-width:420px;width:90%">
-    <h3 style="color:#2563eb;margin-bottom:12px">Admission Enquiry</h3>
-    <form onsubmit="sendWhatsApp();return false;">
-      <input id="name" placeholder="Full Name" required style="width:100%;padding:12px;margin-bottom:12px">
-      <input id="phone" placeholder="Mobile Number" required style="width:100%;padding:12px;margin-bottom:12px">
-      <button class="btn btn-primary" type="submit">Send Enquiry</button>
-    </form>
-  </div>
-</div>
-
 <script>
 function openForm(){formModal.style.display="flex"}
-function sendWhatsApp(){
-  const n=name.value,p=phone.value;
-  if(!/^\d{10}$/.test(p))return alert("Enter valid number");
-  window.open(`https://wa.me/919720136336?text=Name:${n}%0APhone:${p}`,"_blank");
-}
 window.addEventListener("scroll",()=>document.querySelector("header").classList.toggle("scrolled",scrollY>50));
-window.onclick=e=>{if(e.target.id==="formModal")e.target.style.display="none";}
 </script>
 
 </body>
