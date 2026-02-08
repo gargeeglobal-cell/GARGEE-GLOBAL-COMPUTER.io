@@ -67,12 +67,13 @@ header.scrolled{box-shadow:0 6px 15px rgba(0,0,0,.08)}
 /* BUTTON */
 .btn{
   display:inline-block;
-  margin:14px 6px;
-  padding:14px 30px;
+  margin:8px 6px;
+  padding:12px 26px;
   border-radius:30px;
   font-weight:600;
   border:none;
   cursor:pointer;
+  background:#e5e7eb;
 }
 .btn-primary{background:#2563eb;color:#fff}
 .btn-whatsapp{background:#16a34a;color:#fff}
@@ -95,13 +96,13 @@ section{padding:80px 20px}
 .card{
   background:#fff;
   border:1px solid #e5e7eb;
-  padding:30px;
+  padding:26px;
   border-radius:18px;
 }
 
 /* LIST */
-ul{list-style:none;margin-top:16px}
-ul li{margin-bottom:10px}
+ul{list-style:none;margin-top:14px}
+ul li{margin-bottom:8px}
 ul li::before{content:"✔ ";color:#16a34a;font-weight:700}
 
 /* FOOTER */
@@ -139,6 +140,7 @@ footer{
   <div class="nav">
     <h1>GARGEE GLOBAL COMPUTER INSTITUTE</h1>
     <div>
+      <a href="#courses">Courses</a>
       <a href="#director">Director</a>
       <a href="#placement">Placement</a>
       <a href="#partners">Partners</a>
@@ -151,65 +153,127 @@ footer{
   <div class="hero-overlay">
     <h2>Industry Ready IT & Software Education</h2>
     <p>ISO Verified • Affiliated with Future IT College</p>
-    <button class="btn btn-primary" onclick="openForm()">Enroll Now</button>
+    <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView()">Enroll Now</button>
     <a class="btn btn-whatsapp" href="https://wa.me/919720136336">WhatsApp</a>
   </div>
 </section>
+
+<!-- ================= COURSES SECTION ================= -->
+<section id="courses">
+  <div class="container">
+    <h3 class="section-title">Industry Demand Courses (Basic • Advanced • Corporate)</h3>
+
+    <div style="text-align:center;margin-bottom:30px">
+      <button class="btn btn-primary" onclick="filterCourses('all')">All</button>
+      <button class="btn" onclick="filterCourses('basic')">Basic</button>
+      <button class="btn" onclick="filterCourses('advanced')">Advanced</button>
+      <button class="btn" onclick="filterCourses('corporate')">Corporate</button>
+    </div>
+
+    <div class="grid grid-3">
+
+      <div class="card course basic">
+        <h4>Computer Basics</h4>
+        <p><strong>Duration:</strong> 1 Month</p>
+        <button class="btn" onclick="toggleSyllabus(this)">View Syllabus</button>
+        <div class="syllabus" style="display:none">
+          <ul>
+            <li>Computer fundamentals</li>
+            <li>Windows, Internet</li>
+            <li>Office usage</li>
+          </ul>
+        </div>
+        <a class="btn btn-primary" href="#contact">Take Admission</a>
+      </div>
+
+      <div class="card course basic">
+        <h4>Advanced Computer Application</h4>
+        <p><strong>Duration:</strong> 3 Months</p>
+        <button class="btn" onclick="toggleSyllabus(this)">View Syllabus</button>
+        <div class="syllabus" style="display:none">
+          <ul>
+            <li>MS Office Advanced</li>
+            <li>Excel & MIS</li>
+            <li>Corporate reporting</li>
+          </ul>
+        </div>
+        <a class="btn btn-primary" href="#contact">Take Admission</a>
+      </div>
+
+      <div class="card course advanced">
+        <h4>Python Programming</h4>
+        <p><strong>Duration:</strong> 3 Months</p>
+        <button class="btn" onclick="toggleSyllabus(this)">View Syllabus</button>
+        <div class="syllabus" style="display:none">
+          <ul>
+            <li>Core & Advanced Python</li>
+            <li>Automation</li>
+            <li>Live projects</li>
+          </ul>
+        </div>
+        <a class="btn btn-primary" href="#contact">Take Admission</a>
+      </div>
+
+      <div class="card course advanced">
+        <h4>Full Stack Web Development</h4>
+        <p><strong>Duration:</strong> 6 Months</p>
+        <button class="btn" onclick="toggleSyllabus(this)">View Syllabus</button>
+        <div class="syllabus" style="display:none">
+          <ul>
+            <li>Frontend & Backend</li>
+            <li>Database</li>
+            <li>Deployment</li>
+          </ul>
+        </div>
+        <a class="btn btn-primary" href="#contact">Take Admission</a>
+      </div>
+
+      <div class="card course advanced">
+        <h4>AI / ML / Deep Learning</h4>
+        <p><strong>Duration:</strong> 5 Months</p>
+        <button class="btn" onclick="toggleSyllabus(this)">View Syllabus</button>
+        <div class="syllabus" style="display:none">
+          <ul>
+            <li>AI fundamentals</li>
+            <li>Machine learning</li>
+            <li>Industry projects</li>
+          </ul>
+        </div>
+        <a class="btn btn-primary" href="#contact">Take Admission</a>
+      </div>
+
+      <div class="card course corporate">
+        <h4>Corporate Software Training</h4>
+        <p><strong>Duration:</strong> 2–6 Months</p>
+        <button class="btn" onclick="toggleSyllabus(this)">View Syllabus</button>
+        <div class="syllabus" style="display:none">
+          <ul>
+            <li>Company tools</li>
+            <li>Process training</li>
+            <li>Job readiness</li>
+          </ul>
+        </div>
+        <a class="btn btn-primary" href="#contact">Enroll for Corporate</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ================= END COURSES ================= -->
 
 <!-- DIRECTOR MESSAGE -->
 <section id="director">
   <div class="container">
     <h3 class="section-title">Director’s Message</h3>
-
     <div class="card">
       <p>
-        At <strong>Gargee Global Computer Institute</strong>, our core belief is that quality education should directly
-        translate into real career opportunities. In today’s fast-changing IT and corporate environment, theoretical
-        knowledge alone is not enough. Students require practical exposure, industry discipline, and professional
-        guidance to succeed. Our institute has been structured to bridge the exact gap between academic learning
-        and real company requirements.
-        <br><br>
-        We focus on skill-based training, real-time project work, and professional grooming so that every student
-        gains the confidence to perform in interviews and workplace environments. Our goal is not to enroll students
-        in bulk, but to mentor them individually and help them build long-term, stable careers. I personally ensure
-        that our courses, faculty standards, and training methodologies remain aligned with current industry needs.
-        <br><br>
-        I warmly welcome students, parents, and corporate visitors to experience our training culture and see how
-        Gargee Global Computer Institute is shaping the future of skilled professionals.
+        At <strong>Gargee Global Computer Institute</strong>, our focus is practical, job-oriented education
+        aligned with current industry requirements. We prepare students not just for jobs, but for long-term
+        career growth.
       </p>
-
       <p style="margin-top:20px;font-weight:600;color:#2563eb">
-        — Aditya Gupta<br>
-        Director, Gargee Global Computer Institute
+        — Aditya Gupta<br>Director
       </p>
-    </div>
-  </div>
-</section>
-
-<!-- MISSION & VISION -->
-<section>
-  <div class="container">
-    <h3 class="section-title">Our Mission & Vision</h3>
-
-    <div class="grid grid-3">
-      <div class="card">
-        <h4 style="color:#2563eb;margin-bottom:10px">Our Mission</h4>
-        <p>
-          Our mission is to deliver industry-relevant, practical, and career-focused education that empowers
-          students with real-world skills. We aim to create confident professionals by combining technical training,
-          corporate discipline, ethical values, and continuous mentorship, ensuring students are fully prepared
-          for employment and long-term career growth.
-        </p>
-      </div>
-
-      <div class="card">
-        <h4 style="color:#2563eb;margin-bottom:10px">Our Vision</h4>
-        <p>
-          Our vision is to become a trusted and recognized skill-development institute that produces job-ready
-          professionals for the IT and corporate sectors. We strive to build a learning ecosystem where quality,
-          transparency, innovation, and student success remain the foundation of everything we do.
-        </p>
-      </div>
     </div>
   </div>
 </section>
@@ -218,17 +282,11 @@ footer{
 <section id="placement">
   <div class="container">
     <h3 class="section-title">Placement & Career Support</h3>
-
     <div class="card">
-      <p>
-        <strong>Gargee Global Computer Institute</strong> focuses on real career outcomes through practical training,
-        interview preparation, and professional skill development.
-      </p>
       <ul>
-        <li>100% practical & job-oriented training</li>
-        <li>Interview & resume preparation</li>
-        <li>Corporate skill development</li>
-        <li>Placement assistance & guidance</li>
+        <li>100% practical training</li>
+        <li>Interview preparation</li>
+        <li>Placement assistance</li>
       </ul>
     </div>
   </div>
@@ -242,9 +300,9 @@ footer{
       <div class="img-wrap"><img src="https://logo.clearbit.com/tcs.com"></div>
       <div class="img-wrap"><img src="https://logo.clearbit.com/infosys.com"></div>
       <div class="img-wrap"><img src="https://logo.clearbit.com/wipro.com"></div>
-      <div class="img-wrap"><img src="https://logo.clearbit.com/hcltech.com"></div>
-      <div class="img-wrap"><img src="https://logo.clearbit.com/accenture.com"></div>
       <div class="img-wrap"><img src="https://logo.clearbit.com/ibm.com"></div>
+      <div class="img-wrap"><img src="https://logo.clearbit.com/accenture.com"></div>
+      <div class="img-wrap"><img src="https://logo.clearbit.com/hcltech.com"></div>
     </div>
   </div>
 </section>
@@ -267,8 +325,18 @@ footer{
 <a class="whatsapp-float" href="https://wa.me/919720136336">WhatsApp</a>
 
 <script>
-function openForm(){formModal.style.display="flex"}
-window.addEventListener("scroll",()=>document.querySelector("header").classList.toggle("scrolled",scrollY>50));
+function filterCourses(type){
+  document.querySelectorAll('.course').forEach(c=>{
+    c.style.display = (type==='all' || c.classList.contains(type)) ? 'block' : 'none';
+  });
+}
+function toggleSyllabus(btn){
+  const s = btn.nextElementSibling;
+  s.style.display = s.style.display === 'none' ? 'block' : 'none';
+}
+window.addEventListener("scroll",()=>{
+  document.querySelector("header").classList.toggle("scrolled",scrollY>50);
+});
 </script>
 
 </body>
