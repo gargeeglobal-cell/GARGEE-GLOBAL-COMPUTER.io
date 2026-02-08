@@ -27,10 +27,11 @@ header.scrolled{box-shadow:0 4px 10px rgba(0,0,0,0.1);}
 .nav a:hover{color:#1d4ed8}
 
 /* HERO */
-.hero{background:url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;}
+.hero{background:url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;position:relative;}
 .hero-overlay{background:rgba(255,255,255,.92);padding:120px 20px;text-align:center;animation:fadeIn 1s ease-in;}
 .hero h2{font-size:46px;color:#111827}
-.hero p{margin-top:12px;color:#374151}
+.hero p{margin-top:12px;color:#374151;font-size:16px}
+.hero .subtext{font-style:italic;color:#1d4ed8}
 
 /* BUTTONS */
 .btn{display:inline-block;margin:14px 8px;padding:14px 32px;border-radius:30px;font-weight:600;cursor:pointer;border:none;transition:0.3s;}
@@ -71,13 +72,19 @@ form input,form select{width:100%;padding:13px;margin-bottom:14px;border-radius:
 footer{background:#ffffff;text-align:center;padding:22px;font-size:14px;color:#6b7280;border-top:1px solid #e5e7eb}
 
 /* WHATSAPP FLOAT */
-.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#16a34a;color:#fff;padding:14px 22px;border-radius:50px;font-weight:600;z-index:999}
+.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#16a34a;color:#fff;padding:14px 22px;border-radius:50px;font-weight:600;z-index:999;box-shadow:0 4px 15px rgba(0,0,0,0.2);}
 
 /* PLACEMENT LIST */
 ul.placement-list{margin-top:15px;padding-left:20px;list-style:none;line-height:1.6;}
 ul.placement-list li{margin-bottom:10px;position:relative;padding-left:28px;}
 ul.placement-list li::before{content:"✅";position:absolute;left:0;top:0;}
 
+/* TESTIMONIAL */
+.testimonial{background:#eef2ff;padding:30px;border-radius:16px;text-align:center}
+.testimonial p{font-style:italic;color:#374151;margin-bottom:12px}
+.testimonial h5{color:#2563eb;font-weight:600}
+
+/* MEDIA */
 @media(max-width:900px){
   .hero h2{font-size:34px}
   .director{grid-template-columns:1fr}
@@ -96,6 +103,7 @@ ul.placement-list li::before{content:"✅";position:absolute;left:0;top:0;}
     <div>
       <a href="#courses">Courses</a>
       <a href="#placement">Placement</a>
+      <a href="#testimonials">Testimonials</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
@@ -105,7 +113,7 @@ ul.placement-list li::before{content:"✅";position:absolute;left:0;top:0;}
   <div class="hero-overlay">
     <h2>Industry Ready IT & Software Education</h2>
     <p>ISO Verified • Affiliated with Future IT College</p>
-    <p><em>1000+ Company Demand Based Courses</em></p>
+    <p class="subtext">Transforming Students into Corporate-Ready Professionals</p>
     <button class="btn btn-primary" onclick="openForm()">Enroll Now</button>
     <a href="https://wa.me/919720136336" class="btn btn-whatsapp">WhatsApp</a>
   </div>
@@ -115,7 +123,7 @@ ul.placement-list li::before{content:"✅";position:absolute;left:0;top:0;}
   <div class="container">
     <h3 class="section-title">Company Demand Based Courses</h3>
     <div class="grid grid-3">
-
+      <!-- Courses cards (same as before, safe images) -->
       <div class="card course">
         <div class="img-wrap">
           <img loading="lazy" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Data Operator MIS Training">
@@ -124,7 +132,6 @@ ul.placement-list li::before{content:"✅";position:absolute;left:0;top:0;}
         <p>Advanced Excel, MIS Reports<br>Duration: 3 – 12 Months</p>
         <button class="btn btn-primary" onclick="openForm()">Enroll</button>
       </div>
-
       <div class="card course">
         <div class="img-wrap">
           <img loading="lazy" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80" alt="Computer Diploma Training">
@@ -133,7 +140,6 @@ ul.placement-list li::before{content:"✅";position:absolute;left:0;top:0;}
         <p>Basics to Advanced Computer Skills, MS Office, Internet<br>Duration: 3 Months – 3 Years</p>
         <button class="btn btn-primary" onclick="openForm()">Enroll</button>
       </div>
-
       <div class="card course">
         <div class="img-wrap">
           <img loading="lazy" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80" alt="Hardware Networking">
@@ -142,7 +148,6 @@ ul.placement-list li::before{content:"✅";position:absolute;left:0;top:0;}
         <p>CCNA, Server Maintenance, IT Support<br>Duration: 6 Months – 1.5 Years</p>
         <button class="btn btn-primary" onclick="openForm()">Enroll</button>
       </div>
-
       <div class="card course">
         <div class="img-wrap">
           <img loading="lazy" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80" alt="Cyber Security">
@@ -151,7 +156,6 @@ ul.placement-list li::before{content:"✅";position:absolute;left:0;top:0;}
         <p>Network Security, Ethical Hacking Basics<br>Duration: 6 Months – 2 Years</p>
         <button class="btn btn-primary" onclick="openForm()">Enroll</button>
       </div>
-
       <div class="card course">
         <div class="img-wrap">
           <img loading="lazy" src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1200&q=80" alt="SAP ERP Training">
@@ -160,7 +164,6 @@ ul.placement-list li::before{content:"✅";position:absolute;left:0;top:0;}
         <p>FICO, MM, HR, BASIS Modules<br>Duration: 6 – 12 Months</p>
         <button class="btn btn-primary" onclick="openForm()">Enroll</button>
       </div>
-
       <div class="card course">
         <div class="img-wrap">
           <img loading="lazy" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80" alt="Cloud Computing Training">
@@ -169,28 +172,43 @@ ul.placement-list li::before{content:"✅";position:absolute;left:0;top:0;}
         <p>AWS, Azure, Google Cloud Fundamentals<br>Duration: 3 – 12 Months</p>
         <button class="btn btn-primary" onclick="openForm()">Enroll</button>
       </div>
-
     </div>
   </div>
 </section>
 
 <section id="placement">
   <div class="container">
-    <h3 class="section-title">Placement Support</h3>
-    <div class="card">
-      <p>
-        At <strong>Gargee Global Computer Institute</strong>, we provide <strong>comprehensive placement assistance</strong> to help students confidently step into professional roles. Our program ensures each student develops practical skills and corporate readiness through structured guidance and industry exposure.
-      </p>
-      <ul class="placement-list">
-        <li><strong>Resume Building:</strong> Craft professional CVs tailored for IT & corporate roles</li>
-        <li><strong>Interview Preparation:</strong> Mock interviews, HR & technical rounds training</li>
-        <li><strong>Live Project Exposure:</strong> Hands-on experience with real-world corporate projects</li>
-        <li><strong>Corporate Networking:</strong> Direct connections with IT companies, MNCs & startups</li>
-        <li><strong>Career Guidance:</strong> Personalized mentorship to choose the right career path</li>
-      </ul>
-      <p style="margin-top:12px;">
-        Our goal is to equip every student with the confidence, knowledge, and industry-ready skills to excel in competitive job markets, ensuring a smooth transition from learning to professional success.
-      </p>
+    <h3 class="section-title">Our Placement Partners</h3>
+    <div class="grid grid-3">
+      <div class="card img-wrap"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/TCS_Logo.svg" alt="TCS Logo"></div>
+      <div class="card img-wrap"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Infosys_logo.svg" alt="Infosys Logo"></div>
+      <div class="card img-wrap"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Wipro_Logo_2018.svg" alt="Wipro Logo"></div>
+      <div class="card img-wrap"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/HCL_Technologies_logo.svg" alt="HCL Logo"></div>
+      <div class="card img-wrap"><img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Accenture.svg" alt="Accenture Logo"></div>
+      <div class="card img-wrap"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Cognizant_logo.svg" alt="Cognizant Logo"></div>
+    </div>
+    <p style="margin-top:20px;text-align:center;color:#374151;">
+      We provide hands-on training and placement support with top IT companies and corporates. Students from our institute have successfully joined TCS, Infosys, Wipro, HCL, Accenture, Cognizant, and many more.
+    </p>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="container">
+    <h3 class="section-title">Student Testimonials</h3>
+    <div class="grid grid-3">
+      <div class="testimonial card">
+        <p>"Gargee Global gave me the practical skills and confidence to land my first IT job at TCS!"</p>
+        <h5>– Rohan Sharma</h5>
+      </div>
+      <div class="testimonial card">
+        <p>"The SAP and cloud courses were excellent. I got placement in Infosys within 2 months."</p>
+        <h5>– Priya Singh</h5>
+      </div>
+      <div class="testimonial card">
+        <p>"Excellent guidance from faculty and real project exposure. Highly recommended."</p>
+        <h5>– Ankit Verma</h5>
+      </div>
     </div>
   </div>
 </section>
@@ -264,9 +282,7 @@ function sendWhatsApp(){
 }
 
 // Header scroll shadow
-window.addEventListener("scroll",()=>{
-  document.querySelector("header").classList.toggle("scrolled", window.scrollY>50);
-});
+window.addEventListener("scroll",()=>{document.querySelector("header").classList.toggle("scrolled", window.scrollY>50);});
 </script>
 
 </body>
