@@ -3,243 +3,349 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Gargee Global Computer Institute | ISO Verified IT College</title>
-<meta name="description" content="Gargee Global Computer Institute, Near Vishal Mega Mart, Surajpur, Greater Noida. Affiliated with Future IT College. Computer courses, corporate training, placements & ISO verified.">
-<meta name="keywords" content="Gargee Global, IT Institute, Computer Courses, Training, Placement, ISO Verified, Future IT College, Greater Noida">
-<meta name="author" content="Gargee Global Computer Institute">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="ISO Verified Gargee Global Computer Institute, affiliated with Future IT College. Industry-demand IT, Software, SAP, Cloud & Networking courses with placement support.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-/* Base Reset */
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',system-ui,sans-serif;}
-body{background:#f9f9f9;color:#222;line-height:1.6;scroll-behavior:smooth;}
-a{text-decoration:none;color:inherit;}
-img,svg{max-width:100%;height:auto;display:block;}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+body{background:#f8fafc;color:#1f2937;line-height:1.7}
+a{text-decoration:none;color:inherit}
 
-/* Container */
-.container{width:90%;max-width:1200px;margin:0 auto;}
+/* IMAGE WRAPPER */
+.img-wrap{
+  width:100%;
+  height:160px;
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px;
+  overflow:hidden;
+}
+.img-wrap img{
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;
+  display:block;
+}
 
-/* Navbar */
-nav{position:fixed;width:100%;top:0;left:0;background:#003366;color:#fff;z-index:1000;display:flex;justify-content:space-between;align-items:center;padding:15px 5%;box-shadow:0 2px 8px rgba(0,0,0,0.2);}
-nav .logo{font-weight:700;font-size:1.5rem;color:#fff;}
-nav ul{display:flex;gap:20px;}
-nav ul li{list-style:none;}
-nav ul li a{color:#fff;font-weight:500;transition:0.3s;}
-nav ul li a:hover{color:#25d366;}
+.course-card img{
+  width:100%;
+  height:auto;
+  border-radius:12px;
+  margin-bottom:12px;
+}
 
-/* Hero */
-.hero{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;min-height:90vh;background:url('https://source.unsplash.com/1600x900/?college,classroom') center/cover no-repeat;position:relative;color:#fff;}
-.hero::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);}
-.hero h1,.hero p,.hero .btn-group{position:relative;z-index:1;}
-.hero h1{font-size:3rem;margin-bottom:20px;animation:fadeInDown 1s ease forwards;}
-.hero p{font-size:1.3rem;margin-bottom:30px;animation:fadeIn 2s ease forwards;}
-.hero .btn-group{display:flex;gap:15px;flex-wrap:wrap;animation:fadeInUp 2s ease forwards;}
-@keyframes fadeInDown{0%{opacity:0;transform:translateY(-50px);}100%{opacity:1;transform:translateY(0);}}
-@keyframes fadeInUp{0%{opacity:0;transform:translateY(50px);}100%{opacity:1;transform:translateY(0);}}
-@keyframes fadeIn{0%{opacity:0;}100%{opacity:1;}}
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:#fff;
+  border-bottom:1px solid #e5e7eb;
+}
+header.scrolled{box-shadow:0 6px 15px rgba(0,0,0,.08)}
+.nav{
+  max-width:1200px;
+  margin:auto;
+  padding:18px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.nav h1{font-size:20px;color:#2563eb;font-weight:700}
+.nav a{margin-left:18px;font-size:14px;font-weight:500}
 
-/* Buttons */
-.btn{padding:12px 25px;border-radius:6px;font-weight:600;transition:0.3s;cursor:pointer;}
-.btn-primary{background:#0066cc;color:#fff;}
-.btn-primary:hover{background:#005bb5;}
-.btn-whatsapp{background:#25d366;color:#fff;}
-.btn-whatsapp:hover{background:#1ebc5d;}
+.hero{
+  background:url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+}
+.hero-overlay{
+  background:rgba(255,255,255,.92);
+  padding:120px 20px;
+  text-align:center;
+}
+.hero h2{font-size:46px;color:#111827}
+.hero p{margin-top:10px;color:#374151}
 
-/* Sections */
-section{padding:100px 0;position:relative;}
-section:nth-of-type(even){background:#f1f1f1;}
-h2{margin-bottom:30px;color:#003366;text-align:center;font-size:2rem;}
+.btn{
+  display:inline-block;
+  margin:8px 6px;
+  padding:12px 26px;
+  border-radius:30px;
+  font-weight:600;
+  border:none;
+  cursor:pointer;
+  background:#e5e7eb;
+}
+.btn-primary{background:#2563eb;color:#fff}
+.btn-whatsapp{background:#16a34a;color:#fff}
 
-/* About & Director */
-.about img{float:left;margin-right:20px;border-radius:8px;max-width:300px;}
-.director img{float:right;margin-left:20px;border-radius:50%;width:150px;height:150px;object-fit:cover;}
-.about p,.director p{max-width:800px;margin:auto;font-size:1rem;line-height:1.6;}
+section{padding:80px 20px}
+.container{max-width:1200px;margin:auto}
+.section-title{
+  text-align:center;
+  font-size:34px;
+  color:#2563eb;
+  margin-bottom:40px;
+}
+.grid{display:grid;gap:30px}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
 
-/* Mission Vision */
-.mission-vision{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;}
-.mission-vision .block{flex:1 1 300px;padding:25px;background:#fff;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.1);text-align:center;transition:0.3s;}
-.mission-vision .block:hover{transform:translateY(-5px);}
+.card{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  padding:26px;
+  border-radius:18px;
+}
 
-/* Courses */
-.courses-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
-.course-card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.1);transition:0.3s;}
-.course-card:hover{transform:translateY(-5px);}
-.course-card img{border-radius:12px;margin-bottom:15px;}
-.course-card h4{color:#0066cc;margin-bottom:10px;font-size:1.2rem;}
+footer{
+  background:#fff;
+  border-top:1px solid #e5e7eb;
+  padding:22px;
+  text-align:center;
+  font-size:14px;
+  color:#6b7280;
+}
 
-/* Counters */
-.counters{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;text-align:center;margin-top:50px;}
-.counter{flex:1 1 200px;background:#fff;padding:40px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.1);}
-.counter h2{font-size:2.5rem;color:#0066cc;margin-bottom:10px;}
+.whatsapp-float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#16a34a;
+  color:#fff;
+  padding:14px 22px;
+  border-radius:50px;
+  font-weight:600;
+  z-index:999;
+}
 
-/* Testimonials */
-.testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
-.testimonial-card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.1);text-align:center;transition:0.3s;}
-.testimonial-card:hover{transform:translateY(-5px);}
-.testimonial-card img{border-radius:50%;width:80px;height:80px;object-fit:cover;margin-bottom:15px;}
-.testimonial-card p{font-style:italic;}
-
-/* Success Stories */
-.success-stories{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
-.story-card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.1);transition:0.3s;}
-.story-card:hover{transform:translateY(-5px);}
-
-/* Form */
-form{background:#fff;padding:30px;border-radius:12px;max-width:500px;margin:auto;box-shadow:0 4px 15px rgba(0,0,0,0.1);}
-form input,form select{width:100%;padding:12px;margin-bottom:15px;border:1px solid #ccc;border-radius:6px;}
-
-/* Franchise */
-.franchise{text-align:center;}
-
-/* Footer */
-footer{background:#003366;color:#fff;padding:50px 20px;text-align:center;}
-footer a{color:#25d366;font-weight:600;}
-
-/* Responsive */
-@media(max-width:768px){.hero h1{font-size:2rem;}.hero p{font-size:1rem;}.about img,.director img{float:none;margin:auto;display:block;}}
+@media(max-width:900px){
+  .hero h2{font-size:34px}
+}
 </style>
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav>
-<div class="logo">Gargee Global</div>
-<ul>
-<li><a href="#hero">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#courses">Courses</a></li>
-<li><a href="#admission">Admission</a></li>
-<li><a href="#placement">Placement</a></li>
-<li><a href="#testimonials">Testimonials</a></li>
-<li><a href="#why-choose">Why Choose</a></li>
-</ul>
-</nav>
+<header>
+  <div class="nav">
+    <h1>GARGEE GLOBAL COMPUTER INSTITUTE</h1>
+    <div>
+      <a href="#courses">Courses</a>
+      <a href="#placement">Placement</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
 
-<!-- HERO -->
-<section class="hero" id="hero">
-<h1>Join Gargee Global Computer Institute Today!</h1>
-<p>ISO Verified | Government Approved | 85%+ Placement</p>
-<div class="btn-group">
-<a href="#admission" class="btn btn-primary">Apply for Admission</a>
-<a href="https://wa.me/91720136336" target="_blank" class="btn btn-whatsapp">Chat on WhatsApp</a>
-</div>
-</section>
-
-<!-- ABOUT -->
-<section class="about" id="about">
-<div class="container">
-<img src="https://source.unsplash.com/300x200/?classroom,students" alt="Classroom">
-<h2>About Gargee Global Computer Institute</h2>
-<p>Located near Vishal Mega Mart, Surajpur, Greater Noida, Gargee Global Computer Institute is a trusted leader in computer coaching and corporate training. Affiliated with Future IT College and ISO verified, we deliver industry-ready skills and high placement rates through structured courses and corporate tie-ups.</p>
-</div>
+<section class="hero">
+  <div class="hero-overlay">
+    <h2>Industry Ready IT & Software Education</h2>
+    <p>ISO Verified • Affiliated with Future IT College</p>
+    <a class="btn btn-primary" href="#contact">Enroll Now</a>
+    <a class="btn btn-whatsapp" href="https://wa.me/919720136336">WhatsApp</a>
+  </div>
 </section>
 
 <!-- COURSES -->
-<section class="courses" id="courses">
-<div class="container">
-<h2>Our Courses</h2>
-<div class="courses-grid" id="courses-grid"></div>
-</div>
+<section id="courses">
+  <div class="container">
+
+    <h3 class="section-title">Computer Courses: Foundation to Corporate Mastery</h3>
+    <p style="text-align:center;color:#374151;margin-bottom:18px">
+      From School Students to Working Professionals • IT, Software, Corporate & MNC Demand Programs
+    </p>
+    <p style="text-align:center;font-weight:600;color:#2563eb;margin-bottom:35px">
+      Course Duration: 3 Months to 3 Years • 5000+ Courses Available
+    </p>
+
+    <div class="grid grid-3">
+
+      <!-- EACH COURSE CARD -->
+      <!-- BASIC COURSES -->
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1581091215367-59ab6c8f476c?auto=format&fit=crop&w=800&q=80" alt="Computer Fundamentals" loading="lazy">
+        </div>
+        <h4>Computer Fundamentals & Digital Literacy</h4>
+        <p>MS Windows, Internet, Typing, File Management</p>
+        <p><strong>Duration:</strong> 3 Months</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Office Automation" loading="lazy">
+        </div>
+        <h4>Office Automation Professional</h4>
+        <p>MS Word, Excel, PowerPoint, Outlook</p>
+        <p><strong>Duration:</strong> 3–6 Months</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
+
+      <!-- SOFTWARE COURSES -->
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Software Programming" loading="lazy">
+        </div>
+        <h4>Software Programming Career Track</h4>
+        <p>C, C++, Java, Python, Logic Building</p>
+        <p><strong>Duration:</strong> 6–18 Months</p>
+        <a class="btn btn-primary" href="#contact">Join Now</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1526378722443-4bb6c57d1a14?auto=format&fit=crop&w=800&q=80" alt="Advanced Java & Python" loading="lazy">
+        </div>
+        <h4>Advanced Java & Python Developer</h4>
+        <p>Core + Advanced + Live Projects</p>
+        <p><strong>Duration:</strong> 1–2 Years</p>
+        <a class="btn btn-primary" href="#contact">Career Start</a>
+      </div>
+
+      <!-- WEB & APP -->
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Full Stack Web Development" loading="lazy">
+        </div>
+        <h4>Full Stack Web Development</h4>
+        <p>HTML, CSS, JS, React, Node, Database</p>
+        <p><strong>Duration:</strong> 6–12 Months</p>
+        <a class="btn btn-primary" href="#contact">Apply</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=800&q=80" alt="Mobile App Development" loading="lazy">
+        </div>
+        <h4>Mobile App Development</h4>
+        <p>Android, Flutter, React Native</p>
+        <p><strong>Duration:</strong> 6–18 Months</p>
+        <a class="btn btn-primary" href="#contact">Apply</a>
+      </div>
+
+      <!-- CYBER & NETWORK -->
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Cyber Security" loading="lazy">
+        </div>
+        <h4>Cyber Security & Ethical Hacking</h4>
+        <p>Security, Pen-Testing, SOC, CEH Track</p>
+        <p><strong>Duration:</strong> 6 Months – 3 Years</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80" alt="Networking & Cloud" loading="lazy">
+        </div>
+        <h4>Networking & Cloud Computing</h4>
+        <p>CCNA, CCNP, AWS, Azure</p>
+        <p><strong>Duration:</strong> 6–24 Months</p>
+        <a class="btn btn-primary" href="#contact">Join</a>
+      </div>
+
+      <!-- HARDWARE -->
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d8?auto=format&fit=crop&w=800&q=80" alt="Computer Hardware" loading="lazy">
+        </div>
+        <h4>Computer Hardware & Chip Level</h4>
+        <p>Desktop, Laptop, Printer Repairing</p>
+        <p><strong>Duration:</strong> 6–12 Months</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
+
+      <!-- DATA / BI -->
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Data Analytics & Power BI" loading="lazy">
+        </div>
+        <h4>Data Analytics & Power BI</h4>
+        <p>Excel, SQL, Power BI, Dashboard</p>
+        <p><strong>Duration:</strong> 6–12 Months</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
+
+      <!-- DESIGN -->
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=800&q=80" alt="Graphic & UI/UX" loading="lazy">
+        </div>
+        <h4>Graphic & UI/UX Designing</h4>
+        <p>Photoshop, Illustrator, Figma</p>
+        <p><strong>Duration:</strong> 6–12 Months</p>
+        <a class="btn btn-primary" href="#contact">Join</a>
+      </div>
+
+      <!-- DIGITAL MARKETING -->
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Digital Marketing" loading="lazy">
+        </div>
+        <h4>Digital Marketing Professional</h4>
+        <p>SEO, Google Ads, Social Media</p>
+        <p><strong>Duration:</strong> 3–9 Months</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
+
+      <!-- SAP -->
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80" alt="SAP Functional & Technical" loading="lazy">
+        </div>
+        <h4>SAP Functional & Technical</h4>
+        <p>SAP FICO, MM, HR, ABAP</p>
+        <p><strong>Duration:</strong> 6–24 Months</p>
+        <a class="btn btn-primary" href="#contact">Apply</a>
+      </div>
+
+      <!-- CORPORATE -->
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80" alt="Corporate IT & MNC Training" loading="lazy">
+        </div>
+        <h4>Corporate IT & MNC Training</h4>
+        <p>Live Projects, Interview, Placement</p>
+        <p><strong>Duration:</strong> 6–36 Months</p>
+        <a class="btn btn-primary" href="#contact">Join</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=800&q=80" alt="BPO / KPO / ITES Training" loading="lazy">
+        </div>
+        <h4>BPO / KPO / ITES Training</h4>
+        <p>Communication, Process, CRM Tools</p>
+        <p><strong>Duration:</strong> 3–6 Months</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
+
+    </div>
+
+    <p style="text-align:center;margin-top:40px;font-size:18px;font-weight:700;color:#2563eb">
+      ✔ 5000+ Computer, IT, Software & Corporate Courses Available  
+      <br>✔ Career Guidance • Skill Mapping • Placement Support
+    </p>
+
+  </div>
 </section>
 
-<!-- ADMISSION FORM -->
-<section id="admission">
-<div class="container">
-<h2>Admission Form</h2>
-<form onsubmit="alert('Form submitted!'); return false;">
-<input type="text" name="name" placeholder="Full Name" required>
-<input type="tel" name="mobile" placeholder="Mobile Number" pattern="[0-9]{10}" required>
-<input type="email" name="email" placeholder="Email" required>
-<select name="course" id="course-select" required>
-<option value="">Select Course</option>
-</select>
-<button type="submit" class="btn btn-primary">Submit</button>
-</form>
-</div>
-</section>
-
-<!-- PLACEMENT -->
-<section class="placement" id="placement">
-<div class="container">
-<h2>Placement & Corporate Partners</h2>
-<p>With 85%+ placement success, our students secure roles in BPO, KPO, IT, and MNC companies, backed by 120+ corporate partners.</p>
-</div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="testimonials" id="testimonials">
-<div class="container">
-<h2>Student Testimonials</h2>
-<div id="testimonials-grid"></div>
-</div>
-</section>
-
-<!-- SUCCESS STORIES -->
-<section class="success-stories" id="success-stories">
-<div class="container">
-<h2>Success Stories</h2>
-<div id="stories-grid"></div>
-</div>
-</section>
-
-<!-- WHY CHOOSE -->
-<section class="why-choose" id="why-choose">
-<div class="container">
-<h2>Why Choose Gargee Global</h2>
-<ul>
-<li>ISO Verified & Government Approved</li>
-<li>120+ Hiring Partners</li>
-<li>85%+ Placement Success</li>
-<li>Network of 120+ Colleges</li>
-<li>Industry-Focused Professional Courses</li>
-<li>Trusted by Students & Corporates</li>
-</ul>
-</div>
-</section>
-
-<!-- FOOTER -->
 <footer>
-<p>Gargee Global Computer Institute, Near Vishal Mega Mart, Surajpur, Greater Noida</p>
-<p>Mobile: 9720136336 | Email: <a href="mailto:gargeeglobal@gmail.com">gargeeglobal@gmail.com</a></p>
-<a href="https://wa.me/91720136336" class="btn btn-whatsapp">Chat on WhatsApp</a>
-<p>© 2026 Gargee Global Computer Institute. All rights reserved.</p>
+© 2026 Gargee Global Computer Institute • All Rights Reserved
 </footer>
 
+<a class="whatsapp-float" href="https://wa.me/919720136336">WhatsApp</a>
+
 <script>
-// Courses Data
-const courses=["Basic Computer","Advanced Computer","Cyber Security","Networking","Hardware","Accounting","Programming","Designing","Digital Marketing","AI","ML","DL","ChatGPT","META Tools","Corporate Training","BPO Training","KPO Training","IT Training","MNC Training","Full Stack Development","Data Science","Cloud Computing","SAP","Java Programming","Python Programming","C++ Programming","Graphic Designing","Web Designing","UI/UX Design","SEO & SEM","Social Media Marketing","MS Office","Tally ERP","Digital Literacy","Networking Security","Ethical Hacking","Robotics","IoT","Blockchain","Game Development","App Development"];
-const durations=["3 Months","6 Months","9 Months","12 Months","18 Months","2 Years","3 Years"];
-const coursesGrid=document.getElementById('courses-grid');
-const courseSelect=document.getElementById('course-select');
-courses.forEach((c,i)=>{
-  const card=document.createElement('div');
-  card.className='course-card';
-  card.innerHTML=`<img src="https://source.unsplash.com/300x200/?${c.replace(' ','')}" alt="${c}"><h4>${c}</h4><p>Duration: ${durations[i%durations.length]}</p><p>Learn practical skills in ${c} to boost your career.</p>`;
-  coursesGrid.appendChild(card);
-
-  const option=document.createElement('option');
-  option.value=c;
-  option.textContent=c;
-  courseSelect.appendChild(option);
+window.addEventListener("scroll",()=>{
+  document.querySelector("header").classList.toggle("scrolled",scrollY>50);
 });
-
-// Testimonials
-const testimonialsGrid=document.getElementById('testimonials-grid');
-for(let i=1;i<=10;i++){
-  const div=document.createElement('div');
-  div.className='testimonial-card';
-  div.innerHTML=`<img src="https://source.unsplash.com/80x80/?face,student&sig=${i}" alt="Student ${i}"><p>"The courses at Gargee Global transformed my career."</p><p>👍 Liked by students</p>`;
-  testimonialsGrid.appendChild(div);
-}
-
-// Success Stories
-const storiesGrid=document.getElementById('stories-grid');
-for(let i=1;i<=8;i++){
-  const div=document.createElement('div');
-  div.className='story-card';
-  div.innerHTML=`<p>Student ${i} achieved placement in top MNC after completing ${courses[i%courses.length]} course. Career transformed successfully!</p>`;
-  storiesGrid.appendChild(div);
-}
 </script>
 
 </body>
