@@ -153,130 +153,244 @@ footer{
   </div>
 </section>
 
-<!-- ====================== UPGRADED RECOGNITION & AFFILIATION BADGES ====================== -->
-<section id="badges" style="padding:60px 20px;background:#f1f5f9;position:relative;overflow:hidden;">
+<!-- RECOGNITION & AFFILIATION BADGES -->
+<section id="badges" style="padding:60px 20px;background:#f1f5f9;">
   <div class="container">
     <h3 class="section-title">Our Recognitions & Affiliations</h3>
     <p style="text-align:center;color:#374151;margin-bottom:40px;">
       Recognized by ISO, Govt Authorities, Future IT College & 120+ Partner Colleges
     </p>
 
-    <div class="badge-slider-wrapper" style="overflow:hidden; position:relative;">
-      <div class="badge-slider" style="display:flex;gap:40px;flex-wrap:nowrap;cursor:grab;">
-        <!-- Badges (repeat for seamless infinite loop) -->
-        <div class="img-wrap"><img loading="lazy" alt="ISO Certified" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/ISO_9001_Logo.svg/200px-ISO_9001_Logo.svg.png"></div>
-        <div class="img-wrap"><img loading="lazy" alt="Government Recognized" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Emblem_of_India.svg/200px-Emblem_of_India.svg.png"></div>
-        <div class="img-wrap"><img loading="lazy" alt="Future IT College Affiliated" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/College_icon.svg/200px-College_icon.svg.png"></div>
-        <div class="img-wrap"><img loading="lazy" alt="120+ Partner Colleges" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/University_icon.svg/200px-University_icon.svg.png"></div>
+    <div class="grid grid-3" style="justify-items:center;gap:30px;align-items:center;">
 
-        <!-- Duplicate -->
-        <div class="img-wrap"><img loading="lazy" alt="ISO Certified" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/ISO_9001_Logo.svg/200px-ISO_9001_Logo.svg.png"></div>
-        <div class="img-wrap"><img loading="lazy" alt="Government Recognized" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Emblem_of_India.svg/200px-Emblem_of_India.svg.png"></div>
-        <div class="img-wrap"><img loading="lazy" alt="Future IT College Affiliated" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/College_icon.svg/200px-College_icon.svg.png"></div>
-        <div class="img-wrap"><img loading="lazy" alt="120+ Partner Colleges" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/University_icon.svg/200px-University_icon.svg.png"></div>
+      <!-- ISO -->
+      <div class="img-wrap" style="height:100px;width:150px;">
+        <img loading="eager" alt="ISO Certified"
+          src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 80'><rect width='200' height='80' rx='12' fill='%2302563eb'/><text x='100' y='50' font-size='32' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'>ISO 9001</text></svg>">
       </div>
 
-      <!-- Arrows -->
-      <button class="arrow left-arrow">&#10094;</button>
-      <button class="arrow right-arrow">&#10095;</button>
+      <!-- GOVERNMENT -->
+      <div class="img-wrap" style="height:100px;width:150px;">
+        <img loading="eager" alt="Government Recognized"
+          src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 80'><rect width='200' height='80' rx='12' fill='%23111827'/><text x='100' y='48' font-size='18' text-anchor='middle' fill='white' font-family='Arial' font-weight='600'>Govt. Recognized</text></svg>">
+      </div>
+
+      <!-- FUTURE IT COLLEGE -->
+      <div class="img-wrap" style="height:100px;width:150px;">
+        <img loading="eager" alt="Future IT College Affiliated"
+          src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 80'><rect width='220' height='80' rx='12' fill='%2316a34a'/><text x='110' y='50' font-size='20' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'>Future IT College</text></svg>">
+      </div>
+
+      <!-- 120+ PARTNER COLLEGES -->
+      <div class="img-wrap" style="height:100px;width:150px;">
+        <img loading="eager" alt="120+ Partner Colleges"
+          src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 80'><rect width='220' height='80' rx='12' fill='%23f59e0b'/><text x='110' y='48' font-size='18' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'>120+ Colleges</text></svg>">
+      </div>
+
     </div>
   </div>
 </section>
 
-<style>
-#badges .img-wrap{
-  flex:0 0 auto;
-  width:150px;
-  height:100px;
-  background:#fff;
-  border-radius:12px;
-  border:1px solid #e5e7eb;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-#badges .img-wrap img{
-  max-width:100%;
-  max-height:100%;
-  object-fit:contain;
-  display:block;
-}
-#badges .img-wrap:hover{
-  transform: scale(1.1);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-}
+<!-- COURSES -->
+<section id="courses">
+  <div class="container">
+    <h3 class="section-title">Computer Courses: Foundation to Corporate Mastery</h3>
+    <p style="text-align:center;color:#374151;margin-bottom:18px">
+      From School Students to Working Professionals • IT, Software, Corporate & MNC Demand Programs
+    </p>
+    <p style="text-align:center;font-weight:600;color:#2563eb;margin-bottom:35px">
+      Course Duration: 3 Months to 3 Years • 5000+ Courses Available
+    </p>
 
-.arrow{
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  background:rgba(0,0,0,0.5);
-  color:#fff;
-  border:none;
-  font-size:30px;
-  padding:8px 12px;
-  border-radius:50%;
-  cursor:pointer;
-  z-index:10;
-}
-.left-arrow{left:10px;}
-.right-arrow{right:10px;}
-.arrow:hover{background:rgba(0,0,0,0.7);}
+    <div class="grid grid-3">
 
-@media(max-width:900px){
-  #badges .img-wrap{width:120px;height:80px;}
-  .badge-slider{gap:20px;}
-}
-</style>
+      <!-- COURSES LIST -->
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=80" alt="Computer Fundamentals" loading="lazy">
+        </div>
+        <h4>Computer Fundamentals & Digital Literacy</h4>
+        <p>MS Windows, Internet, Typing, File Management</p>
+        <p><strong>Duration:</strong> 3 Months</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
 
-<script>
-// Drag-to-scroll
-const slider = document.querySelector(".badge-slider");
-let isDown = false, startX, scrollLeft;
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Office Automation" loading="lazy">
+        </div>
+        <h4>Office Automation Professional</h4>
+        <p>MS Word, Excel, PowerPoint, Outlook</p>
+        <p><strong>Duration:</strong> 3–6 Months</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
 
-slider.addEventListener("mousedown", e => {
-  isDown = true;
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-});
-slider.addEventListener("mouseleave", () => isDown = false);
-slider.addEventListener("mouseup", () => isDown = false);
-slider.addEventListener("mousemove", e => {
-  if(!isDown) return;
-  e.preventDefault();
-  slider.scrollLeft = scrollLeft - (e.pageX - startX)*2;
-});
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Software Programming" loading="lazy">
+        </div>
+        <h4>Software Programming Career Track</h4>
+        <p>C, C++, Java, Python, Logic Building</p>
+        <p><strong>Duration:</strong> 6–18 Months</p>
+        <a class="btn btn-primary" href="#contact">Join Now</a>
+      </div>
 
-// Touch support
-slider.addEventListener("touchstart", e => startX = e.touches[0].pageX - slider.offsetLeft);
-slider.addEventListener("touchmove", e => slider.scrollLeft -= (e.touches[0].pageX - startX));
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=80" alt="Advanced Java & Python" loading="lazy">
+        </div>
+        <h4>Advanced Java & Python Developer</h4>
+        <p>Core + Advanced + Live Projects</p>
+        <p><strong>Duration:</strong> 1–2 Years</p>
+        <a class="btn btn-primary" href="#contact">Career Start</a>
+      </div>
 
-// Arrows
-document.querySelector(".left-arrow").addEventListener("click", () => slider.scrollBy({ left:-200, behavior:"smooth" }));
-document.querySelector(".right-arrow").addEventListener("click", () => slider.scrollBy({ left:200, behavior:"smooth" }));
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Full Stack Web Development" loading="lazy">
+        </div>
+        <h4>Full Stack Web Development</h4>
+        <p>HTML, CSS, JS, React, Node, Database</p>
+        <p><strong>Duration:</strong> 6–12 Months</p>
+        <a class="btn btn-primary" href="#contact">Apply</a>
+      </div>
 
-// Auto-loop with hover pause
-let scrollSpeed = 0.5;
-let hover = false;
-slider.addEventListener("mouseenter", ()=> hover = true);
-slider.addEventListener("mouseleave", ()=> hover = false);
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=800&q=80" alt="Mobile App Development" loading="lazy">
+        </div>
+        <h4>Mobile App Development</h4>
+        <p>Android, Flutter, React Native</p>
+        <p><strong>Duration:</strong> 6–18 Months</p>
+        <a class="btn btn-primary" href="#contact">Apply</a>
+      </div>
 
-function autoScroll(){
-  if(!hover){
-    slider.scrollLeft += scrollSpeed;
-    if(slider.scrollLeft >= slider.scrollWidth / 2) slider.scrollLeft = 0;
-  }
-  requestAnimationFrame(autoScroll);
-}
-autoScroll();
-</script>
-<!-- ====================== END BADGES ====================== -->
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Cyber Security" loading="lazy">
+        </div>
+        <h4>Cyber Security & Ethical Hacking</h4>
+        <p>Security, Pen-Testing, SOC, CEH Track</p>
+        <p><strong>Duration:</strong> 6 Months – 3 Years</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
 
-<!-- COURSES, DIRECTOR, MISSION/VISION, FOOTER (UNCHANGED) -->
-<section id="courses"> ... <!-- your original course code here --> </section>
-<section id="director"> ... </section>
-<section id="mission-vision"> ... </section>
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80" alt="Networking & Cloud" loading="lazy">
+        </div>
+        <h4>Networking & Cloud Computing</h4>
+        <p>CCNA, CCNP, AWS, Azure</p>
+        <p><strong>Duration:</strong> 6–24 Months</p>
+        <a class="btn btn-primary" href="#contact">Join</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Data Analytics & Power BI" loading="lazy">
+        </div>
+        <h4>Data Analytics & Power BI</h4>
+        <p>Excel, SQL, Power BI, Dashboard</p>
+        <p><strong>Duration:</strong> 6–12 Months</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=800&q=80" alt="Graphic & UI/UX" loading="lazy">
+        </div>
+        <h4>Graphic & UI/UX Designing</h4>
+        <p>Photoshop, Illustrator, Figma</p>
+        <p><strong>Duration:</strong> 6–12 Months</p>
+        <a class="btn btn-primary" href="#contact">Join</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Digital Marketing" loading="lazy">
+        </div>
+        <h4>Digital Marketing Professional</h4>
+        <p>SEO, Google Ads, Social Media</p>
+        <p><strong>Duration:</strong> 3–9 Months</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80" alt="SAP Functional & Technical" loading="lazy">
+        </div>
+        <h4>SAP Functional & Technical</h4>
+        <p>SAP FICO, MM, HR, ABAP</p>
+        <p><strong>Duration:</strong> 6–24 Months</p>
+        <a class="btn btn-primary" href="#contact">Apply</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80" alt="Corporate IT & MNC Training" loading="lazy">
+        </div>
+        <h4>Corporate IT & MNC Training</h4>
+        <p>Live Projects, Interview, Placement</p>
+        <p><strong>Duration:</strong> 6–36 Months</p>
+        <a class="btn btn-primary" href="#contact">Join</a>
+      </div>
+
+      <div class="card course-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=800&q=80" alt="BPO / KPO / ITES Training" loading="lazy">
+        </div>
+        <h4>BPO / KPO / ITES Training</h4>
+        <p>Communication, Process, CRM Tools</p>
+        <p><strong>Duration:</strong> 3–6 Months</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
+
+    </div>
+
+    <p style="text-align:center;margin-top:40px;font-size:18px;font-weight:700;color:#2563eb">
+      ✔ 5000+ Computer, IT, Software & Corporate Courses Available  
+      <br>✔ Career Guidance • Skill Mapping • Placement Support
+    </p>
+  </div>
+</section>
+
+<!-- DIRECTOR MESSAGE -->
+<section id="director" style="background:#f1f5f9;padding:80px 20px;">
+  <div class="container">
+    <h3 class="section-title">Message from the Director</h3>
+    <div style="color:#374151;font-size:16px;line-height:1.8;">
+      <p>
+        Welcome to Gargee Global Computer Institute. I am Aditya Gupta, dedicated to empowering students with industry-ready IT, Software, and Corporate skills. Our mission is to provide world-class training, hands-on projects, and placement support, ensuring every learner achieves success. Join us to transform your potential into expertise and take your career to new heights with confidence and professionalism.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION & VISION -->
+<section id="mission-vision" style="padding:80px 20px;">
+  <div class="container">
+    <div class="grid" style="grid-template-columns:1fr 1fr;gap:30px;align-items:center;">
+      <div class="img-wrap" style="height:220px;">
+        <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=500&q=80" alt="Mission" loading="lazy">
+      </div>
+      <div>
+        <h4 style="color:#2563eb;margin-bottom:12px;">Our Mission</h4>
+        <p style="color:#374151;line-height:1.6;font-weight:500;">
+        To deliver high-quality IT education and professional skills, guiding every student toward practical expertise, career growth, and personal development. We strive to create a supportive learning environment that bridges knowledge and industry demand.
+        </p>
+      </div>
+      <div class="img-wrap" style="height:220px;">
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=500&q=80" alt="Vision" loading="lazy">
+      </div>
+      <div>
+        <h4 style="color:#2563eb;margin-bottom:12px;">Our Vision</h4>
+        <p style="color:#374151;line-height:1.6;font-weight:500;">
+        To be a leading global IT training institute recognized for excellence, innovation, and student success, empowering learners to achieve remarkable careers, contribute to technology, and grow sustainably in a competitive world.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <footer>
 © 2026 Gargee Global Computer Institute • All Rights Reserved
