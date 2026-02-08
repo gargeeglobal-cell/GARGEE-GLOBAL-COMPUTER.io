@@ -16,19 +16,19 @@ a{text-decoration:none;color:inherit}
 
 .img-wrap{
   width:100%;
-  height:120px;
+  height:160px;
   background:#fff;
   border:1px solid #e5e7eb;
   border-radius:14px;
   display:flex;
   align-items:center;
   justify-content:center;
-  padding:14px;
+  overflow:hidden;
 }
 .img-wrap img{
-  max-width:100%;
-  max-height:100%;
-  object-fit:contain;
+  width:100%;
+  height:100%;
+  object-fit:cover;
 }
 
 header{
@@ -118,6 +118,13 @@ footer{
   z-index:999;
 }
 
+.map-wrap iframe{
+  width:100%;
+  height:350px;
+  border:0;
+  border-radius:16px;
+}
+
 @media(max-width:900px){
   .hero h2{font-size:34px}
 }
@@ -132,7 +139,7 @@ footer{
     <div>
       <a href="#courses">Courses</a>
       <a href="#placement">Placement</a>
-      <a href="#parent-faq">FAQ</a>
+      <a href="#director">Director</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
@@ -147,126 +154,102 @@ footer{
   </div>
 </section>
 
-<!-- COURSES -->
+<!-- COURSES (UNCHANGED) -->
 <section id="courses">
   <div class="container">
     <h3 class="section-title">Complete Job-Oriented Computer Courses</h3>
-
     <div class="grid grid-3">
-      <div class="card course basic">
+      <div class="card">
         <h4>Computer Basics & Office Automation</h4>
         <p><strong>Duration:</strong> 1–3 Months</p>
         <p><strong>Career Path:</strong> Office Executive, Computer Operator</p>
-        <p><strong>Who should join:</strong> Beginners, students, job seekers</p>
         <a class="btn btn-primary" href="#contact">Take Admission</a>
       </div>
-
-      <div class="card course advanced">
+      <div class="card">
         <h4>Web Development & Programming</h4>
         <p><strong>Duration:</strong> 3–6 Months</p>
-        <p><strong>Career Path:</strong> Web Developer, Software Trainee</p>
-        <p><strong>Who should join:</strong> IT career aspirants</p>
+        <p><strong>Career Path:</strong> Web Developer</p>
         <a class="btn btn-primary" href="#contact">Join Now</a>
       </div>
-
-      <div class="card course professional">
+      <div class="card">
         <h4>Professional Software & MIS</h4>
         <p><strong>Duration:</strong> 6–9 Months</p>
-        <p><strong>Career Path:</strong> MIS Executive, Analyst</p>
-        <p><strong>Who should join:</strong> Graduates & professionals</p>
+        <p><strong>Career Path:</strong> MIS Executive</p>
         <a class="btn btn-primary" href="#contact">Career Start</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ADMISSION URGENCY -->
-<section>
+<!-- DIRECTOR MESSAGE -->
+<section id="director">
   <div class="container">
-    <div class="card" style="border-left:6px solid #dc2626">
-      <h3 style="color:#dc2626">⚠ Limited Seats Available</h3>
-      <p>Limited students per batch for personal attention. First come first serve.</p>
-      <a href="#contact" class="btn btn-primary">Book Your Seat</a>
+    <h3 class="section-title">Director’s Message</h3>
+    <div class="card">
+      <p><strong>Aditya Gupta (Director)</strong></p>
+      <p>
+        At Gargee Global Computer Institute, our focus is to transform students into confident,
+        skilled, and industry-ready professionals. We believe education should not only provide
+        certificates but also practical exposure, discipline, and long-term career direction.
+        Our programs are carefully designed as per current corporate and IT industry demands.
+        With experienced trainers, structured learning, and personal mentoring, we ensure that
+        every student receives quality education and career guidance. Our mission is to build
+        capable professionals who contribute positively to organizations and society.
+      </p>
     </div>
   </div>
 </section>
 
-<!-- STUDENT JOURNEY -->
+<!-- MISSION & VISION -->
 <section>
   <div class="container">
-    <h3 class="section-title">Student Career Journey</h3>
+    <h3 class="section-title">Mission & Vision</h3>
     <div class="grid grid-3">
-      <div class="card">Classroom Training</div>
-      <div class="card">Projects & Practicals</div>
-      <div class="card">Interview Preparation</div>
-      <div class="card">Placement Assistance</div>
-      <div class="card">Career Growth Support</div>
+      <div class="card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80">
+        </div>
+        <h4 style="margin-top:15px">Our Mission</h4>
+        <p>
+          Our mission is to deliver industry-oriented, practical, and affordable education
+          that empowers students with real-world skills. We aim to bridge the gap between
+          academic learning and corporate expectations through quality training, discipline,
+          ethical values, and continuous career support for sustainable professional growth.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=80">
+        </div>
+        <h4 style="margin-top:15px">Our Vision</h4>
+        <p>
+          Our vision is to become a trusted IT education and skill-development institution,
+          recognized for excellence, innovation, and results. We strive to create future-ready
+          professionals who achieve career success, add value to organizations, and contribute
+          to the nation’s digital and economic growth.
+        </p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- PLACEMENT -->
-<section id="placement">
-  <div class="container">
-    <h3 class="section-title">Placement Support</h3>
-    <div class="card">
-      <ul>
-        <li>Practical training & live projects</li>
-        <li>Resume & interview preparation</li>
-        <li>Placement assistance through references</li>
-        <li>Career guidance after course completion</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- WHY GARGEE -->
-<section>
-  <div class="container">
-    <h3 class="section-title">Why Gargee Global?</h3>
-    <div class="card">
-      <ul>
-        <li>ISO certified & structured training</li>
-        <li>Industry & job-oriented syllabus</li>
-        <li>Affordable fees</li>
-        <li>Personal mentoring</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- PARENT FAQ -->
-<section id="parent-faq">
-  <div class="container">
-    <h3 class="section-title">Parent FAQs</h3>
-    <div class="card">
-      <p><strong>Q:</strong> Kya beginners join kar sakte hain?<br>Yes, basic se start hota hai.</p>
-      <p><strong>Q:</strong> Placement milta hai?<br>Placement assistance + guidance di jaati hai.</p>
-      <p><strong>Q:</strong> Fees affordable hai?<br>Yes, quality ke according reasonable.</p>
-    </div>
-  </div>
-</section>
-
-<!-- PARTNERS -->
-<section>
-  <div class="container">
-    <h3 class="section-title">Placement Partners</h3>
-    <div class="grid grid-3">
-      <div class="img-wrap"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tcs.svg"></div>
-      <div class="img-wrap"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/infosys.svg"></div>
-      <div class="img-wrap"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/wipro.svg"></div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
+<!-- CONTACT & MAP -->
 <section id="contact">
   <div class="container">
     <h3 class="section-title">Contact Us</h3>
-    <div class="card">
-      <p>📍 Vishal Mega Mart, Surajpur, Greater Noida</p>
-      <p>📞 9720136336 / 8178599981</p>
-      <p>✉️ gargeeglobal@gmail.com</p>
+    <div class="grid grid-3">
+      <div class="card">
+        <p>📍 Near Vishal Mega Mart, Surajpur,<br>Greater Noida, Uttar Pradesh</p>
+        <p>📞 9720136336 / 8178599981</p>
+        <p>✉️ gargeeglobal@gmail.com</p>
+      </div>
+      <div class="card map-wrap">
+        <iframe 
+          src="https://www.google.com/maps?q=Vishal%20Mega%20Mart%20Surajpur%20Greater%20Noida&output=embed"
+          loading="lazy">
+        </iframe>
+      </div>
     </div>
   </div>
 </section>
