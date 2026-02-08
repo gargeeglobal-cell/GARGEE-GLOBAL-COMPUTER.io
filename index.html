@@ -14,25 +14,22 @@
 body{background:#f8fafc;color:#1f2937;line-height:1.7}
 a{text-decoration:none;color:inherit}
 
-/* SAFE IMAGE SYSTEM */
+/* SAFE IMAGE */
 .img-wrap{
   width:100%;
-  aspect-ratio:16/9;
-  background:#e5e7eb;
+  height:120px;
+  background:#fff;
+  border:1px solid #e5e7eb;
   border-radius:14px;
-  overflow:hidden;
   display:flex;
   align-items:center;
   justify-content:center;
+  padding:14px;
 }
 .img-wrap img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
-.img-wrap img:error{
-  display:none;
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;
 }
 
 /* HEADER */
@@ -54,7 +51,6 @@ header.scrolled{box-shadow:0 6px 15px rgba(0,0,0,.08)}
 }
 .nav h1{font-size:20px;color:#2563eb;font-weight:700}
 .nav a{margin-left:18px;font-size:14px;font-weight:500}
-.nav a:hover{color:#1d4ed8}
 
 /* HERO */
 .hero{
@@ -77,12 +73,9 @@ header.scrolled{box-shadow:0 6px 15px rgba(0,0,0,.08)}
   font-weight:600;
   border:none;
   cursor:pointer;
-  transition:.3s;
 }
 .btn-primary{background:#2563eb;color:#fff}
-.btn-primary:hover{background:#1d4ed8;transform:translateY(-2px)}
 .btn-whatsapp{background:#16a34a;color:#fff}
-.btn-whatsapp:hover{background:#15803d;transform:translateY(-2px)}
 
 /* SECTIONS */
 section{padding:80px 20px}
@@ -96,43 +89,20 @@ section{padding:80px 20px}
 
 /* GRID */
 .grid{display:grid;gap:30px}
-.grid-3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
 
 /* CARD */
 .card{
   background:#fff;
   border:1px solid #e5e7eb;
-  padding:26px;
+  padding:30px;
   border-radius:18px;
-  transition:.3s;
-}
-.card:hover{transform:translateY(-5px);box-shadow:0 10px 25px rgba(0,0,0,.08)}
-
-/* COURSE */
-.course h4{margin-top:14px;color:#1d4ed8;font-size:18px}
-.course p{font-size:14px;color:#374151}
-
-/* DIRECTOR */
-.director{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px;
-  align-items:center;
 }
 
 /* PLACEMENT LIST */
-ul.placement-list{list-style:none;padding-left:0;margin-top:18px}
-ul.placement-list li{
-  margin-bottom:10px;
-  padding-left:26px;
-  position:relative;
-}
-ul.placement-list li::before{
-  content:"✔";
-  position:absolute;
-  left:0;
-  color:#16a34a;
-}
+ul{list-style:none;margin-top:16px}
+ul li{margin-bottom:10px}
+ul li::before{content:"✔ ";color:#16a34a;font-weight:700}
 
 /* FOOTER */
 footer{
@@ -159,7 +129,6 @@ footer{
 
 @media(max-width:900px){
   .hero h2{font-size:34px}
-  .director{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -170,8 +139,8 @@ footer{
   <div class="nav">
     <h1>GARGEE GLOBAL COMPUTER INSTITUTE</h1>
     <div>
-      <a href="#courses">Courses</a>
       <a href="#placement">Placement</a>
+      <a href="#partners">Partners</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
@@ -181,43 +150,49 @@ footer{
   <div class="hero-overlay">
     <h2>Industry Ready IT & Software Education</h2>
     <p>ISO Verified • Affiliated with Future IT College</p>
-    <p><em>Company Demand Based Professional Courses</em></p>
     <button class="btn btn-primary" onclick="openForm()">Enroll Now</button>
     <a class="btn btn-whatsapp" href="https://wa.me/919720136336">WhatsApp</a>
   </div>
 </section>
 
+<!-- PLACEMENT MESSAGE -->
 <section id="placement">
   <div class="container">
-    <h3 class="section-title">Our Placement Partners & Career Support</h3>
+    <h3 class="section-title">Placement & Career Support</h3>
 
     <div class="card">
       <p>
-        <strong>Gargee Global Computer Institute</strong> works closely with a wide network of IT companies, software firms,
-        corporate offices, startups, and service-based organizations to support student career growth. Our placement
-        partners value practical skills, professional discipline, and job-ready training, which is why our curriculum
-        is designed strictly according to real industry requirements.
+        <strong>Gargee Global Computer Institute</strong> is committed to building real careers, not false promises.
+        Our training model is designed exactly as per current company requirements, focusing on practical skills,
+        live system work, and professional discipline. Students are guided step-by-step in resume creation,
+        interview preparation, corporate communication, and job readiness.
+        We work with multiple IT companies, corporate offices, startups, and service organizations that regularly
+        require trained candidates. If you are serious about your future and want a stable career in IT or
+        corporate sector, Gargee Global Computer Institute is the right place to start your professional journey.
       </p>
 
-      <p>
-        We do not believe in fake placement promises. Instead, we focus on <strong>skill development, live project exposure,
-        resume building, interview preparation, and corporate communication training</strong>. Our placement partners
-        regularly seek trained candidates for roles such as Data Operator, MIS Executive, IT Support Engineer, Network
-        Technician, Junior Developer, and ERP Executive.
-      </p>
-
-      <p>
-        Through continuous guidance, professional mentoring, and industry-aligned training, Gargee Global Computer
-        Institute ensures that students become reliable, confident, and employable professionals. This trusted approach
-        has helped many learners successfully enter the corporate world with long-term career stability.
-      </p>
-
-      <ul class="placement-list">
-        <li>Industry-oriented practical training</li>
-        <li>Resume & interview preparation support</li>
-        <li>Corporate etiquette & communication skills</li>
-        <li>Guidance for IT, corporate & startup roles</li>
+      <ul>
+        <li>100% practical & job-oriented training</li>
+        <li>Interview & resume preparation</li>
+        <li>Corporate skill development</li>
+        <li>Placement assistance & guidance</li>
       </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PLACEMENT PARTNERS -->
+<section id="partners">
+  <div class="container">
+    <h3 class="section-title">Our Placement Partners</h3>
+
+    <div class="grid grid-3">
+      <div class="img-wrap"><img src="https://logo.clearbit.com/tcs.com" alt="TCS"></div>
+      <div class="img-wrap"><img src="https://logo.clearbit.com/infosys.com" alt="Infosys"></div>
+      <div class="img-wrap"><img src="https://logo.clearbit.com/wipro.com" alt="Wipro"></div>
+      <div class="img-wrap"><img src="https://logo.clearbit.com/hcltech.com" alt="HCL"></div>
+      <div class="img-wrap"><img src="https://logo.clearbit.com/accenture.com" alt="Accenture"></div>
+      <div class="img-wrap"><img src="https://logo.clearbit.com/ibm.com" alt="IBM"></div>
     </div>
   </div>
 </section>
@@ -240,41 +215,26 @@ footer{
 <a class="whatsapp-float" href="https://wa.me/919720136336">WhatsApp</a>
 
 <!-- MODAL -->
-<div class="modal" id="formModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);align-items:center;justify-content:center;">
+<div id="formModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);align-items:center;justify-content:center;">
   <div class="card" style="max-width:420px;width:90%">
     <h3 style="color:#2563eb;margin-bottom:12px">Admission Enquiry</h3>
     <form onsubmit="sendWhatsApp();return false;">
       <input id="name" placeholder="Full Name" required style="width:100%;padding:12px;margin-bottom:12px">
       <input id="phone" placeholder="Mobile Number" required style="width:100%;padding:12px;margin-bottom:12px">
-      <select id="course" style="width:100%;padding:12px;margin-bottom:12px">
-        <option>Course Interested</option>
-        <option>Data Operator / MIS</option>
-        <option>Computer Diploma</option>
-        <option>Networking</option>
-        <option>Cyber Security</option>
-        <option>SAP / ERP</option>
-        <option>Cloud Computing</option>
-      </select>
       <button class="btn btn-primary" type="submit">Send Enquiry</button>
     </form>
   </div>
 </div>
 
 <script>
-function openForm(){
-  document.getElementById("formModal").style.display="flex";
-}
+function openForm(){formModal.style.display="flex"}
 function sendWhatsApp(){
-  const n=name.value.trim(), p=phone.value.trim(), c=course.value;
-  if(!/^\d{10}$/.test(p)){alert("Enter valid 10-digit number");return;}
-  window.open(`https://wa.me/919720136336?text=Name:${n}%0APhone:${p}%0ACourse:${c}`,"_blank");
+  const n=name.value,p=phone.value;
+  if(!/^\d{10}$/.test(p))return alert("Enter valid number");
+  window.open(`https://wa.me/919720136336?text=Name:${n}%0APhone:${p}`,"_blank");
 }
-window.addEventListener("scroll",()=>{
-  document.querySelector("header").classList.toggle("scrolled",scrollY>50)
-});
-window.onclick=e=>{
-  if(e.target.id==="formModal") e.target.style.display="none";
-};
+window.addEventListener("scroll",()=>document.querySelector("header").classList.toggle("scrolled",scrollY>50));
+window.onclick=e=>{if(e.target.id==="formModal")e.target.style.display="none";}
 </script>
 
 </body>
