@@ -7,94 +7,93 @@
 <meta name="description" content="Gargee Global Computer Institute, Near Vishal Mega Mart, Surajpur, Greater Noida. Affiliated with Future IT College. Computer courses, corporate training, placements & ISO verified.">
 <meta name="keywords" content="Gargee Global, IT Institute, Computer Courses, Training, Placement, ISO Verified, Future IT College, Greater Noida">
 <meta name="author" content="Gargee Global Computer Institute">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-/* Reset & Base */
-*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,sans-serif;}
-body{line-height:1.6;color:#222;background:#f9f9f9;}
+/* Base Reset */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',system-ui,sans-serif;}
+body{background:#f9f9f9;color:#222;line-height:1.6;scroll-behavior:smooth;}
 a{text-decoration:none;color:inherit;}
 img,svg{max-width:100%;height:auto;display:block;}
+
+/* Container */
 .container{width:90%;max-width:1200px;margin:0 auto;}
-html{scroll-behavior:smooth;}
+
+/* Navbar */
+nav{position:fixed;width:100%;top:0;left:0;background:#003366;color:#fff;z-index:1000;display:flex;justify-content:space-between;align-items:center;padding:15px 5%;box-shadow:0 2px 8px rgba(0,0,0,0.2);}
+nav .logo{font-weight:700;font-size:1.5rem;color:#fff;}
+nav ul{display:flex;gap:20px;}
+nav ul li{list-style:none;}
+nav ul li a{color:#fff;font-weight:500;transition:0.3s;}
+nav ul li a:hover{color:#25d366;}
+
+/* Hero */
+.hero{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;min-height:90vh;background:url('https://source.unsplash.com/1600x900/?college,classroom') center/cover no-repeat;position:relative;color:#fff;}
+.hero::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);}
+.hero h1,.hero p,.hero .btn-group{position:relative;z-index:1;}
+.hero h1{font-size:3rem;margin-bottom:20px;animation:fadeInDown 1s ease forwards;}
+.hero p{font-size:1.3rem;margin-bottom:30px;animation:fadeIn 2s ease forwards;}
+.hero .btn-group{display:flex;gap:15px;flex-wrap:wrap;animation:fadeInUp 2s ease forwards;}
+@keyframes fadeInDown{0%{opacity:0;transform:translateY(-50px);}100%{opacity:1;transform:translateY(0);}}
+@keyframes fadeInUp{0%{opacity:0;transform:translateY(50px);}100%{opacity:1;transform:translateY(0);}}
+@keyframes fadeIn{0%{opacity:0;}100%{opacity:1;}}
 
 /* Buttons */
-.btn{display:inline-block;padding:12px 24px;margin:5px;border:none;border-radius:6px;font-weight:bold;cursor:pointer;transition:0.3s;}
+.btn{padding:12px 25px;border-radius:6px;font-weight:600;transition:0.3s;cursor:pointer;}
 .btn-primary{background:#0066cc;color:#fff;}
 .btn-primary:hover{background:#005bb5;}
 .btn-whatsapp{background:#25d366;color:#fff;}
 .btn-whatsapp:hover{background:#1ebc5d;}
 
 /* Sections */
-section{padding:80px 0;position:relative;}
+section{padding:100px 0;position:relative;}
 section:nth-of-type(even){background:#f1f1f1;}
-h1,h2,h3,h4,h5{margin-bottom:20px;color:#003366;}
-p{margin-bottom:15px;}
-hr{border:none;border-top:1px solid #ccc;margin:40px 0;}
+h2{margin-bottom:30px;color:#003366;text-align:center;font-size:2rem;}
 
-/* Hero */
-.hero{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;min-height:90vh;background:url('https://source.unsplash.com/1600x900/?college,classroom') center/cover no-repeat;color:#fff;position:relative;}
-.hero::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);}
-.hero h1, .hero p, .hero .btn-group{position:relative;z-index:1;}
-.hero h1{font-size:2.5rem;}
-.hero p{font-size:1.2rem;margin:20px 0;}
-.hero .btn-group{margin-top:20px;}
-
-/* About */
+/* About & Director */
 .about img{float:left;margin-right:20px;border-radius:8px;max-width:300px;}
-.about p{max-width:800px;margin:auto;font-size:1rem;line-height:1.6;}
-
-/* Director */
 .director img{float:right;margin-left:20px;border-radius:50%;width:150px;height:150px;object-fit:cover;}
-.director p{max-width:800px;margin:auto;font-size:1rem;line-height:1.6;}
+.about p,.director p{max-width:800px;margin:auto;font-size:1rem;line-height:1.6;}
 
 /* Mission Vision */
 .mission-vision{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;}
-.mission-vision .block{flex:1 1 300px;padding:20px;background:#fff;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.05);}
-
-/* Placement */
-.placement .companies{display:flex;flex-wrap:wrap;gap:15px;justify-content:center;margin-top:20px;}
-.company-card{padding:10px 20px;background:#e6f0ff;border-radius:6px;font-weight:bold;}
-
-/* Counters */
-.counters{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;text-align:center;}
-.counter{flex:1 1 200px;background:#fff;padding:30px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.05);}
-.counter h2{font-size:2rem;color:#0066cc;}
+.mission-vision .block{flex:1 1 300px;padding:25px;background:#fff;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.1);text-align:center;transition:0.3s;}
+.mission-vision .block:hover{transform:translateY(-5px);}
 
 /* Courses */
 .courses-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
-.course-card{background:#fff;padding:20px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.05);transition:0.3s;}
+.course-card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.1);transition:0.3s;}
 .course-card:hover{transform:translateY(-5px);}
-.course-card img{border-radius:8px;margin-bottom:10px;}
-.course-card h4{color:#0066cc;margin-bottom:10px;}
+.course-card img{border-radius:12px;margin-bottom:15px;}
+.course-card h4{color:#0066cc;margin-bottom:10px;font-size:1.2rem;}
 
-/* Admission Form */
-form{background:#fff;padding:30px;border-radius:8px;max-width:500px;margin:auto;box-shadow:0 4px 12px rgba(0,0,0,0.05);}
-form input,form select{width:100%;padding:12px;margin-bottom:15px;border:1px solid #ccc;border-radius:6px;}
-form button{width:100%;}
-
-/* Franchise */
-.franchise{text-align:center;}
-.franchise .btn{margin-top:15px;}
+/* Counters */
+.counters{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;text-align:center;margin-top:50px;}
+.counter{flex:1 1 200px;background:#fff;padding:40px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.1);}
+.counter h2{font-size:2.5rem;color:#0066cc;margin-bottom:10px;}
 
 /* Testimonials */
-.testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
-.testimonial-card{background:#fff;padding:20px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.05);text-align:center;}
-.testimonial-card img{border-radius:50%;width:80px;height:80px;object-fit:cover;margin-bottom:10px;}
+.testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
+.testimonial-card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.1);text-align:center;transition:0.3s;}
+.testimonial-card:hover{transform:translateY(-5px);}
+.testimonial-card img{border-radius:50%;width:80px;height:80px;object-fit:cover;margin-bottom:15px;}
 .testimonial-card p{font-style:italic;}
 
 /* Success Stories */
-.success-stories{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
-.story-card{background:#fff;padding:20px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.05);}
+.success-stories{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
+.story-card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.1);transition:0.3s;}
+.story-card:hover{transform:translateY(-5px);}
 
-/* Why Choose */
-.why-choose ul{list-style:none;max-width:800px;margin:auto;}
-.why-choose li{margin-bottom:12px;padding-left:25px;position:relative;}
-.why-choose li::before{content:'✓';position:absolute;left:0;color:#0066cc;font-weight:bold;}
+/* Form */
+form{background:#fff;padding:30px;border-radius:12px;max-width:500px;margin:auto;box-shadow:0 4px 15px rgba(0,0,0,0.1);}
+form input,form select{width:100%;padding:12px;margin-bottom:15px;border:1px solid #ccc;border-radius:6px;}
+
+/* Franchise */
+.franchise{text-align:center;}
 
 /* Footer */
-footer{background:#003366;color:#fff;padding:40px 20px;text-align:center;}
-footer a{color:#25d366;font-weight:bold;}
-footer p{margin:5px 0;}
+footer{background:#003366;color:#fff;padding:50px 20px;text-align:center;}
+footer a{color:#25d366;font-weight:600;}
 
 /* Responsive */
 @media(max-width:768px){.hero h1{font-size:2rem;}.hero p{font-size:1rem;}.about img,.director img{float:none;margin:auto;display:block;}}
@@ -102,10 +101,24 @@ footer p{margin:5px 0;}
 </head>
 <body>
 
+<!-- NAVBAR -->
+<nav>
+<div class="logo">Gargee Global</div>
+<ul>
+<li><a href="#hero">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#admission">Admission</a></li>
+<li><a href="#placement">Placement</a></li>
+<li><a href="#testimonials">Testimonials</a></li>
+<li><a href="#why-choose">Why Choose</a></li>
+</ul>
+</nav>
+
 <!-- HERO -->
 <section class="hero" id="hero">
 <h1>Join Gargee Global Computer Institute Today!</h1>
-<p>ISO Verified | Government Approved | 85%+ Placement in BPO, KPO, IT & MNC Companies</p>
+<p>ISO Verified | Government Approved | 85%+ Placement</p>
 <div class="btn-group">
 <a href="#admission" class="btn btn-primary">Apply for Admission</a>
 <a href="https://wa.me/91720136336" target="_blank" class="btn btn-whatsapp">Chat on WhatsApp</a>
@@ -118,63 +131,6 @@ footer p{margin:5px 0;}
 <img src="https://source.unsplash.com/300x200/?classroom,students" alt="Classroom">
 <h2>About Gargee Global Computer Institute</h2>
 <p>Located near Vishal Mega Mart, Surajpur, Greater Noida, Gargee Global Computer Institute is a trusted leader in computer coaching and corporate training. Affiliated with Future IT College and ISO verified, we deliver industry-ready skills and high placement rates through structured courses and corporate tie-ups.</p>
-<p>With a network of 120+ colleges, government approvals (MSME, NIELIT), and training partnerships across 120+ companies, we offer credibility, scale, and results that matter for both students and business partners.</p>
-</div>
-</section>
-
-<!-- DIRECTOR MESSAGE -->
-<section class="director" id="director">
-<div class="container">
-<img src="https://source.unsplash.com/150x150/?person,teacher" alt="Director">
-<h2>Director's Message</h2>
-<p>At Gargee Global, our mission is to empower students with practical IT skills and professional excellence. Our vision is to create a generation of industry-ready professionals who contribute to global growth. We focus on comprehensive training, ethical guidance, and building a trusted learning environment. Join us to transform your career and achieve your ambitions with confidence and credibility.</p>
-</div>
-</section>
-
-<!-- MISSION & VISION -->
-<section class="mission-vision" id="mission-vision">
-<div class="block">
-<h3>Our Mission</h3>
-<p>To provide high-quality computer education and professional training that bridges the gap between academic learning and industry requirements, ensuring every student achieves career success.</p>
-</div>
-<div class="block">
-<h3>Our Vision</h3>
-<p>To become the most trusted IT and corporate training institute in India, recognized for excellence, innovation, and sustainable career growth for students and partners.</p>
-</div>
-</section>
-
-<!-- PLACEMENT -->
-<section class="placement" id="placement">
-<div class="container">
-<h2>Placement & Corporate Partnerships</h2>
-<p>With 85%+ placement success, our students secure roles in BPO, KPO, IT, and MNC companies, backed by 120+ corporate partners. We ensure real-world experience and career-ready skills.</p>
-<div class="companies">
-<div class="company-card">Company A</div>
-<div class="company-card">Company B</div>
-<div class="company-card">Company C</div>
-<div class="company-card">Company D</div>
-<div class="company-card">Company E</div>
-</div>
-</div>
-</section>
-
-<!-- COUNTERS -->
-<section class="counters" id="counters">
-<div class="counter">
-<h2>5000+</h2>
-<p>Courses Conducted</p>
-</div>
-<div class="counter">
-<h2>40+</h2>
-<p>Professional Courses</p>
-</div>
-<div class="counter">
-<h2>120+</h2>
-<p>Hiring Partners</p>
-</div>
-<div class="counter">
-<h2>1000+</h2>
-<p>Success Stories</p>
 </div>
 </section>
 
@@ -202,12 +158,11 @@ footer p{margin:5px 0;}
 </div>
 </section>
 
-<!-- FRANCHISE -->
-<section class="franchise" id="franchise">
+<!-- PLACEMENT -->
+<section class="placement" id="placement">
 <div class="container">
-<h2>Franchise Opportunities</h2>
-<p>Join our network as a business partner. Expand your business with Gargee Global and benefit from our training expertise, corporate tie-ups, and brand credibility.</p>
-<a href="#admission" class="btn btn-primary">Apply for Franchise</a>
+<h2>Placement & Corporate Partners</h2>
+<p>With 85%+ placement success, our students secure roles in BPO, KPO, IT, and MNC companies, backed by 120+ corporate partners.</p>
 </div>
 </section>
 
@@ -245,50 +200,45 @@ footer p{margin:5px 0;}
 <!-- FOOTER -->
 <footer>
 <p>Gargee Global Computer Institute, Near Vishal Mega Mart, Surajpur, Greater Noida</p>
-<p>Mobile: 9720136336 / 8178599981 | Email: <a href="mailto:gargeeglobal@gmail.com">gargeeglobal@gmail.com</a></p>
+<p>Mobile: 9720136336 | Email: <a href="mailto:gargeeglobal@gmail.com">gargeeglobal@gmail.com</a></p>
 <a href="https://wa.me/91720136336" class="btn btn-whatsapp">Chat on WhatsApp</a>
 <p>© 2026 Gargee Global Computer Institute. All rights reserved.</p>
 </footer>
 
 <script>
-// Course Data
-const courses=[
-"Basic Computer","Advanced Computer","Cyber Security","Networking","Hardware","Accounting","Programming","Designing","Digital Marketing","AI","ML","DL","ChatGPT","META Tools","Corporate Training","BPO Training","KPO Training","IT Training","MNC Training","Full Stack Development","Data Science","Cloud Computing","SAP","Java Programming","Python Programming","C++ Programming","Graphic Designing","Web Designing","UI/UX Design","SEO & SEM","Social Media Marketing","MS Office","Tally ERP","Digital Literacy","Networking Security","Ethical Hacking","Robotics","IoT","Blockchain","Game Development","App Development"
-];
+// Courses Data
+const courses=["Basic Computer","Advanced Computer","Cyber Security","Networking","Hardware","Accounting","Programming","Designing","Digital Marketing","AI","ML","DL","ChatGPT","META Tools","Corporate Training","BPO Training","KPO Training","IT Training","MNC Training","Full Stack Development","Data Science","Cloud Computing","SAP","Java Programming","Python Programming","C++ Programming","Graphic Designing","Web Designing","UI/UX Design","SEO & SEM","Social Media Marketing","MS Office","Tally ERP","Digital Literacy","Networking Security","Ethical Hacking","Robotics","IoT","Blockchain","Game Development","App Development"];
 const durations=["3 Months","6 Months","9 Months","12 Months","18 Months","2 Years","3 Years"];
 const coursesGrid=document.getElementById('courses-grid');
 const courseSelect=document.getElementById('course-select');
-
 courses.forEach((c,i)=>{
-    // Course cards
-    const card=document.createElement('div');
-    card.className='course-card';
-    card.innerHTML=`<img src="https://source.unsplash.com/300x200/?${c.replace(' ','')}" alt="${c}"><h4>${c}</h4><p>Duration: ${durations[i%durations.length]}</p><p>Learn core concepts and practical skills in ${c} to enhance your career opportunities.</p>`;
-    coursesGrid.appendChild(card);
+  const card=document.createElement('div');
+  card.className='course-card';
+  card.innerHTML=`<img src="https://source.unsplash.com/300x200/?${c.replace(' ','')}" alt="${c}"><h4>${c}</h4><p>Duration: ${durations[i%durations.length]}</p><p>Learn practical skills in ${c} to boost your career.</p>`;
+  coursesGrid.appendChild(card);
 
-    // Form select
-    const option=document.createElement('option');
-    option.value=c;
-    option.textContent=c;
-    courseSelect.appendChild(option);
+  const option=document.createElement('option');
+  option.value=c;
+  option.textContent=c;
+  courseSelect.appendChild(option);
 });
 
 // Testimonials
 const testimonialsGrid=document.getElementById('testimonials-grid');
 for(let i=1;i<=10;i++){
-    const div=document.createElement('div');
-    div.className='testimonial-card';
-    div.innerHTML=`<img src="https://source.unsplash.com/80x80/?face,student&sig=${i}" alt="Student ${i}"><p>"The courses at Gargee Global transformed my career and boosted my confidence."</p><p>👍 Liked by students | 1000+ Viewed</p>`;
-    testimonialsGrid.appendChild(div);
+  const div=document.createElement('div');
+  div.className='testimonial-card';
+  div.innerHTML=`<img src="https://source.unsplash.com/80x80/?face,student&sig=${i}" alt="Student ${i}"><p>"The courses at Gargee Global transformed my career."</p><p>👍 Liked by students</p>`;
+  testimonialsGrid.appendChild(div);
 }
 
 // Success Stories
 const storiesGrid=document.getElementById('stories-grid');
 for(let i=1;i<=8;i++){
-    const div=document.createElement('div');
-    div.className='story-card';
-    div.innerHTML=`<p>Student ${i} achieved placement in top MNC after completing ${courses[i%courses.length]} course. Career transformed successfully!</p>`;
-    storiesGrid.appendChild(div);
+  const div=document.createElement('div');
+  div.className='story-card';
+  div.innerHTML=`<p>Student ${i} achieved placement in top MNC after completing ${courses[i%courses.length]} course. Career transformed successfully!</p>`;
+  storiesGrid.appendChild(div);
 }
 </script>
 
