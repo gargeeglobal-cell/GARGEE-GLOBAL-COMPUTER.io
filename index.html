@@ -14,7 +14,6 @@
 body{background:#f8fafc;color:#1f2937;line-height:1.7}
 a{text-decoration:none;color:inherit}
 
-/* SAFE IMAGE */
 .img-wrap{
   width:100%;
   height:120px;
@@ -32,7 +31,6 @@ a{text-decoration:none;color:inherit}
   object-fit:contain;
 }
 
-/* HEADER */
 header{
   position:sticky;
   top:0;
@@ -52,7 +50,6 @@ header.scrolled{box-shadow:0 6px 15px rgba(0,0,0,.08)}
 .nav h1{font-size:20px;color:#2563eb;font-weight:700}
 .nav a{margin-left:18px;font-size:14px;font-weight:500}
 
-/* HERO */
 .hero{
   background:url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
 }
@@ -64,7 +61,6 @@ header.scrolled{box-shadow:0 6px 15px rgba(0,0,0,.08)}
 .hero h2{font-size:46px;color:#111827}
 .hero p{margin-top:10px;color:#374151}
 
-/* BUTTON */
 .btn{
   display:inline-block;
   margin:8px 6px;
@@ -78,7 +74,6 @@ header.scrolled{box-shadow:0 6px 15px rgba(0,0,0,.08)}
 .btn-primary{background:#2563eb;color:#fff}
 .btn-whatsapp{background:#16a34a;color:#fff}
 
-/* SECTIONS */
 section{padding:80px 20px}
 .container{max-width:1200px;margin:auto}
 .section-title{
@@ -88,11 +83,9 @@ section{padding:80px 20px}
   margin-bottom:40px;
 }
 
-/* GRID */
 .grid{display:grid;gap:30px}
 .grid-3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
 
-/* CARD */
 .card{
   background:#fff;
   border:1px solid #e5e7eb;
@@ -100,12 +93,10 @@ section{padding:80px 20px}
   border-radius:18px;
 }
 
-/* LIST */
 ul{list-style:none;margin-top:14px}
 ul li{margin-bottom:8px}
 ul li::before{content:"✔ ";color:#16a34a;font-weight:700}
 
-/* FOOTER */
 footer{
   background:#fff;
   border-top:1px solid #e5e7eb;
@@ -115,7 +106,6 @@ footer{
   color:#6b7280;
 }
 
-/* WHATSAPP FLOAT */
 .whatsapp-float{
   position:fixed;
   bottom:20px;
@@ -141,9 +131,8 @@ footer{
     <h1>GARGEE GLOBAL COMPUTER INSTITUTE</h1>
     <div>
       <a href="#courses">Courses</a>
-      <a href="#director">Director</a>
       <a href="#placement">Placement</a>
-      <a href="#partners">Partners</a>
+      <a href="#parent-faq">FAQ</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
@@ -153,7 +142,7 @@ footer{
   <div class="hero-overlay">
     <h2>Industry Ready IT & Software Education</h2>
     <p>ISO Verified • Affiliated with Future IT College</p>
-    <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView()">Enroll Now</button>
+    <a class="btn btn-primary" href="#contact">Enroll Now</a>
     <a class="btn btn-whatsapp" href="https://wa.me/919720136336">WhatsApp</a>
   </div>
 </section>
@@ -161,84 +150,57 @@ footer{
 <!-- COURSES -->
 <section id="courses">
   <div class="container">
-    <h3 class="section-title">Industry Demand Courses (Basic • Advanced • Corporate)</h3>
-
-    <div style="text-align:center;margin-bottom:30px">
-      <button class="btn btn-primary" onclick="filterCourses('all')">All</button>
-      <button class="btn" onclick="filterCourses('basic')">Basic</button>
-      <button class="btn" onclick="filterCourses('advanced')">Advanced</button>
-      <button class="btn" onclick="filterCourses('corporate')">Corporate</button>
-    </div>
+    <h3 class="section-title">Complete Job-Oriented Computer Courses</h3>
 
     <div class="grid grid-3">
-
       <div class="card course basic">
-        <h4>Computer Basics</h4>
-        <p><strong>Duration:</strong> 1 Month</p>
-        <button class="btn" onclick="toggleSyllabus(this)">View Syllabus</button>
-        <div class="syllabus" style="display:none">
-          <ul>
-            <li>Computer fundamentals</li>
-            <li>Windows, Internet</li>
-            <li>Office usage</li>
-          </ul>
-        </div>
+        <h4>Computer Basics & Office Automation</h4>
+        <p><strong>Duration:</strong> 1–3 Months</p>
+        <p><strong>Career Path:</strong> Office Executive, Computer Operator</p>
+        <p><strong>Who should join:</strong> Beginners, students, job seekers</p>
         <a class="btn btn-primary" href="#contact">Take Admission</a>
       </div>
 
       <div class="card course advanced">
-        <h4>Python Programming</h4>
-        <p><strong>Duration:</strong> 3 Months</p>
-        <button class="btn" onclick="toggleSyllabus(this)">View Syllabus</button>
-        <div class="syllabus" style="display:none">
-          <ul>
-            <li>Core & Advanced Python</li>
-            <li>Automation</li>
-            <li>Live projects</li>
-          </ul>
-        </div>
-        <a class="btn btn-primary" href="#contact">Take Admission</a>
+        <h4>Web Development & Programming</h4>
+        <p><strong>Duration:</strong> 3–6 Months</p>
+        <p><strong>Career Path:</strong> Web Developer, Software Trainee</p>
+        <p><strong>Who should join:</strong> IT career aspirants</p>
+        <a class="btn btn-primary" href="#contact">Join Now</a>
       </div>
 
-      <div class="card course corporate">
-        <h4>Corporate Software Training</h4>
-        <p><strong>Duration:</strong> 2–6 Months</p>
-        <button class="btn" onclick="toggleSyllabus(this)">View Syllabus</button>
-        <div class="syllabus" style="display:none">
-          <ul>
-            <li>Company tools</li>
-            <li>Process training</li>
-            <li>Job readiness</li>
-          </ul>
-        </div>
-        <a class="btn btn-primary" href="#contact">Enroll for Corporate</a>
+      <div class="card course professional">
+        <h4>Professional Software & MIS</h4>
+        <p><strong>Duration:</strong> 6–9 Months</p>
+        <p><strong>Career Path:</strong> MIS Executive, Analyst</p>
+        <p><strong>Who should join:</strong> Graduates & professionals</p>
+        <a class="btn btn-primary" href="#contact">Career Start</a>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- DIRECTOR MESSAGE -->
-<section id="director">
+<!-- ADMISSION URGENCY -->
+<section>
   <div class="container">
-    <h3 class="section-title">Director’s Message</h3>
-    <div class="card">
-      <p>
-        At <strong>Gargee Global Computer Institute</strong>, our mission is to deliver industry-relevant,
-        practical, and skill-based education that transforms students into confident professionals.
-        We strongly believe that true learning happens when theory meets real-world application.
-        Our curriculum is continuously updated as per current IT, software, and corporate industry
-        requirements so that our students stay ahead in a competitive job market.
-      </p>
-      <p style="margin-top:14px">
-        Our vision is to become a trusted center of excellence for IT and professional training,
-        where students not only gain technical knowledge but also develop problem-solving ability,
-        discipline, and professional ethics. We are committed to shaping careers, building confidence,
-        and creating long-term success for every learner who joins us.
-      </p>
-      <p style="margin-top:20px;font-weight:600;color:#2563eb">
-        — Aditya Gupta<br>Director
-      </p>
+    <div class="card" style="border-left:6px solid #dc2626">
+      <h3 style="color:#dc2626">⚠ Limited Seats Available</h3>
+      <p>Limited students per batch for personal attention. First come first serve.</p>
+      <a href="#contact" class="btn btn-primary">Book Your Seat</a>
+    </div>
+  </div>
+</section>
+
+<!-- STUDENT JOURNEY -->
+<section>
+  <div class="container">
+    <h3 class="section-title">Student Career Journey</h3>
+    <div class="grid grid-3">
+      <div class="card">Classroom Training</div>
+      <div class="card">Projects & Practicals</div>
+      <div class="card">Interview Preparation</div>
+      <div class="card">Placement Assistance</div>
+      <div class="card">Career Growth Support</div>
     </div>
   </div>
 </section>
@@ -246,34 +208,58 @@ footer{
 <!-- PLACEMENT -->
 <section id="placement">
   <div class="container">
-    <h3 class="section-title">Placement & Career Support</h3>
+    <h3 class="section-title">Placement Support</h3>
     <div class="card">
-      <p>
-        Our placement and career support system is designed to make students job-ready from day one.
-        We focus on practical training, real-time project exposure, interview preparation, and
-        professional communication skills.
-      </p>
+      <ul>
+        <li>Practical training & live projects</li>
+        <li>Resume & interview preparation</li>
+        <li>Placement assistance through references</li>
+        <li>Career guidance after course completion</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- PARTNERS (FIXED – GITHUB SAFE) -->
-<section id="partners">
+<!-- WHY GARGEE -->
+<section>
   <div class="container">
-    <h3 class="section-title">Our Placement Partners</h3>
-    <div class="grid grid-3">
-
-      <div class="img-wrap"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tcs.svg" alt="TCS"></div>
-      <div class="img-wrap"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/infosys.svg" alt="Infosys"></div>
-      <div class="img-wrap"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/wipro.svg" alt="Wipro"></div>
-      <div class="img-wrap"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/ibm.svg" alt="IBM"></div>
-      <div class="img-wrap"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/accenture.svg" alt="Accenture"></div>
-      <div class="img-wrap"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/hcl.svg" alt="HCL"></div>
-
+    <h3 class="section-title">Why Gargee Global?</h3>
+    <div class="card">
+      <ul>
+        <li>ISO certified & structured training</li>
+        <li>Industry & job-oriented syllabus</li>
+        <li>Affordable fees</li>
+        <li>Personal mentoring</li>
+      </ul>
     </div>
   </div>
 </section>
 
+<!-- PARENT FAQ -->
+<section id="parent-faq">
+  <div class="container">
+    <h3 class="section-title">Parent FAQs</h3>
+    <div class="card">
+      <p><strong>Q:</strong> Kya beginners join kar sakte hain?<br>Yes, basic se start hota hai.</p>
+      <p><strong>Q:</strong> Placement milta hai?<br>Placement assistance + guidance di jaati hai.</p>
+      <p><strong>Q:</strong> Fees affordable hai?<br>Yes, quality ke according reasonable.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section>
+  <div class="container">
+    <h3 class="section-title">Placement Partners</h3>
+    <div class="grid grid-3">
+      <div class="img-wrap"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tcs.svg"></div>
+      <div class="img-wrap"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/infosys.svg"></div>
+      <div class="img-wrap"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/wipro.svg"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
   <div class="container">
     <h3 class="section-title">Contact Us</h3>
@@ -292,15 +278,6 @@ footer{
 <a class="whatsapp-float" href="https://wa.me/919720136336">WhatsApp</a>
 
 <script>
-function filterCourses(type){
-  document.querySelectorAll('.course').forEach(c=>{
-    c.style.display = (type==='all' || c.classList.contains(type)) ? 'block' : 'none';
-  });
-}
-function toggleSyllabus(btn){
-  const s = btn.nextElementSibling;
-  s.style.display = s.style.display === 'none' ? 'block' : 'none';
-}
 window.addEventListener("scroll",()=>{
   document.querySelector("header").classList.toggle("scrolled",scrollY>50);
 });
