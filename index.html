@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -8,6 +7,7 @@
 <meta name="description" content="Gargee Global Computer Institute, Near Vishal Mega Mart, Surajpur, Greater Noida. Affiliated with Future IT College. Computer courses, corporate training, placements & ISO verified.">
 <meta name="keywords" content="Gargee Global, IT Institute, Computer Courses, Training, Placement, ISO Verified, Future IT College, Greater Noida">
 <meta name="author" content="Gargee Global Computer Institute">
+
 <style>
 /* Reset & Base */
 *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,sans-serif;}
@@ -15,16 +15,14 @@ body{line-height:1.6;color:#222;background:#f9f9f9;}
 a{text-decoration:none;color:inherit;}
 img,svg{max-width:100%;height:auto;display:block;}
 .container{width:90%;max-width:1200px;margin:0 auto;}
-
-/* Scroll Smooth */
 html{scroll-behavior:smooth;}
 
 /* Buttons */
 .btn{display:inline-block;padding:12px 24px;margin:5px;border:none;border-radius:6px;font-weight:bold;cursor:pointer;transition:0.3s;}
 .btn-primary{background:#0066cc;color:#fff;}
-.btn-primary:hover
+.btn-primary:hover{background:#005bb5;}
 .btn-whatsapp{background:#25d366;color:#fff;}
-.btn-whatsapp:hover
+.btn-whatsapp:hover{background:#1ebc5d;}
 
 /* Sections */
 section{padding:80px 0;position:relative;}
@@ -34,16 +32,20 @@ p{margin-bottom:15px;}
 hr{border:none;border-top:1px solid #ccc;margin:40px 0;}
 
 /* Hero */
-.hero{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;min-height:90vh;background:linear-gradient(135deg,#0066cc,#3399ff);color:#fff;}
+.hero{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;min-height:90vh;background:url('https://source.unsplash.com/1600x900/?college,classroom') center/cover no-repeat;color:#fff;position:relative;}
+.hero::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);}
+.hero h1, .hero p, .hero .btn-group{position:relative;z-index:1;}
 .hero h1{font-size:2.5rem;}
 .hero p{font-size:1.2rem;margin:20px 0;}
 .hero .btn-group{margin-top:20px;}
 
 /* About */
-.about p{max-width:800px;margin:auto;font-size:1rem;}
+.about img{float:left;margin-right:20px;border-radius:8px;max-width:300px;}
+.about p{max-width:800px;margin:auto;font-size:1rem;line-height:1.6;}
 
 /* Director */
-.director p{max-width:800px;margin:auto;font-size:1rem;line-height:1.5;}
+.director img{float:right;margin-left:20px;border-radius:50%;width:150px;height:150px;object-fit:cover;}
+.director p{max-width:800px;margin:auto;font-size:1rem;line-height:1.6;}
 
 /* Mission Vision */
 .mission-vision{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;}
@@ -59,9 +61,10 @@ hr{border:none;border-top:1px solid #ccc;margin:40px 0;}
 .counter h2{font-size:2rem;color:#0066cc;}
 
 /* Courses */
-.courses{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.courses-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
 .course-card{background:#fff;padding:20px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.05);transition:0.3s;}
 .course-card:hover{transform:translateY(-5px);}
+.course-card img{border-radius:8px;margin-bottom:10px;}
 .course-card h4{color:#0066cc;margin-bottom:10px;}
 
 /* Admission Form */
@@ -75,7 +78,8 @@ form button{width:100%;}
 
 /* Testimonials */
 .testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
-.testimonial-card{background:#fff;padding:20px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.05);}
+.testimonial-card{background:#fff;padding:20px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.05);text-align:center;}
+.testimonial-card img{border-radius:50%;width:80px;height:80px;object-fit:cover;margin-bottom:10px;}
 .testimonial-card p{font-style:italic;}
 
 /* Success Stories */
@@ -93,13 +97,12 @@ footer a{color:#25d366;font-weight:bold;}
 footer p{margin:5px 0;}
 
 /* Responsive */
-@media(max-width:768px){.hero h1{font-size:2rem;}.hero p{font-size:1rem;}} </style>
-
+@media(max-width:768px){.hero h1{font-size:2rem;}.hero p{font-size:1rem;}.about img,.director img{float:none;margin:auto;display:block;}}
+</style>
 </head>
 <body>
 
-<!-- HERO SECTION -->
-
+<!-- HERO -->
 <section class="hero" id="hero">
 <h1>Join Gargee Global Computer Institute Today!</h1>
 <p>ISO Verified | Government Approved | 85%+ Placement in BPO, KPO, IT & MNC Companies</p>
@@ -109,10 +112,10 @@ footer p{margin:5px 0;}
 </div>
 </section>
 
-<!-- ABOUT INSTITUTE -->
-
+<!-- ABOUT -->
 <section class="about" id="about">
 <div class="container">
+<img src="https://source.unsplash.com/300x200/?classroom,students" alt="Classroom">
 <h2>About Gargee Global Computer Institute</h2>
 <p>Located near Vishal Mega Mart, Surajpur, Greater Noida, Gargee Global Computer Institute is a trusted leader in computer coaching and corporate training. Affiliated with Future IT College and ISO verified, we deliver industry-ready skills and high placement rates through structured courses and corporate tie-ups.</p>
 <p>With a network of 120+ colleges, government approvals (MSME, NIELIT), and training partnerships across 120+ companies, we offer credibility, scale, and results that matter for both students and business partners.</p>
@@ -120,16 +123,15 @@ footer p{margin:5px 0;}
 </section>
 
 <!-- DIRECTOR MESSAGE -->
-
 <section class="director" id="director">
 <div class="container">
+<img src="https://source.unsplash.com/150x150/?person,teacher" alt="Director">
 <h2>Director's Message</h2>
 <p>At Gargee Global, our mission is to empower students with practical IT skills and professional excellence. Our vision is to create a generation of industry-ready professionals who contribute to global growth. We focus on comprehensive training, ethical guidance, and building a trusted learning environment. Join us to transform your career and achieve your ambitions with confidence and credibility.</p>
 </div>
 </section>
 
 <!-- MISSION & VISION -->
-
 <section class="mission-vision" id="mission-vision">
 <div class="block">
 <h3>Our Mission</h3>
@@ -141,8 +143,7 @@ footer p{margin:5px 0;}
 </div>
 </section>
 
-<!-- PLACEMENT SECTION -->
-
+<!-- PLACEMENT -->
 <section class="placement" id="placement">
 <div class="container">
 <h2>Placement & Corporate Partnerships</h2>
@@ -157,8 +158,7 @@ footer p{margin:5px 0;}
 </div>
 </section>
 
-<!-- SUCCESS METRICS -->
-
+<!-- COUNTERS -->
 <section class="counters" id="counters">
 <div class="counter">
 <h2>5000+</h2>
@@ -178,32 +178,15 @@ footer p{margin:5px 0;}
 </div>
 </section>
 
-<!-- COURSES SECTION -->
-
+<!-- COURSES -->
 <section class="courses" id="courses">
 <div class="container">
 <h2>Our Courses</h2>
-<div class="courses-grid">
-<!-- 40 Course Cards -->
-<script>
-const courses=[
-"Basic Computer","Advanced Computer","Cyber Security","Networking","Hardware","Accounting","Programming","Designing","Digital Marketing","AI","ML","DL","ChatGPT","META Tools","Corporate Training","BPO Training","KPO Training","IT Training","MNC Training","Full Stack Development","Data Science","Cloud Computing","SAP","Java Programming","Python Programming","C++ Programming","Graphic Designing","Web Designing","UI/UX Design","SEO & SEM","Social Media Marketing","MS Office","Tally ERP","Digital Literacy","Networking Security","Ethical Hacking","Robotics","IoT","Blockchain","Game Development","App Development"
-];
-const durations=["3 Months","6 Months","9 Months","12 Months","18 Months","2 Years","3 Years"];
-courses.forEach((c,i)=>{
-document.write(`<div class="course-card">
-<h4>${c}</h4>
-<p>Duration: ${durations[i%durations.length]}</p>
-<p>Learn core concepts and practical skills in ${c} to enhance your career opportunities.</p>
-</div>`);
-});
-</script>
-</div>
+<div class="courses-grid" id="courses-grid"></div>
 </div>
 </section>
 
 <!-- ADMISSION FORM -->
-
 <section id="admission">
 <div class="container">
 <h2>Admission Form</h2>
@@ -211,19 +194,15 @@ document.write(`<div class="course-card">
 <input type="text" name="name" placeholder="Full Name" required>
 <input type="tel" name="mobile" placeholder="Mobile Number" pattern="[0-9]{10}" required>
 <input type="email" name="email" placeholder="Email" required>
-<select name="course" required>
+<select name="course" id="course-select" required>
 <option value="">Select Course</option>
-<script>
-courses.forEach(c=>document.write(`<option value="${c}">${c}</option>`));
-</script>
 </select>
 <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 </div>
 </section>
 
-<!-- FRANCHISE SECTION -->
-
+<!-- FRANCHISE -->
 <section class="franchise" id="franchise">
 <div class="container">
 <h2>Franchise Opportunities</h2>
@@ -233,38 +212,22 @@ courses.forEach(c=>document.write(`<option value="${c}">${c}</option>`));
 </section>
 
 <!-- TESTIMONIALS -->
-
 <section class="testimonials" id="testimonials">
 <div class="container">
 <h2>Student Testimonials</h2>
-<script>
-for(let i=1;i<=20;i++){
-document.write(`<div class="testimonial-card">
-<p>"The courses at Gargee Global transformed my career and boosted my confidence."</p>
-<p>👍 Liked by students | 1000+ Viewed</p>
-</div>`);
-}
-</script>
+<div id="testimonials-grid"></div>
 </div>
 </section>
 
 <!-- SUCCESS STORIES -->
-
 <section class="success-stories" id="success-stories">
 <div class="container">
 <h2>Success Stories</h2>
-<script>
-for(let i=1;i<=8;i++){
-document.write(`<div class="story-card">
-<p>Student ${i} achieved placement in top MNC after completing ${courses[i%courses.length]} course. Career transformed successfully!</p>
-</div>`);
-}
-</script>
+<div id="stories-grid"></div>
 </div>
 </section>
 
 <!-- WHY CHOOSE -->
-
 <section class="why-choose" id="why-choose">
 <div class="container">
 <h2>Why Choose Gargee Global</h2>
@@ -280,13 +243,54 @@ document.write(`<div class="story-card">
 </section>
 
 <!-- FOOTER -->
-
 <footer>
 <p>Gargee Global Computer Institute, Near Vishal Mega Mart, Surajpur, Greater Noida</p>
 <p>Mobile: 9720136336 / 8178599981 | Email: <a href="mailto:gargeeglobal@gmail.com">gargeeglobal@gmail.com</a></p>
 <a href="https://wa.me/91720136336" class="btn btn-whatsapp">Chat on WhatsApp</a>
 <p>© 2026 Gargee Global Computer Institute. All rights reserved.</p>
 </footer>
+
+<script>
+// Course Data
+const courses=[
+"Basic Computer","Advanced Computer","Cyber Security","Networking","Hardware","Accounting","Programming","Designing","Digital Marketing","AI","ML","DL","ChatGPT","META Tools","Corporate Training","BPO Training","KPO Training","IT Training","MNC Training","Full Stack Development","Data Science","Cloud Computing","SAP","Java Programming","Python Programming","C++ Programming","Graphic Designing","Web Designing","UI/UX Design","SEO & SEM","Social Media Marketing","MS Office","Tally ERP","Digital Literacy","Networking Security","Ethical Hacking","Robotics","IoT","Blockchain","Game Development","App Development"
+];
+const durations=["3 Months","6 Months","9 Months","12 Months","18 Months","2 Years","3 Years"];
+const coursesGrid=document.getElementById('courses-grid');
+const courseSelect=document.getElementById('course-select');
+
+courses.forEach((c,i)=>{
+    // Course cards
+    const card=document.createElement('div');
+    card.className='course-card';
+    card.innerHTML=`<img src="https://source.unsplash.com/300x200/?${c.replace(' ','')}" alt="${c}"><h4>${c}</h4><p>Duration: ${durations[i%durations.length]}</p><p>Learn core concepts and practical skills in ${c} to enhance your career opportunities.</p>`;
+    coursesGrid.appendChild(card);
+
+    // Form select
+    const option=document.createElement('option');
+    option.value=c;
+    option.textContent=c;
+    courseSelect.appendChild(option);
+});
+
+// Testimonials
+const testimonialsGrid=document.getElementById('testimonials-grid');
+for(let i=1;i<=10;i++){
+    const div=document.createElement('div');
+    div.className='testimonial-card';
+    div.innerHTML=`<img src="https://source.unsplash.com/80x80/?face,student&sig=${i}" alt="Student ${i}"><p>"The courses at Gargee Global transformed my career and boosted my confidence."</p><p>👍 Liked by students | 1000+ Viewed</p>`;
+    testimonialsGrid.appendChild(div);
+}
+
+// Success Stories
+const storiesGrid=document.getElementById('stories-grid');
+for(let i=1;i<=8;i++){
+    const div=document.createElement('div');
+    div.className='story-card';
+    div.innerHTML=`<p>Student ${i} achieved placement in top MNC after completing ${courses[i%courses.length]} course. Career transformed successfully!</p>`;
+    storiesGrid.appendChild(div);
+}
+</script>
 
 </body>
 </html>
