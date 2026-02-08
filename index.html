@@ -14,7 +14,6 @@
 body{background:#f8fafc;color:#1f2937;line-height:1.7}
 a{text-decoration:none;color:inherit}
 
-/* IMAGE WRAP */
 .img-wrap{
   width:100%;
   height:120px;
@@ -32,7 +31,6 @@ a{text-decoration:none;color:inherit}
   object-fit:contain;
 }
 
-/* COURSE IMAGE FIX */
 .course-card img{
   width:100%;
   height:160px;
@@ -41,7 +39,6 @@ a{text-decoration:none;color:inherit}
   margin-bottom:12px;
 }
 
-/* HEADER */
 header{
   position:sticky;
   top:0;
@@ -61,7 +58,6 @@ header.scrolled{box-shadow:0 6px 15px rgba(0,0,0,.08)}
 .nav h1{font-size:20px;color:#2563eb;font-weight:700}
 .nav a{margin-left:18px;font-size:14px;font-weight:500}
 
-/* HERO */
 .hero{
   background:url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
 }
@@ -73,7 +69,6 @@ header.scrolled{box-shadow:0 6px 15px rgba(0,0,0,.08)}
 .hero h2{font-size:46px;color:#111827}
 .hero p{margin-top:10px;color:#374151}
 
-/* BUTTONS */
 .btn{
   display:inline-block;
   margin:8px 6px;
@@ -87,7 +82,6 @@ header.scrolled{box-shadow:0 6px 15px rgba(0,0,0,.08)}
 .btn-primary{background:#2563eb;color:#fff}
 .btn-whatsapp{background:#16a34a;color:#fff}
 
-/* LAYOUT */
 section{padding:80px 20px}
 .container{max-width:1200px;margin:auto}
 .section-title{
@@ -106,7 +100,6 @@ section{padding:80px 20px}
   border-radius:18px;
 }
 
-/* FOOTER */
 footer{
   background:#fff;
   border-top:1px solid #e5e7eb;
@@ -160,73 +153,151 @@ footer{
 <section id="courses">
   <div class="container">
 
-    <h3 class="section-title">5000+ Job-Oriented Computer Courses</h3>
-    <p style="text-align:center;color:#374151;margin-bottom:25px">
-      Beginner to Advanced • Corporate & MNC Demand • Duration: 3 Months to 3 Years
+    <h3 class="section-title">Computer Courses: Foundation to Corporate Mastery</h3>
+    <p style="text-align:center;color:#374151;margin-bottom:18px">
+      From School Students to Working Professionals • IT, Software, Corporate & MNC Demand Programs
     </p>
-
-    <div style="text-align:center;margin-bottom:30px">
-      <select id="courseFilter" class="btn">
-        <option value="all">All Courses</option>
-        <option value="basic">Computer Basics</option>
-        <option value="software">Software & Programming</option>
-        <option value="web">Web & App Development</option>
-        <option value="cyber">Cyber Security</option>
-        <option value="network">Networking & Cloud</option>
-        <option value="accounts">Accounts & MIS</option>
-        <option value="corporate">Corporate / BPO / KPO</option>
-        <option value="diploma">Diploma / Long Term</option>
-      </select>
-    </div>
+    <p style="text-align:center;font-weight:600;color:#2563eb;margin-bottom:35px">
+      Course Duration: 3 Months to 3 Years • 5000+ Courses Available
+    </p>
 
     <div class="grid grid-3">
 
-      <div class="card course-card" data-category="basic">
+      <!-- BASIC -->
+      <div class="card course-card">
         <img src="https://images.unsplash.com/photo-1581091215367-59ab6c8f476c?auto=format&fit=crop&w=800&q=80">
-        <h4>Computer Basics & Office Automation</h4>
+        <h4>Computer Fundamentals & Digital Literacy</h4>
+        <p>MS Windows, Internet, Typing, File Management</p>
+        <p><strong>Duration:</strong> 3 Months</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
+
+      <div class="card course-card">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80">
+        <h4>Office Automation Professional</h4>
+        <p>MS Word, Excel, PowerPoint, Outlook</p>
         <p><strong>Duration:</strong> 3–6 Months</p>
-        <a class="btn btn-primary" href="#contact">Take Admission</a>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
       </div>
 
-      <div class="card course-card" data-category="software">
+      <!-- SOFTWARE -->
+      <div class="card course-card">
         <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80">
-        <h4>Software Programming Professional</h4>
-        <p><strong>Duration:</strong> 6 Months – 1 Year</p>
-        <a class="btn btn-primary" href="#contact">Join Now</a>
-      </div>
-
-      <div class="card course-card" data-category="web">
-        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80">
-        <h4>Full Stack Web Development</h4>
-        <p><strong>Duration:</strong> 6–12 Months</p>
-        <a class="btn btn-primary" href="#contact">Career Start</a>
-      </div>
-
-      <div class="card course-card" data-category="cyber">
-        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80">
-        <h4>Cyber Security & Ethical Hacking</h4>
-        <p><strong>Duration:</strong> 6 Months – 2 Years</p>
-        <a class="btn btn-primary" href="#contact">Enroll Now</a>
-      </div>
-
-      <div class="card course-card" data-category="network">
-        <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80">
-        <h4>Networking & Cloud Computing</h4>
+        <h4>Software Programming Career Track</h4>
+        <p>C, C++, Java, Python, Logic Building</p>
         <p><strong>Duration:</strong> 6–18 Months</p>
         <a class="btn btn-primary" href="#contact">Join Now</a>
       </div>
 
-      <div class="card course-card" data-category="accounts">
-        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80">
-        <h4>Accounts, Tally & Advanced Excel</h4>
+      <div class="card course-card">
+        <img src="https://images.unsplash.com/photo-1526378722443-4bb6c57d1a14?auto=format&fit=crop&w=800&q=80">
+        <h4>Advanced Java & Python Developer</h4>
+        <p>Core + Advanced + Live Projects</p>
+        <p><strong>Duration:</strong> 1–2 Years</p>
+        <a class="btn btn-primary" href="#contact">Career Start</a>
+      </div>
+
+      <!-- WEB & APP -->
+      <div class="card course-card">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80">
+        <h4>Full Stack Web Development</h4>
+        <p>HTML, CSS, JS, React, Node, Database</p>
+        <p><strong>Duration:</strong> 6–12 Months</p>
+        <a class="btn btn-primary" href="#contact">Apply</a>
+      </div>
+
+      <div class="card course-card">
+        <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=800&q=80">
+        <h4>Mobile App Development</h4>
+        <p>Android, Flutter, React Native</p>
+        <p><strong>Duration:</strong> 6–18 Months</p>
+        <a class="btn btn-primary" href="#contact">Apply</a>
+      </div>
+
+      <!-- CYBER & NETWORK -->
+      <div class="card course-card">
+        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80">
+        <h4>Cyber Security & Ethical Hacking</h4>
+        <p>Security, Pen-Testing, SOC, CEH Track</p>
+        <p><strong>Duration:</strong> 6 Months – 3 Years</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
+
+      <div class="card course-card">
+        <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80">
+        <h4>Networking & Cloud Computing</h4>
+        <p>CCNA, CCNP, AWS, Azure</p>
+        <p><strong>Duration:</strong> 6–24 Months</p>
+        <a class="btn btn-primary" href="#contact">Join</a>
+      </div>
+
+      <!-- HARDWARE -->
+      <div class="card course-card">
+        <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d8?auto=format&fit=crop&w=800&q=80">
+        <h4>Computer Hardware & Chip Level</h4>
+        <p>Desktop, Laptop, Printer Repairing</p>
+        <p><strong>Duration:</strong> 6–12 Months</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
+
+      <!-- DATA / BI -->
+      <div class="card course-card">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80">
+        <h4>Data Analytics & Power BI</h4>
+        <p>Excel, SQL, Power BI, Dashboard</p>
+        <p><strong>Duration:</strong> 6–12 Months</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
+
+      <!-- DESIGN -->
+      <div class="card course-card">
+        <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=800&q=80">
+        <h4>Graphic & UI/UX Designing</h4>
+        <p>Photoshop, Illustrator, Figma</p>
+        <p><strong>Duration:</strong> 6–12 Months</p>
+        <a class="btn btn-primary" href="#contact">Join</a>
+      </div>
+
+      <!-- DIGITAL MARKETING -->
+      <div class="card course-card">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80">
+        <h4>Digital Marketing Professional</h4>
+        <p>SEO, Google Ads, Social Media</p>
         <p><strong>Duration:</strong> 3–9 Months</p>
-        <a class="btn btn-primary" href="#contact">Take Admission</a>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
+      </div>
+
+      <!-- SAP -->
+      <div class="card course-card">
+        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80">
+        <h4>SAP Functional & Technical</h4>
+        <p>SAP FICO, MM, HR, ABAP</p>
+        <p><strong>Duration:</strong> 6–24 Months</p>
+        <a class="btn btn-primary" href="#contact">Apply</a>
+      </div>
+
+      <!-- CORPORATE -->
+      <div class="card course-card">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80">
+        <h4>Corporate IT & MNC Training</h4>
+        <p>Live Projects, Interview, Placement</p>
+        <p><strong>Duration:</strong> 6–36 Months</p>
+        <a class="btn btn-primary" href="#contact">Join</a>
+      </div>
+
+      <div class="card course-card">
+        <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=800&q=80">
+        <h4>BPO / KPO / ITES Training</h4>
+        <p>Communication, Process, CRM Tools</p>
+        <p><strong>Duration:</strong> 3–6 Months</p>
+        <a class="btn btn-primary" href="#contact">Enroll</a>
       </div>
 
     </div>
 
-    <p style="text-align:center;margin-top:30px;font-weight:600;color:#2563eb">
-      + 5000 More Industry & Company Demand Courses Available
+    <p style="text-align:center;margin-top:40px;font-size:18px;font-weight:700;color:#2563eb">
+      ✔ 5000+ Computer, IT, Software & Corporate Courses Available  
+      <br>✔ Career Guidance • Skill Mapping • Placement Support
     </p>
 
   </div>
@@ -242,19 +313,7 @@ footer{
 window.addEventListener("scroll",()=>{
   document.querySelector("header").classList.toggle("scrolled",scrollY>50);
 });
-
-const filter = document.getElementById("courseFilter");
-const cards = document.querySelectorAll(".course-card");
-
-if(filter){
-  filter.addEventListener("change",()=>{
-    const value = filter.value;
-    cards.forEach(card=>{
-      card.style.display = value==="all" || card.dataset.category===value ? "block" : "none";
-    });
-  });
-}
 </script>
 
 </body>
-</html> 
+</html>
