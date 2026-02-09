@@ -3,11 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gargee Global Computer Institute (GGCI) | Professional IT College</title>
+<title>Gargee Global Computer Institute (GGCI)</title>
 
-<meta name="description" content="Gargee Global Computer Institute (GGCI) is a professional IT & computer education institute in India offering industry-focused courses with career support and corporate-level training.">
-<meta name="keywords" content="Gargee Global Computer Institute, GGCI, Computer Institute, IT College, Software Courses, Professional Computer Education">
-<meta name="author" content="Gargee Global Computer Institute">
+<meta name="description" content="Gargee Global Computer Institute – Professional IT Education, Franchise Opportunities & Career-Focused Training">
+<meta name="author" content="GGCI">
 
 <style>
 :root{
@@ -16,265 +15,66 @@
   --light:#f5f8ff;
   --dark:#1a1a1a;
 }
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial}
+body{background:#fff;color:var(--dark);line-height:1.6}
+html{scroll-behavior:smooth}
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: "Segoe UI", Arial, sans-serif;
+/* HEADER */
+header{position:sticky;top:0;background:#fff;z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.navbar{max-width:1200px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:22px;font-weight:700;color:var(--primary)}
+nav ul{list-style:none;display:flex;gap:20px}
+nav a{text-decoration:none;color:#333;font-weight:500}
+.menu-toggle{display:none;font-size:24px;cursor:pointer}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;padding:90px 20px}
+.hero-inner{max-width:1200px;margin:auto;display:grid;grid-template-columns:1.2fr .8fr;gap:40px}
+.hero h1{font-size:42px;margin-bottom:15px}
+.btn{display:inline-block;padding:14px 26px;border-radius:6px;text-decoration:none;font-weight:600}
+.btn.white{background:#fff;color:var(--primary)}
+.btn.outline{border:2px solid #fff;color:#fff;background:none}
+
+/* SECTIONS */
+section{padding:70px 20px}
+.container{max-width:1200px;margin:auto}
+.section-title{text-align:center;margin-bottom:40px}
+.section-title h2{color:var(--primary);font-size:32px}
+
+/* GRID */
+.grid{display:grid;gap:25px}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.card{background:#fff;padding:30px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,.08)}
+
+/* FORM */
+input,select{width:100%;padding:12px;margin-bottom:12px;border:1px solid #ccc;border-radius:6px}
+button{padding:14px;border:none;border-radius:6px;background:var(--primary);color:#fff;font-size:16px;cursor:pointer}
+
+/* POPUP */
+#popup{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:2000}
+.popup-box{background:#fff;max-width:400px;margin:10% auto;padding:30px;border-radius:12px;text-align:center}
+.popup-box button{margin-top:10px}
+
+/* WHATSAPP FLOAT */
+.whatsapp{
+position:fixed;bottom:20px;right:20px;
+background:#25d366;color:#fff;
+padding:14px 18px;border-radius:50px;
+text-decoration:none;font-weight:600;
+z-index:1500
 }
 
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  color:var(--dark);
-  background:#fff;
-  line-height:1.6;
-}
-
-/* ===== HEADER ===== */
-header{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:#fff;
-  box-shadow:0 2px 10px rgba(0,0,0,0.08);
-}
-
-.navbar{
-  max-width:1200px;
-  margin:auto;
-  padding:15px 20px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-
-.logo{
-  font-size:22px;
-  font-weight:700;
-  color:var(--primary);
-}
-
-nav ul{
-  list-style:none;
-  display:flex;
-  gap:20px;
-}
-
-nav a{
-  text-decoration:none;
-  color:var(--dark);
-  font-weight:500;
-}
-
-nav a:hover{
-  color:var(--primary);
-}
-
-.menu-toggle{
-  display:none;
-  font-size:24px;
-  cursor:pointer;
-}
-
-/* ===== HERO ===== */
-.hero{
-  background:linear-gradient(135deg, var(--primary), var(--secondary));
-  color:#fff;
-  padding:90px 20px;
-}
-
-.hero-inner{
-  max-width:1200px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:1.2fr 0.8fr;
-  gap:40px;
-  align-items:center;
-}
-
-.hero h1{
-  font-size:42px;
-  margin-bottom:20px;
-}
-
-.hero p{
-  font-size:18px;
-  margin-bottom:30px;
-}
-
-.btn{
-  display:inline-block;
-  padding:14px 28px;
-  background:#fff;
-  color:var(--primary);
-  border-radius:6px;
-  font-weight:600;
-  text-decoration:none;
-  margin-right:15px;
-}
-
-.btn.outline{
-  background:transparent;
-  border:2px solid #fff;
-  color:#fff;
-}
-
-.hero-card{
-  background:#fff;
-  color:var(--dark);
-  border-radius:12px;
-  padding:30px;
-  box-shadow:0 20px 40px rgba(0,0,0,0.2);
-}
-
-/* ===== SECTIONS ===== */
-section{
-  padding:70px 20px;
-}
-
-.container{
-  max-width:1200px;
-  margin:auto;
-}
-
-.section-title{
-  text-align:center;
-  margin-bottom:50px;
-}
-
-.section-title h2{
-  font-size:32px;
-  color:var(--primary);
-}
-
-.section-title p{
-  max-width:700px;
-  margin:10px auto 0;
-  color:#555;
-}
-
-/* ===== CARDS ===== */
-.grid{
-  display:grid;
-  gap:25px;
-}
-
-.grid-3{
-  grid-template-columns:repeat(3,1fr);
-}
-
-.card{
-  background:#fff;
-  padding:30px;
-  border-radius:12px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
-  transition:transform .3s;
-}
-
-.card:hover{
-  transform:translateY(-6px);
-}
-
-/* ===== WHY ===== */
-.why{
-  background:var(--light);
-}
-
-/* ===== TESTIMONIAL ===== */
-.testimonial{
-  background:#fff;
-  border-left:5px solid var(--primary);
-}
-
-/* ===== CONTACT ===== */
-.contact{
-  background:var(--light);
-}
-
-.contact-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:30px;
-}
-
-.contact-box{
-  background:#fff;
-  padding:30px;
-  border-radius:12px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
-}
-
-.contact-box iframe{
-  width:100%;
-  height:280px;
-  border:0;
-}
-
-/* ===== FOOTER ===== */
-footer{
-  background:#0a1f44;
-  color:#fff;
-  padding:40px 20px;
-}
-
-.footer-inner{
-  max-width:1200px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:2fr 1fr 1fr;
-  gap:30px;
-}
-
-footer a{
-  color:#cfd8ff;
-  text-decoration:none;
-}
-
-footer a:hover{
-  color:#fff;
-}
-
-/* ===== RESPONSIVE ===== */
+/* RESPONSIVE */
 @media(max-width:900px){
-  .hero-inner{
-    grid-template-columns:1fr;
-  }
-  .grid-3{
-    grid-template-columns:1fr 1fr;
-  }
-  .contact-grid{
-    grid-template-columns:1fr;
-  }
+.hero-inner{grid-template-columns:1fr}
+.grid-3{grid-template-columns:1fr 1fr}
 }
-
 @media(max-width:600px){
-  nav ul{
-    position:absolute;
-    top:65px;
-    right:0;
-    background:#fff;
-    width:200px;
-    flex-direction:column;
-    padding:20px;
-    display:none;
-    box-shadow:0 10px 25px rgba(0,0,0,0.15);
-  }
-  nav ul.show{
-    display:flex;
-  }
-  .menu-toggle{
-    display:block;
-  }
-  .grid-3{
-    grid-template-columns:1fr;
-  }
-  .hero h1{
-    font-size:34px;
-  }
+.menu-toggle{display:block}
+nav ul{display:none;position:absolute;top:65px;right:0;background:#fff;width:200px;flex-direction:column;padding:20px}
+nav ul.show{display:flex}
+.grid-3{grid-template-columns:1fr}
+.hero h1{font-size:34px}
 }
 </style>
 </head>
@@ -282,149 +82,122 @@ footer a:hover{
 <body>
 
 <header>
-  <div class="navbar">
-    <div class="logo">GGCI</div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav>
-      <ul id="menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#why">Why GGCI</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+<div class="navbar">
+<div class="logo">GGCI</div>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<nav>
+<ul id="menu">
+<li><a href="#about">About</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#franchise">Franchise</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
 </header>
 
 <section class="hero">
-  <div class="hero-inner">
-    <div>
-      <h1>Build Your IT Career With Confidence</h1>
-      <p>Gargee Global Computer Institute delivers professional, industry-driven computer education designed to prepare students for real-world IT careers.</p>
-      <a href="#contact" class="btn">Apply for Admission</a>
-      <a href="#courses" class="btn outline">Explore Courses</a>
-    </div>
-    <div class="hero-card">
-      <h3>Professional IT Education</h3>
-      <p>Corporate-style training, modern curriculum, and career-focused learning environment.</p>
-    </div>
-  </div>
+<div class="hero-inner">
+<div>
+<h1>Build Your IT Career With GGCI</h1>
+<p>Professional IT education with corporate-level training.</p>
+<a href="#contact" class="btn white">Apply Now</a>
+<a href="#franchise" class="btn outline">Take Franchise</a>
+</div>
+<div class="card">
+<h3>Career Focused Training</h3>
+<p>Industry aligned curriculum & guidance.</p>
+</div>
+</div>
 </section>
 
 <section id="about">
-  <div class="container">
-    <div class="section-title">
-      <h2>About GGCI</h2>
-      <p>A trusted institute committed to quality computer and IT education.</p>
-    </div>
-    <p>
-      Gargee Global Computer Institute (GGCI) is a professionally managed computer education institute
-      focused on delivering high-quality IT and software training. Our programs are designed with
-      industry relevance, practical exposure, and long-term career growth in mind.
-    </p>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="section-title">
-      <h2>Director's Message</h2>
-      <p>Leadership focused on quality and career success.</p>
-    </div>
-    <p>
-      At GGCI, our mission is to create skilled professionals who are confident, competent,
-      and industry-ready. We believe in discipline, quality education, and continuous improvement
-      to help our students succeed in the competitive IT world.
-    </p>
-  </div>
+<div class="container">
+<div class="section-title"><h2>About GGCI</h2></div>
+<p>GGCI is a professionally managed computer institute delivering career-oriented IT education.</p>
+</div>
 </section>
 
 <section id="courses">
-  <div class="container">
-    <div class="section-title">
-      <h2>Courses Offered</h2>
-      <p>Industry-relevant programs designed for real careers.</p>
-    </div>
-    <div class="grid grid-3">
-      <div class="card">Computer Fundamentals & Office Automation</div>
-      <div class="card">Programming & Software Development</div>
-      <div class="card">Web Designing & Development</div>
-      <div class="card">Networking & Hardware</div>
-      <div class="card">Professional IT Diploma Programs</div>
-      <div class="card">Career-Oriented Short-Term Courses</div>
-    </div>
-  </div>
+<div class="container">
+<div class="section-title"><h2>Courses Offered</h2></div>
+<div class="grid grid-3">
+<div class="card">Computer Fundamentals</div>
+<div class="card">Programming & Software</div>
+<div class="card">Web Development</div>
+<div class="card">Networking</div>
+<div class="card">Professional Diplomas</div>
+<div class="card">Short Term Courses</div>
+</div>
+</div>
 </section>
 
-<section id="why" class="why">
-  <div class="container">
-    <div class="section-title">
-      <h2>Why Choose GGCI</h2>
-    </div>
-    <div class="grid grid-3">
-      <div class="card">Professional & Corporate Learning Environment</div>
-      <div class="card">Experienced Faculty & Practical Training</div>
-      <div class="card">Career Guidance & Skill Development</div>
-    </div>
-  </div>
+<section id="franchise" style="background:var(--light)">
+<div class="container">
+<div class="section-title"><h2>Franchise Opportunity</h2></div>
+<div class="grid grid-3">
+<div class="card">Low Investment Model</div>
+<div class="card">Brand & Academic Support</div>
+<div class="card">High Growth Education Sector</div>
+</div>
+</div>
 </section>
 
-<section>
-  <div class="container">
-    <div class="section-title">
-      <h2>Student Testimonials</h2>
-    </div>
-    <div class="card testimonial">
-      <p>
-        “GGCI helped me gain confidence and professional IT skills. The training environment truly feels corporate and career-focused.”
-      </p>
-    </div>
-  </div>
+<section id="contact">
+<div class="container">
+<div class="section-title"><h2>Contact / Lead Form</h2></div>
+<div class="grid grid-3">
+<div class="card">
+<h3>Send Enquiry</h3>
+<input id="name" placeholder="Your Name">
+<input id="phone" placeholder="Mobile Number">
+<select id="interest">
+<option>Course Admission</option>
+<option>Franchise</option>
+</select>
+<button onclick="sendWhatsApp()">Submit on WhatsApp</button>
+</div>
+<div class="card">
+<p><strong>Address:</strong> Near Vishal Mega Mart, Surajpur, Greater Noida</p>
+<p><strong>Phone:</strong> 9720136336, 8178599981</p>
+<p><strong>Email:</strong> gargeeglobal@gmail.com</p>
+</div>
+</div>
+</div>
 </section>
 
-<section id="contact" class="contact">
-  <div class="container">
-    <div class="section-title">
-      <h2>Contact Us</h2>
-      <p>Start your professional journey today.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-box">
-        <h3>Institute Details</h3>
-        <p><strong>Address:</strong> Near Vishal Mega Mart, Surajpur, Greater Noida</p>
-        <p><strong>Phone:</strong> 9720136336, 8178599981</p>
-        <p><strong>Email:</strong> gargeeglobal@gmail.com</p>
-      </div>
-      <div class="contact-box">
-        <iframe loading="lazy" src="https://maps.google.com/maps?q=Surajpur%20Greater%20Noida&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-      </div>
-    </div>
-  </div>
-</section>
+<a id="waBtn" class="whatsapp" target="_blank">WhatsApp</a>
 
-<footer>
-  <div class="footer-inner">
-    <div>
-      <h3>Gargee Global Computer Institute</h3>
-      <p>Professional IT education with corporate-level training standards.</p>
-    </div>
-    <div>
-      <h4>Quick Links</h4>
-      <p><a href="#about">About</a></p>
-      <p><a href="#courses">Courses</a></p>
-      <p><a href="#contact">Contact</a></p>
-    </div>
-    <div>
-      <h4>Admissions</h4>
-      <p>Apply now and build a strong IT career with GGCI.</p>
-    </div>
-  </div>
-</footer>
+<div id="popup">
+<div class="popup-box">
+<h3>Admissions Open</h3>
+<p>Apply now for latest IT courses.</p>
+<button onclick="closePopup()">Close</button>
+</div>
+</div>
 
 <script>
 function toggleMenu(){
-  document.getElementById("menu").classList.toggle("show");
+document.getElementById("menu").classList.toggle("show");
 }
+
+/* WhatsApp rotation */
+const numbers=["919720136336","918178599981"];
+let index=Math.floor(Math.random()*numbers.length);
+document.getElementById("waBtn").href="https://wa.me/"+numbers[index];
+
+function sendWhatsApp(){
+let n=document.getElementById("name").value;
+let p=document.getElementById("phone").value;
+let i=document.getElementById("interest").value;
+let msg=`Name: ${n}%0APhone: ${p}%0AInterest: ${i}`;
+window.open("https://wa.me/"+numbers[index]+"?text="+msg,"_blank");
+}
+
+/* POPUP CONTROL */
+let popupON=false; // ADMIN CONTROL
+if(popupON){document.getElementById("popup").style.display="block";}
+function closePopup(){document.getElementById("popup").style.display="none";}
 </script>
 
 </body>
