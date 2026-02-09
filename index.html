@@ -4,11 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gargee Global Computer Institute | ISO Verified IT College</title>
-<meta name="description" content="ISO Verified Gargee Global Computer Institute, affiliated with Future IT College. Industry-demand IT, Software, SAP, Cloud & Networking courses with placement support.">
+
+<meta name="description" content="ISO Verified Gargee Global Computer Institute, MSME Registered & NSDC Affiliated IT Institute in Greater Noida offering industry-ready courses.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<!-- GOOGLE TRUST SCHEMA -->
+<!-- TRUST SCHEMA -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -32,14 +33,36 @@ header{position:sticky;top:0;background:#fff;border-bottom:1px solid #e5e7eb;z-i
 .nav h1{font-size:20px;color:#2563eb;font-weight:700}
 .nav a{margin-left:18px;font-size:14px;font-weight:500}
 
-.hero{background:url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80') center/cover}
+.hero{
+background:url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat
+}
 .hero-overlay{background:rgba(255,255,255,.92);padding:120px 20px;text-align:center}
 .hero h2{font-size:46px;color:#111827}
 .hero p{margin-top:10px;color:#374151}
 
-.hero-badges{display:flex;justify-content:center;gap:22px;margin-top:26px;flex-wrap:wrap}
-.hero-badges .badge{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:12px 18px;height:64px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 14px rgba(0,0,0,.08)}
-.hero-badges img{max-height:38px}
+.hero-badges{
+display:flex;
+justify-content:center;
+gap:22px;
+margin-top:26px;
+flex-wrap:wrap
+}
+.hero-badges .badge{
+background:#fff;
+border:1px solid #e5e7eb;
+border-radius:14px;
+padding:14px 20px;
+height:70px;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 6px 14px rgba(0,0,0,.08)
+}
+.hero-badges img{
+max-height:42px;
+width:auto;
+display:block
+}
 
 .verified-strip{margin-top:16px;font-size:15px;font-weight:600;color:#2563eb}
 .review-strip{margin-top:14px;font-size:15px;font-weight:600;color:#f59e0b}
@@ -52,18 +75,36 @@ section{padding:80px 20px}
 .container{max-width:1200px;margin:auto}
 .section-title{text-align:center;font-size:34px;color:#2563eb;margin-bottom:40px}
 
-.card{background:#fff;border:1px solid #e5e7eb;padding:26px;border-radius:18px}
-.grid{display:grid;gap:30px}
-.grid-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-
 footer{background:#fff;border-top:1px solid #e5e7eb;padding:22px;text-align:center;font-size:14px;color:#6b7280}
 
-.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#16a34a;color:#fff;padding:14px 22px;border-radius:50px;font-weight:600;z-index:999}
-.google-review-float{position:fixed;bottom:80px;right:20px;background:#f59e0b;color:#fff;padding:12px 20px;border-radius:50px;font-weight:600;z-index:998}
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#16a34a;
+color:#fff;
+padding:14px 22px;
+border-radius:50px;
+font-weight:600;
+z-index:999
+}
+.google-review-float{
+position:fixed;
+bottom:80px;
+right:20px;
+background:#f59e0b;
+color:#fff;
+padding:12px 20px;
+border-radius:50px;
+font-weight:600;
+z-index:998
+}
 
 input,select{width:100%;padding:12px;border-radius:10px;border:1px solid #e5e7eb}
 
-@media(max-width:900px){.hero h2{font-size:32px}}
+@media(max-width:900px){
+.hero h2{font-size:32px}
+}
 </style>
 </head>
 
@@ -85,10 +126,17 @@ input,select{width:100%;padding:12px;border-radius:10px;border:1px solid #e5e7eb
     <h2>Industry Ready IT & Software Education</h2>
     <p>ISO Certified • MSME Registered • NSDC Affiliated</p>
 
+    <!-- FIXED BADGES -->
     <div class="hero-badges">
-      <div class="badge"><img src="images/badges/iso.png"></div>
-      <div class="badge"><img src="images/badges/msme.png"></div>
-      <div class="badge"><img src="images/badges/nsdc.png"></div>
+      <div class="badge">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/ISO_Logo.svg" alt="ISO Certified">
+      </div>
+      <div class="badge">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/MSME_Logo.png" alt="MSME Registered">
+      </div>
+      <div class="badge">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/NSDC_Logo.png" alt="NSDC Affiliated">
+      </div>
     </div>
 
     <div class="verified-strip">✔ Trusted & Verified Institute</div>
@@ -130,12 +178,22 @@ input,select{width:100%;padding:12px;border-radius:10px;border:1px solid #e5e7eb
 <a class="whatsapp-float" href="https://wa.me/919720136336">WhatsApp</a>
 
 <script>
-const whatsappNumbers=["919720136336","918178599981"];let i=0;
-function nextNumber(){let n=whatsappNumbers[i];i=(i+1)%whatsappNumbers.length;return n;}
+const whatsappNumbers=["919720136336","918178599981"];
+let i=0;
+
+function nextNumber(){
+  let n=whatsappNumbers[i];
+  i=(i+1)%whatsappNumbers.length;
+  return n;
+}
 
 async function sendLead(){
-  const data={name:lname.value,mobile:lmobile.value,course:lcourse.value};
-  await fetch("PASTE_GOOGLE_SCRIPT_URL",{method:"POST",body:JSON.stringify(data)});
+  const data={
+    name:lname.value,
+    mobile:lmobile.value,
+    course:lcourse.value
+  };
+  fetch("PASTE_GOOGLE_SCRIPT_URL",{method:"POST",body:JSON.stringify(data)});
   let num=nextNumber();
   let msg=`New Enquiry%0AName: ${lname.value}%0AMobile: ${lmobile.value}%0ACourse: ${lcourse.value}`;
   window.open(`https://wa.me/${num}?text=${msg}`,'_blank');
