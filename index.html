@@ -90,11 +90,16 @@ section{padding:70px 20px}
 /* GRID */
 .grid{display:grid;gap:25px}
 .grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-4{grid-template-columns:repeat(4,1fr)}
 .card{
 background:#fff;
 padding:30px;
 border-radius:12px;
 box-shadow:0 10px 25px rgba(0,0,0,.08)
+}
+.icon{
+font-size:36px;
+margin-bottom:15px
 }
 
 /* FORM */
@@ -133,6 +138,7 @@ z-index:1500
 @media(max-width:900px){
 .hero-inner{grid-template-columns:1fr}
 .grid-3{grid-template-columns:1fr 1fr}
+.grid-4{grid-template-columns:1fr 1fr}
 }
 @media(max-width:600px){
 .menu-toggle{display:block}
@@ -147,7 +153,7 @@ flex-direction:column;
 padding:20px
 }
 nav ul.show{display:flex}
-.grid-3{grid-template-columns:1fr}
+.grid-3,.grid-4{grid-template-columns:1fr}
 .hero h1{font-size:34px}
 .trust-list{grid-template-columns:1fr}
 }
@@ -163,8 +169,8 @@ nav ul.show{display:flex}
 <nav>
 <ul id="menu">
 <li><a href="#about">About</a></li>
-<li><a href="#why">Why GGCI</a></li>
 <li><a href="#director">Director Message</a></li>
+<li><a href="#why-ggci">Why GGCI?</a></li>
 <li><a href="#courses">Courses</a></li>
 <li><a href="#franchise">Franchise</a></li>
 <li><a href="#contact">Contact</a></li>
@@ -207,32 +213,51 @@ nav ul.show{display:flex}
 <!-- DIRECTOR MESSAGE -->
 <section id="director" style="background:var(--light)">
 <div class="container">
-<div class="section-title">
-<h2>Director’s Message</h2>
-</div>
-
+<div class="section-title"><h2>Director’s Message</h2></div>
 <div class="card">
 <p>
-At Gargee Global Computer Institute (GGCI), our mission is to create skilled professionals and successful education entrepreneurs who are ready to meet real industry challenges. We strongly believe that quality education should not only focus on certificates, but also on practical knowledge, confidence, and long-term career growth.
+At Gargee Global Computer Institute (GGCI), our mission is to create skilled professionals and successful education entrepreneurs who are ready to meet real industry challenges. We believe quality education goes beyond certificates and focuses on practical exposure, discipline, and long-term career stability.
 <br><br>
-GGCI is built with a clear vision to deliver industry-relevant IT training through structured curriculum, experienced trainers, and disciplined academic processes. We are equally committed to supporting our franchise partners by providing academic guidance, operational support, and brand value. Our focus is on trust, transparency, and sustainable growth for every student and partner associated with GGCI.
+GGCI operates with structured academic systems, experienced trainers, and transparent processes. We are committed to guiding students and franchise partners with honesty, operational support, and academic excellence, ensuring sustainable growth and trust for every individual associated with GGCI.
 </p>
 <p style="margin-top:15px;font-weight:600;color:var(--primary)">
-— Director<br>
-Gargee Global Computer Institute
+— Director<br>Gargee Global Computer Institute
 </p>
 </div>
-
 </div>
 </section>
 
-<section id="why">
+<!-- WHY GGCI EMOTIONAL CONVINCER -->
+<section id="why-ggci">
 <div class="container">
-<div class="section-title"><h2>Why Choose GGCI</h2></div>
-<div class="grid grid-3">
-<div class="card">Practical Training</div>
-<div class="card">Experienced Trainers</div>
-<div class="card">Physical Training Center</div>
+<div class="section-title">
+<h2>Why Students & Partners Choose GGCI</h2>
+</div>
+
+<div class="grid grid-4">
+<div class="card">
+<div class="icon">🎯</div>
+<h3>Practical Training</h3>
+<p>Hands-on learning with live projects that prepare students for real industry challenges.</p>
+</div>
+
+<div class="card">
+<div class="icon">👨‍🏫</div>
+<h3>Experienced Trainers</h3>
+<p>Learn from skilled professionals with real teaching and industry experience.</p>
+</div>
+
+<div class="card">
+<div class="icon">🏫</div>
+<h3>Physical Training Center</h3>
+<p>100% offline institute with real classrooms – not an online scam or fake setup.</p>
+</div>
+
+<div class="card">
+<div class="icon">🤝</div>
+<h3>Long-Term Franchise Support</h3>
+<p>Complete academic, marketing, and operational support for sustainable franchise growth.</p>
+</div>
 </div>
 </div>
 </section>
@@ -291,11 +316,9 @@ Gargee Global Computer Institute
 function toggleMenu(){
 document.getElementById("menu").classList.toggle("show");
 }
-
 const numbers=["919720136336","918178599981"];
 let index=Math.floor(Math.random()*numbers.length);
 document.getElementById("waBtn").href="https://wa.me/"+numbers[index];
-
 function sendWhatsApp(){
 let n=document.getElementById("name").value;
 let p=document.getElementById("phone").value;
