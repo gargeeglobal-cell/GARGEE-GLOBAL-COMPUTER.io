@@ -97,6 +97,12 @@ border-radius:12px;
 box-shadow:0 10px 25px rgba(0,0,0,.08)
 }
 
+/* WHY GGCI */
+.why-icon{
+font-size:36px;
+margin-bottom:15px
+}
+
 /* FORM */
 input,select{
 width:100%;
@@ -182,6 +188,7 @@ nav ul.show{display:flex}
 <ul id="menu">
 <li><a href="#about">About</a></li>
 <li><a href="#courses">Courses</a></li>
+<li><a href="#why">Why GGCI</a></li>
 <li><a href="#franchise">Franchise</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
@@ -192,7 +199,6 @@ nav ul.show{display:flex}
 <!-- HERO -->
 <section class="hero">
 <div class="hero-inner">
-
 <div>
 <h1>Build Your IT Career With GGCI</h1>
 <p>Professional IT education with corporate-level training.</p>
@@ -200,33 +206,18 @@ nav ul.show{display:flex}
 <a href="#contact" class="btn white">Apply Now</a>
 <a href="#franchise" class="btn outline">Take Franchise</a>
 
-<!-- TRUST SIGNALS -->
 <div class="trust-list">
-<div class="trust-item">
-<div class="trust-icon">✔</div>
-<span>10+ Years Education Experience</span>
+<div class="trust-item"><div class="trust-icon">✔</div>10+ Years Education Experience</div>
+<div class="trust-item"><div class="trust-icon">✔</div>1000+ Students Trained</div>
+<div class="trust-item"><div class="trust-icon">✔</div>Industry Oriented Curriculum</div>
+<div class="trust-item"><div class="trust-icon">✔</div>Placement & Franchise Support</div>
 </div>
-<div class="trust-item">
-<div class="trust-icon">✔</div>
-<span>1000+ Students Trained</span>
-</div>
-<div class="trust-item">
-<div class="trust-icon">✔</div>
-<span>Industry Oriented Curriculum</span>
-</div>
-<div class="trust-item">
-<div class="trust-icon">✔</div>
-<span>Placement & Franchise Support</span>
-</div>
-</div>
-
 </div>
 
 <div class="card">
 <h3>Career Focused Training</h3>
 <p>Industry aligned curriculum & expert guidance.</p>
 </div>
-
 </div>
 </section>
 
@@ -234,6 +225,41 @@ nav ul.show{display:flex}
 <div class="container">
 <div class="section-title"><h2>About GGCI</h2></div>
 <p>GGCI is a professionally managed computer institute delivering career-oriented IT education.</p>
+</div>
+</section>
+
+<!-- WHY GGCI SECTION -->
+<section id="why" style="background:var(--light)">
+<div class="container">
+<div class="section-title">
+<h2>Why Students & Partners Choose GGCI</h2>
+</div>
+
+<div class="grid grid-3">
+<div class="card">
+<div class="why-icon">🎯</div>
+<h3>Practical Training</h3>
+<p>Live projects & real-world skills – not just theory.</p>
+</div>
+
+<div class="card">
+<div class="why-icon">👨‍🏫</div>
+<h3>Experienced Trainers</h3>
+<p>Industry-expert faculty with teaching excellence.</p>
+</div>
+
+<div class="card">
+<div class="why-icon">🏫</div>
+<h3>Physical Training Center</h3>
+<p>100% offline institute – genuine & trusted learning.</p>
+</div>
+
+<div class="card">
+<div class="why-icon">🤝</div>
+<h3>Long-Term Franchise Support</h3>
+<p>Marketing, academic & operational support always.</p>
+</div>
+</div>
 </div>
 </section>
 
@@ -276,6 +302,7 @@ nav ul.show{display:flex}
 </select>
 <button onclick="sendWhatsApp()">Submit on WhatsApp</button>
 </div>
+
 <div class="card">
 <p><strong>Address:</strong> Near Vishal Mega Mart, Surajpur, Greater Noida</p>
 <p><strong>Phone:</strong> 9720136336, 8178599981</p>
@@ -287,20 +314,11 @@ nav ul.show{display:flex}
 
 <a id="waBtn" class="whatsapp" target="_blank">WhatsApp</a>
 
-<div id="popup">
-<div class="popup-box">
-<h3>Admissions Open</h3>
-<p>Apply now for latest IT courses.</p>
-<button onclick="closePopup()">Close</button>
-</div>
-</div>
-
 <script>
 function toggleMenu(){
 document.getElementById("menu").classList.toggle("show");
 }
 
-/* WhatsApp rotation */
 const numbers=["919720136336","918178599981"];
 let index=Math.floor(Math.random()*numbers.length);
 document.getElementById("waBtn").href="https://wa.me/"+numbers[index];
@@ -312,11 +330,6 @@ let i=document.getElementById("interest").value;
 let msg=`Name: ${n}%0APhone: ${p}%0AInterest: ${i}`;
 window.open("https://wa.me/"+numbers[index]+"?text="+msg,"_blank");
 }
-
-/* POPUP CONTROL */
-let popupON=false;
-if(popupON){document.getElementById("popup").style.display="block";}
-function closePopup(){document.getElementById("popup").style.display="none";}
 </script>
 
 </body>
