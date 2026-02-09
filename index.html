@@ -55,7 +55,7 @@ margin-right:10px
 .btn.white{background:#fff;color:var(--primary)}
 .btn.outline{border:2px solid #fff;color:#fff;background:none}
 
-/* TRUST SIGNALS */
+/* TRUST */
 .trust-list{
 margin-top:25px;
 display:grid;
@@ -97,12 +97,6 @@ border-radius:12px;
 box-shadow:0 10px 25px rgba(0,0,0,.08)
 }
 
-/* WHY GGCI */
-.why-icon{
-font-size:36px;
-margin-bottom:15px
-}
-
 /* FORM */
 input,select{
 width:100%;
@@ -121,25 +115,7 @@ font-size:16px;
 cursor:pointer
 }
 
-/* POPUP */
-#popup{
-display:none;
-position:fixed;
-inset:0;
-background:rgba(0,0,0,.6);
-z-index:2000
-}
-.popup-box{
-background:#fff;
-max-width:400px;
-margin:10% auto;
-padding:30px;
-border-radius:12px;
-text-align:center
-}
-.popup-box button{margin-top:10px}
-
-/* WHATSAPP FLOAT */
+/* WHATSAPP */
 .whatsapp{
 position:fixed;
 bottom:20px;
@@ -187,8 +163,9 @@ nav ul.show{display:flex}
 <nav>
 <ul id="menu">
 <li><a href="#about">About</a></li>
-<li><a href="#courses">Courses</a></li>
 <li><a href="#why">Why GGCI</a></li>
+<li><a href="#director">Director Message</a></li>
+<li><a href="#courses">Courses</a></li>
 <li><a href="#franchise">Franchise</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
@@ -196,7 +173,6 @@ nav ul.show{display:flex}
 </div>
 </header>
 
-<!-- HERO -->
 <section class="hero">
 <div class="hero-inner">
 <div>
@@ -228,37 +204,35 @@ nav ul.show{display:flex}
 </div>
 </section>
 
-<!-- WHY GGCI SECTION -->
-<section id="why" style="background:var(--light)">
+<!-- DIRECTOR MESSAGE -->
+<section id="director" style="background:var(--light)">
 <div class="container">
 <div class="section-title">
-<h2>Why Students & Partners Choose GGCI</h2>
+<h2>Director’s Message</h2>
 </div>
 
+<div class="card">
+<p>
+At Gargee Global Computer Institute (GGCI), our mission is to create skilled professionals and successful education entrepreneurs who are ready to meet real industry challenges. We strongly believe that quality education should not only focus on certificates, but also on practical knowledge, confidence, and long-term career growth.
+<br><br>
+GGCI is built with a clear vision to deliver industry-relevant IT training through structured curriculum, experienced trainers, and disciplined academic processes. We are equally committed to supporting our franchise partners by providing academic guidance, operational support, and brand value. Our focus is on trust, transparency, and sustainable growth for every student and partner associated with GGCI.
+</p>
+<p style="margin-top:15px;font-weight:600;color:var(--primary)">
+— Director<br>
+Gargee Global Computer Institute
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="why">
+<div class="container">
+<div class="section-title"><h2>Why Choose GGCI</h2></div>
 <div class="grid grid-3">
-<div class="card">
-<div class="why-icon">🎯</div>
-<h3>Practical Training</h3>
-<p>Live projects & real-world skills – not just theory.</p>
-</div>
-
-<div class="card">
-<div class="why-icon">👨‍🏫</div>
-<h3>Experienced Trainers</h3>
-<p>Industry-expert faculty with teaching excellence.</p>
-</div>
-
-<div class="card">
-<div class="why-icon">🏫</div>
-<h3>Physical Training Center</h3>
-<p>100% offline institute – genuine & trusted learning.</p>
-</div>
-
-<div class="card">
-<div class="why-icon">🤝</div>
-<h3>Long-Term Franchise Support</h3>
-<p>Marketing, academic & operational support always.</p>
-</div>
+<div class="card">Practical Training</div>
+<div class="card">Experienced Trainers</div>
+<div class="card">Physical Training Center</div>
 </div>
 </div>
 </section>
@@ -290,10 +264,9 @@ nav ul.show{display:flex}
 
 <section id="contact">
 <div class="container">
-<div class="section-title"><h2>Contact / Lead Form</h2></div>
+<div class="section-title"><h2>Contact</h2></div>
 <div class="grid grid-3">
 <div class="card">
-<h3>Send Enquiry</h3>
 <input id="name" placeholder="Your Name">
 <input id="phone" placeholder="Mobile Number">
 <select id="interest">
