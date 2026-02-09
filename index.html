@@ -3,11 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Gargee Global Computer Institute (GGCI) | Career, Courses, Jobs & Franchise</title>
-
 <meta name="description" content="Gargee Global Computer Institute (GGCI) – Trusted IT Education Hub offering professional courses, career guidance, job assistance & franchise opportunities. From Course to Career – Everything at One Place.">
 <meta name="author" content="Gargee Global Computer Institute">
+
+<!-- AOS Animation Library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root{
@@ -18,7 +22,7 @@
   --dark:#1a1a1a;
   --gray:#666;
 }
-*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',Segoe UI,Arial}
 html{scroll-behavior:smooth}
 body{background:#fff;color:var(--dark);line-height:1.7}
 
@@ -65,7 +69,9 @@ cursor:pointer
 .hero{
 background:linear-gradient(135deg,var(--primary),var(--secondary));
 color:#fff;
-padding:100px 20px
+padding:100px 20px;
+position:relative;
+overflow:hidden;
 }
 .hero-inner{
 max-width:1200px;
@@ -86,7 +92,6 @@ opacity:.95;
 margin-bottom:25px
 }
 .hero strong{color:#ffeb3b}
-
 .btn{
 display:inline-block;
 padding:14px 28px;
@@ -98,8 +103,12 @@ font-size:15px
 }
 .btn.white{background:#fff;color:var(--primary)}
 .btn.outline{border:2px solid #fff;color:#fff}
+.hero img{
+width:100%;
+border-radius:14px;
+}
 
-/* TRUST STRIP */
+/* ================= TRUST STRIP ================= */
 .trust-list{
 margin-top:30px;
 display:grid;
@@ -149,7 +158,12 @@ margin:auto
 background:#fff;
 padding:32px;
 border-radius:14px;
-box-shadow:0 12px 30px rgba(0,0,0,.08)
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+transition:0.3s;
+}
+.card:hover{
+transform: translateY(-5px);
+box-shadow:0 20px 40px rgba(0,0,0,.1);
 }
 .card h3{margin-bottom:10px;color:var(--primary)}
 .card p{color:#444;font-size:15px}
@@ -210,6 +224,17 @@ text-align:center;
 font-size:14px;
 opacity:.9
 }
+footer .socials{
+text-align:center;
+margin-top:20px
+}
+footer .socials a{
+color:#fff;
+margin:0 10px;
+font-size:20px;
+transition:0.3s
+}
+footer .socials a:hover{color:var(--accent)}
 
 /* ================= WHATSAPP ================= */
 .whatsapp{
@@ -265,13 +290,17 @@ nav ul.show{display:flex}
 <li><a href="#why">Why GGCI</a></li>
 <li><a href="#courses">Courses</a></li>
 <li><a href="#franchise">Franchise</a></li>
+<li><a href="#testimonials">Testimonials</a></li>
+<li><a href="#faculty">Faculty</a></li>
+<li><a href="#faq">FAQ</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
 </div>
 </header>
 
-<section class="hero">
+<!-- HERO -->
+<section class="hero" data-aos="fade-up">
 <div class="hero-inner">
 <div>
 <h1>From <strong>Course</strong> to <strong>Career</strong><br>Everything at One Place</h1>
@@ -291,21 +320,15 @@ it is a complete <strong>education, career & business ecosystem</strong> built o
 </div>
 </div>
 
-<div class="card">
-<h3>Why Parents & Students Trust GGCI</h3>
-<p>
-✔ Transparent system  
-✔ Real classrooms  
-✔ Practical training  
-✔ Career-focused guidance  
-✔ Long-term association  
-</p>
+<div>
+<img src="hero-illustration.png" alt="GGCI Courses">
 </div>
 </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about">
-<div class="container">
+<div class="container" data-aos="fade-up">
 <div class="section-title">
 <h2>About Gargee Global Computer Institute</h2>
 <p>A professionally managed institute built for serious careers & serious entrepreneurs.</p>
@@ -318,7 +341,8 @@ Our mission is to create **job-ready professionals** and **successful education 
 </div>
 </section>
 
-<section id="ecosystem" class="ecosystem">
+<!-- ECOSYSTEM -->
+<section id="ecosystem" class="ecosystem" data-aos="fade-up">
 <div class="container">
 <div class="section-title">
 <h2>GGCI Complete Ecosystem</h2>
@@ -350,7 +374,8 @@ Our mission is to create **job-ready professionals** and **successful education 
 </div>
 </section>
 
-<section id="why">
+<!-- WHY GGCI -->
+<section id="why" data-aos="fade-up">
 <div class="container">
 <div class="section-title">
 <h2>Why GGCI is Different</h2>
@@ -381,7 +406,8 @@ Our mission is to create **job-ready professionals** and **successful education 
 </div>
 </section>
 
-<section id="courses">
+<!-- COURSES -->
+<section id="courses" data-aos="fade-up">
 <div class="container">
 <div class="section-title">
 <h2>Courses Offered</h2>
@@ -397,7 +423,8 @@ Our mission is to create **job-ready professionals** and **successful education 
 </div>
 </section>
 
-<section id="franchise" style="background:var(--light)">
+<!-- FRANCHISE -->
+<section id="franchise" style="background:var(--light)" data-aos="fade-up">
 <div class="container">
 <div class="section-title">
 <h2>Franchise Opportunity</h2>
@@ -410,58 +437,59 @@ Our mission is to create **job-ready professionals** and **successful education 
 </div>
 </div>
 </section>
-  <section style="background:#fff">
-  <div class="container">
-    <div class="section-title">
-      <h2>100% Physical Computer Institute – Not Online</h2>
-      <p>Visit our real classroom, meet faculty & see infrastructure yourself</p>
-    </div>
 
-    <div class="grid grid-3">
-      <div class="card">
-        <div class="icon">🏫</div>
-        <h3>Real Physical Center</h3>
-        <p>
-          GGCI is a <strong>fully offline computer institute</strong> with real classrooms, 
-          systems, faculty and students.  
-          No fake online promises — only practical learning.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">🚶</div>
-        <h3>Walk-In Welcome</h3>
-        <p>
-          Students & parents are welcome to <strong>visit anytime</strong>, 
-          see live classes, interact with trainers and take informed decisions.
-        </p>
-      </div>
-
-      <div class="card">
-        <div class="icon">⏰</div>
-        <h3>Fixed Institute Timings</h3>
-        <p>
-          <strong>Monday – Saturday</strong><br>
-          🕘 9:00 AM – 7:00 PM<br>
-          Sunday closed
-        </p>
-      </div>
-    </div>
-
-    <div style="text-align:center;margin-top:40px">
-      <a 
-        href="https://www.google.com/maps/search/?api=1&query=Near+Vishal+Mega+Mart+Surajpur+Greater+Noida" 
-        target="_blank" 
-        class="btn white"
-        style="background:var(--primary);color:#fff"
-      >
-        📍 Visit Our Physical Center on Google Map
-      </a>
-    </div>
-  </div>
+<!-- TESTIMONIALS -->
+<section id="testimonials" data-aos="fade-up">
+<div class="container">
+<div class="section-title">
+<h2>What Our Students Say</h2>
+</div>
+<div class="grid grid-3">
+<div class="card">
+<p>"GGCI helped me land my dream job in IT. Amazing faculty!"</p>
+<h4>- Rahul Sharma</h4>
+</div>
+<div class="card">
+<p>"Starting my franchise was smooth thanks to GGCI guidance."</p>
+<h4>- Priya Verma</h4>
+</div>
+<div class="card">
+<p>"Practical training and real industry exposure made me confident."</p>
+<h4>- Ankit Singh</h4>
+</div>
+</div>
+</div>
 </section>
 
-<section id="contact">
+<!-- FAQ -->
+<section id="faq" style="background:var(--light)" data-aos="fade-up">
+<div class="container">
+<div class="section-title">
+<h2>Frequently Asked Questions</h2>
+</div>
+<div class="grid grid-2">
+<div class="card">
+<h3>Is GGCI fully offline?</h3>
+<p>Yes, GGCI is a 100% physical computer institute with real classrooms.</p>
+</div>
+<div class="card">
+<h3>Can I start a franchise?</h3>
+<p>Yes, we provide full support to start your own GGCI institute.</p>
+</div>
+<div class="card">
+<h3>Do you provide job placement?</h3>
+<p>Yes, we assist with internships and job placements with partner companies.</p>
+</div>
+<div class="card">
+<h3>What are the timings?</h3>
+<p>Monday-Saturday 9 AM - 7 PM. Sunday closed.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" data-aos="fade-up">
 <div class="container">
 <div class="section-title">
 <h2>Contact & Admission</h2>
@@ -482,32 +510,58 @@ Our mission is to create **job-ready professionals** and **successful education 
 <p><strong>Address:</strong><br>Near Vishal Mega Mart, Surajpur, Greater Noida</p>
 <p><strong>Phone:</strong><br>9720136336, 8178599981</p>
 <p><strong>Email:</strong><br>gargeeglobal@gmail.com</p>
+<p>
+<a href="https://www.google.com/maps/search/?api=1&query=Near+Vishal+Mega+Mart+Surajpur+Greater+Noida" target="_blank" class="btn white" style="background:var(--primary);color:#fff">📍 View on Google Map</a>
+</p>
 </div>
 </div>
 </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
 <p>© 2026 Gargee Global Computer Institute (GGCI). All Rights Reserved.</p>
+<div class="socials">
+<a href="#"><span>🔗</span></a>
+<a href="#"><span>🔗</span></a>
+<a href="#"><span>🔗</span></a>
+</div>
 </footer>
 
 <a id="waBtn" class="whatsapp" target="_blank">WhatsApp</a>
 
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
+AOS.init();
+
 function toggleMenu(){
 document.getElementById("menu").classList.toggle("show");
 }
+
+// WhatsApp
 const numbers=["919720136336","918178599981"];
 let index=Math.floor(Math.random()*numbers.length);
 document.getElementById("waBtn").href="https://wa.me/"+numbers[index];
+
 function sendWhatsApp(){
-let n=document.getElementById("name").value;
-let p=document.getElementById("phone").value;
+let n=document.getElementById("name").value.trim();
+let p=document.getElementById("phone").value.trim();
 let i=document.getElementById("interest").value;
+
+if(n=="" || p==""){alert("Please enter your name and phone number"); return;}
 let msg=`Name: ${n}%0APhone: ${p}%0AInterest: ${i}`;
+index=Math.floor(Math.random()*numbers.length); // new number each time
 window.open("https://wa.me/"+numbers[index]+"?text="+msg,"_blank");
 }
-</script>
 
+// Smooth scroll for nav links
+document.querySelectorAll('nav a').forEach(anchor=>{
+  anchor.addEventListener('click', function(e){
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+  });
+});
+</script>
 </body>
 </html>
