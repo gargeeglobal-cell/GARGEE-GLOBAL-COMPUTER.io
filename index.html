@@ -28,12 +28,58 @@ nav a{text-decoration:none;color:#333;font-weight:500}
 .menu-toggle{display:none;font-size:24px;cursor:pointer}
 
 /* HERO */
-.hero{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;padding:90px 20px}
-.hero-inner{max-width:1200px;margin:auto;display:grid;grid-template-columns:1.2fr .8fr;gap:40px}
+.hero{
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+color:#fff;
+padding:90px 20px
+}
+.hero-inner{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:40px;
+align-items:center
+}
 .hero h1{font-size:42px;margin-bottom:15px}
-.btn{display:inline-block;padding:14px 26px;border-radius:6px;text-decoration:none;font-weight:600}
+.hero p{opacity:.95}
+
+.btn{
+display:inline-block;
+padding:14px 26px;
+border-radius:6px;
+text-decoration:none;
+font-weight:600;
+margin-right:10px
+}
 .btn.white{background:#fff;color:var(--primary)}
 .btn.outline{border:2px solid #fff;color:#fff;background:none}
+
+/* TRUST SIGNALS */
+.trust-list{
+margin-top:25px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px
+}
+.trust-item{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:15px;
+font-weight:500
+}
+.trust-icon{
+width:22px;
+height:22px;
+border-radius:50%;
+background:#fff;
+color:var(--primary);
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:700
+}
 
 /* SECTIONS */
 section{padding:70px 20px}
@@ -44,23 +90,60 @@ section{padding:70px 20px}
 /* GRID */
 .grid{display:grid;gap:25px}
 .grid-3{grid-template-columns:repeat(3,1fr)}
-.card{background:#fff;padding:30px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,.08)}
+.card{
+background:#fff;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,.08)
+}
 
 /* FORM */
-input,select{width:100%;padding:12px;margin-bottom:12px;border:1px solid #ccc;border-radius:6px}
-button{padding:14px;border:none;border-radius:6px;background:var(--primary);color:#fff;font-size:16px;cursor:pointer}
+input,select{
+width:100%;
+padding:12px;
+margin-bottom:12px;
+border:1px solid #ccc;
+border-radius:6px
+}
+button{
+padding:14px;
+border:none;
+border-radius:6px;
+background:var(--primary);
+color:#fff;
+font-size:16px;
+cursor:pointer
+}
 
 /* POPUP */
-#popup{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:2000}
-.popup-box{background:#fff;max-width:400px;margin:10% auto;padding:30px;border-radius:12px;text-align:center}
+#popup{
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.6);
+z-index:2000
+}
+.popup-box{
+background:#fff;
+max-width:400px;
+margin:10% auto;
+padding:30px;
+border-radius:12px;
+text-align:center
+}
 .popup-box button{margin-top:10px}
 
 /* WHATSAPP FLOAT */
 .whatsapp{
-position:fixed;bottom:20px;right:20px;
-background:#25d366;color:#fff;
-padding:14px 18px;border-radius:50px;
-text-decoration:none;font-weight:600;
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:#fff;
+padding:14px 18px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
 z-index:1500
 }
 
@@ -71,10 +154,20 @@ z-index:1500
 }
 @media(max-width:600px){
 .menu-toggle{display:block}
-nav ul{display:none;position:absolute;top:65px;right:0;background:#fff;width:200px;flex-direction:column;padding:20px}
+nav ul{
+display:none;
+position:absolute;
+top:65px;
+right:0;
+background:#fff;
+width:200px;
+flex-direction:column;
+padding:20px
+}
 nav ul.show{display:flex}
 .grid-3{grid-template-columns:1fr}
 .hero h1{font-size:34px}
+.trust-list{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -96,18 +189,44 @@ nav ul.show{display:flex}
 </div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
 <div class="hero-inner">
+
 <div>
 <h1>Build Your IT Career With GGCI</h1>
 <p>Professional IT education with corporate-level training.</p>
+
 <a href="#contact" class="btn white">Apply Now</a>
 <a href="#franchise" class="btn outline">Take Franchise</a>
+
+<!-- TRUST SIGNALS -->
+<div class="trust-list">
+<div class="trust-item">
+<div class="trust-icon">✔</div>
+<span>10+ Years Education Experience</span>
 </div>
+<div class="trust-item">
+<div class="trust-icon">✔</div>
+<span>1000+ Students Trained</span>
+</div>
+<div class="trust-item">
+<div class="trust-icon">✔</div>
+<span>Industry Oriented Curriculum</span>
+</div>
+<div class="trust-item">
+<div class="trust-icon">✔</div>
+<span>Placement & Franchise Support</span>
+</div>
+</div>
+
+</div>
+
 <div class="card">
 <h3>Career Focused Training</h3>
-<p>Industry aligned curriculum & guidance.</p>
+<p>Industry aligned curriculum & expert guidance.</p>
 </div>
+
 </div>
 </section>
 
@@ -195,7 +314,7 @@ window.open("https://wa.me/"+numbers[index]+"?text="+msg,"_blank");
 }
 
 /* POPUP CONTROL */
-let popupON=false; // ADMIN CONTROL
+let popupON=false;
 if(popupON){document.getElementById("popup").style.display="block";}
 function closePopup(){document.getElementById("popup").style.display="none";}
 </script>
