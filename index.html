@@ -278,7 +278,77 @@ nav ul.show{display:flex}
 </head>
 
 <body>
+<!-- ================= STICKY BANNER ================= -->
+<div id="stickyBanner" style="position:fixed;top:0;left:0;width:100%;background:var(--accent);color:#fff;text-align:center;padding:12px;font-weight:700;z-index:4000;box-shadow:0 3px 10px rgba(0,0,0,.2);display:flex;justify-content:space-between;align-items:center;">
+  <span>GGCI – Noida's #1 Career, IT & Franchise Hub | Limited Seats Available!</span>
+  <a href="#contact" style="color:#fff;text-decoration:underline;font-weight:800;">Enroll Now</a>
+  <span onclick="document.getElementById('stickyBanner').style.display='none'" style="cursor:pointer;margin-left:15px;">✖</span>
+</div>
 
+<!-- ================= POPUP LEAD FORM ================= -->
+<div id="leadPopup" style="position:fixed;bottom:20px;right:20px;width:300px;background:#fff;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,.2);padding:20px;z-index:5000;display:none;font-family:'Poppins',sans-serif;">
+  <h3 style="color:var(--primary);margin-bottom:10px;">Free Demo / Consultation</h3>
+  <p style="font-size:14px;color:#333;margin-bottom:12px;">Check your skills or discuss franchise with our expert.</p>
+  <input id="popupName" placeholder="Your Name" style="width:100%;padding:10px;margin-bottom:8px;border:1px solid #ccc;border-radius:6px;">
+  <input id="popupPhone" placeholder="Mobile Number" style="width:100%;padding:10px;margin-bottom:8px;border:1px solid #ccc;border-radius:6px;">
+  <select id="popupInterest" style="width:100%;padding:10px;margin-bottom:8px;border:1px solid #ccc;border-radius:6px;">
+    <option>Course Admission</option>
+    <option>Franchise Opportunity</option>
+    <option>Free Demo Class</option>
+    <option>Career Guidance</option>
+  </select>
+  <button onclick="sendPopupWhatsApp()" style="width:100%;padding:12px;border:none;border-radius:6px;background:var(--primary);color:#fff;font-weight:700;cursor:pointer;">Send on WhatsApp</button>
+  <span onclick="document.getElementById('leadPopup').style.display='none'" style="position:absolute;top:8px;right:12px;cursor:pointer;color:#666;">✖</span>
+</div>
+
+<!-- ================= TRENDING BADGES ================= -->
+<script>
+window.addEventListener('load', function() {
+  // Show lead popup after 5 seconds
+  setTimeout(function(){
+    document.getElementById('leadPopup').style.display='block';
+  },5000);
+
+  // Add "Trending" badges to first 4 courses
+  document.querySelectorAll('#courses .card').forEach((card, i)=>{
+    if(i<4){
+      let badge=document.createElement('div');
+      badge.innerText="🔥 Trending";
+      badge.style.cssText="position:absolute;top:10px;right:10px;background:#ff9800;color:#fff;padding:4px 8px;border-radius:6px;font-size:12px;font-weight:700;";
+      card.style.position="relative";
+      card.appendChild(badge);
+    }
+  });
+});
+
+// ---------------- WhatsApp Popup Form ----------------
+function sendPopupWhatsApp(){
+  let n=document.getElementById("popupName").value.trim();
+  let p=document.getElementById("popupPhone").value.trim();
+  let i=document.getElementById("popupInterest").value;
+  if(n=="" || p==""){alert("Please enter your name and phone number"); return;}
+  let msg=`Name: ${n}%0APhone: ${p}%0AInterest: ${i}`;
+  let numbers=["919720136336","918178599981"];
+  let idx=Math.floor(Math.random()*numbers.length);
+  window.open("https://wa.me/"+numbers[idx]+"?text="+msg,"_blank");
+  document.getElementById('leadPopup').style.display='none';
+}
+
+// ---------------- Existing WhatsApp Button Randomizer ----------------
+const numbers=["919720136336","918178599981"];
+let index=Math.floor(Math.random()*numbers.length);
+document.getElementById("waBtn").href="https://wa.me/"+numbers[index];
+
+function sendWhatsApp(){
+  let n=document.getElementById("name").value.trim();
+  let p=document.getElementById("phone").value.trim();
+  let i=document.getElementById("interest").value;
+  if(n=="" || p==""){alert("Please enter your name and phone number"); return;}
+  let msg=`Name: ${n}%0APhone: ${p}%0AInterest: ${i}`;
+  index=Math.floor(Math.random()*numbers.length); // new number each time
+  window.open("https://wa.me/"+numbers[index]+"?text="+msg,"_blank");
+}
+</script>
 <header>
 <div class="navbar">
 <div class="logo">GGCI</div>
