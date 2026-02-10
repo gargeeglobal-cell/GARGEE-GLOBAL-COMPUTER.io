@@ -3,47 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Gargee Global Computer Institute (GGCI) | Noida’s Trusted Career & Computer Institute</title>
-
-<meta name="description" content="Gargee Global Computer Institute (GGCI) – Noida & Greater Noida’s most trusted computer institute for career-focused courses, job assistance & franchise business opportunities.">
-
+<title>Gargee Global Computer Institute (GGCI) | Career, Courses, Jobs & Franchise</title>
+<meta name="description" content="Gargee Global Computer Institute (GGCI) – Trusted IT Education Hub offering professional courses, career guidance, job assistance & franchise opportunities. From Course to Career – Everything at One Place.">
 <meta name="author" content="Gargee Global Computer Institute">
 
+<!-- AOS Animation Library -->
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root{
---primary:#0b3c8a;
---secondary:#1565c0;
---accent:#ff9800;
---light:#f4f7ff;
---dark:#1a1a1a;
---gray:#666;
+  --primary:#0b3c8a;
+  --secondary:#1565c0;
+  --accent:#ff9800;
+  --light:#f4f7ff;
+  --dark:#1a1a1a;
+  --gray:#666;
 }
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',Segoe UI,Arial}
 html{scroll-behavior:smooth}
 body{background:#fff;color:var(--dark);line-height:1.7}
 
-/* TOP BAR */
-.top-bar{
-background:linear-gradient(90deg,#ff9800,#ff5722);
-color:#fff;
-text-align:center;
-padding:10px;
-font-weight:700;
-position:sticky;
-top:0;
-z-index:4000;
-}
-
-/* HEADER */
+/* ================= HEADER ================= */
 header{
 position:sticky;
-top:40px;
+top:0;
 background:#fff;
-z-index:3000;
+z-index:2000;
 box-shadow:0 3px 15px rgba(0,0,0,.08)
 }
 .navbar{
@@ -51,19 +39,39 @@ max-width:1200px;
 margin:auto;
 padding:16px 20px;
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between
 }
-.logo{font-size:26px;font-weight:800;color:var(--primary)}
-nav ul{list-style:none;display:flex;gap:22px}
-nav a{text-decoration:none;color:#333;font-weight:600}
-.menu-toggle{display:none;font-size:26px}
+.logo{
+font-size:24px;
+font-weight:800;
+color:var(--primary)
+}
+nav ul{
+list-style:none;
+display:flex;
+gap:22px
+}
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:600;
+font-size:15px
+}
+nav a:hover{color:var(--primary)}
+.menu-toggle{
+display:none;
+font-size:26px;
+cursor:pointer
+}
 
-/* HERO */
+/* ================= HERO ================= */
 .hero{
 background:linear-gradient(135deg,var(--primary),var(--secondary));
 color:#fff;
-padding:110px 20px;
+padding:100px 20px;
+position:relative;
+overflow:hidden;
 }
 .hero-inner{
 max-width:1200px;
@@ -71,113 +79,333 @@ margin:auto;
 display:grid;
 grid-template-columns:1.2fr .8fr;
 gap:50px;
-align-items:center;
+align-items:center
 }
-.hero h1{font-size:46px}
+.hero h1{
+font-size:46px;
+margin-bottom:15px;
+line-height:1.2
+}
+.hero p{
+font-size:17px;
+opacity:.95;
+margin-bottom:25px
+}
 .hero strong{color:#ffeb3b}
 .btn{
 display:inline-block;
 padding:14px 28px;
 border-radius:6px;
-font-weight:700;
 text-decoration:none;
+font-weight:700;
 margin-right:12px;
+font-size:15px
 }
 .btn.white{background:#fff;color:var(--primary)}
 .btn.outline{border:2px solid #fff;color:#fff}
+.hero img{
+width:100%;
+border-radius:14px;
+}
 
-/* SECTION */
+/* ================= TRUST STRIP ================= */
+.trust-list{
+margin-top:30px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:14px
+}
+.trust-item{
+display:flex;
+align-items:center;
+gap:12px;
+font-size:15px;
+font-weight:600
+}
+.trust-icon{
+width:24px;
+height:24px;
+border-radius:50%;
+background:#fff;
+color:var(--primary);
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:900
+}
+
+/* ================= SECTIONS ================= */
 section{padding:80px 20px}
 .container{max-width:1200px;margin:auto}
 .section-title{text-align:center;margin-bottom:45px}
-.section-title h2{font-size:34px;color:var(--primary)}
-.section-title p{color:var(--gray)}
+.section-title h2{
+font-size:34px;
+color:var(--primary);
+margin-bottom:8px
+}
+.section-title p{
+color:var(--gray);
+max-width:700px;
+margin:auto
+}
 
-/* GRID */
+/* ================= GRID ================= */
 .grid{display:grid;gap:28px}
-.grid-4{grid-template-columns:repeat(4,1fr)}
 .grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-4{grid-template-columns:repeat(4,1fr)}
 
 .card{
 background:#fff;
-padding:30px;
+padding:32px;
 border-radius:14px;
 box-shadow:0 12px 30px rgba(0,0,0,.08);
-transition:.3s;
+transition:0.3s;
 }
-.card:hover{transform:translateY(-6px)}
+.card:hover{
+transform: translateY(-5px);
+box-shadow:0 20px 40px rgba(0,0,0,.1);
+}
+.card h3{margin-bottom:10px;color:var(--primary)}
+.card p{color:#444;font-size:15px}
 
-/* COURSES IMAGE */
-.card img{width:80px;margin-bottom:12px}
+.icon{
+font-size:40px;
+margin-bottom:15px
+}
 
-/* CONTACT */
+/* ================= ECOSYSTEM ================= */
+.ecosystem{
+background:var(--light)
+}
+.eco-step{
+text-align:center
+}
+.eco-step span{
+display:inline-block;
+background:var(--primary);
+color:#fff;
+width:42px;
+height:42px;
+line-height:42px;
+border-radius:50%;
+font-weight:700;
+margin-bottom:10px
+}
+
+/* ================= FORM ================= */
 input,select{
 width:100%;
 padding:13px;
 margin-bottom:14px;
 border:1px solid #ccc;
 border-radius:6px;
+font-size:15px
 }
 button{
 width:100%;
 padding:14px;
+border:none;
+border-radius:6px;
 background:var(--primary);
 color:#fff;
-border:none;
+font-size:16px;
 font-weight:700;
-border-radius:6px;
+cursor:pointer
 }
 
-/* WHATSAPP */
+/* ================= FOOTER ================= */
+footer{
+background:#0b1f3a;
+color:#fff;
+padding:40px 20px
+}
+footer p{
+text-align:center;
+font-size:14px;
+opacity:.9
+}
+footer .socials{
+text-align:center;
+margin-top:20px
+}
+footer .socials a{
+color:#fff;
+margin:0 10px;
+font-size:20px;
+transition:0.3s
+}
+footer .socials a:hover{color:var(--accent)}
+
+/* ================= WHATSAPP ================= */
 .whatsapp{
 position:fixed;
 bottom:20px;
 right:20px;
 background:#25d366;
 color:#fff;
-padding:14px 22px;
+padding:14px 20px;
 border-radius:50px;
 text-decoration:none;
 font-weight:700;
-z-index:5000;
+z-index:3000
 }
 
-/* RESPONSIVE */
+/* ================= RESPONSIVE ================= */
 @media(max-width:900px){
 .hero-inner{grid-template-columns:1fr}
-.grid-4,.grid-3{grid-template-columns:1fr 1fr}
+.grid-3{grid-template-columns:1fr 1fr}
+.grid-4{grid-template-columns:1fr 1fr}
 }
 @media(max-width:600px){
-.grid-4,.grid-3{grid-template-columns:1fr}
-.hero h1{font-size:34px}
+.menu-toggle{display:block}
+nav ul{
+display:none;
+position:absolute;
+top:70px;
+right:20px;
+background:#fff;
+width:220px;
+flex-direction:column;
+padding:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.15)
+}
+nav ul.show{display:flex}
+.grid-3,.grid-4{grid-template-columns:1fr}
+.hero h1{font-size:36px}
+.trust-list{grid-template-columns:1fr}
 }
 </style>
 </head>
 
 <body>
 
-<div class="top-bar">
-🎯 Admissions Open | Franchise Available in Noida & UP – Call Now
-</div>
-
 <header>
 <div class="navbar">
 <div class="logo">GGCI</div>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<nav>
+<ul id="menu">
+<li><a href="#about">About</a></li>
+<li><a href="#ecosystem">Ecosystem</a></li>
+<li><a href="#why">Why GGCI</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#franchise">Franchise</a></li>
+<li><a href="#testimonials">Testimonials</a></li>
+<li><a href="#faculty">Faculty</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 </div>
 </header>
 
-<section class="hero">
+<!-- HERO -->
+<section class="hero" data-aos="fade-up">
 <div class="hero-inner">
 <div>
-<h1>Noida’s Most Trusted <strong>Computer & Career Institute</strong></h1>
-<p>From Computer Courses to Jobs & Franchise Business – Everything at One Place.</p>
-<a href="#courses" class="btn white">View Courses</a>
-<a href="#contact" class="btn outline">Take Admission</a>
+<h1>From <strong>Course</strong> to <strong>Career</strong><br>Everything at One Place</h1>
+<p>
+Gargee Global Computer Institute is not just an institute —  
+it is a complete <strong>education, career & business ecosystem</strong> built on trust, structure and long-term growth.
+</p>
+
+<a href="#contact" class="btn white">Take Admission</a>
+<a href="#franchise" class="btn outline">Start Franchise</a>
+
+<div class="trust-list">
+<div class="trust-item"><div class="trust-icon">✔</div>10+ Years Trusted Education</div>
+<div class="trust-item"><div class="trust-icon">✔</div>1000+ Students Trained</div>
+<div class="trust-item"><div class="trust-icon">✔</div>Offline Physical Institute</div>
+<div class="trust-item"><div class="trust-icon">✔</div>Career & Business Support</div>
+</div>
+</div>
+
+<div>
+<img src="hero-illustration.png" alt="GGCI Courses">
 </div>
 </div>
 </section>
 
-<!-- COURSES (FULL RESTORED) -->
+<!-- ABOUT -->
+<section id="about">
+<div class="container" data-aos="fade-up">
+<div class="section-title">
+<h2>About Gargee Global Computer Institute</h2>
+<p>A professionally managed institute built for serious careers & serious entrepreneurs.</p>
+</div>
+<p style="max-width:900px;margin:auto;text-align:center">
+GGCI is designed to bridge the gap between education and employment.  
+We focus on **skills, discipline, industry exposure and ethical education practices**.  
+Our mission is to create **job-ready professionals** and **successful education entrepreneurs** across India.
+</p>
+</div>
+</section>
+
+<!-- ECOSYSTEM -->
+<section id="ecosystem" class="ecosystem" data-aos="fade-up">
+<div class="container">
+<div class="section-title">
+<h2>GGCI Complete Ecosystem</h2>
+<p>Everything you need — under one trusted brand</p>
+</div>
+
+<div class="grid grid-4">
+<div class="card eco-step">
+<span>1</span>
+<h3>Skill-Based Courses</h3>
+<p>Industry-aligned curriculum with practical training.</p>
+</div>
+<div class="card eco-step">
+<span>2</span>
+<h3>Career Guidance</h3>
+<p>Personality, interview & career roadmap support.</p>
+</div>
+<div class="card eco-step">
+<span>3</span>
+<h3>Job Assistance</h3>
+<p>Internship & placement assistance with partner companies.</p>
+</div>
+<div class="card eco-step">
+<span>4</span>
+<h3>Franchise Business</h3>
+<p>Low-risk education business with full support.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WHY GGCI -->
+<section id="why" data-aos="fade-up">
+<div class="container">
+<div class="section-title">
+<h2>Why GGCI is Different</h2>
+</div>
+
+<div class="grid grid-4">
+<div class="card">
+<div class="icon">🏫</div>
+<h3>Real Institute</h3>
+<p>Physical classrooms, real faculty, real students.</p>
+</div>
+<div class="card">
+<div class="icon">🎯</div>
+<h3>Career Focus</h3>
+<p>Not certificates — we focus on employable skills.</p>
+</div>
+<div class="card">
+<div class="icon">🤝</div>
+<h3>Long-Term Support</h3>
+<p>Students & partners are supported beyond admission.</p>
+</div>
+<div class="card">
+<div class="icon">📈</div>
+<h3>Growth Model</h3>
+<p>Designed for sustainable careers & businesses.</p>
+</div>
+</div>
+</div>
+</section>
+
 <!-- COURSES -->
 <section id="courses" data-aos="fade-up">
 <div class="container">
@@ -426,12 +654,76 @@ z-index:5000;
 </section>
 
 
-
-<!-- CONTACT -->
-<section id="contact">
+<!-- FRANCHISE -->
+<section id="franchise" style="background:var(--light)" data-aos="fade-up">
 <div class="container">
 <div class="section-title">
-<h2>Admission & Franchise Enquiry</h2>
+<h2>Franchise Opportunity</h2>
+<p>Build your own institute with GGCI support</p>
+</div>
+<div class="grid grid-3">
+<div class="card">Low Investment – High Trust Model</div>
+<div class="card">Academic, Marketing & Branding Support</div>
+<div class="card">Growing Education Industry Opportunity</div>
+</div>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" data-aos="fade-up">
+<div class="container">
+<div class="section-title">
+<h2>What Our Students Say</h2>
+</div>
+<div class="grid grid-3">
+<div class="card">
+<p>"GGCI helped me land my dream job in IT. Amazing faculty!"</p>
+<h4>- Rahul Sharma</h4>
+</div>
+<div class="card">
+<p>"Starting my franchise was smooth thanks to GGCI guidance."</p>
+<h4>- Priya Verma</h4>
+</div>
+<div class="card">
+<p>"Practical training and real industry exposure made me confident."</p>
+<h4>- Ankit Singh</h4>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="background:var(--light)" data-aos="fade-up">
+<div class="container">
+<div class="section-title">
+<h2>Frequently Asked Questions</h2>
+</div>
+<div class="grid grid-2">
+<div class="card">
+<h3>Is GGCI fully offline?</h3>
+<p>Yes, GGCI is a 100% physical computer institute with real classrooms.</p>
+</div>
+<div class="card">
+<h3>Can I start a franchise?</h3>
+<p>Yes, we provide full support to start your own GGCI institute.</p>
+</div>
+<div class="card">
+<h3>Do you provide job placement?</h3>
+<p>Yes, we assist with internships and job placements with partner companies.</p>
+</div>
+<div class="card">
+<h3>What are the timings?</h3>
+<p>Monday-Saturday 9 AM - 7 PM. Sunday closed.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" data-aos="fade-up">
+<div class="container">
+<div class="section-title">
+<h2>Contact & Admission</h2>
 </div>
 
 <div class="grid grid-3">
@@ -448,26 +740,59 @@ z-index:5000;
 <div class="card">
 <p><strong>Address:</strong><br>Near Vishal Mega Mart, Surajpur, Greater Noida</p>
 <p><strong>Phone:</strong><br>9720136336, 8178599981</p>
+<p><strong>Email:</strong><br>gargeeglobal@gmail.com</p>
+<p>
+<a href="https://www.google.com/maps/search/?api=1&query=Near+Vishal+Mega+Mart+Surajpur+Greater+Noida" target="_blank" class="btn white" style="background:var(--primary);color:#fff">📍 View on Google Map</a>
+</p>
 </div>
 </div>
 </div>
 </section>
 
-<footer style="background:#0b1f3a;color:#fff;text-align:center;padding:30px">
-© 2026 Gargee Global Computer Institute
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Gargee Global Computer Institute (GGCI). All Rights Reserved.</p>
+<div class="socials">
+<a href="#"><span>🔗</span></a>
+<a href="#"><span>🔗</span></a>
+<a href="#"><span>🔗</span></a>
+</div>
 </footer>
 
-<a id="waBtn" class="whatsapp">WhatsApp</a>
+<a id="waBtn" class="whatsapp" target="_blank">WhatsApp</a>
 
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
-const numbers=["919720136336","918178599981"];
-document.getElementById("waBtn").href="https://wa.me/"+numbers[0];
-function sendWhatsApp(){
-let n=name.value,p=phone.value,i=interest.value;
-if(!n||!p){alert("Enter details");return;}
-window.open(`https://wa.me/919720136336?text=Name:${n}%0APhone:${p}%0AInterest:${i}`,"_blank");
-}
-</script>
+AOS.init();
 
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("show");
+}
+
+// WhatsApp
+const numbers=["919720136336","918178599981"];
+let index=Math.floor(Math.random()*numbers.length);
+document.getElementById("waBtn").href="https://wa.me/"+numbers[index];
+
+function sendWhatsApp(){
+let n=document.getElementById("name").value.trim();
+let p=document.getElementById("phone").value.trim();
+let i=document.getElementById("interest").value;
+
+if(n=="" || p==""){alert("Please enter your name and phone number"); return;}
+let msg=`Name: ${n}%0APhone: ${p}%0AInterest: ${i}`;
+index=Math.floor(Math.random()*numbers.length); // new number each time
+window.open("https://wa.me/"+numbers[index]+"?text="+msg,"_blank");
+}
+
+// Smooth scroll for nav links
+document.querySelectorAll('nav a').forEach(anchor=>{
+  anchor.addEventListener('click', function(e){
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+  });
+});
+</script>
 </body>
 </html>
